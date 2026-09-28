@@ -1,0 +1,74 @@
+/* Sobre Nosotros Styles - Agujas Acupuntura */
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #1a4f70 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.image-container {
+    position: relative;
+    border-radius: 2.5rem;
+    overflow: hidden;
+}
+
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+[data-reveal].revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.embed-mode #navbar {
+    position: relative !important;
+    z-index: 100 !important;
+    padding-top: 0 !important;
+    padding-inline: 0 !important;
+}
+
+.embed-mode .nav-fixed {
+    position: static !important;
+}
+
+#desktopCoursesMenu,
+#desktopMasterclassMenu,
+#mobileMenuWrap {
+    z-index: 110 !important;
+}
+
+#desktopPresencialesPanel,
+#desktopOnlinePanel {
+    z-index: 120 !important;
+}

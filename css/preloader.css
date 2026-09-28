@@ -1,0 +1,11 @@
+        /* Ocultar barra de desplazamiento interna en Wix/iframe */
+        html,
+        body {
+            scrollbar-width: none !important;
+            -ms-overflow-style: none !important;
+        }
+
+        html::-webkit-scrollbar,
+        body::-webkit-scrollbar {
+            display: none !important;
+        }

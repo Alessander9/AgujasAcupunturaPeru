@@ -1,0 +1,36 @@
+{
+  "pages": {
+    "catalogo_productos": {
+      "pages_navigated": 13,
+      "items_checked": 155
+    },
+    "amazonik": [
+      {
+        "name": "Aceite Puro de Copaiba Amazónica",
+        "src": "http://localhost:3001/img_productos/borgo%C3%B1a-opt.webp",
+        "status": "OK"
+      },
+      {
+        "name": "Sangre de Grado Pura Certificada",
+        "src": "http://localhost:3001/img_productos/rosas-opt.webp",
+        "status": "OK"
+      },
+      {
+        "name": "Aceite Esencial Puro de Palo Santo",
+        "src": "http://localhost:3001/img_productos/citronella-opt.webp",
+        "status": "OK"
+      },
+      {
+        "name": "Elixir Terapéutico Aguaje & Rosa Mosqueta",
+        "src": "http://localhost:3001/img_productos/mixFlora-opt.webp",
+        "status": "OK"
+      }
+    ]
+  },
+  "summary": {
+    "total_product_images": 159,
+    "loaded_ok": 159,
+    "broken": 0,
+    "wix_urls": 0
+  }
+}

@@ -1,0 +1,148 @@
+/* ═══════════════════════════════════════════════════════════
+   Flowing Hover Effect for Promo Cards — Premium Edition
+═══════════════════════════════════════════════════════════ */
+
+.flowing-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 1.5rem;
+}
+
+/* ── OVERLAY CONTAINER ── */
+.flowing-marquee {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  /* Starts off-screen (slides in from top/bottom via GSAP) */
+  transform: translate3d(0, 101%, 0);
+  z-index: 25;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* ── FULL-BLEED IMAGE BACKGROUND INSIDE OVERLAY ── */
+.flowing-marquee::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--fm-bg, none);
+  background-size: cover;
+  background-position: center;
+  /* Vivid zoom on slide-in */
+  transform: scale(1.08);
+  transition: transform 0.65s cubic-bezier(0.33, 1, 0.68, 1);
+  z-index: -2;
+}
+
+/* Rich gradient to preserve readability and feel premium */
+.flowing-marquee::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(10, 30, 24, 0.82) 0%,
+      rgba(18, 51, 41, 0.70) 45%,
+      rgba(0, 0, 0, 0.40) 100%
+    );
+  /* Subtle shimmer strip across center */
+  border-top: 1px solid rgba(194, 155, 98, 0.25);
+  border-bottom: 1px solid rgba(194, 155, 98, 0.15);
+  z-index: -1;
+}
+
+/* Zoom image on hover (set via JS GSAP enter) */
+.flowing-card:hover .flowing-marquee::before {
+  transform: scale(1.0);
+}
+
+/* ── INNER WRAP: scrolling marquee row ── */
+.flowing-marquee__inner-wrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  /* Frosted glass strip for the marquee row */
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.65rem 0;
+}
+
+.flowing-marquee__inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+  will-change: transform;
+}
+
+.flowing-marquee__part {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* ── MARQUEE TEXT — large, refined ── */
+.flowing-marquee span {
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  font-weight: 900;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  padding: 0 1rem;
+  /* Gold shimmer text */
+  color: #EDE4D6;
+  text-shadow:
+    0 0 24px rgba(194, 155, 98, 0.45),
+    0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 640px) {
+  .flowing-marquee span {
+    font-size: 1.3rem;
+  }
+}
+
+/* ── PRODUCT IMAGE PILL inside marquee ── */
+.flowing-marquee__img {
+  width: 88px;
+  height: 60px;
+  margin: 0 1rem;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid rgba(194, 155, 98, 0.65);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 0 0 4px rgba(194, 155, 98, 0.12);
+  flex-shrink: 0;
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+}
+
+.flowing-marquee__img:hover {
+  transform: rotate(0deg) scale(1.06);
+}
+
+/* ── SEPARATOR DIAMOND between text parts ── */
+.flowing-marquee__part::after {
+  content: '◆';
+  display: inline-block;
+  font-size: 0.45rem;
+  color: rgba(194, 155, 98, 0.6);
+  margin: 0 0.5rem;
+  flex-shrink: 0;
+  vertical-align: middle;
+}

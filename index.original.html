@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INSTEIP - Cursos, terapias y productos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://static.wixstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/preloader-body.css">
+    <script src="js/vendor/gsap.min.js"></script>
+</head>
+
+<body>
+
+
+
+    <!-- INSTEIP PREMIUM PRELOADER -->
+    <div id="preloader"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; min-height: 100vh; background: #ffffff; z-index: 999999; transition: opacity 0.4s ease, visibility 0.4s ease; opacity: 1; visibility: visible;">
+        <div
+            style="position: absolute; top: 320px; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; padding: 20px; width: 100%; max-width: 320px; box-sizing: border-box;">
+
+            <!-- Energy Rings & Nature Ornaments Wrapper -->
+            <div
+                style="position: relative; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center;">
+
+                <!-- Ripple Aura Rings -->
+                <div class="preloader-ripple" style="border: 2px solid rgba(13, 148, 136, 0.08);"></div>
+                <div class="preloader-ripple" style="border: 2px solid rgba(30, 58, 138, 0.05); animation-delay: 0.8s;">
+                </div>
+                <div class="preloader-ripple"
+                    style="border: 2px solid rgba(13, 148, 136, 0.03); animation-delay: 1.6s;"></div>
+
+                <!-- Rotating Leaf Ornaments (SVGs) -->
+                <div class="preloader-leaf"
+                    style="top: 10px; left: 10px; animation: floatLeaf1 6s ease-in-out infinite;">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="#10b981" fill-opacity="0.5"
+                        style="transform: rotate(-45deg);">
+                        <path d="M12 2C8 6 6 10 6 14c0 3.3 2.7 6 6 6s6-2.7 6-6c0-4-2-8-6-12z" />
+                    </svg>
+                </div>
+                <div class="preloader-leaf"
+                    style="bottom: 10px; right: 10px; animation: floatLeaf2 8s ease-in-out infinite;">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="#0d9488" fill-opacity="0.4"
+                        style="transform: rotate(45deg);">
+                        <path d="M12 2C8 6 6 10 6 14c0 3.3 2.7 6 6 6s6-2.7 6-6c0-4-2-8-6-12z" />
+                    </svg>
+                </div>
+
+                <!-- Outer Glowing Spinner -->
+                <div
+                    style="position: absolute; width: 100px; height: 100px; border: 3px solid rgba(30, 58, 138, 0.04); border-top: 3px solid #1e3a8a; border-right: 3px solid #0d9488; border-radius: 50%; animation: preloader-spin 1.2s cubic-bezier(0.5, 0.1, 0.1, 0.9) infinite;">
+                </div>
+
+                <!-- Inner Core (Lotus/Meditation SVG) -->
+                <div
+                    style="position: absolute; width: 68px; height: 68px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(30, 58, 138, 0.08); z-index: 10;">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="url(#preloader-grad)"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        style="animation: preloader-pulse 2s ease-in-out infinite;">
+                        <defs>
+                            <linearGradient id="preloader-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#1e3a8a" />
+                                <stop offset="100%" stop-color="#0d9488" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M12 3c-1.5 3-4.5 4.5-4.5 7.5S9.75 16 12 16s4.5-2.5 4.5-5.5S13.5 6 12 3z"
+                            fill="url(#preloader-grad)" fill-opacity="0.2" />
+                        <path d="M12 21a9 9 0 009-9M12 21a9 9 0 01-9-9M12 3v18" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Brand Logo / Title -->
+            <div
+                style="display: flex; flex-direction: column; align-items: center; gap: 8px; z-index: 10; max-width: 280px; width: 100%;">
+                <img src="https://static.wixstatic.com/media/3c52e9_9ec03e42cb904e099561bb8993016d89~mv2.png"
+                    alt="INSTEIP Logo" style="height: 48px; width: auto; object-fit: contain; transition: all 0.3s;"
+                    onerror="this.style.display='none'; document.getElementById('preloader-fallback-text').style.display='block';">
+                <div id="preloader-fallback-text" style="display: none; text-align: center;">
+                    <span
+                        style="font-size: 24px; font-weight: 800; color: #1e3a8a; letter-spacing: 0.05em; font-family: 'Inter', sans-serif;">INSTEIP</span>
+                    <div
+                        style="font-size: 10px; color: #0d9488; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; margin-top: 2px; font-family: 'Inter', sans-serif;">
+                        Terapias Integrales</div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 6px; margin-top: 4px;">
+                    <span class="preloader-dot"></span>
+                    <span class="preloader-dot" style="animation-delay: 0.2s;"></span>
+                    <span class="preloader-dot" style="animation-delay: 0.4s;"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/preloader.js"></script>
+
+
+
+
+
+    <div class="relative overflow-hidden">
+        <div
+            class="pointer-events-none absolute inset-x-0 top-0 z-0 h-[42rem] bg-[radial-gradient(circle_at_top,rgba(26,79,112,.16),transparent_58%)]">
+        </div>
+
+        <!-- NAVBAR -->
+        <nav id="navbar" class="fixed inset-x-0 top-0 z-50 px-2 pt-2 sm:px-5 sm:pt-4 lg:px-8">
+            <div
+                class="mx-auto flex max-w-7xl items-center justify-between rounded-[1.2rem] border border-white/60 bg-white px-3 py-2.5 shadow-[0_10px_40px_rgba(15,23,42,.08)] backdrop-blur-xl sm:rounded-[1.75rem] sm:px-5 sm:py-3 lg:px-6">
+                <a href="https://www.agujasacupunturaperu.com/demox" class="flex min-w-0 items-center gap-2.5 sm:gap-3">
+                    <div
+                        class="grid h-9 w-9 place-items-center rounded-xl bg-[#1a4f70] text-white shadow-lg shadow-[#1a4f70]/20 sm:h-11 sm:w-11 sm:rounded-2xl">
+                        <span class="material-symbols-outlined text-[20px] sm:text-[24px]">school</span>
+                    </div>
+                    <div class="min-w-0">
+                        <p
+                            class="truncate text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#1a4f70] sm:text-base sm:tracking-[0.22em]">
+                            INSTEIP</p>
+                        <p
+                            class="hidden truncate text-[10px] font-medium uppercase tracking-[0.22em] text-slate-500 sm:block sm:text-[11px]">
+                            Cursos y terapias integrales</p>
+                    </div>
+                </a>
+
+                <div id="desktopMenu" class="hidden items-center gap-2 lg:flex">
+                    <a class="inline-flex items-center rounded-full px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#1a4f70]"
+                        href="https://www.agujasacupunturaperu.com/demox">Inicio</a>
+
+                    <div id="desktopCoursesWrap" class="relative">
+                        <button id="desktopCoursesToggle" type="button" aria-expanded="false"
+                            class="inline-flex items-center gap-1 rounded-full px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#1a4f70]">
+                            Cursos
+                            <span id="desktopCoursesChevron"
+                                class="material-symbols-outlined text-[18px] transition-transform duration-300">keyboard_arrow_down</span>
+                        </button>
+
+                        <div id="desktopCoursesMenu"
+                            class="absolute left-0 top-full mt-4 hidden w-[18rem] rounded-3xl border border-slate-200/80 bg-white/96 p-3 shadow-[0_20px_60px_rgba(15,23,42,.16)] backdrop-blur-xl">
+                            <div class="space-y-1">
+                                <div class="relative">
+                                    <button id="desktopPresencialesToggle" type="button"
+                                        class="flex w-full items-center justify-between rounded-2xl px-4 py-3 text-left text-sm font-semibold text-slate-800 transition hover:bg-[#eef7fb] hover:text-[#1a4f70]">
+                                        <span class="flex items-center gap-3">
+                                            <span
+                                                class="grid h-9 w-9 place-items-center rounded-xl bg-[#eef7fb] text-[#1a4f70]"><span
+                                                    class="material-symbols-outlined text-[20px]">location_on</span></span>
+                                            Presenciales
+                                        </span>
+                                        <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+                                    </button>
+                                    <div id="desktopPresencialesPanel"
+                                        class="absolute left-full top-0 ml-3 hidden w-[24rem] rounded-3xl border border-slate-200/80 bg-white/98 p-3 shadow-[0_20px_60px_rgba(15,23,42,.18)]">
+                                        <a href="https://www.agujasacupunturaperu.com/cursos-presenciales-2026"
+                                            class="block rounded-xl px-3 py-2 text-sm font-semibold text-[#1a4f70] transition hover:bg-slate-50">Ver
+                                            todos los presenciales</a>
+                                        <p
+                                            class="px-3 pt-3 text-[11px] font-extrabold uppercase tracking-[0.18em] text-sky-500">
+                                            Formaciones
+                                        </p>
+                                        <a href="https://www.agujasacupunturaperu.com/formacion-auriculoterapia"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Formación
+                                            de Auriculoterapia</a>
+                                        <a href="https://www.agujasacupunturaperu.com/formacion-acupuntura"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Formación
+                                            Anual de Acupuntura</a>
+                                        <a href="https://www.agujasacupunturaperu.com/formacion-masaje-digitopresion"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Masaje
+                                            Terapéutico y Digitopresión</a>
+                                        <p
+                                            class="px-3 pt-3 text-[11px] font-extrabold uppercase tracking-[0.18em] text-amber-500">
+                                            Talleres
+                                        </p>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-taller-reflexologia-podal"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Taller:
+                                            Reflexología Podal</a>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-taller-acupuntura-en-paralisis-facial"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Taller:
+                                            Acupuntura en Parálisis Facial</a>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-taller-moxibustion-y-ventosas"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Taller:
+                                            Moxibustión y Ventosas</a>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-taller-acupuntura-estetica"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Taller:
+                                            Acupuntura Estética</a>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-taller-streching-terapeutico"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Taller:
+                                            Stretching Terapéutico</a>
+                                    </div>
+                                </div>
+
+                                <div class="relative">
+                                    <button id="desktopOnlineToggle" type="button"
+                                        class="flex w-full items-center justify-between rounded-2xl px-4 py-3 text-left text-sm font-semibold text-slate-800 transition hover:bg-[#eef7fb] hover:text-[#1a4f70]">
+                                        <span class="flex items-center gap-3">
+                                            <span
+                                                class="grid h-9 w-9 place-items-center rounded-xl bg-amber-50 text-amber-600"><span
+                                                    class="material-symbols-outlined text-[20px]">laptop_mac</span></span>
+                                            Online
+                                        </span>
+                                        <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+                                    </button>
+                                    <div id="desktopOnlinePanel"
+                                        class="absolute left-full top-0 ml-3 hidden w-[24rem] rounded-3xl border border-slate-200/80 bg-white/98 p-3 shadow-[0_20px_60px_rgba(15,23,42,.18)]">
+                                        <a href="https://www.agujasacupunturaperu.com/cursos-online"
+                                            class="block rounded-xl px-3 py-2 text-sm font-semibold text-[#1a4f70] transition hover:bg-slate-50">Ver
+                                            toda la oferta online</a>
+                                        <p
+                                            class="px-3 pt-3 text-[11px] font-extrabold uppercase tracking-[0.18em] text-cyan-500">
+                                            Cursos</p>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-auriculoterapia"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Curso
+                                            de Auriculoterapia</a>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-masaje-terapeutico-y-digito"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Curso
+                                            de Masaje Terapéutico y Digitopresión</a>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-formacion-de-acupuntura"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Formación
+                                            de Acupuntura</a>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-reflexologia"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Curso
+                                            de Reflexología</a>
+                                        <p
+                                            class="px-3 pt-3 text-[11px] font-extrabold uppercase tracking-[0.18em] text-amber-500">
+                                            Talleres
+                                        </p>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-taller-paralisis-facial-ter"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Parálisis
+                                            Facial con Terapia Manual</a>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-taller-paralisis-facial-acu"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Parálisis
+                                            Facial con Acupuntura y Fisioterapia</a>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-taller-acupuntura-estetica"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Taller
+                                            de Acupuntura Estética</a>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-taller-de-streching-terapeu"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Taller
+                                            de Stretching Terapéutico</a>
+                                        <p
+                                            class="px-3 pt-3 text-[11px] font-extrabold uppercase tracking-[0.18em] text-violet-500">
+                                            Seminarios</p>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-seminario-de-acupuntura-tun"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Seminario
+                                            de Acupuntura Tung</a>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-seminario-auriculoterapia-y"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Seminario
+                                            Auriculoterapia y Acupuntura en Control de Peso</a>
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-seminario-de-reflexologia"
+                                            class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Seminario
+                                            de Reflexología</a>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="relative">
+                  <button id="desktopSesionToggle" type="button"
+                    class="flex w-full items-center justify-between rounded-2xl px-4 py-3 text-left text-sm font-semibold text-slate-800 transition hover:bg-[#eef7fb] hover:text-[#1a4f70]">
+                    <span class="flex items-center gap-3">
+                      <span class="grid h-9 w-9 place-items-center rounded-xl bg-emerald-50 text-emerald-600"><span
+                          class="material-symbols-outlined text-[20px]">school</span></span>
+                      Nuevos Cursos
+                    </span>
+                    <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+                  </button>
+                  <div id="desktopSesionPanel"
+                    class="absolute left-full top-0 ml-3 hidden w-[24rem] rounded-3xl border border-slate-200/80 bg-white/98 p-3 shadow-[0_20px_60px_rgba(15,23,42,.18)]">
+                    <a href="https://www.agujasacupunturaperu.com/sesion-curso1-1"
+                      class="block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Sesion
+                      1</a>
+                  </div>
+                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="desktopMasterclassWrap" class="relative">
+                        <button id="desktopMasterclassToggle" type="button" aria-expanded="false"
+                            class="inline-flex items-center gap-1 rounded-full px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#1a4f70]">
+                            Masterclass
+                            <span id="desktopMasterclassChevron"
+                                class="material-symbols-outlined text-[18px] transition-transform duration-300">keyboard_arrow_down</span>
+                        </button>
+
+                        <div id="desktopMasterclassMenu"
+                            class="absolute left-0 top-full mt-4 hidden w-[22rem] rounded-3xl border border-slate-200/80 bg-white/96 p-3 shadow-[0_20px_60px_rgba(15,23,42,.16)] backdrop-blur-xl">
+                            <div class="space-y-1">
+                                <a href="https://www.agujasacupunturaperu.com/masterclass-trastornos-musculoesqueleticos"
+                                    class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold text-slate-800 transition hover:bg-[#eef7fb] hover:text-[#1a4f70]">
+                                    <span
+                                        class="grid h-9 w-9 place-items-center rounded-xl bg-[#eef7fb] text-[#1a4f70]"><span
+                                            class="material-symbols-outlined text-[20px]">accessibility_new</span></span>
+                                    Trastornos musculoesqueléticos
+                                </a>
+                                <a href="https://www.agujasacupunturaperu.com/masterclass-trastornos-genitourinarios"
+                                    class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold text-slate-800 transition hover:bg-[#eef7fb] hover:text-[#1a4f70]">
+                                    <span
+                                        class="grid h-9 w-9 place-items-center rounded-xl bg-rose-50 text-rose-600"><span
+                                            class="material-symbols-outlined text-[20px]">water_drop</span></span>
+                                    Trastornos genitourinarios
+                                </a>
+                                <a href="https://www.agujasacupunturaperu.com/masterclass-control-de-peso"
+                                    class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold text-slate-800 transition hover:bg-[#eef7fb] hover:text-[#1a4f70]">
+                                    <span
+                                        class="grid h-9 w-9 place-items-center rounded-xl bg-emerald-50 text-emerald-600"><span
+                                            class="material-symbols-outlined text-[20px]">monitor_weight</span></span>
+                                    Control de peso
+                                </a>
+                                <a href="https://www.agujasacupunturaperu.com/masterclass-paralisis-facial"
+                                    class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold text-slate-800 transition hover:bg-[#eef7fb] hover:text-[#1a4f70]">
+                                    <span
+                                        class="grid h-9 w-9 place-items-center rounded-xl bg-amber-50 text-amber-600"><span
+                                            class="material-symbols-outlined text-[20px]">face_retouching_natural</span></span>
+                                    Parálisis facial
+                                </a>
+                                <a href="https://www.agujasacupunturaperu.com/masterclass-tratamiento-lumbalgia"
+                                    class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold text-slate-800 transition hover:bg-[#eef7fb] hover:text-[#1a4f70]">
+                                    <span
+                                        class="grid h-9 w-9 place-items-center rounded-xl bg-violet-50 text-violet-600"><span
+                                            class="material-symbols-outlined text-[20px]">airline_seat_flat</span></span>
+                                    Tratamiento de lumbalgia
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="inline-flex items-center rounded-full px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#1a4f70]"
+                        href="https://www.agujasacupunturaperu.com/productos-v2">Productos</a>
+                    <a class="inline-flex items-center rounded-full px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#1a4f70]"
+                        href="https://www.agujasacupunturaperu.com/tutorialesinsteip">Tutoriales</a>
+                    <a class="inline-flex items-center rounded-full px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-100 hover:text-[#1a4f70]"
+                        href="https://www.agujasacupunturaperu.com/sobrenosotros">Conócenos</a>
+                </div>
+
+                <div class="hidden items-center gap-3 lg:flex">
+                    <a href="https://wa.me/51930830427?text=Hola,%20quiero%20más%20información%20sobre%20INSTEIP."
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-[#d8edf6] hover:bg-[#eef7fb] hover:text-[#1a4f70]">
+                        <span class="material-symbols-outlined text-[18px]">call</span>
+                        Contactar
+                    </a>
+                    <a href="https://www.agujasacupunturaperu.com/cursos-presenciales-2026"
+                        class="inline-flex items-center gap-2 rounded-full bg-[#1a4f70] px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-[#1a4f70]/20 transition hover:-translate-y-0.5 hover:bg-[#163f59]">
+                        <span class="material-symbols-outlined text-[18px]">school</span>
+                        Ver cursos
+                    </a>
+                </div>
+
+                <button id="menuToggle"
+                    class="grid h-9 w-9 place-items-center rounded-xl border border-slate-200 text-slate-700 transition hover:bg-slate-100 sm:h-11 sm:w-11 sm:rounded-2xl lg:hidden"
+                    aria-label="Abrir menú" type="button">
+                    <span class="material-symbols-outlined text-[22px] sm:text-[24px]">menu</span>
+                </button>
+            </div>
+
+            <div id="mobileMenuWrap"
+                class="mx-auto mt-2 hidden max-w-7xl overflow-hidden rounded-[1.2rem] border border-slate-200/80 bg-white/95 shadow-[0_10px_40px_rgba(15,23,42,.08)] backdrop-blur-xl sm:mt-3 sm:rounded-[1.75rem] lg:hidden">
+                <div class="space-y-2 p-3 sm:p-4">
+                    <a href="https://www.agujasacupunturaperu.com/demox"
+                        class="mobile-nav-link flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100">Inicio</a>
+
+                    <div class="rounded-3xl border border-slate-200/80 bg-slate-50/70">
+                        <button id="mobileCoursesToggle"
+                            class="flex w-full items-center justify-between rounded-2xl px-4 py-3.5 text-sm font-semibold text-slate-700"
+                            type="button">
+                            <span class="flex items-center gap-3">
+                                <span
+                                    class="grid h-10 w-10 place-items-center rounded-2xl bg-[#eef7fb] text-[#1a4f70]"><span
+                                        class="material-symbols-outlined text-[20px]">menu_book</span></span>
+                                Cursos
+                            </span>
+                            <span id="mobileCoursesIcon"
+                                class="material-symbols-outlined text-[20px] transition">keyboard_arrow_down</span>
+                        </button>
+                        <div id="mobileCoursesMenu" class="hidden px-3 pb-3">
+                            <div class="space-y-2 rounded-2xl bg-white p-2">
+                                <div class="rounded-2xl border border-slate-200/80">
+                                    <button data-target="presencialesList"
+                                        class="mobile-subtoggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800"
+                                        type="button">
+                                        <span class="flex items-center gap-3">
+                                            <span
+                                                class="grid h-9 w-9 place-items-center rounded-xl bg-[#eef7fb] text-[#1a4f70]"><span
+                                                    class="material-symbols-outlined text-[18px]">location_on</span></span>
+                                            Presenciales
+                                        </span>
+                                        <span class="material-symbols-outlined text-[18px]">add</span>
+                                    </button>
+                                    <div id="presencialesList" class="hidden px-3 pb-3">
+                                        <div class="space-y-1 rounded-xl bg-slate-50 p-2">
+                                            <a href="https://www.agujasacupunturaperu.com/cursos-presenciales-2026"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm font-semibold text-[#1a4f70] transition hover:bg-white">Ver
+                                                todos los presenciales</a>
+                                            <a href="https://www.agujasacupunturaperu.com/formacion-auriculoterapia"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Formación
+                                                de Auriculoterapia</a>
+                                            <a href="https://www.agujasacupunturaperu.com/formacion-acupuntura"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Formación
+                                                Anual de Acupuntura</a>
+                                            <a href="https://www.agujasacupunturaperu.com/formacion-masaje-digitopresion"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Masaje
+                                                Terapéutico y Digitopresión</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-taller-reflexologia-podal"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Taller:
+                                                Reflexología Podal</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-taller-acupuntura-en-paralisis-facial"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Taller:
+                                                Acupuntura en Parálisis Facial</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-taller-moxibustion-y-ventosas"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Taller:
+                                                Moxibustión y Ventosas</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-taller-acupuntura-estetica"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Taller:
+                                                Acupuntura Estética</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-taller-streching-terapeutico"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Taller:
+                                                Stretching Terapéutico</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-2xl border border-slate-200/80">
+                                    <button data-target="onlineList"
+                                        class="mobile-subtoggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800"
+                                        type="button">
+                                        <span class="flex items-center gap-3">
+                                            <span
+                                                class="grid h-9 w-9 place-items-center rounded-xl bg-amber-50 text-amber-600"><span
+                                                    class="material-symbols-outlined text-[18px]">laptop_mac</span></span>
+                                            Online
+                                        </span>
+                                        <span class="material-symbols-outlined text-[18px]">add</span>
+                                    </button>
+                                    <div id="onlineList" class="hidden px-3 pb-3">
+                                        <div class="space-y-1 rounded-xl bg-slate-50 p-2">
+                                            <a href="https://www.agujasacupunturaperu.com/cursos-online"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm font-semibold text-[#1a4f70] transition hover:bg-white">Ver
+                                                toda la oferta online</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-online-auriculoterapia"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Curso
+                                                de Auriculoterapia</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-online-masaje-terapeutico-y-digito"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Masaje
+                                                Terapéutico y Digitopresión</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-online-formacion-de-acupuntura"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Formación
+                                                de Acupuntura</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-online-reflexologia"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Curso
+                                                de Reflexología</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-online-taller-paralisis-facial-ter"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Parálisis
+                                                Facial con Terapia Manual</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-online-taller-paralisis-facial-acu"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Parálisis
+                                                Facial con Acupuntura y Fisioterapia</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-online-taller-acupuntura-estetica"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Taller
+                                                de Acupuntura Estética</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-online-taller-de-streching-terapeu"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Taller
+                                                de Stretching Terapéutico</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-online-seminario-de-acupuntura-tun"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Seminario
+                                                de Acupuntura Tung</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-online-seminario-auriculoterapia-y"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Seminario
+                                                Auriculoterapia y Acupuntura en Control de Peso</a>
+                                            <a href="https://www.agujasacupunturaperu.com/curso-online-seminario-de-reflexologia"
+                                                class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Seminario
+                                                de Reflexología</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="rounded-2xl border border-slate-200/80">
+                  <button data-target="sesionList"
+                    class="mobile-subtoggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800"
+                    type="button">
+                    <span class="flex items-center gap-3">
+                      <span class="grid h-9 w-9 place-items-center rounded-xl bg-emerald-50 text-emerald-600"><span
+                          class="material-symbols-outlined text-[18px]">school</span></span>
+                      Sesion Cursos
+                    </span>
+                    <span class="material-symbols-outlined text-[18px]">add</span>
+                  </button>
+                  <div id="sesionList" class="hidden px-3 pb-3">
+                    <div class="space-y-1 rounded-xl bg-slate-50 p-2">
+                      <a href="https://www.agujasacupunturaperu.com/sesion-curso1-1"
+                        class="mobile-nav-link block rounded-xl px-3 py-2 text-sm text-slate-600 transition hover:bg-white hover:text-[#1a4f70]">Sesion
+                        1</a>
+                    </div>
+                  </div>
+                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-3xl border border-slate-200/80 bg-slate-50/70">
+                        <button id="mobileMasterclassToggle"
+                            class="flex w-full items-center justify-between rounded-2xl px-4 py-3.5 text-sm font-semibold text-slate-700"
+                            type="button">
+                            <span class="flex items-center gap-3">
+                                <span
+                                    class="grid h-10 w-10 place-items-center rounded-2xl bg-[#eef7fb] text-[#1a4f70]"><span
+                                        class="material-symbols-outlined text-[20px]">workspace_premium</span></span>
+                                Masterclass
+                            </span>
+                            <span id="mobileMasterclassIcon"
+                                class="material-symbols-outlined text-[20px] transition">keyboard_arrow_down</span>
+                        </button>
+                        <div id="mobileMasterclassMenu" class="hidden px-3 pb-3">
+                            <div class="space-y-1 rounded-2xl bg-white p-2">
+                                <a href="https://www.agujasacupunturaperu.com/masterclass-trastornos-musculoesqueleticos"
+                                    class="mobile-nav-link block rounded-xl px-3 py-2.5 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Trastornos
+                                    musculoesqueléticos</a>
+                                <a href="https://www.agujasacupunturaperu.com/masterclass-trastornos-genitourinarios"
+                                    class="mobile-nav-link block rounded-xl px-3 py-2.5 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Trastornos
+                                    genitourinarios</a>
+                                <a href="https://www.agujasacupunturaperu.com/masterclass-control-de-peso"
+                                    class="mobile-nav-link block rounded-xl px-3 py-2.5 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Control
+                                    de peso</a>
+                                <a href="https://www.agujasacupunturaperu.com/masterclass-paralisis-facial"
+                                    class="mobile-nav-link block rounded-xl px-3 py-2.5 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Parálisis
+                                    facial</a>
+                                <a href="https://www.agujasacupunturaperu.com/masterclass-tratamiento-lumbalgia"
+                                    class="mobile-nav-link block rounded-xl px-3 py-2.5 text-sm text-slate-600 transition hover:bg-slate-50 hover:text-[#1a4f70]">Tratamiento
+                                    de lumbalgia</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://www.agujasacupunturaperu.com/productos-v2"
+                        class="mobile-nav-link flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100">Productos</a>
+                    <a href="https://www.agujasacupunturaperu.com/tutorialesinsteip"
+                        class="mobile-nav-link flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100">Tutoriales</a>
+                    <a href="https://www.agujasacupunturaperu.com/sobrenosotros"
+                        class="mobile-nav-link flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100">Conócenos</a>
+                </div>
+            </div>
+        </nav>
+        <div id="navSpacer" aria-hidden="true" class="h-0"></div>
+        <section id="quickLinksSection" class="relative z-20 px-3 sm:px-5 lg:px-8" style="padding-top: 5px;">
+            <div
+                class="mx-auto flex max-w-7xl flex-wrap items-center gap-2 rounded-[1.25rem] border border-slate-200 bg-white/92 p-3 shadow-[0_12px_34px_rgba(15,23,42,.05)]">
+                <a href="https://www.agujasacupunturaperu.com/cursos-presenciales-2026"
+                    class="inline-flex items-center gap-2 rounded-full bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-700 transition hover:bg-amber-100">
+                    <span class="material-symbols-outlined text-[18px]">school</span>Cursos presenciales
+                </a>
+                <a href="https://www.agujasacupunturaperu.com/cursos-online"
+                    class="inline-flex items-center gap-2 rounded-full bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-700 transition hover:bg-sky-100">
+                    <span class="material-symbols-outlined text-[18px]">laptop_mac</span>Cursos online
+                </a>
+                <a href="https://www.agujasacupunturaperu.com/productos-v2"
+                    class="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 transition hover:bg-emerald-100">
+                    <span class="material-symbols-outlined text-[18px]">inventory_2</span>Productos
+                </a>
+            </div>
+        </section>
+
+        <!-- HERO -->
+        <header id="inicio" class="relative min-h-screen pt-4 sm:pt-5 lg:pt-6">
+            <div id="heroShell"
+                class="relative mx-auto w-full max-w-[1600px] px-2 pb-2 sm:px-5 sm:pb-5 lg:px-8 lg:pb-8">
+                <div
+                    class="relative overflow-hidden rounded-[1.4rem] border border-slate-200/70 shadow-[0_25px_80px_rgba(15,23,42,.14)] sm:rounded-[2.25rem] lg:rounded-[2.5rem]">
+
+                    <!-- HERO DOTS ARRIBA -->
+                    <div class="hero-dots-top">
+                        <div id="heroDots"></div>
+                    </div>
+
+                    <div id="heroTrack"
+                        class="relative flex h-[430px] min-h-[430px] w-full transition-transform duration-700 ease-out sm:h-[76svh] sm:min-h-[620px] lg:h-[88svh] lg:min-h-[720px]">
+
+                        <!-- SLIDE 1 -->
+                        <section class="hero-slide hero-slide--promo relative min-w-full overflow-hidden bg-slate-950">
+                            <img src="https://static.wixstatic.com/media/3c52e9_19a7dc724c9e400ea635f27462972d1b~mv2.png"
+                                alt="" aria-hidden="true"
+                                class="hero-bg-image absolute inset-0 h-full w-full object-cover object-center" />
+                            <img src="https://static.wixstatic.com/media/3c52e9_19a7dc724c9e400ea635f27462972d1b~mv2.png"
+                                alt="Nueva Formación" class="hero-main-image absolute inset-0 z-[1] h-full w-full" />
+                            <div class="slide-overlay z-[2]"></div>
+
+                            <div class="hero-content">
+                                <div class="hero-copy text-white">
+                                    <div class="hero-ui-box">
+                                        <div class="hero-actions">
+                                            <a href="https://wa.me/51930830427?text=Hola,%20quiero%20más%20información%20sobre%20esta%20formación."
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="hero-btn-primary hero-anim">
+                                                <span class="material-symbols-outlined">chat</span>
+                                                Más información
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- SLIDE 2 -->
+                        <section class="hero-slide hero-slide--promo relative min-w-full overflow-hidden bg-slate-950">
+                            <img src="https://static.wixstatic.com/media/3c52e9_62820f223abf4891b33345b6f54e9141~mv2.png"
+                                alt="" aria-hidden="true"
+                                class="hero-bg-image absolute inset-0 h-full w-full object-cover object-center" />
+                            <img src="https://static.wixstatic.com/media/3c52e9_62820f223abf4891b33345b6f54e9141~mv2.png"
+                                alt="Curso presencial" class="hero-main-image absolute inset-0 z-[1] h-full w-full" />
+                            <div class="slide-overlay z-[2]"></div>
+
+                            <div class="hero-content">
+                                <div class="hero-copy text-white">
+                                    <div class="hero-ui-box">
+                                        <div class="hero-chip-row">
+                                            <span class="hero-chip hero-anim"><span
+                                                    class="material-symbols-outlined">calendar_month</span>28
+                                                de marzo</span>
+                                            <span class="hero-chip hero-anim"><span
+                                                    class="material-symbols-outlined">workspace_premium</span>Práctico</span>
+                                        </div>
+                                        <div class="hero-actions">
+                                            <a href="https://www.agujasacupunturaperu.com/cursos-presenciales-2026"
+                                                class="hero-btn-primary hero-anim">
+                                                <span class="material-symbols-outlined">arrow_forward</span>
+                                                Cursos presenciales
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- SLIDE 3 -->
+                        <section class="hero-slide hero-slide--promo relative min-w-full overflow-hidden bg-slate-950">
+                            <img src="https://static.wixstatic.com/media/3c52e9_dc64241a58a14361a0ae801ff113808d~mv2.png"
+                                alt="" aria-hidden="true"
+                                class="hero-bg-image absolute inset-0 h-full w-full object-cover object-center" />
+                            <img src="https://static.wixstatic.com/media/3c52e9_dc64241a58a14361a0ae801ff113808d~mv2.png"
+                                alt="Cursos online" class="hero-main-image absolute inset-0 z-[1] h-full w-full" />
+                            <div class="slide-overlay z-[2]"></div>
+
+                            <div class="hero-content">
+                                <div class="hero-copy text-white">
+                                    <div class="hero-ui-box">
+                                        <div class="hero-chip-row">
+                                            <span class="hero-chip hero-anim"><span
+                                                    class="material-symbols-outlined">laptop_mac</span>Cursos
+                                                online</span>
+                                            <span class="hero-chip hero-anim"><span
+                                                    class="material-symbols-outlined">verified</span>Certificación</span>
+                                        </div>
+                                        <div class="hero-actions">
+                                            <a href="https://www.agujasacupunturaperu.com/cursos-online"
+                                                class="hero-btn-primary hero-anim">
+                                                <span class="material-symbols-outlined">school</span>
+                                                Oferta virtual
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- SLIDE 4 -->
+                        <section class="hero-slide hero-slide--promo relative min-w-full overflow-hidden bg-slate-950">
+                            <img src="https://static.wixstatic.com/media/3c52e9_cd0e36a82c384d85903108142c0491fd~mv2.png"
+                                alt="" aria-hidden="true"
+                                class="hero-bg-image absolute inset-0 h-full w-full object-cover object-center" />
+                            <img src="https://static.wixstatic.com/media/3c52e9_cd0e36a82c384d85903108142c0491fd~mv2.png"
+                                alt="Productos terapéuticos"
+                                class="hero-main-image absolute inset-0 z-[1] h-full w-full" />
+                            <div class="slide-overlay z-[2]"></div>
+
+                            <div class="hero-content">
+                                <div class="hero-copy text-white">
+                                    <div class="hero-ui-box">
+                                        <div class="hero-chip-row">
+                                            <span class="hero-chip hero-anim"><span
+                                                    class="material-symbols-outlined">local_mall</span>Productos e
+                                                insumos</span>
+                                            <span class="hero-chip hero-anim"><span
+                                                    class="material-symbols-outlined">local_shipping</span>Envíos al
+                                                Perú</span>
+                                        </div>
+                                        <div class="hero-actions">
+                                            <a href="https://www.agujasacupunturaperu.com/productos-v2"
+                                                class="hero-btn-primary hero-anim">
+                                                <span class="material-symbols-outlined">shopping_bag</span>
+                                                Catálogo disponible
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- SLIDE 5 -->
+                        <section class="hero-slide hero-slide--promo relative min-w-full overflow-hidden bg-slate-950">
+                            <img src="https://static.wixstatic.com/media/3c52e9_ee414894b2894f37a373cf4bc78d56b0~mv2.png"
+                                alt="" aria-hidden="true"
+                                class="hero-bg-image absolute inset-0 h-full w-full object-cover object-center" />
+                            <img src="https://static.wixstatic.com/media/3c52e9_ee414894b2894f37a373cf4bc78d56b0~mv2.png"
+                                alt="Auriculoterapia" class="hero-main-image absolute inset-0 z-[1] h-full w-full" />
+                            <div class="slide-overlay z-[2]"></div>
+
+                            <div class="hero-content">
+                                <div class="hero-copy text-white">
+                                    <div class="hero-ui-box">
+                                        <div class="hero-chip-row">
+                                            <span class="hero-chip hero-anim"><span
+                                                    class="material-symbols-outlined">hearing</span>Auriculoterapia</span>
+                                            <span class="hero-chip hero-anim"><span
+                                                    class="material-symbols-outlined">group</span>Formación
+                                                guiada</span>
+                                        </div>
+                                        <div class="hero-actions">
+                                            <a href="https://wa.me/51930830427?text=Hola,%20quiero%20información%20sobre%20Auriculoterapia."
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="hero-btn-primary hero-anim">
+                                                <span class="material-symbols-outlined">chat</span>
+                                                Información del programa
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- SLIDE 6 -->
+                        <section class="hero-slide hero-slide--promo relative min-w-full overflow-hidden bg-slate-950">
+                            <img src="https://static.wixstatic.com/media/3c52e9_87bbb8fc6c694be1844b02e13dbe5e04~mv2.png"
+                                alt="" aria-hidden="true"
+                                class="hero-bg-image absolute inset-0 h-full w-full object-cover object-center" />
+                            <img src="https://static.wixstatic.com/media/3c52e9_87bbb8fc6c694be1844b02e13dbe5e04~mv2.png"
+                                alt="Masaje terapéutico" class="hero-main-image absolute inset-0 z-[1] h-full w-full" />
+                            <div class="slide-overlay z-[2]"></div>
+
+                            <div class="hero-content">
+                                <div class="hero-copy text-white">
+                                    <div class="hero-ui-box">
+                                        <div class="hero-chip-row">
+                                            <span class="hero-chip hero-anim"><span
+                                                    class="material-symbols-outlined">spa</span>Masaje
+                                                terapéutico</span>
+                                            <span class="hero-chip hero-anim"><span
+                                                    class="material-symbols-outlined">workspace_premium</span>Práctica
+                                                real</span>
+                                        </div>
+                                        <div class="hero-actions">
+                                            <a href="https://wa.me/51930830427?text=Hola,%20quiero%20información%20del%20taller%20de%20masaje%20terapéutico."
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="hero-btn-primary hero-anim">
+                                                <span class="material-symbols-outlined">event_available</span>
+                                                Cupos e inscripción
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- SLIDE 7 -->
+                        <section class="hero-slide hero-slide--promo relative min-w-full overflow-hidden bg-slate-950">
+                            <img src="https://static.wixstatic.com/media/3c52e9_9f061da55b11470c9542a968bb069c8d~mv2.png"
+                                alt="" aria-hidden="true"
+                                class="hero-bg-image absolute inset-0 h-full w-full object-cover object-center" />
+                            <img src="https://static.wixstatic.com/media/3c52e9_9f061da55b11470c9542a968bb069c8d~mv2.png"
+                                alt="Moxibustión" class="hero-main-image absolute inset-0 z-[1] h-full w-full" />
+                            <div class="slide-overlay z-[2]"></div>
+
+                            <div class="hero-content">
+                                <div class="hero-copy text-white">
+                                    <div class="hero-ui-box">
+                                        <div class="hero-chip-row">
+                                            <span class="hero-chip hero-anim"><span
+                                                    class="material-symbols-outlined">local_fire_department</span>Moxibustión</span>
+                                            <span class="hero-chip hero-anim"><span
+                                                    class="material-symbols-outlined">verified</span>Actualizado</span>
+                                        </div>
+                                        <div class="hero-actions">
+                                            <a href="https://wa.me/51930830427?text=Hola,%20quiero%20información%20sobre%20el%20curso%20de%20Moxibustión."
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="hero-btn-primary hero-anim">
+                                                <span class="material-symbols-outlined">chat</span>
+                                                Información del taller
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- SLIDE 8 -->
+                        <section class="hero-slide hero-slide--promo relative min-w-full overflow-hidden bg-slate-950">
+                            <img src="https://static.wixstatic.com/media/3c52e9_cc5b1b7d15944c38ae8fc8cbebf4e9fe~mv2.png"
+                                alt="" aria-hidden="true"
+                                class="hero-bg-image absolute inset-0 h-full w-full object-cover object-center" />
+                            <img src="https://static.wixstatic.com/media/3c52e9_cc5b1b7d15944c38ae8fc8cbebf4e9fe~mv2.png"
+                                alt="Seminarios" class="hero-main-image absolute inset-0 z-[1] h-full w-full" />
+                            <div class="slide-overlay z-[2]"></div>
+
+                            <div class="hero-content">
+                                <div class="hero-copy text-white">
+                                    <div class="hero-ui-box">
+                                        <div class="hero-chip-row">
+                                            <span class="hero-chip hero-anim"><span
+                                                    class="material-symbols-outlined">groups</span>Seminarios</span>
+                                            <span class="hero-chip hero-anim"><span
+                                                    class="material-symbols-outlined">campaign</span>Nuevas
+                                                fechas</span>
+                                        </div>
+                                        <div class="hero-actions">
+                                            <a href="https://www.agujasacupunturaperu.com/cursos-online"
+                                                class="hero-btn-primary hero-anim">
+                                                <span class="material-symbols-outlined">arrow_forward</span>
+                                                Seminarios online
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div
+                        class="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-24 bg-gradient-to-t from-slate-950/25 to-transparent sm:h-32">
+                    </div>
+
+                    <div
+                        class="absolute inset-x-0 bottom-0 z-30 flex items-end justify-between gap-3 p-3 sm:p-5 lg:p-6">
+                        <div
+                            class="glass hidden items-center gap-2 rounded-full px-2 py-2 shadow-lg shadow-slate-900/15 sm:flex">
+                            <button id="heroPrevBtn"
+                                class="grid h-11 w-11 place-items-center rounded-full text-white transition hover:bg-white/10"
+                                aria-label="Anterior" type="button">
+                                <span class="material-symbols-outlined text-[22px]">arrow_back_ios_new</span>
+                            </button>
+                            <button id="heroNextBtn"
+                                class="grid h-11 w-11 place-items-center rounded-full text-white transition hover:bg-white/10"
+                                aria-label="Siguiente" type="button">
+                                <span class="material-symbols-outlined text-[22px]">arrow_forward_ios</span>
+                            </button>
+                        </div>
+
+                        <div class="hidden w-[110px] sm:block"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- BARRA ANIMADA -->
+        <section id="tickerSection" class="px-2 pb-5 sm:px-5 lg:px-8">
+            <div
+                class="mx-auto max-w-[1600px] overflow-hidden rounded-[1.4rem] border border-[#d8edf6] bg-gradient-to-r from-[#1a4f70] via-[#286a8a] to-[#163f59] py-3 text-white shadow-[0_18px_50px_rgba(26,79,112,.16)] sm:rounded-[2rem] sm:py-4">
+                <div class="tour-marquee">
+                    <div
+                        class="flex items-center gap-4 px-5 text-xs font-semibold uppercase tracking-[0.10em] sm:text-sm">
+                        <span class="inline-flex items-center gap-2"><span
+                                class="material-symbols-outlined text-[18px]">shopping_bag</span>Productos en Acupuntura
+                            -
+                            Auriculoterapia - Masaje Terapéutico - Aromaterapia - Maxibustion - Laminas - Maquetas y más
+                            - solicítalo
+                            - envíos a todo el país: 930830427</span>
+                    </div>
+                    <div
+                        class="flex items-center gap-4 px-5 text-xs font-semibold uppercase tracking-[0.10em] sm:text-sm">
+                        <span class="inline-flex items-center gap-2"><span
+                                class="material-symbols-outlined text-[18px]">shopping_bag</span>Productos en Acupuntura
+                            -
+                            Auriculoterapia - Masaje Terapéutico - Aromaterapia - Maxibustion - Laminas - Maquetas y más
+                            - solicítalo
+                            - envíos a todo el país: 930830427</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main class="relative z-10">
+            <!-- PRODUCTOS -->
+            <section id="productos" class="px-3 py-10 sm:px-5 sm:py-14 lg:px-8 lg:py-18">
+                <div class="mx-auto max-w-7xl">
+                    <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between" data-reveal>
+                        <div>
+                            <span
+                                class="inline-flex items-center gap-2 rounded-full border border-[#d8edf6] bg-white px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#1a4f70] shadow-sm sm:text-xs">
+                                <span class="material-symbols-outlined text-[16px]">inventory_2</span>
+                                Catálogo destacado
+                            </span>
+                            <h2 class="mt-4 text-2xl font-black leading-tight text-slate-950 sm:text-3xl lg:text-4xl">
+                                Los productos
+                                más solicitados</h2>
+                            <p class="mt-3 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+                                Selección especial de productos con mayor demanda para estudiantes, terapeutas y
+                                profesionales.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mobile-slider-shell mt-8" data-mobile-slider>
+                        <button class="mobile-slider-btn prev md:hidden mobile-slider-prev" type="button"
+                            aria-label="Anterior">
+                            <span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span>
+                        </button>
+                        <button class="mobile-slider-btn next md:hidden mobile-slider-next" type="button"
+                            aria-label="Siguiente">
+                            <span class="material-symbols-outlined text-[20px]">arrow_forward_ios</span>
+                        </button>
+
+                        <div class="overflow-hidden">
+                            <div class="mobile-slider-track grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+                                <article class="mobile-slide card-modern p-4 sm:p-5">
+                                    <img src="https://static.wixstatic.com/media/3c52e9_39ab85764d55436fa7dcf587d9ffaf17~mv2.avif"
+                                        alt="Ventosas faciales"
+                                        class="h-56 w-full rounded-[1.1rem] object-contain bg-slate-50 p-4 sm:h-64" />
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span
+                                            class="rounded-full bg-cyan-100 px-3 py-1 text-[11px] font-bold text-cyan-700">Ventosa
+                                            terapia</span>
+                                        <span
+                                            class="rounded-full bg-emerald-100 px-3 py-1 text-[11px] font-bold text-emerald-700">Más
+                                            solicitado</span>
+                                    </div>
+                                    <h3 class="mt-4 text-xl font-black text-slate-950">Ventosas faciales</h3>
+                                    <p class="mt-3 text-sm leading-7 text-slate-600">Herramienta de masaje facial en
+                                        silicona para mejorar
+                                        circulación, drenaje y luminosidad.</p>
+                                    <div class="mt-4 flex items-center justify-between">
+                                        <p class="text-2xl font-black text-[#1a4f70]">S/ 20.00</p>
+                                        <span
+                                            class="rounded-full bg-slate-100 px-3 py-1 text-[11px] font-semibold text-slate-600">Silicona
+                                            suave</span>
+                                    </div>
+                                    <a href="https://www.agujasacupunturaperu.com/productos-v2#catalogo" target="_top"
+                                        class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1a4f70] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#163f59]">
+                                        <span class="material-symbols-outlined text-[18px]">shopping_bag</span>Solicitar
+                                        producto
+                                    </a>
+                                </article>
+
+                                <article class="mobile-slide card-modern p-4 sm:p-5">
+                                    <img src="https://static.wixstatic.com/media/3c52e9_c491d2d29c2f4d379dd06d4ee6b37df4~mv2.avif"
+                                        alt="Talonera en herradura"
+                                        class="h-56 w-full rounded-[1.1rem] object-contain bg-slate-50 p-4 sm:h-64" />
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span
+                                            class="rounded-full bg-violet-100 px-3 py-1 text-[11px] font-bold text-violet-700">Ortopedia</span>
+                                        <span
+                                            class="rounded-full bg-orange-100 px-3 py-1 text-[11px] font-bold text-orange-700">Soporte
+                                            diario</span>
+                                    </div>
+                                    <h3 class="mt-4 text-xl font-black text-slate-950">Talonera en herradura</h3>
+                                    <p class="mt-3 text-sm leading-7 text-slate-600">Talonera de silicona para espolón
+                                        calcáneo y alivio
+                                        de impacto en la pisada.</p>
+                                    <div class="mt-4 flex items-center justify-between">
+                                        <p class="text-2xl font-black text-[#1a4f70]">S/ 28.00</p>
+                                        <span
+                                            class="rounded-full bg-slate-100 px-3 py-1 text-[11px] font-semibold text-slate-600">Silicón
+                                            clínico</span>
+                                    </div>
+                                    <a href="https://www.agujasacupunturaperu.com/productos-v2#catalogo" target="_top"
+                                        class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1a4f70] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#163f59]">
+                                        <span class="material-symbols-outlined text-[18px]">shopping_bag</span>Solicitar
+                                        producto
+                                    </a>
+                                </article>
+
+                                <article class="mobile-slide card-modern p-4 sm:p-5">
+                                    <img src="https://static.wixstatic.com/media/3c52e9_16d05d5953c146649173f4da02c531ab~mv2.avif"
+                                        alt="Rodillera de doble varilla"
+                                        class="h-56 w-full rounded-[1.1rem] object-contain bg-slate-50 p-4 sm:h-64" />
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span
+                                            class="rounded-full bg-amber-100 px-3 py-1 text-[11px] font-bold text-amber-700">Ortopedia</span>
+                                        <span
+                                            class="rounded-full bg-rose-100 px-3 py-1 text-[11px] font-bold text-rose-700">Alta
+                                            demanda</span>
+                                    </div>
+                                    <h3 class="mt-4 text-xl font-black text-slate-950">Rodillera de doble varilla</h3>
+                                    <p class="mt-3 text-sm leading-7 text-slate-600">Soporte reforzado para estabilidad,
+                                        dolor de rodilla
+                                        y uso terapéutico diario.</p>
+                                    <div class="mt-4 flex items-center justify-between">
+                                        <p class="text-2xl font-black text-[#1a4f70]">S/ 50.00</p>
+                                        <span
+                                            class="rounded-full bg-slate-100 px-3 py-1 text-[11px] font-semibold text-slate-600">King
+                                            Confort</span>
+                                    </div>
+                                    <a href="https://www.agujasacupunturaperu.com/productos-v2#catalogo" target="_top"
+                                        class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1a4f70] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#163f59]">
+                                        <span class="material-symbols-outlined text-[18px]">shopping_bag</span>Solicitar
+                                        producto
+                                    </a>
+                                </article>
+
+                                <article class="mobile-slide card-modern p-4 sm:p-5">
+                                    <img src="https://static.wixstatic.com/media/3c52e9_c4c1cac15c6d4bebb464291c41d06b66~mv2.avif"
+                                        alt="Aro de pilates"
+                                        class="h-56 w-full rounded-[1.1rem] object-contain bg-slate-50 p-4 sm:h-64" />
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span
+                                            class="rounded-full bg-sky-100 px-3 py-1 text-[11px] font-bold text-sky-700">Fisioterapia</span>
+                                        <span
+                                            class="rounded-full bg-emerald-100 px-3 py-1 text-[11px] font-bold text-emerald-700">Rehabilitación</span>
+                                    </div>
+                                    <h3 class="mt-4 text-xl font-black text-slate-950">Aro de pilates</h3>
+                                    <p class="mt-3 text-sm leading-7 text-slate-600">Accesorio versátil para pilates,
+                                        tonificación, core y
+                                        ejercicios de rehabilitación.</p>
+                                    <div class="mt-4 flex items-center justify-between">
+                                        <p class="text-2xl font-black text-[#1a4f70]">S/ 30.00</p>
+                                        <span
+                                            class="rounded-full bg-slate-100 px-3 py-1 text-[11px] font-semibold text-slate-600">Pilates
+                                            y
+                                            core</span>
+                                    </div>
+                                    <a href="https://www.agujasacupunturaperu.com/productos-v2#catalogo" target="_top"
+                                        class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1a4f70] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#163f59]">
+                                        <span class="material-symbols-outlined text-[18px]">shopping_bag</span>Solicitar
+                                        producto
+                                    </a>
+                                </article>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CURSOS VIRTUALES -->
+            <section id="cursos-online" class="px-3 pb-10 sm:px-5 sm:pb-14 lg:px-8 lg:pb-18">
+                <div class="mx-auto max-w-7xl">
+                    <div data-reveal>
+                        <span
+                            class="inline-flex items-center gap-2 rounded-full border border-[#d8edf6] bg-white px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#1a4f70] shadow-sm sm:text-xs">
+                            <span class="material-symbols-outlined text-[16px]">laptop_mac</span>
+                            Cursos virtuales
+                        </span>
+                        <h2 class="mt-4 text-2xl font-black leading-tight text-slate-950 sm:text-3xl lg:text-4xl">
+                            Nuestros cursos
+                            virtuales</h2>
+                        <p class="mt-3 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+                            Aprende desde cualquier lugar con material guiado, acompañamiento y formación estructurada.
+                        </p>
+                    </div>
+
+                    <div class="mobile-slider-shell mt-8" data-mobile-slider>
+                        <button class="mobile-slider-btn prev md:hidden mobile-slider-prev" type="button"
+                            aria-label="Anterior">
+                            <span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span>
+                        </button>
+                        <button class="mobile-slider-btn next md:hidden mobile-slider-next" type="button"
+                            aria-label="Siguiente">
+                            <span class="material-symbols-outlined text-[20px]">arrow_forward_ios</span>
+                        </button>
+
+                        <div class="overflow-hidden">
+                            <div class="mobile-slider-track grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+                                <article class="mobile-slide card-modern p-4 sm:p-5" data-reveal>
+                                    <img src="https://static.wixstatic.com/media/3c52e9_17f2acd3a3e44e5788766f6d264a43a8~mv2.png"
+                                        alt="Curso de Auriculoterapia"
+                                        class="h-60 w-full rounded-[1.1rem] bg-[linear-gradient(180deg,#f9fcff_0%,#e3ebf1_100%)] object-contain p-3 sm:h-72" />
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span
+                                            class="rounded-full bg-sky-100 px-3 py-1 text-[11px] font-bold text-sky-700">Online</span>
+                                        <span
+                                            class="rounded-full bg-violet-100 px-3 py-1 text-[11px] font-bold text-violet-700">12
+                                            meses</span>
+                                    </div>
+                                    <h4 class="mt-4 text-xl font-black text-slate-950">Curso de Auriculoterapia</h4>
+                                    <p class="mt-3 text-sm leading-7 text-slate-600">Fundamentos y práctica de la
+                                        auriculoterapia con 12
+                                        meses de acceso y disponibilidad inmediata.</p>
+                                    <p class="mt-4 text-2xl font-black text-[#1a4f70]">S/ 150.00</p>
+                                    <div class="mt-5 grid gap-3">
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-auriculoterapia"
+                                            target="_top"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1a4f70] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#163f59]">
+                                            <span class="material-symbols-outlined text-[18px]">open_in_new</span>Ver
+                                            detalle
+                                        </a>
+                                        <a href="https://wa.me/51930830427?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20Curso%20de%20Auriculoterapia%20online"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#1ebe5d]">
+                                            <span class="material-symbols-outlined text-[18px]">chat</span>Comprar por
+                                            WhatsApp
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="mobile-slide card-modern p-4 sm:p-5" data-reveal>
+                                    <img src="https://static.wixstatic.com/media/3c52e9_40e747e5541c494d99b86a4d839f785f~mv2.png"
+                                        alt="Formación de Acupuntura"
+                                        class="h-60 w-full rounded-[1.1rem] bg-[linear-gradient(180deg,#f9fcff_0%,#e3ebf1_100%)] object-contain p-3 sm:h-72" />
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span
+                                            class="rounded-full bg-sky-100 px-3 py-1 text-[11px] font-bold text-sky-700">Online</span>
+                                        <span
+                                            class="rounded-full bg-orange-100 px-3 py-1 text-[11px] font-bold text-orange-700">144
+                                            horas</span>
+                                    </div>
+                                    <h4 class="mt-4 text-xl font-black text-slate-950">Formación de Acupuntura</h4>
+                                    <p class="mt-3 text-sm leading-7 text-slate-600">Programa online con 12 meses de
+                                        acceso y 144 h de
+                                        formación en acupuntura.</p>
+                                    <p class="mt-4 text-2xl font-black text-[#1a4f70]">S/ 600.00</p>
+                                    <div class="mt-5 grid gap-3">
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-formacion-de-acupuntura"
+                                            target="_top"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1a4f70] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#163f59]">
+                                            <span class="material-symbols-outlined text-[18px]">open_in_new</span>Ver
+                                            detalle
+                                        </a>
+                                        <a href="https://wa.me/51930830427?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20Formaci%C3%B3n%20de%20Acupuntura%20online"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#1ebe5d]">
+                                            <span class="material-symbols-outlined text-[18px]">chat</span>Comprar por
+                                            WhatsApp
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="mobile-slide card-modern p-4 sm:p-5" data-reveal>
+                                    <img src="https://static.wixstatic.com/media/3c52e9_0fac17bb91b8409f894d4ef5fbfd8119~mv2.png"
+                                        alt="Curso de Reflexología"
+                                        class="h-60 w-full rounded-[1.1rem] bg-[linear-gradient(180deg,#f9fcff_0%,#e3ebf1_100%)] object-contain p-3 sm:h-72" />
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span
+                                            class="rounded-full bg-sky-100 px-3 py-1 text-[11px] font-bold text-sky-700">Online</span>
+                                        <span
+                                            class="rounded-full bg-violet-100 px-3 py-1 text-[11px] font-bold text-violet-700">2
+                                            horas</span>
+                                    </div>
+                                    <h4 class="mt-4 text-xl font-black text-slate-950">Curso de Reflexología</h4>
+                                    <p class="mt-3 text-sm leading-7 text-slate-600">Curso online de reflexología con
+                                        acceso por 12 meses
+                                        y una carga académica de 2 horas.</p>
+                                    <p class="mt-4 text-2xl font-black text-[#1a4f70]">S/ 120.00</p>
+                                    <div class="mt-5 grid gap-3">
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-reflexologia"
+                                            target="_top"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1a4f70] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#163f59]">
+                                            <span class="material-symbols-outlined text-[18px]">open_in_new</span>Ver
+                                            detalle
+                                        </a>
+                                        <a href="https://wa.me/51930830427?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20Curso%20de%20Reflexolog%C3%ADa%20online"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#1ebe5d]">
+                                            <span class="material-symbols-outlined text-[18px]">chat</span>Comprar por
+                                            WhatsApp
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="mobile-slide card-modern p-4 sm:p-5" data-reveal>
+                                    <img src="https://static.wixstatic.com/media/3c52e9_d9d111a7d1c547c796558fbe5a84037c~mv2.png"
+                                        alt="Seminario de Acupuntura Tung"
+                                        class="h-60 w-full rounded-[1.1rem] bg-[linear-gradient(180deg,#f9fcff_0%,#e3ebf1_100%)] object-contain p-3 sm:h-72" />
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span
+                                            class="rounded-full bg-sky-100 px-3 py-1 text-[11px] font-bold text-sky-700">Online</span>
+                                        <span
+                                            class="rounded-full bg-amber-100 px-3 py-1 text-[11px] font-bold text-amber-700">Seminario</span>
+                                    </div>
+                                    <h4 class="mt-4 text-xl font-black text-slate-950">Seminario de Acupuntura Tung</h4>
+                                    <p class="mt-3 text-sm leading-7 text-slate-600">Seminario online con 6 horas de
+                                        duración y acceso por
+                                        12 meses.</p>
+                                    <p class="mt-4 text-2xl font-black text-[#1a4f70]">S/ 250.00</p>
+                                    <div class="mt-5 grid gap-3">
+                                        <a href="https://www.agujasacupunturaperu.com/curso-online-seminario-de-acupuntura-tun"
+                                            target="_top"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1a4f70] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#163f59]">
+                                            <span class="material-symbols-outlined text-[18px]">open_in_new</span>Ver
+                                            detalle
+                                        </a>
+                                        <a href="https://wa.me/51930830427?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20Seminario%20de%20Acupuntura%20Tung%20online"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#1ebe5d]">
+                                            <span class="material-symbols-outlined text-[18px]">chat</span>Comprar por
+                                            WhatsApp
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <!-- TARJETA OCULTA: Seminario Auriculoterapia y Acupuntura en Control de Peso
+                <article class="mobile-slide card-modern p-4 sm:p-5" data-reveal>
+                  <img src="https://static.wixstatic.com/media/3c52e9_84f806effb824c61a533a66a2cc1e137~mv2.png" alt="Seminario de Auriculoterapia y Acupuntura en Control de Peso" class="h-60 w-full rounded-[1.1rem] bg-[linear-gradient(180deg,#f9fcff_0%,#e3ebf1_100%)] object-contain p-3 sm:h-72" />
+                  <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="rounded-full bg-sky-100 px-3 py-1 text-[11px] font-bold text-sky-700">Online</span>
+                    <span class="rounded-full bg-amber-100 px-3 py-1 text-[11px] font-bold text-amber-700">Seminario</span>
+                  </div>
+                  <h4 class="mt-4 text-xl font-black text-slate-950">Seminario Auriculoterapia y Acupuntura en Control de Peso</h4>
+                  <p class="mt-3 text-sm leading-7 text-slate-600">Seminario online con 12 meses de acceso, 8 h de contenido y enfoque en control metabólico.</p>
+                  <p class="mt-4 text-2xl font-black text-[#1a4f70]">S/ 180.00</p>
+                  <div class="mt-5 grid gap-3">
+                    <a href="https://www.agujasacupunturaperu.com/curso-online-seminario-auriculoterapia-y" target="_top" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1a4f70] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#163f59]">
+                      <span class="material-symbols-outlined text-[18px]">open_in_new</span>Ver detalle
+                    </a>
+                    <a href="https://wa.me/51930830427?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20Seminario%20de%20Auriculoterapia%20y%20Acupuntura%20en%20Control%20de%20Peso%20online" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#1ebe5d]">
+                      <span class="material-symbols-outlined text-[18px]">chat</span>Comprar por WhatsApp
+                    </a>
+                  </div>
+                </article>
+                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CURSOS PRESENCIALES -->
+            <section id="cursos-presenciales" class="px-3 pb-10 sm:px-5 sm:pb-14 lg:px-8 lg:pb-18">
+                <div class="mx-auto max-w-7xl">
+                    <div data-reveal>
+                        <span
+                            class="inline-flex items-center gap-2 rounded-full border border-[#d8edf6] bg-white px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#1a4f70] shadow-sm sm:text-xs">
+                            <span class="material-symbols-outlined text-[16px]">location_on</span>
+                            Cursos presenciales
+                        </span>
+                        <h2 class="mt-4 text-2xl font-black leading-tight text-slate-950 sm:text-3xl lg:text-4xl">
+                            Nuestros cursos
+                            presenciales</h2>
+                        <p class="mt-3 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+                            Vive la experiencia práctica con asesoría directa, interacción y aplicación real.
+                        </p>
+                    </div>
+
+                    <div class="mobile-slider-shell mt-8" data-mobile-slider>
+                        <button class="mobile-slider-btn prev md:hidden mobile-slider-prev" type="button"
+                            aria-label="Anterior">
+                            <span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span>
+                        </button>
+                        <button class="mobile-slider-btn next md:hidden mobile-slider-next" type="button"
+                            aria-label="Siguiente">
+                            <span class="material-symbols-outlined text-[20px]">arrow_forward_ios</span>
+                        </button>
+
+                        <div class="overflow-hidden">
+                            <div class="mobile-slider-track grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+                                <article class="mobile-slide card-modern p-4 sm:p-5" data-reveal>
+                                    <img src="https://static.wixstatic.com/media/3c52e9_0d64c49213cc461aa9f39643baf9bb7d~mv2.png"
+                                        alt="Formación de Auriculoterapia"
+                                        class="h-60 w-full rounded-[1.1rem] bg-[linear-gradient(180deg,#f9fcff_0%,#e3ebf1_100%)] object-contain p-3 sm:h-72" />
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span
+                                            class="rounded-full bg-orange-100 px-3 py-1 text-[11px] font-bold text-orange-700">Presencial</span>
+                                        <span
+                                            class="rounded-full bg-cyan-100 px-3 py-1 text-[11px] font-bold text-cyan-700">2
+                                            meses ·
+                                            Domingos</span>
+                                    </div>
+                                    <h4 class="mt-4 text-xl font-black text-slate-950">Formación de Auriculoterapia</h4>
+                                    <p class="mt-3 text-sm leading-7 text-slate-600">Programa práctico con kit, manual,
+                                        caja original y
+                                        cartograma plastificado incluidos.</p>
+                                    <p class="mt-4 text-2xl font-black text-[#1a4f70]">Matrícula S/ 30.00</p>
+                                    <div class="mt-5 grid gap-3">
+                                        <a href="https://www.agujasacupunturaperu.com/formacion-auriculoterapia"
+                                            target="_top"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1a4f70] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#163f59]">
+                                            <span class="material-symbols-outlined text-[18px]">open_in_new</span>Ver
+                                            detalle
+                                        </a>
+                                        <a href="https://wa.me/51930830427?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20Formaci%C3%B3n%20de%20Auriculoterapia"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#1ebe5d]">
+                                            <span class="material-symbols-outlined text-[18px]">chat</span>Reservar por
+                                            WhatsApp
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="mobile-slide card-modern p-4 sm:p-5" data-reveal>
+                                    <img src="https://static.wixstatic.com/media/3c52e9_81d1be71838a49bc8cc1f867470aaf57~mv2.png"
+                                        alt="Formación de Masaje Terapéutico y Digitopresión Mecánica"
+                                        class="h-60 w-full rounded-[1.1rem] bg-[linear-gradient(180deg,#f9fcff_0%,#e3ebf1_100%)] object-contain p-3 sm:h-72" />
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span
+                                            class="rounded-full bg-orange-100 px-3 py-1 text-[11px] font-bold text-orange-700">Presencial</span>
+                                        <span
+                                            class="rounded-full bg-cyan-100 px-3 py-1 text-[11px] font-bold text-cyan-700">2
+                                            meses</span>
+                                    </div>
+                                    <h4 class="mt-4 text-xl font-black text-slate-950">Masaje Terapéutico y
+                                        Digitopresión</h4>
+                                    <p class="mt-3 text-sm leading-7 text-slate-600">Masaje terapéutico, digitopresión,
+                                        ventosa terapia,
+                                        estiramientos y tratamientos deportivos.</p>
+                                    <p class="mt-4 text-2xl font-black text-[#1a4f70]">Matrícula S/ 30.00</p>
+                                    <div class="mt-5 grid gap-3">
+                                        <a href="https://www.agujasacupunturaperu.com/formacion-masaje-digitopresion"
+                                            target="_top"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1a4f70] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#163f59]">
+                                            <span class="material-symbols-outlined text-[18px]">open_in_new</span>Ver
+                                            detalle
+                                        </a>
+                                        <a href="https://wa.me/51930830427?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20Formaci%C3%B3n%20de%20Masaje%20Terap%C3%A9utico%20y%20Digitopresi%C3%B3n%20Mec%C3%A1nica"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#1ebe5d]">
+                                            <span class="material-symbols-outlined text-[18px]">chat</span>Reservar por
+                                            WhatsApp
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="mobile-slide card-modern p-4 sm:p-5" data-reveal>
+                                    <img src="https://static.wixstatic.com/media/3c52e9_48626c73287b4310bc96ec3df68850d6~mv2.png"
+                                        alt="Taller de Moxibustión y Ventosas"
+                                        class="h-60 w-full rounded-[1.1rem] bg-[linear-gradient(180deg,#f9fcff_0%,#e3ebf1_100%)] object-contain p-3 sm:h-72" />
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span
+                                            class="rounded-full bg-orange-100 px-3 py-1 text-[11px] font-bold text-orange-700">Presencial</span>
+                                        <span
+                                            class="rounded-full bg-cyan-100 px-3 py-1 text-[11px] font-bold text-cyan-700">Full
+                                            day</span>
+                                    </div>
+                                    <h4 class="mt-4 text-xl font-black text-slate-950">Taller: Moxibustión y Ventosas
+                                    </h4>
+                                    <p class="mt-3 text-sm leading-7 text-slate-600">Taller intensivo de ventosaterapia
+                                        y moxibustión con
+                                        técnicas de Medicina Tradicional China.</p>
+                                    <p class="mt-4 text-2xl font-black text-[#1a4f70]">Inversión S/ 130</p>
+                                    <div class="mt-5 grid gap-3">
+                                        <a href="https://www.agujasacupunturaperu.com/curso-taller-moxibustion-y-ventosas"
+                                            target="_top"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1a4f70] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#163f59]">
+                                            <span class="material-symbols-outlined text-[18px]">open_in_new</span>Ver
+                                            detalle
+                                        </a>
+                                        <a href="https://wa.me/51930830427?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20Taller%20de%20Moxibusti%C3%B3n%20y%20Ventosas"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#1ebe5d]">
+                                            <span class="material-symbols-outlined text-[18px]">chat</span>Reservar por
+                                            WhatsApp
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="mobile-slide card-modern p-4 sm:p-5" data-reveal>
+                                    <img src="https://static.wixstatic.com/media/3c52e9_c5290a53462a4673ba55543bdbd6f106~mv2.png"
+                                        alt="Formación Anual de Acupuntura"
+                                        class="h-60 w-full rounded-[1.1rem] bg-[linear-gradient(180deg,#f9fcff_0%,#e3ebf1_100%)] object-contain p-3 sm:h-72" />
+                                    <div class="mt-4 flex flex-wrap gap-2">
+                                        <span
+                                            class="rounded-full bg-orange-100 px-3 py-1 text-[11px] font-bold text-orange-700">Presencial</span>
+                                        <span
+                                            class="rounded-full bg-cyan-100 px-3 py-1 text-[11px] font-bold text-cyan-700">12
+                                            meses · 20
+                                            h/mes</span>
+                                    </div>
+                                    <h4 class="mt-4 text-xl font-black text-slate-950">Formación Anual de Acupuntura
+                                    </h4>
+                                    <p class="mt-3 text-sm leading-7 text-slate-600">Formación anual con acupuntura y
+                                        microsistemas; solo
+                                        se abre una vez al año.</p>
+                                    <p class="mt-4 text-2xl font-black text-[#1a4f70]">Matrícula S/ 40.00</p>
+                                    <div class="mt-5 grid gap-3">
+                                        <a href="https://www.agujasacupunturaperu.com/formacion-acupuntura"
+                                            target="_top"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1a4f70] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#163f59]">
+                                            <span class="material-symbols-outlined text-[18px]">open_in_new</span>Ver
+                                            detalle
+                                        </a>
+                                        <a href="https://wa.me/51930830427?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20Formaci%C3%B3n%20Anual%20de%20Acupuntura"
+                                            target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#1ebe5d]">
+                                            <span class="material-symbols-outlined text-[18px]">chat</span>Reservar por
+                                            WhatsApp
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TUTORIALES -->
+            <section id="tutoriales" class="px-3 pb-10 sm:px-5 sm:pb-14 lg:px-8 lg:pb-18">
+                <div class="mx-auto max-w-7xl">
+                    <div data-reveal>
+                        <span
+                            class="inline-flex items-center gap-2 rounded-full border border-[#d8edf6] bg-white px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#1a4f70] shadow-sm sm:text-xs">
+                            <span class="material-symbols-outlined text-[16px]">smart_display</span>
+                            Tutoriales
+                        </span>
+                        <h2 class="mt-4 text-2xl font-black leading-tight text-slate-950 sm:text-3xl lg:text-4xl">Revisa
+                            nuestros
+                            tutoriales</h2>
+                        <p class="mt-3 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+                            Mira contenido práctico y educativo para seguir aprendiendo con INSTEIP.
+                        </p>
+                    </div>
+
+                    <!-- TERAPIAS -->
+                    <h3 class="mt-8 text-lg font-black text-slate-950 sm:text-xl">Terapias</h3>
+                    <div class="mt-4 grid gap-5 md:grid-cols-3">
+                        <article class="card-modern video-card p-4" data-reveal>
+                            <iframe src="https://www.youtube.com/embed/qlpjvqJ0LTg?rel=0" title="Terapias 1"
+                                loading="lazy" allowfullscreen></iframe>
+                        </article>
+                        <article class="card-modern video-card p-4" data-reveal>
+                            <iframe src="https://www.youtube.com/embed/Q0OduVQLZdk?rel=0" title="Terapias 2"
+                                loading="lazy" allowfullscreen></iframe>
+                        </article>
+                        <article class="card-modern video-card p-4" data-reveal>
+                            <iframe src="https://www.youtube.com/embed/JwsMXHKdsRM?rel=0" title="Terapias 3"
+                                loading="lazy" allowfullscreen></iframe>
+                        </article>
+                    </div>
+
+                    <!-- PRODUCTOS -->
+                    <h3 class="mt-10 text-lg font-black text-slate-950 sm:text-xl">Productos</h3>
+                    <div class="mt-4 grid gap-5 md:grid-cols-3">
+                        <article class="card-modern video-card p-4" data-reveal>
+                            <iframe src="https://www.youtube.com/embed/c7PVwvAd4ko?rel=0" title="Productos 1"
+                                loading="lazy" allowfullscreen></iframe>
+                        </article>
+                        <article class="card-modern video-card p-4" data-reveal>
+                            <iframe src="https://www.youtube.com/embed/-aU9YKKAIIo?rel=0" title="Productos 2"
+                                loading="lazy" allowfullscreen></iframe>
+                        </article>
+                        <article class="card-modern video-card p-4" data-reveal>
+                            <iframe src="https://www.youtube.com/embed/CssKbgM5toc?rel=0" title="Productos 3"
+                                loading="lazy" allowfullscreen></iframe>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- REALIZA TUS COMPRAS -->
+            <section id="compras" class="px-3 pb-10 sm:px-5 sm:pb-14 lg:px-8 lg:pb-18">
+                <div class="mx-auto max-w-7xl rounded-[1.75rem] border border-slate-200/70 bg-white/90 p-6 shadow-[0_16px_40px_rgba(15,23,42,.06)] backdrop-blur-xl sm:p-8 lg:p-10"
+                    data-reveal>
+                    <div class="max-w-3xl">
+                        <span
+                            class="inline-flex items-center gap-2 rounded-full border border-[#d8edf6] bg-white px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#1a4f70] shadow-sm sm:text-xs">
+                            <span class="material-symbols-outlined text-[16px]">shopping_cart_checkout</span>
+                            Realiza tus compras
+                        </span>
+                        <h2 class="mt-4 text-2xl font-black leading-tight text-slate-950 sm:text-3xl lg:text-4xl">
+                            REALIZA TUS
+                            COMPRAS</h2>
+                        <p class="mt-3 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+                            Compra con confianza y recibe orientación para elegir lo mejor según tu necesidad.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 grid gap-4 md:grid-cols-3">
+                        <div class="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-5">
+                            <div class="grid h-12 w-12 place-items-center rounded-2xl bg-[#1a4f70] text-white"><span
+                                    class="material-symbols-outlined text-[22px]">shield</span></div>
+                            <h3 class="mt-4 text-lg font-black text-slate-950">Seguridad</h3>
+                            <p class="mt-3 text-sm leading-7 text-slate-600">Te orientamos durante el proceso de compra
+                                para que
+                                adquieras productos adecuados y confiables.</p>
+                        </div>
+                        <div class="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-5">
+                            <div class="grid h-12 w-12 place-items-center rounded-2xl bg-[#f97316] text-white"><span
+                                    class="material-symbols-outlined text-[22px]">verified</span></div>
+                            <h3 class="mt-4 text-lg font-black text-slate-950">Garantía</h3>
+                            <p class="mt-3 text-sm leading-7 text-slate-600">Trabajamos con productos seleccionados para
+                                brindar una
+                                experiencia de compra más segura y respaldada.</p>
+                        </div>
+                        <div class="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-5">
+                            <div class="grid h-12 w-12 place-items-center rounded-2xl bg-emerald-500 text-white"><span
+                                    class="material-symbols-outlined text-[22px]">workspace_premium</span></div>
+                            <h3 class="mt-4 text-lg font-black text-slate-950">Calidad</h3>
+                            <p class="mt-3 text-sm leading-7 text-slate-600">Nuestro catálogo está pensado para
+                                estudiantes,
+                                terapeutas y profesionales que buscan buen nivel de producto.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer id="contacto" class="relative overflow-hidden bg-slate-950 text-white">
+                <div
+                    class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(60,138,176,.22),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(249,115,22,.16),transparent_26%)]">
+                </div>
+
+                <div class="relative mx-auto max-w-7xl px-3 py-10 sm:px-5 sm:py-14 lg:px-8 lg:py-16">
+                    <div class="mb-8 footer-glass rounded-[1.6rem] p-4 sm:mb-10 sm:rounded-[2rem] sm:p-6 lg:p-8"
+                        data-reveal>
+                        <div class="grid gap-6 lg:grid-cols-[1.15fr_.85fr] lg:items-center">
+                            <div>
+                                <div
+                                    class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/8 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-white/75 sm:text-xs">
+                                    <span class="material-symbols-outlined text-[16px]">bolt</span>
+                                    Atención rápida y profesional
+                                </div>
+                                <h3
+                                    class="max-w-2xl text-2xl font-black leading-tight text-white sm:text-3xl lg:text-4xl">
+                                    ¿Listo para
+                                    aprender, comprar o reservar?</h3>
+                                <p class="mt-3 max-w-2xl text-sm leading-7 text-white/70 sm:text-base">Escríbenos y te
+                                    orientamos sobre
+                                    cursos presenciales, programas online, terapias y productos especializados.</p>
+                            </div>
+
+                            <div class="grid gap-3 sm:grid-cols-2 lg:justify-self-end">
+                                <a href="mailto:ecabanillasbardales@gmail.com"
+                                    class="inline-flex items-center justify-center gap-2 rounded-full bg-[#f97316] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#f97316]/25 transition duration-300 hover:-translate-y-0.5 hover:bg-[#ea580c]">
+                                    <span class="material-symbols-outlined text-[18px]">mail</span>
+                                    Solicitar información
+                                </a>
+                                <a href="https://wa.me/51930830427?text=Hola,%20quiero%20más%20información%20sobre%20sus%20cursos,%20terapias%20y%20productos."
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="inline-flex items-center justify-center gap-2 rounded-full border border-white/12 bg-white/8 px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-white/12">
+                                    <span class="material-symbols-outlined text-[18px]">call</span>
+                                    Escribir por WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="grid gap-8 border-b border-white/10 pb-8 sm:gap-10 sm:pb-10 lg:grid-cols-[1.05fr_.8fr_1.1fr]">
+                        <div data-reveal>
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="grid h-11 w-11 place-items-center rounded-2xl bg-white text-[#1a4f70] shadow-lg shadow-black/20">
+                                    <span class="material-symbols-outlined text-[24px]">school</span>
+                                </div>
+                                <div>
+                                    <p
+                                        class="text-sm font-extrabold uppercase tracking-[0.22em] text-white sm:text-base">
+                                        INSTEIP</p>
+                                    <p
+                                        class="text-[10px] font-medium uppercase tracking-[0.22em] text-white/50 sm:text-[11px]">
+                                        Cursos y
+                                        terapias integrales</p>
+                                </div>
+                            </div>
+
+                            <p class="mt-5 max-w-md text-sm leading-7 text-white/70">Formación, servicios e insumos
+                                terapéuticos en
+                                una experiencia digital moderna, clara y adaptable a móvil, tablet y escritorio.</p>
+
+                            <div class="mt-6 flex flex-wrap items-center gap-3">
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                                    class="social-icon" aria-label="Instagram INSTEIP"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                                    class="social-icon" aria-label="Facebook INSTEIP"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"
+                                    class="social-icon" aria-label="TikTok INSTEIP"><i
+                                        class="fa-brands fa-tiktok"></i></a>
+                                <a href="https://wa.me/51930830427" target="_blank" rel="noopener noreferrer"
+                                    class="social-icon" aria-label="WhatsApp INSTEIP"><i
+                                        class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+
+                            <a href="https://www.agujasacupunturaperu.com/about-4"
+                                class="mt-4 inline-flex items-center gap-2.5 text-base font-semibold text-white/70 transition hover:text-white">
+                                <span class="material-symbols-outlined text-[20px]">receipt_long</span>
+                                Libro de reclamaciones
+                            </a>
+                        </div>
+
+                        <div data-reveal>
+                            <h4 class="text-sm font-bold uppercase tracking-[0.2em] text-white/55">CONTÁCTANOS</h4>
+                            <div class="mt-5 space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <div
+                                        class="grid h-10 w-10 place-items-center rounded-2xl border border-white/10 bg-white/6 text-white/75">
+                                        <span class="material-symbols-outlined text-[18px]">location_on</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs uppercase tracking-[0.18em] text-white/40">Dirección</p>
+                                        <p class="mt-1 text-sm leading-6 text-white/78">Julio C Tello 438 Lince</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <div
+                                        class="grid h-10 w-10 place-items-center rounded-2xl border border-white/10 bg-white/6 text-white/75">
+                                        <span class="material-symbols-outlined text-[18px]">mail</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs uppercase tracking-[0.18em] text-white/40">Correo</p>
+                                        <p class="mt-1 break-all text-sm text-white/78">ecabanillasbardales@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <div
+                                        class="grid h-10 w-10 place-items-center rounded-2xl border border-white/10 bg-white/6 text-white/75">
+                                        <span class="material-symbols-outlined text-[18px]">call</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs uppercase tracking-[0.18em] text-white/40">Teléfono</p>
+                                        <p class="mt-1 text-sm text-white/78">+51 930 830 427</p>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-[1.4rem] border border-white/10 bg-white/6 p-4">
+                                    <div class="flex items-center gap-2 text-sm font-semibold text-white"><span
+                                            class="material-symbols-outlined text-[18px]">language</span>Redes sociales
+                                        INSTEIP</div>
+                                    <p class="mt-2 text-sm leading-6 text-white/70">Instagram, Facebook, TikTok y
+                                        WhatsApp para novedades,
+                                        eventos y consultas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-reveal>
+                            <h4 class="text-sm font-bold uppercase tracking-[0.2em] text-white/55">Ubicación en Google
+                                Maps</h4>
+                            <div class="mt-5 overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/6 p-2">
+                                <iframe title="Mapa INSTEIP"
+                                    src="https://maps.google.com/maps?q=Julio%20C%20Tello%20438%20Lince&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                    class="h-[280px] w-full rounded-[1rem] border-0" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-4 pt-5 text-xs text-white/50 sm:pt-6 lg:flex-row lg:items-center lg:justify-between"
+                        data-reveal>
+                        <p>© 2026 INSTEIP. Todos los derechos reservados.</p>
+                        <div class="flex flex-wrap items-center gap-3 sm:gap-5">
+                            <a href="#" class="transition hover:text-white">Política de privacidad</a>
+                            <a href="#" class="transition hover:text-white">Términos y condiciones</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <!-- BOTÓN WHATSAPP -->
+        <div class="wa-wrap" id="waWrap">
+            <div class="wa-bubble" id="waBubble">
+                <div class="flex items-start justify-between gap-3">
+                    <div>
+                        <p class="text-sm font-bold text-white">¿Necesitas ayuda rápida?</p>
+                        <p class="mt-2 text-[13px] leading-6 text-white/70">Escríbenos por WhatsApp y te orientamos
+                            sobre cursos,
+                            tutoriales o productos.</p>
+                    </div>
+                    <button id="waClose" class="text-lg leading-none text-white/45 transition hover:text-white"
+                        type="button" aria-label="Cerrar">×</button>
+                </div>
+                <a href="https://wa.me/51930830427?text=Hola,%20quiero%20más%20información%20sobre%20sus%20cursos,%20tutoriales%20y%20productos."
+                    target="_blank" rel="noopener noreferrer"
+                    class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-green-500/20 transition hover:-translate-y-0.5 hover:bg-[#1ebe5d]">
+                    <span class="material-symbols-outlined text-[18px]">chat</span>
+                    Abrir WhatsApp
+                </a>
+            </div>
+
+            <button class="wa-btn" id="waBtn" aria-label="WhatsApp" type="button">
+                <span class="wa-dot"></span>
+                <img class="wa-icon" src="https://cdn.simpleicons.org/whatsapp/white" alt="" aria-hidden="true"
+                    decoding="async">
+            </button>
+        </div>
+
+        <button class="scroll-top-btn" id="scrollTopBtn" type="button" aria-label="Volver arriba">
+            <span class="material-symbols-outlined">arrow_upward</span>
+        </button>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

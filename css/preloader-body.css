@@ -1,0 +1,253 @@
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            background: #ffffff;
+            z-index: 999999;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .preloader-container {
+            position: absolute;
+            top: 320px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            width: 100%;
+            max-width: 320px;
+            box-sizing: border-box;
+        }
+
+        .preloader-spinner-wrap {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .preloader-ripple {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation: preloader-ripple-anim 2.4s cubic-bezier(0.1, 0.8, 0.3, 1) infinite;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .preloader-ripple-1 {
+            border: 2px solid rgba(13, 148, 136, 0.08);
+        }
+
+        .preloader-ripple-2 {
+            border: 2px solid rgba(30, 58, 138, 0.05);
+            animation-delay: 0.8s;
+        }
+
+        .preloader-ripple-3 {
+            border: 2px solid rgba(13, 148, 136, 0.03);
+            animation-delay: 1.6s;
+        }
+
+        .preloader-leaf {
+            position: absolute;
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        .preloader-leaf-1 {
+            top: 10px;
+            left: 10px;
+            animation: floatLeaf1 6s ease-in-out infinite;
+        }
+
+        .preloader-leaf-2 {
+            bottom: 10px;
+            right: 10px;
+            animation: floatLeaf2 8s ease-in-out infinite;
+        }
+
+        .rotate-neg-45 {
+            transform: rotate(-45deg);
+        }
+
+        .rotate-45 {
+            transform: rotate(45deg);
+        }
+
+        .preloader-outer-spinner {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 3px solid rgba(30, 58, 138, 0.04);
+            border-top: 3px solid #1e3a8a;
+            border-right: 3px solid #0d9488;
+            border-radius: 50%;
+            animation: preloader-spin 1.2s cubic-bezier(0.5, 0.1, 0.1, 0.9) infinite;
+        }
+
+        .preloader-inner-core {
+            position: absolute;
+            width: 68px;
+            height: 68px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(30, 58, 138, 0.08);
+            z-index: 10;
+        }
+
+        .preloader-svg-pulse {
+            animation: preloader-pulse 2s ease-in-out infinite;
+        }
+
+        .preloader-brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            z-index: 10;
+            max-width: 280px;
+            width: 100%;
+        }
+
+        .preloader-logo-img {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+            transition: all 0.3s;
+        }
+
+        .preloader-fallback {
+            display: none;
+            text-align: center;
+        }
+
+        .preloader-brand-name {
+            font-size: 24px;
+            font-weight: 800;
+            color: #1e3a8a;
+            letter-spacing: 0.05em;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .preloader-brand-tagline {
+            font-size: 10px;
+            color: #0d9488;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 2px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .preloader-dots-wrap {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 4px;
+        }
+
+        .preloader-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #0d9488;
+            animation: preloader-dot-pulse 1.4s ease-in-out infinite;
+        }
+
+        .preloader-dot-delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .preloader-dot-delay-2 {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes preloader-spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes preloader-pulse {
+
+            0%,
+            100% {
+                transform: scale(0.96);
+                opacity: 0.9;
+            }
+
+            50% {
+                transform: scale(1.04);
+                opacity: 1;
+            }
+        }
+
+        @keyframes preloader-ripple-anim {
+            0% {
+                transform: scale(0.6);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1.3);
+                opacity: 0;
+            }
+        }
+
+        @keyframes preloader-dot-pulse {
+
+            0%,
+            100% {
+                opacity: 0.3;
+                transform: scale(0.8);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes floatLeaf1 {
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(6px, -6px) rotate(15deg);
+            }
+        }
+
+        @keyframes floatLeaf2 {
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(-8px, 4px) rotate(-20deg);
+            }
+        }

@@ -1,0 +1,170 @@
+{
+  "total_cards": 0,
+  "loaded_images": 12,
+  "broken_images": 0,
+  "products": [],
+  "broken_list": [],
+  "total_img_tags": 20,
+  "img_audit": [
+    {
+      "index": 0,
+      "src": "http://localhost:3001/agujaslogo.png",
+      "alt": "Agujas Acupuntura Perú",
+      "parent_text": "Inicio",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 1,
+      "src": "http://localhost:3001/img_productos/agujasKoreanas-opt.webp",
+      "alt": "Agujas Koreanas x caja de 500 und - Insumo médico y de acupuntura en Perú",
+      "parent_text": "-15%",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 2,
+      "src": "http://localhost:3001/img_productos/agujasAcupuntura-opt.webp",
+      "alt": "Agujas para acupuntura - Insumo médico y de acupuntura en Perú",
+      "parent_text": "-15%",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 3,
+      "src": "http://localhost:3001/img_productos/ChatGPT%20Image%2026%20sept%202026,%2004_06_54%20p.m-opt.webp",
+      "alt": "Aplicador de agujas - Insumo médico y de acupuntura en Perú",
+      "parent_text": "-15%",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 4,
+      "src": "http://localhost:3001/img_productos/cajaMOXAS2-opt.webp",
+      "alt": "Caja de moxibustión (3 moxas) - Insumo médico y de acupuntura en Perú",
+      "parent_text": "-15%",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 5,
+      "src": "http://localhost:3001/img_productos/cajaMoxas-opt.webp",
+      "alt": "Caja de Moxibustin (1 moxa) - Insumo médico y de acupuntura en Perú",
+      "parent_text": "-15%",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 6,
+      "src": "http://localhost:3001/img_productos/cajaMOXAS2-opt.webp",
+      "alt": "Caja de moxibustin (2 moxas) - Insumo médico y de acupuntura en Perú",
+      "parent_text": "-15%",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 7,
+      "src": "http://localhost:3001/img_productos/ChatGPT%20Image%2026%20sept%202026,%2004_07_06%20p.m-opt.webp",
+      "alt": "Cocodrilos de Electroacupuntura - Insumo médico y de acupuntura en Perú",
+      "parent_text": "-15%",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 8,
+      "src": "http://localhost:3001/img_productos/ChatGPT%20Image%2027%20sept%202026,%2003_37_56%20p.m-opt.webp",
+      "alt": "Electroacupuntor Portátil SDZ-IIB - Insumo médico y de acupuntura en Perú",
+      "parent_text": "-15%",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 9,
+      "src": "http://localhost:3001/img_productos/ChatGPT%20Image%2027%20sept%202026,%2003_37_56%20p.m-opt.webp",
+      "alt": "Electroacupuntura Tekno Bio Body - Insumo médico y de acupuntura en Perú",
+      "parent_text": "-15%",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 10,
+      "src": "http://localhost:3001/img_productos/ChatGPT%20Image%2026%20sept%202026,%2004_07_06%20p.m-opt.webp",
+      "alt": "Lápiz de electroacupuntura - Insumo médico y de acupuntura en Perú",
+      "parent_text": "-15%",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 11,
+      "src": "http://localhost:3001/img_productos/ChatGPT%20Image%2026%20sept%202026,%2004_06_54%20p.m-opt.webp",
+      "alt": "Lápiz Electroacupuntor \"Acu doc\" - Insumo médico y de acupuntura en Perú",
+      "parent_text": "-15%",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 12,
+      "src": "http://localhost:3001/img_productos/martilloAcupuntura-opt.webp",
+      "alt": "Martillo de 5 puntos - Insumo médico y de acupuntura en Perú",
+      "parent_text": "-15%",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 13,
+      "src": "http://localhost:3001/images/payments/yape.svg",
+      "alt": "Yape",
+      "parent_text": "",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 14,
+      "src": "http://localhost:3001/images/payments/plin.png",
+      "alt": "Plin",
+      "parent_text": "",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 15,
+      "src": "http://localhost:3001/images/payments/bcp.svg",
+      "alt": "BCP",
+      "parent_text": "",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 16,
+      "src": "http://localhost:3001/images/payments/bbva.svg",
+      "alt": "BBVA",
+      "parent_text": "",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 17,
+      "src": "http://localhost:3001/images/payments/interbank.svg",
+      "alt": "Interbank",
+      "parent_text": "",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 18,
+      "src": "http://localhost:3001/images/payments/banco-nacion.png",
+      "alt": "Banco de la Nación",
+      "parent_text": "",
+      "loaded": true,
+      "status": "OK"
+    },
+    {
+      "index": 19,
+      "src": "http://localhost:3001/agujaslogoblanco1.png",
+      "alt": "Agujas Acupuntura Perú",
+      "parent_text": "Especialistas en insumos de alta precisión para acupuntura, medicina tradicional china, moxibustión, ventosaterapia y terapias integrales en todo el Perú.",
+      "loaded": true,
+      "status": "OK"
+    }
+  ]
+}

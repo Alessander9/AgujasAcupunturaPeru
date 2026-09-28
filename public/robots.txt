@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Excluir rutas no indexables
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://www.agujasacupunturaperu.com/sitemap.xml
