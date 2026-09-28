@@ -142,12 +142,27 @@ export default function ProductsPage() {
     return isNaN(p) || p < 1 ? 1 : p;
   });
 
-  // Sync search query from URL if present
+  // Sync search query and filters from URL if present
   useEffect(() => {
     const urlSearch = searchParams.get('search') || searchParams.get('q');
     if (urlSearch !== null && urlSearch !== searchQuery) {
       setSearchQuery(urlSearch);
     }
+
+    const cat = searchParams.get('category') || searchParams.get('cat');
+    if (cat) {
+      setSelectedCategories(cat.split(','));
+    }
+
+    const t = searchParams.get('type');
+    if (t) {
+      setSelectedProductTypes(t.split(','));
+    }
+
+    const p = searchParams.get('promo') || searchParams.get('filter');
+    if (p === 'ofertas') setSelectedPromos(['onsale']);
+    else if (p === 'novedades') setSelectedPromos(['new']);
+    else if (p) setSelectedPromos(p.split(','));
   }, [searchParams]);
 
   // Sync state back to URL params
