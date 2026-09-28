@@ -16,6 +16,37 @@ import { classifyIntent } from './intent-router.js';
 import { pushTurn, getLastProduct, setLastProduct, isAmbiguousFollowup } from './conversation-memory.js';
 import { retrieveTopProducts } from './retrieval.js';
 
+// Helper: Serverless Vercel AI Gateway (/api/chat)
+async function callServerlessAPI(messages, systemPrompt) {
+  try {
+    const response = await fetch('/api/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        messages,
+        systemPrompt
+      })
+    });
+
+    if (!response.ok) {
+      throw new Error(`Serverless chat endpoint returned status ${response.status}`);
+    }
+
+    const data = await response.json();
+    if (data && data.text && data.text.trim().length > 0) {
+      return {
+        text: data.text.trim(),
+        provider: data.provider || 'Asistente IA Seguro (Vercel Serverless)'
+      };
+    }
+  } catch (err) {
+    // Silently fall back to client cascade / local RAG
+  }
+  return null;
+}
+
 // Helper: Groq API Call
 async function callGroq(messages, systemPrompt) {
   const apiKey = typeof import.meta !== 'undefined' && import.meta.env?.VITE_GROQ_API_KEY
@@ -294,31 +325,40 @@ export async function generateChatResponse(chatHistory, userMessage, sessionId =
     content: cleanMessage
   });
 
-  const providers = [
-    { name: 'Groq (Llama 3.3 RAG)', fn: () => callGroq(messages, systemPrompt) },
-    { name: 'OpenRouter RAG', fn: () => callOpenRouter(messages, systemPrompt) },
-    { name: 'Mistral RAG', fn: () => callMistral(messages, systemPrompt) },
-    { name: 'Gemini RAG', fn: () => callGemini(messages, systemPrompt) }
-  ];
-
   let finalReply = '';
   let chosenProvider = 'Motor RAG Local';
 
-  // Try each provider in cascade
-  for (const provider of providers) {
-    try {
-      const reply = await provider.fn();
-      if (reply && reply.trim().length > 0) {
-        finalReply = reply.trim();
-        chosenProvider = provider.name;
-        break;
+  // 1. Intentar primero a través del Endpoint Serverless Seguro de Vercel (/api/chat)
+  const serverlessResult = await callServerlessAPI(messages, systemPrompt);
+  if (serverlessResult && serverlessResult.text) {
+    finalReply = serverlessResult.text;
+    chosenProvider = serverlessResult.provider;
+  }
+
+  // 2. Si el endpoint serverless no está disponible (ej. desarrollo local), intentar cliente
+  if (!finalReply) {
+    const providers = [
+      { name: 'Groq (Llama 3.3 RAG)', fn: () => callGroq(messages, systemPrompt) },
+      { name: 'OpenRouter RAG', fn: () => callOpenRouter(messages, systemPrompt) },
+      { name: 'Mistral RAG', fn: () => callMistral(messages, systemPrompt) },
+      { name: 'Gemini RAG', fn: () => callGemini(messages, systemPrompt) }
+    ];
+
+    for (const provider of providers) {
+      try {
+        const reply = await provider.fn();
+        if (reply && reply.trim().length > 0) {
+          finalReply = reply.trim();
+          chosenProvider = provider.name;
+          break;
+        }
+      } catch (err) {
+        // Cascade to next provider
       }
-    } catch (err) {
-      // Cascade to next provider
     }
   }
 
-  // Fallback to local deterministic generator if all external LLMs fail
+  // 3. Fallback determinístico local 0ms si todo lo anterior falla
   if (!finalReply) {
     finalReply = await localDeterministicRAG(queryForRetrieval, sessionId);
   }
