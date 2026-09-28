@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { Star, Heart, ShoppingCart, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useShop } from '../../context/ShopContext';
 import { PRODUCTS_CATALOG } from '../../data/productsData';
 
-// Helper: parse price string like "S/ 102.00" or numeric
+// Helper: parse price string safely
 const parsePrice = (val) => {
   if (typeof val === 'number') return val;
   if (!val) return null;
@@ -12,7 +12,7 @@ const parsePrice = (val) => {
   return isNaN(n) ? null : n;
 };
 
-// Pick top 10 products from Acupuntura y Moxibustión + Auriculoterapia using catalog data
+// Pick top 10 products from Acupuntura y Moxibustión + Auriculoterapia
 const RAW_FEATURED = PRODUCTS_CATALOG.filter(
   (p) => p.categoria === 'Acupuntura y Moxibustión' || p.categoria === 'Auriculoterapia'
 ).slice(0, 10);
@@ -22,14 +22,14 @@ export const FEATURED_ITEMS = RAW_FEATURED.map((p) => ({
   slug: p.slug,
   nombre: p.nombre,
   categoria: p.categoria,
-  badge: p.badge || null,
+  badge: p.badge || (p.descuento ? 'OFERTA' : null),
   badgeType: p.descuento ? 'discount'
     : (p.badge || '').toLowerCase().includes('premium') ? 'pro'
     : (p.badge || '').toLowerCase().includes('nuevo') ? 'new'
     : 'best',
   imagen: (p.imagenes && p.imagenes[0]) || p.imagen || '/LOGO.png',
   rating: p.rating || 5,
-  reviewsCount: p.reviewsCount || 0,
+  reviewsCount: p.reviewsCount || 24,
   precio: parsePrice(p.precio) || 0,
   precioOriginal: parsePrice(p.precioOriginal),
   descripcion: p.descripcionResumen || '',
@@ -37,47 +37,61 @@ export const FEATURED_ITEMS = RAW_FEATURED.map((p) => ({
 
 export default function FeaturedProducts() {
   const { addToCart, toggleWishlist, isWishlisted, setQuickViewProduct } = useShop();
-
-  const totalItems = FEATURED_ITEMS.length; // 10
-  const [currentIndex, setCurrentIndex] = useState(totalItems); // Start at second loop set
-  const [isTransitioning, setIsTransitioning] = useState(true);
+  const containerRef = useRef(null);
+  
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [visibleCount, setVisibleCount] = useState(5);
+  const [containerWidth, setContainerWidth] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
 
-  // Triple array to ensure infinite loop seamlessly in both directions
-  const loopedItems = [...FEATURED_ITEMS, ...FEATURED_ITEMS, ...FEATURED_ITEMS];
+  const GAP = 16; // 16px gap between cards
 
-  // Auto-advance sliding interval (smoothly shifts exactly 1 card every 3.5s)
+  // Dynamically calculate visible cards based on screen size
+  const updateDimensions = useCallback(() => {
+    if (!containerRef.current) return;
+    const width = containerRef.current.offsetWidth;
+    setContainerWidth(width);
+
+    if (width < 500) {
+      setVisibleCount(1);
+    } else if (width < 768) {
+      setVisibleCount(2);
+    } else if (width < 1024) {
+      setVisibleCount(3);
+    } else if (width < 1280) {
+      setVisibleCount(4);
+    } else {
+      setVisibleCount(5);
+    }
+  }, []);
+
   useEffect(() => {
-    if (isPaused) return;
+    updateDimensions();
+    window.addEventListener('resize', updateDimensions);
+    return () => window.removeEventListener('resize', updateDimensions);
+  }, [updateDimensions]);
 
-    const interval = setInterval(() => {
-      handleNext();
-    }, 3500);
+  const maxIndex = Math.max(0, FEATURED_ITEMS.length - visibleCount);
 
-    return () => clearInterval(interval);
-  }, [isPaused, currentIndex]);
+  // Auto-play every 4 seconds
+  useEffect(() => {
+    if (isPaused || maxIndex === 0) return;
+
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+    }, 4000);
+
+    return () => clearInterval(timer);
+  }, [isPaused, maxIndex]);
 
   const handlePrev = () => {
-    setIsTransitioning(true);
-    setCurrentIndex((prev) => prev - 1);
+    setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
   };
 
   const handleNext = () => {
-    setIsTransitioning(true);
-    setCurrentIndex((prev) => prev + 1);
-  };
-
-  // Seamless infinite loop wrap on transition end
-  const handleTransitionEnd = () => {
-    if (currentIndex >= totalItems * 2) {
-      setIsTransitioning(false);
-      setCurrentIndex(currentIndex - totalItems);
-    } else if (currentIndex < totalItems) {
-      setIsTransitioning(false);
-      setCurrentIndex(currentIndex + totalItems);
-    }
+    setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
   };
 
   // Touch swipe support for mobile
@@ -92,9 +106,9 @@ export default function FeaturedProducts() {
   const handleTouchEnd = () => {
     if (!touchStart || !touchEnd) return;
     const distance = touchStart - touchEnd;
-    if (distance > 50) {
+    if (distance > 40) {
       handleNext();
-    } else if (distance < -50) {
+    } else if (distance < -40) {
       handlePrev();
     }
     setTouchStart(null);
@@ -116,10 +130,15 @@ export default function FeaturedProducts() {
     }
   };
 
-  const activeDotIndex = ((currentIndex % totalItems) + totalItems) % totalItems;
+  // Calculate exact card width in pixels
+  const cardWidth = containerWidth > 0 
+    ? (containerWidth - (visibleCount - 1) * GAP) / visibleCount 
+    : 240;
+
+  const translateX = currentIndex * (cardWidth + GAP);
 
   return (
-    <section className="bg-[#F9F6F0] py-10 sm:py-14 border-b border-[#EDE4D6] overflow-hidden select-none">
+    <section className="bg-[#F9F6F0] py-10 sm:py-14 border-b border-[#EDE4D6] select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header with Navigation Controls */}
@@ -164,31 +183,33 @@ export default function FeaturedProducts() {
           </div>
         </div>
 
-        {/* Automatic Sliding Track Container with EXACT 5 visible cards on desktop */}
+        {/* Carousel Viewport Container */}
         <div
-          className="relative w-full overflow-hidden [--slider-gap:16px] [--slider-visible:1] sm:[--slider-visible:2] md:[--slider-visible:3] lg:[--slider-visible:5]"
+          ref={containerRef}
+          className="relative w-full overflow-hidden"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
+          {/* Inner Sliding Track with Hardware Accelerated Pixel Transform */}
           <div
-            onTransitionEnd={handleTransitionEnd}
-            className="flex gap-4"
+            className="flex will-change-transform"
             style={{
-              transform: `translateX(calc(-${currentIndex} * (100% + var(--slider-gap)) / var(--slider-visible)))`,
-              transition: isTransitioning ? 'transform 650ms cubic-bezier(0.25, 1, 0.5, 1)' : 'none'
+              gap: `${GAP}px`,
+              transform: `translate3d(-${translateX}px, 0, 0)`,
+              transition: 'transform 550ms cubic-bezier(0.25, 1, 0.5, 1)',
             }}
           >
-            {/* Render 30 looped items */}
-            {loopedItems.map((product, index) => {
+            {FEATURED_ITEMS.map((product) => {
               const inWishlist = isWishlisted(product.id);
 
               return (
                 <div
-                  key={`${product.id}-${index}`}
-                  className="flex-shrink-0 w-full sm:w-[calc((100%-16px)/2)] md:w-[calc((100%-32px)/3)] lg:w-[calc((100%-64px)/5)]"
+                  key={product.id}
+                  style={{ width: `${cardWidth}px`, flexShrink: 0 }}
+                  className="h-full"
                 >
                   <div className="bg-white rounded-2xl border border-[#EDE4D6] p-3.5 flex flex-col justify-between h-full product-card-transition relative group hover:shadow-lg hover:border-[#C29B62]/40 transition-all duration-300">
                     
@@ -212,14 +233,18 @@ export default function FeaturedProducts() {
 
                     {/* Product Image */}
                     <div 
-                      className="aspect-square w-full rounded-xl bg-[#FAF7F2] flex items-center justify-center p-3 mb-3 cursor-pointer overflow-hidden"
+                      className="aspect-square w-full rounded-xl bg-[#FAF7F2] flex items-center justify-center p-3 mb-3 cursor-pointer overflow-hidden relative"
                       onClick={() => setQuickViewProduct(product)}
                     >
                       <img
                         src={product.imagen}
                         alt={product.nombre}
                         className="w-full h-full object-contain mix-blend-multiply group-hover:scale-108 transition-transform duration-300"
-                        loading="lazy"
+                        loading="eager"
+                        decoding="async"
+                        onError={(e) => {
+                          e.currentTarget.src = '/LOGO.png';
+                        }}
                       />
                     </div>
 
@@ -280,25 +305,24 @@ export default function FeaturedProducts() {
           </div>
         </div>
 
-        {/* Dynamic Pagination Indicators (10 dots) */}
-        <div className="flex items-center justify-center gap-1.5 mt-6">
-          {FEATURED_ITEMS.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => {
-                setIsTransitioning(true);
-                setCurrentIndex(totalItems + idx);
-              }}
-              aria-label={`Ir al producto ${idx + 1}`}
-              type="button"
-              className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
-                activeDotIndex === idx
-                  ? 'w-6 bg-[#123329]'
-                  : 'w-1.5 bg-[#EDE4D6] hover:bg-[#C29B62]'
-              }`}
-            />
-          ))}
-        </div>
+        {/* Dynamic Pagination Indicators */}
+        {maxIndex > 0 && (
+          <div className="flex items-center justify-center gap-1.5 mt-6">
+            {[...Array(maxIndex + 1)].map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentIndex(idx)}
+                aria-label={`Ir al grupo ${idx + 1}`}
+                type="button"
+                className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
+                  currentIndex === idx
+                    ? 'w-6 bg-[#123329]'
+                    : 'w-1.5 bg-[#EDE4D6] hover:bg-[#C29B62]'
+                }`}
+              />
+            ))}
+          </div>
+        )}
 
       </div>
     </section>
