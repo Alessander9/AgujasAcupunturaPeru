@@ -74,7 +74,7 @@ export default async function handler(req, res) {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${OPENROUTER_KEY}`,
-            'HTTP-Referer': 'https://www.agujasacupunturaperu.com',
+            'HTTP-Referer': 'https://agujas-acupuntura-peru.vercel.app',
             'X-Title': 'Agujas Acupuntura Perú'
           },
           body: JSON.stringify({

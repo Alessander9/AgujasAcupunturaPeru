@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..');
 
-const BASE_URL = 'https://www.agujasacupunturaperu.com';
+const BASE_URL = 'https://agujas-acupuntura-peru.vercel.app';
 const TODAY = new Date().toISOString().split('T')[0];
 
 const staticRoutes = [

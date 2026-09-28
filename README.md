@@ -11,7 +11,7 @@
 
 ## 🏛️ 1. Descripción del Proyecto
 
-**Agujas Acupuntura Perú** (`www.agujasacupunturaperu.com`) es una plataforma web de comercio electrónico de alta precisión desarrollada para el **Instituto de Terapias Integrales Perú**. Está especializada en el suministro de insumos médicos certificados, agujas de acupuntura estériles, conos y puros de moxibustión, ventosas terapéuticas, semillas de auriculoterapia y extractos amazónicos de la línea Amazoni-k en Lima y todo el territorio peruano.
+**Agujas Acupuntura Perú** (`https://agujas-acupuntura-peru.vercel.app`) es una plataforma web de comercio electrónico de alta precisión desarrollada para el **Instituto de Terapias Integrales Perú**. Está especializada en el suministro de insumos médicos certificados, agujas de acupuntura estériles, conos y puros de moxibustión, ventosas terapéuticas, semillas de auriculoterapia y extractos amazónicos de la línea Amazoni-k en Lima y todo el territorio peruano.
 
 ---
 
@@ -185,5 +185,5 @@ npm run build
 
 * **Entidad:** Instituto de Terapias Integrales Perú
 * **Dirección:** Av. Julio César Tello 438, Lince 15046, Lima - Perú
-* **Dominio Oficial:** [https://www.agujasacupunturaperu.com](https://www.agujasacupunturaperu.com)
+* **Dominio Oficial:** [https://agujas-acupuntura-peru.vercel.app](https://agujas-acupuntura-peru.vercel.app)
 * **Año:** 2026
