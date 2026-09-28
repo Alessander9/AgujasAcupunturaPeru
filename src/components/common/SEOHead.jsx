@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 const DEFAULT_TITLE = 'Agujas de Acupuntura en Perú | Insumos Médicos & Terapéuticos Certificados';
 const DEFAULT_DESCRIPTION = 'Venta de agujas de acupuntura estériles, moxas, ventosas, semillas de auriculoterapia y aceites amazónicos en Lima y todo el Perú. Envíos 24-48h.';
-const DEFAULT_IMAGE = 'https://agujas-acupuntura-peru.vercel.app/agujaslogoblanco1.png';
+const DEFAULT_IMAGE = 'https://agujas-acupuntura-peru.vercel.app/agujaslogo.png';
 const BASE_URL = 'https://agujas-acupuntura-peru.vercel.app';
 
 export default function SEOHead({
