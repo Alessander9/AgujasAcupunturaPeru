@@ -222,7 +222,7 @@ export default function ProductCard({ product, viewMode = 'grid' }) {
 
   // DEFAULT GRID VIEW MATCHING EXACT MOCKUP
   return (
-    <article className="group bg-white rounded-2xl border border-[#EDE4D6] p-3 sm:p-3.5 flex flex-col justify-between hover:shadow-xl hover:border-[#123329]/30 transition-all duration-300 relative">
+    <article className="group bg-white rounded-2xl border border-[#EDE4D6] p-2.5 min-[380px]:p-3 sm:p-3.5 flex flex-col justify-between hover:shadow-xl hover:border-[#123329]/30 transition-all duration-300 relative">
       <div>
         {/* IMAGE CONTAINER */}
         <div 
@@ -340,11 +340,12 @@ export default function ProductCard({ product, viewMode = 'grid' }) {
           target="_blank"
           rel="noopener noreferrer"
           onClick={(e) => e.stopPropagation()}
-          className="w-full h-9 sm:h-9.5 flex items-center justify-center gap-1.5 px-2 rounded-xl bg-[#25D366] hover:bg-[#1ebe5d] active:bg-[#18a854] text-white text-[10.5px] min-[360px]:text-[11.5px] sm:text-xs font-bold tracking-tight whitespace-nowrap transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 active:scale-[0.98] shadow-xs"
+          className="w-full h-9 sm:h-9.5 flex items-center justify-center gap-1.5 px-2 rounded-xl bg-[#25D366] hover:bg-[#1ebe5d] active:bg-[#18a854] text-white text-[11px] sm:text-xs font-bold tracking-tight whitespace-nowrap transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 active:scale-[0.98] shadow-xs"
         >
           <WhatsAppIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-          <span className="hidden min-[360px]:inline">Comprar por WhatsApp</span>
-          <span className="min-[360px]:hidden">Comprar WhatsApp</span>
+          <span className="hidden sm:inline">Comprar por WhatsApp</span>
+          <span className="hidden min-[350px]:inline sm:hidden">Pedir por WhatsApp</span>
+          <span className="min-[350px]:hidden">Pedir WhatsApp</span>
         </a>
         {/* Ver detalle + Carrito */}
         <div className="flex items-center gap-2">
