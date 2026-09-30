@@ -303,10 +303,11 @@ export default function FeaturedProducts() {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="w-full flex items-center justify-center gap-1.5 py-1.5 rounded-xl bg-[#25D366] hover:bg-[#1ebe5d] active:bg-[#18a854] text-white text-[11px] font-bold tracking-wide transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 active:scale-[0.98] shadow-sm"
+                        className="w-full h-8.5 sm:h-9 flex items-center justify-center gap-1.5 px-2 rounded-xl bg-[#25D366] hover:bg-[#1ebe5d] active:bg-[#18a854] text-white text-[10.5px] min-[360px]:text-[11.5px] sm:text-xs font-bold tracking-tight whitespace-nowrap transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 active:scale-[0.98] shadow-xs"
                       >
-                        <WhatsAppIcon className="w-3 h-3 shrink-0" />
-                        Comprar por WhatsApp
+                        <WhatsAppIcon className="w-3.5 h-3.5 shrink-0" />
+                        <span className="hidden min-[360px]:inline">Comprar por WhatsApp</span>
+                        <span className="min-[360px]:hidden">Comprar WhatsApp</span>
                       </a>
                       {/* Ver detalle + Carrito */}
                       <div className="flex items-center gap-1.5">
