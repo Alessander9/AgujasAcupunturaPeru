@@ -192,7 +192,9 @@ export default function WishlistModal() {
                           </span>
                           {product.precioOriginal && (
                             <span className="text-[11px] text-[#8C9690] line-through">
-                              S/ {Number(product.precioOriginal).toFixed(2)}
+                              {typeof product.precioOriginal === 'string' && product.precioOriginal.startsWith('S/')
+                                ? product.precioOriginal
+                                : `S/ ${parseFloat(String(product.precioOriginal).replace(/[^0-9.]/g, '') || 0).toFixed(2)}`}
                             </span>
                           )}
                           {isOutOfStock && (

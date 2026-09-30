@@ -15,13 +15,25 @@ export function ShopProvider({ children }) {
     }
   });
 
-  // Wishlist state
+  // Wishlist state (vacío por defecto, sin productos falsos precargados)
   const [wishlist, setWishlist] = useState(() => {
     try {
       const saved = localStorage.getItem('aap_wishlist');
-      return saved ? JSON.parse(saved) : ['prod-150', 'prod-151', 'prod-152'];
+      if (!saved) return [];
+      const parsed = JSON.parse(saved);
+      // Limpiar datos demo de prueba antiguos (prod-150, prod-151, prod-152) si estaban guardados
+      const isLegacyMock = Array.isArray(parsed) && 
+        parsed.length === 3 && 
+        parsed.includes('prod-150') && 
+        parsed.includes('prod-151') && 
+        parsed.includes('prod-152');
+      if (isLegacyMock) {
+        localStorage.removeItem('aap_wishlist');
+        return [];
+      }
+      return Array.isArray(parsed) ? parsed : [];
     } catch {
-      return ['prod-150', 'prod-151', 'prod-152'];
+      return [];
     }
   });
 
