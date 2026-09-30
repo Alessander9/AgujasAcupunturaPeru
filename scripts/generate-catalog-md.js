@@ -5,7 +5,12 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const productsPath = path.resolve(__dirname, '../productos_completos.json');
+const candidates = [
+  path.resolve(__dirname, '../src/data/productos_completos.json'),
+  path.resolve(__dirname, '../public/productos_completos.json'),
+  path.resolve(__dirname, '../productos_completos.json')
+];
+const productsPath = candidates.find(f => fs.existsSync(f));
 const rawData = fs.readFileSync(productsPath, 'utf8');
 const products = JSON.parse(rawData);
 

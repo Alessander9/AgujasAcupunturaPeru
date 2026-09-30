@@ -58,8 +58,13 @@ const generateSitemap = () => {
   });
 
   // 3. Products
-  const productsFile = path.join(rootDir, 'productos_completos.json');
-  if (fs.existsSync(productsFile)) {
+  const candidates = [
+    path.join(rootDir, 'public', 'productos_completos.json'),
+    path.join(rootDir, 'src', 'data', 'productos_completos.json'),
+    path.join(rootDir, 'productos_completos.json')
+  ];
+  const productsFile = candidates.find(f => fs.existsSync(f));
+  if (productsFile) {
     try {
       const rawData = fs.readFileSync(productsFile, 'utf-8');
       const products = JSON.parse(rawData);

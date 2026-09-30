@@ -1,4 +1,6 @@
 .vercel
+.atl
+.kilo
 node_modules
 dist
 .env
@@ -11,4 +13,5 @@ low-confidence.jsonl
 *.jsonl
 .DS_Store
 Thumbs.db
+*.timestamp-*.mjs
 

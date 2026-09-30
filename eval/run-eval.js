@@ -12,8 +12,8 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { retrieveTopProducts } from '../retrieval.js';
-import { classifyIntent } from '../intent-router.js';
+import { retrieveTopProducts } from '../src/lib/retrieval.js';
+import { classifyIntent } from '../src/lib/intent-router.js';
 
 let __dirname = '';
 try {
