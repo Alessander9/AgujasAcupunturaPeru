@@ -734,15 +734,28 @@ export default function ProductsPage() {
             ))}
           </div>
         ) : (
-          <div className="space-y-4">
-            {paginatedProducts.map((product) => (
-              <ProductCard
-                key={product.id}
-                product={product}
-                viewMode="list"
-              />
-            ))}
-          </div>
+          <>
+            {/* En móviles siempre forzar vista cuadrícula de 2 columnas */}
+            <div className="grid grid-cols-2 sm:hidden gap-3.5">
+              {paginatedProducts.map((product) => (
+                <ProductCard
+                  key={product.id}
+                  product={product}
+                  viewMode="grid"
+                />
+              ))}
+            </div>
+            {/* En pantallas medianas y grandes, mostrar vista lista */}
+            <div className="hidden sm:block space-y-4">
+              {paginatedProducts.map((product) => (
+                <ProductCard
+                  key={product.id}
+                  product={product}
+                  viewMode="list"
+                />
+              ))}
+            </div>
+          </>
         )}
 
         {/* PAGINATION */}

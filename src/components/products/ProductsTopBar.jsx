@@ -55,7 +55,7 @@ export default function ProductsTopBar({
       </div>
 
       {/* SORT DROPDOWN AND VIEW MODE */}
-      <div className="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
+      <div className="flex items-center gap-3 w-full sm:w-auto justify-end">
         {/* Sort dropdown */}
         <div className="flex items-center gap-2">
           <label htmlFor="sort-dropdown" className="text-xs text-[#65726B] font-medium hidden md:inline whitespace-nowrap">
@@ -78,8 +78,8 @@ export default function ProductsTopBar({
           </div>
         </div>
 
-        {/* View mode toggle */}
-        <div className="flex items-center gap-1 bg-white border border-[#E2D9CC] rounded-lg p-0.5 shadow-xs">
+        {/* View mode toggle - Oculto en móviles */}
+        <div className="hidden sm:flex items-center gap-1 bg-white border border-[#E2D9CC] rounded-lg p-0.5 shadow-xs">
           <button
             type="button"
             onClick={() => onChangeViewMode('grid')}
