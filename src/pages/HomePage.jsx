@@ -5,7 +5,7 @@ import OffersMarquee from '../components/home/OffersMarquee';
 import CategoryBadges from '../components/home/CategoryBadges';
 import FeaturedProducts from '../components/home/FeaturedProducts';
 import PromoBanners from '../components/home/PromoBanners';
-import TherapyKits from '../components/home/TherapyKits';
+// import TherapyKits from '../components/home/TherapyKits';
 import Testimonials from '../components/home/Testimonials';
 import Newsletter from '../components/home/Newsletter';
 import BenefitsBar from '../components/home/BenefitsBar';
@@ -32,8 +32,8 @@ export default function HomePage() {
       {/* 5. BANNERS PROMOCIONALES EDITORIALES */}
       <PromoBanners />
 
-      {/* 6. SECCIÓN DE KITS PARA CADA TIPO DE TERAPIA */}
-      <TherapyKits />
+      {/* 6. SECCIÓN DE KITS PARA CADA TIPO DE TERAPIA — DESACTIVADO TEMPORALMENTE */}
+      {/* <TherapyKits /> */}
 
       {/* 7. TESTIMONIOS: Con la confianza de terapeutas */}
       <Testimonials />

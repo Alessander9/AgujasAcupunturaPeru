@@ -5762,7 +5762,7 @@ export const PRODUCTS_CATALOG = [
     ],
     "highlights": [],
     "imagenes": [
-      "/img_productos/meridianoIntestino-opt.webp"
+      "/img_productos/meridiano-intestino-grueso_min.webp"
     ],
     "features": [
       {
@@ -5812,7 +5812,7 @@ export const PRODUCTS_CATALOG = [
       "Características:"
     ],
     "imagenes": [
-      "/img_productos/lamina-auriculoterapia1-opt.webp"
+      "/img_productos/lamina-auriculo1_min.webp"
     ],
     "features": [
       {
@@ -5859,7 +5859,7 @@ export const PRODUCTS_CATALOG = [
     ],
     "highlights": [],
     "imagenes": [
-      "/img_productos/lamina-auriculoterapia2-opt.webp"
+      "/img_productos/lamina-auriculo2_min.webp"
     ],
     "features": [
       {
@@ -5906,7 +5906,7 @@ export const PRODUCTS_CATALOG = [
     ],
     "highlights": [],
     "imagenes": [
-      "/img_productos/lamina-auriculoterapia3-opt.webp"
+      "/img_productos/lamina-auriculo3_min.webp"
     ],
     "features": [
       {
@@ -5956,7 +5956,7 @@ export const PRODUCTS_CATALOG = [
       "Contenido:"
     ],
     "imagenes": [
-      "/img_productos/lamina-5elementos-china-opt.webp"
+      "/img_productos/lamina-5-elementos_min.webp"
     ],
     "features": [
       {
@@ -6007,7 +6007,7 @@ export const PRODUCTS_CATALOG = [
       "Características:"
     ],
     "imagenes": [
-      "/img_productos/lamina-reflexologia1-opt.webp"
+      "/img_productos/lamina-reflexologia1_min.webp"
     ],
     "features": [
       {
@@ -6054,7 +6054,7 @@ export const PRODUCTS_CATALOG = [
     ],
     "highlights": [],
     "imagenes": [
-      "/img_productos/lamina-reflexologia1-opt.webp"
+      "/img_productos/lamina-reflexologia2_min.webp"
     ],
     "features": [
       {
@@ -6101,7 +6101,7 @@ export const PRODUCTS_CATALOG = [
     ],
     "highlights": [],
     "imagenes": [
-      "/img_productos/lamina-reflexologia3-opt.webp"
+      "/img_productos/lamina-reflexologia3_min.webp"
     ],
     "features": [
       {
@@ -6462,7 +6462,7 @@ export const PRODUCTS_CATALOG = [
       "Contenido:"
     ],
     "imagenes": [
-      "/img_productos/meridiano-higado-opt.webp"
+      "/img_productos/lamina-meridiano-higado_min.webp"
     ],
     "features": [
       {
@@ -6511,7 +6511,7 @@ export const PRODUCTS_CATALOG = [
     ],
     "highlights": [],
     "imagenes": [
-      "/img_productos/meridianoIntestino-opt.webp"
+      "/img_productos/lamina-meridiano-vejiga_min.webp"
     ],
     "features": [
       {
@@ -6560,7 +6560,7 @@ export const PRODUCTS_CATALOG = [
     ],
     "highlights": [],
     "imagenes": [
-      "/img_productos/meridiano-vesicula-opt.webp"
+      "/img_productos/meridiano-vesicula_min.webp"
     ],
     "features": [
       {
@@ -6607,7 +6607,7 @@ export const PRODUCTS_CATALOG = [
     ],
     "highlights": [],
     "imagenes": [
-      "/img_productos/meridiano-corazon-opt.webp"
+      "/img_productos/lamina-meridiano-corazon_min.webp"
     ],
     "features": [
       {
@@ -6654,7 +6654,7 @@ export const PRODUCTS_CATALOG = [
     ],
     "highlights": [],
     "imagenes": [
-      "/img_productos/meridiano-riñon-opt.webp"
+      "/img_productos/lamina-meridiano-riñon_min.webp"
     ],
     "features": [
       {
@@ -6703,7 +6703,7 @@ export const PRODUCTS_CATALOG = [
       "? Lámina del Meridiano del Bazo-Pncreas."
     ],
     "imagenes": [
-      "/img_productos/meridiano-bazo-pancreas-opt.webp"
+      "/img_productos/meridiano-vaso-pancreas_min.webp"
     ],
     "features": [
       {
@@ -6750,7 +6750,7 @@ export const PRODUCTS_CATALOG = [
     ],
     "highlights": [],
     "imagenes": [
-      "/img_productos/meridiano-corazon-opt.webp"
+      "/img_productos/lamina-meridiano-corazon_min.webp"
     ],
     "features": [
       {
@@ -6797,7 +6797,7 @@ export const PRODUCTS_CATALOG = [
     ],
     "highlights": [],
     "imagenes": [
-      "/img_productos/meridiano-corazon-opt.webp"
+      "/img_productos/meridiano-corazon-2_min.webp"
     ],
     "features": [
       {
@@ -6844,7 +6844,7 @@ export const PRODUCTS_CATALOG = [
     ],
     "highlights": [],
     "imagenes": [
-      "/img_productos/meridiano-intestino-delgado-opt.webp"
+      "/img_productos/meridiano-intestino-delgado_min.webp"
     ],
     "features": [
       {
@@ -6940,7 +6940,7 @@ export const PRODUCTS_CATALOG = [
     ],
     "highlights": [],
     "imagenes": [
-      "/img_productos/meridiano-triple-calentador-opt.webp"
+      "/img_productos/meridiano-triple-recalentador_min.webp"
     ],
     "features": [
       {
