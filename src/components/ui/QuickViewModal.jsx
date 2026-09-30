@@ -92,7 +92,7 @@ export default function QuickViewModal() {
   const reviews = product.reviewsCount || 48;
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto" role="dialog" aria-modal="true">
+    <div className="fixed inset-0 z-[100] overflow-y-auto" role="dialog" aria-modal="true">
       {/* Backdrop */}
       <div
         className="fixed inset-0 bg-black/65 backdrop-blur-sm animate-in fade-in duration-200"
@@ -329,58 +329,46 @@ export default function QuickViewModal() {
                 )}
 
                 {/* Quantity + Add to Cart */}
-                <div className="space-y-2.5 pt-2 border-t border-[#EDE4D6]">
-                  <div className="flex items-center gap-2.5">
+                <div className="space-y-3 pt-3 border-t border-[#EDE4D6]">
+                  {/* Selector de cantidad + Subtotal + Favoritos */}
+                  <div className="flex items-center justify-between gap-2.5">
                     {/* Qty stepper */}
-                    <div className="flex items-center border border-[#EDE4D6] rounded-xl bg-[#F9F6F0] overflow-hidden shrink-0">
+                    <div className="flex items-center border border-[#EDE4D6] rounded-xl bg-[#F9F6F0] overflow-hidden shadow-xs shrink-0">
                       <button
                         onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                        className="w-8 h-10 flex items-center justify-center text-[#123329] hover:bg-white transition cursor-pointer"
+                        className="w-10 h-10 flex items-center justify-center text-[#123329] hover:bg-white active:bg-gray-100 transition cursor-pointer"
                         aria-label="Reducir cantidad"
                       >
-                        <Minus className="w-3.5 h-3.5" />
+                        <Minus className="w-4 h-4" />
                       </button>
-                      <span className="w-10 text-center text-sm font-bold text-[#123329] select-none">
+                      <span className="w-10 text-center text-sm font-extrabold text-[#123329] select-none">
                         {quantity}
                       </span>
                       <button
                         onClick={() => setQuantity(quantity + 1)}
-                        className="w-8 h-10 flex items-center justify-center text-[#123329] hover:bg-white transition cursor-pointer"
+                        className="w-10 h-10 flex items-center justify-center text-[#123329] hover:bg-white active:bg-gray-100 transition cursor-pointer"
                         aria-label="Aumentar cantidad"
                       >
-                        <Plus className="w-3.5 h-3.5" />
+                        <Plus className="w-4 h-4" />
                       </button>
                     </div>
 
-                    {/* Add to cart */}
-                    <button
-                      onClick={handleAddToCart}
-                      disabled={isOutOfStock}
-                      className={`flex-1 h-10 rounded-xl font-bold text-xs flex items-center justify-center gap-2 shadow-md transition-all duration-200 cursor-pointer ${
-                        isOutOfStock
-                          ? 'bg-gray-200 text-gray-400 cursor-not-allowed shadow-none'
-                          : addedAnim
-                            ? 'bg-[#2C7A62] text-white scale-[0.98]'
-                            : 'bg-[#123329] hover:bg-[#1B4538] text-white hover:scale-[1.01]'
-                      }`}
-                    >
-                      {addedAnim ? (
-                        <>
-                          <Check className="w-4 h-4" />
-                          <span>¡Agregado!</span>
-                        </>
-                      ) : (
-                        <>
-                          <ShoppingCart className="w-4 h-4 text-[#EDE4D6]" />
-                          <span>{isOutOfStock ? 'Sin stock' : 'Agregar al Carrito'}</span>
-                        </>
-                      )}
-                    </button>
+                    {/* Subtotal si quantity > 1 */}
+                    {quantity > 1 ? (
+                      <div className="text-right flex-1 px-1">
+                        <span className="text-[10px] uppercase font-bold text-[#8C9891] block leading-none">Subtotal</span>
+                        <span className="font-extrabold text-[#123329] text-xs sm:text-sm">
+                          S/ {(price * quantity).toFixed(2)}
+                        </span>
+                      </div>
+                    ) : (
+                      <div className="flex-1" />
+                    )}
 
                     {/* Wishlist */}
                     <button
                       onClick={() => toggleWishlist(product.id, product.nombre)}
-                      className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all cursor-pointer ${
+                      className={`h-10 px-3 rounded-xl border flex items-center gap-1.5 transition-all cursor-pointer shrink-0 ${
                         inWishlist
                           ? 'bg-red-50 border-red-200 text-[#D84A38]'
                           : 'border-[#EDE4D6] bg-[#F9F6F0] text-[#65726B] hover:text-[#D84A38] hover:bg-red-50'
@@ -388,27 +376,47 @@ export default function QuickViewModal() {
                       title={inWishlist ? 'Quitar de favoritos' : 'Guardar en favoritos'}
                     >
                       <Heart className={`w-4 h-4 transition-transform ${inWishlist ? 'fill-[#D84A38] scale-110' : ''}`} />
+                      <span className="text-xs font-semibold hidden min-[370px]:inline">
+                        {inWishlist ? 'Guardado' : 'Favoritos'}
+                      </span>
                     </button>
                   </div>
 
-                  {/* Subtotal display */}
-                  {quantity > 1 && (
-                    <div className="flex items-center justify-between text-xs text-[#65726B] px-1">
-                      <span>{quantity} unidades × S/ {price.toFixed(2)}</span>
-                      <span className="font-extrabold text-[#123329]">
-                        Subtotal: S/ {(price * quantity).toFixed(2)}
-                      </span>
-                    </div>
-                  )}
+                  {/* Add to cart - Botón Principal a Ancho Completo */}
+                  <button
+                    onClick={handleAddToCart}
+                    disabled={isOutOfStock}
+                    className={`w-full h-12 rounded-xl font-bold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-md transition-all duration-200 cursor-pointer ${
+                      isOutOfStock
+                        ? 'bg-gray-200 text-gray-400 cursor-not-allowed shadow-none'
+                        : addedAnim
+                          ? 'bg-[#2C7A62] text-white scale-[0.99] shadow-lg shadow-[#2C7A62]/25'
+                          : 'bg-[#123329] hover:bg-[#1B4538] active:scale-[0.98] text-white hover:shadow-lg'
+                    }`}
+                  >
+                    {addedAnim ? (
+                      <>
+                        <Check className="w-5 h-5 text-emerald-300 stroke-[3]" />
+                        <span className="tracking-wide">¡Agregado al Carrito!</span>
+                      </>
+                    ) : (
+                      <>
+                        <ShoppingCart className="w-5 h-5 text-[#EDE4D6]" />
+                        <span className="tracking-wide">
+                          {isOutOfStock ? 'Sin stock disponible' : 'Agregar al Carrito'}
+                        </span>
+                      </>
+                    )}
+                  </button>
 
                   {/* WhatsApp button */}
                   <button
                     onClick={handleWhatsApp}
-                    className="w-full h-10 rounded-xl border border-[#2C7A62]/40 bg-[#2C7A62]/8 hover:bg-[#2C7A62]/15 text-[#123329] text-xs font-bold flex items-center justify-center gap-2 transition cursor-pointer"
+                    className="w-full h-10.5 rounded-xl border border-[#2C7A62]/40 bg-[#2C7A62]/8 hover:bg-[#2C7A62]/15 text-[#123329] text-xs sm:text-sm font-bold flex items-center justify-center gap-2 transition cursor-pointer"
                   >
                     <MessageCircle className="w-4 h-4 text-[#2C7A62]" />
                     <span>Consultar por WhatsApp</span>
-                    <ArrowRight className="w-3 h-3 text-[#2C7A62]" />
+                    <ArrowRight className="w-3.5 h-3.5 text-[#2C7A62]" />
                   </button>
                 </div>
 
