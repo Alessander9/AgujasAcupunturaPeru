@@ -40,12 +40,17 @@ html {
   font-family: var(--font-sans);
   background-color: #F9F6F0;
   color: #18221D;
+  /* overflow-x en html (NO en body) para evitar que el body se convierta
+     en scroll-container y recorte el contenido vertical del hero */
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
   padding: 0;
-  overflow-x: clip;
+  /* NO overflow-x aquí: si se pone overflow en body, el navegador fuerza
+     overflow-y: auto en body, convirtiéndolo en scroll container y
+     recortando el hero verticalmente. El clip está en html (arriba). */
   background-color: #F9F6F0;
   color: #18221D;
   -webkit-font-smoothing: antialiased;

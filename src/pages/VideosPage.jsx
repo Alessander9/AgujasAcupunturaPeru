@@ -23,6 +23,7 @@ export default function VideosPage() {
   const [selectedType, setSelectedType] = useState('all'); // 'all', 'producto', 'uso'
   const [searchQuery, setSearchQuery] = useState('');
   const [activeVideo, setActiveVideo] = useState(null);
+  const [iframeLoaded, setIframeLoaded] = useState(false);
 
   // Close modal on Escape key
   useEffect(() => {
@@ -34,6 +35,58 @@ export default function VideosPage() {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
+
+  // Reset iframe loaded state when active video changes
+  useEffect(() => {
+    if (activeVideo) {
+      setIframeLoaded(false);
+    }
+  }, [activeVideo]);
+
+  // Pre-warm / prefetch YouTube player resources on page load for instant playback
+  useEffect(() => {
+    // 1. Warm base YouTube player engine
+    const prefetchUrls = [
+      'https://www.youtube-nocookie.com/s/player/',
+      'https://www.youtube-nocookie.com/embed/' + (VIDEOS_DATA[0]?.youtubeId || '')
+    ];
+    prefetchUrls.forEach((url) => {
+      if (!document.querySelector(`link[href="${url}"]`)) {
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = url;
+        link.as = 'document';
+        document.head.appendChild(link);
+      }
+    });
+
+    // 2. Pre-warm first 6 videos on idle so top clicks are instantaneous
+    const idleCallback = window.requestIdleCallback || ((cb) => setTimeout(cb, 500));
+    const handleIdlePrefetch = idleCallback(() => {
+      VIDEOS_DATA.slice(0, 6).forEach((v) => {
+        handlePrewarmVideo(v.youtubeId);
+      });
+    });
+
+    return () => {
+      if (window.cancelIdleCallback && typeof handleIdlePrefetch === 'number') {
+        window.cancelIdleCallback(handleIdlePrefetch);
+      }
+    };
+  }, []);
+
+  // Pre-warm a specific video when user hovers or touches a card
+  const handlePrewarmVideo = (youtubeId) => {
+    if (!youtubeId) return;
+    const embedUrl = `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0&playsinline=1&modestbranding=1&enablejsapi=1`;
+    if (!document.querySelector(`link[href="${embedUrl}"]`)) {
+      const link = document.createElement('link');
+      link.rel = 'prefetch';
+      link.href = embedUrl;
+      link.as = 'document';
+      document.head.appendChild(link);
+    }
+  };
 
   // Filtered videos
   const filteredVideos = useMemo(() => {
@@ -206,7 +259,13 @@ export default function VideosPage() {
               <div
                 key={video.id}
                 onClick={() => setActiveVideo(video)}
-                className="bg-white rounded-3xl border border-[#E8DFC8] shadow-xs hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between group cursor-pointer hover:-translate-y-1"
+                onMouseEnter={() => handlePrewarmVideo(video.youtubeId)}
+                onTouchStart={() => handlePrewarmVideo(video.youtubeId)}
+                onFocus={() => handlePrewarmVideo(video.youtubeId)}
+                tabIndex={0}
+                role="button"
+                aria-label={`Reproducir video: ${video.title}`}
+                className="bg-white rounded-3xl border border-[#E8DFC8] shadow-xs hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between group cursor-pointer hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-[#123329]"
               >
                 <div>
                   {/* Thumbnail con botón Play animado */}
@@ -309,7 +368,7 @@ export default function VideosPage() {
       {activeVideo && (
         <div
           onClick={() => setActiveVideo(null)}
-          className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 transition-all"
+          className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 transition-all animate-fadeIn"
         >
           <div
             onClick={(e) => e.stopPropagation()}
@@ -334,13 +393,32 @@ export default function VideosPage() {
               </button>
             </div>
 
-            {/* Video Iframe Container */}
-            <div className="relative aspect-[16/9] w-full bg-black">
+            {/* Video Iframe Container con poster instantáneo y carga ultrarrápida */}
+            <div className="relative aspect-[16/9] w-full bg-black overflow-hidden">
+              {/* Imagen de fondo instantánea para eliminar pantalla negra mientras carga */}
+              <div
+                className={`absolute inset-0 bg-cover bg-center transition-opacity duration-300 pointer-events-none ${
+                  iframeLoaded ? 'opacity-0' : 'opacity-100'
+                }`}
+                style={{
+                  backgroundImage: `url(https://img.youtube.com/vi/${activeVideo.youtubeId}/hqdefault.jpg)`
+                }}
+              >
+                <div className="absolute inset-0 bg-black/50 backdrop-blur-xs flex flex-col items-center justify-center gap-3 text-white">
+                  <div className="w-12 h-12 rounded-full border-3 border-[#C29B62] border-t-transparent animate-spin" />
+                  <span className="text-xs font-semibold text-[#EDE4D6] tracking-wide">Cargando video...</span>
+                </div>
+              </div>
+
               <iframe
-                src={`https://www.youtube.com/embed/${activeVideo.youtubeId}?autoplay=1&rel=0`}
+                key={activeVideo.id}
+                src={`https://www.youtube-nocookie.com/embed/${activeVideo.youtubeId}?autoplay=1&mute=0&playsinline=1&rel=0&modestbranding=1&enablejsapi=1&origin=${typeof window !== 'undefined' ? window.location.origin : ''}`}
                 title={activeVideo.title}
-                className="w-full h-full border-0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                loading="eager"
+                fetchPriority="high"
+                onLoad={() => setIframeLoaded(true)}
+                className="w-full h-full border-0 relative z-10"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
             </div>

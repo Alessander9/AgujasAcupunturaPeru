@@ -43,36 +43,24 @@ export default function Hero() {
   return (
     <section
       id="hero-section"
-      className="relative w-full bg-[#0A1E18] select-none flex justify-center items-center"
-      style={{
-        width: '100%',
-        margin: 0,
-        padding: 0,
-        overflow: 'hidden',
-      }}
+      className="relative w-full bg-[#0A1E18] select-none"
+      style={{ margin: 0, padding: 0 }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
-        className="relative w-full"
         style={{
-          maxWidth: '1672px',
-          aspectRatio: '1672 / 941',
           width: '100%',
-          overflow: 'hidden',
+          aspectRatio: '1672 / 941',
           position: 'relative',
         }}
       >
-        {/* SLIDES — todas absolute dentro del contenedor 1672x941 */}
         {HERO_SLIDES.map((s, idx) => (
           <div
             key={s.id}
             style={{
               position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%',
+              top: 0, left: 0, width: '100%', height: '100%',
               opacity: idx === currentSlide ? 1 : 0,
               pointerEvents: idx === currentSlide ? 'auto' : 'none',
               transition: 'opacity 900ms ease-in-out',
@@ -83,14 +71,9 @@ export default function Hero() {
               src={s.image}
               alt={s.alt}
               style={{
-                display: 'block',
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                objectPosition: 'center center',
-                margin: 0,
-                padding: 0,
-                border: 'none',
+                display: 'block', width: '100%', height: '100%',
+                objectFit: 'cover', objectPosition: 'center center',
+                margin: 0, padding: 0, border: 'none',
               }}
               loading={idx === 0 ? 'eager' : 'lazy'}
             />
@@ -100,15 +83,10 @@ export default function Hero() {
         {/* OVERLAY: botón VER PRODUCTOS */}
         <div
           style={{
-            position: 'absolute',
-            inset: 0,
-            zIndex: 20,
-            pointerEvents: 'none',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'flex-end',
-            alignItems: 'center',
-            paddingBottom: '4%',
+            position: 'absolute', inset: 0, zIndex: 20,
+            pointerEvents: 'none', display: 'flex',
+            flexDirection: 'column', justifyContent: 'flex-end',
+            alignItems: 'center', paddingBottom: '4%',
           }}
         >
           <Link
@@ -148,9 +126,7 @@ export default function Hero() {
                 key={i}
                 onClick={() => setCurrentSlide(i)}
                 className={`h-1.5 sm:h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                  currentSlide === i
-                    ? 'w-5 sm:w-8 bg-[#C29B62]'
-                    : 'w-1.5 sm:w-2 bg-white/40 hover:bg-white/80'
+                  currentSlide === i ? 'w-5 sm:w-8 bg-[#C29B62]' : 'w-1.5 sm:w-2 bg-white/40 hover:bg-white/80'
                 }`}
                 aria-label={`Ir al slide ${i + 1}`}
               />
