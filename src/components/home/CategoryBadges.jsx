@@ -28,7 +28,7 @@ const CATEGORIES = [
     image: '/img/categories/catDigitopresion-opt.webp'
   },
   {
-    name: 'Fitoterapia',
+    name: 'Aromaterapia',
     slug: 'Aromaterapia',
     image: '/img/categories/catFitoterapia-opt.webp'
   },
@@ -38,7 +38,7 @@ const CATEGORIES = [
     image: '/img/categories/catMasajeBienestar-opt.webp'
   },
   {
-    name: 'Equipos Terapéuticos',
+    name: 'Fisioterapia',
     slug: 'Fisioterapia',
     image: '/img/categories/catEquiposTerapeuticos-opt.webp'
   },
