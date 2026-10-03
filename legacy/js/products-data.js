@@ -565,12 +565,12 @@ window.PRODUCTS_DATA = [
             {
                 id: "prod-25",
                 slug: "linea-de-aromaterapia-flores-de-bach",
-                nombre: "Línea de Aromaterapia & Flores de Bach",
+                nombre: "Mix Floral - Aceite para masajes",
                 precio: 0,
                 precioTexto: "S/ 0.00",
                 categoria: "Aromaterapia",
                 categoriaOrden: 4,
-                descripcionResumen: " Línea de Aromaterapia & Flores de Bach.",
+                descripcionResumen: " Mix Floral - Aceite para masajes.",
                 descripcionCompleta:
                     " Línea de Aromaterapia & Flores de Bach.\n\nCatlogo completo de aceites esenciales, difusores y productos de Flores de Bach para bienestar emocional y terapias complementarias.\n\nConsultar disponibilidad y precios de productos específicos.\n\n Envío a todo el Perú |  930830427",
                 descripcionBloques: [

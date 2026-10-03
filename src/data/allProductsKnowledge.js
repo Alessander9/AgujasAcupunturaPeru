@@ -1,5 +1,5 @@
 /**
- * Catálogo completo ultra-detallado de 159 productos para el motor RAG
+ * Catálogo completo ultra-detallado de productos para el motor RAG
  * Agujas Acupuntura Perú & Línea Amazoni-k
  */
 export const allProductsKnowledge = [
@@ -1575,7 +1575,7 @@ export const allProductsKnowledge = [
     "id": "prod-25",
     "slug": "linea-de-aromaterapia-flores-de-bach",
     "sku": "PROD-25",
-    "nombre": "Línea de Aromaterapia & Flores de Bach",
+    "nombre": "Mix Floral - Aceite para masajes",
     "categoria": "Aromaterapia",
     "marca": "Agujas Acupuntura Perú",
     "precio": 35,
@@ -1587,10 +1587,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 41,
     "badge": "Stock Limitado",
     "medidas": [],
-    "resumen": "• Línea de Aromaterapia & Flores de Bach.",
+    "resumen": "• Mix Floral - Aceite para masajes.",
     "descripcionCompleta": "• Aromaterapia • Buen día, te saludamos desde Agujas de Acupuntura Perú. Tenemos una amplia gama de productos de Aromaterapia: • Aceites esenciales Amazonik (aromas variados) • Aceites de masaje (aromas variados) • Probadores de esencias y Más... • Hacemos Envíos a todo el Perú. • Solicita tu pedido por WhatsApp al 930830427.",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Línea de Aromaterapia & Flores de Bach | SKU: PROD-25 | Precio: S/ 0.00 | Categoría: Aromaterapia | Medidas: Estándar | Stock: Disponible | Descripción: • Línea de Aromaterapia & Flores de Bach."
+    "fichaRAG": "Producto: Mix Floral - Aceite para masajes | SKU: PROD-25 | Precio: S/ 0.00 | Categoría: Aromaterapia | Medidas: Estándar | Stock: Disponible | Descripción: • Mix Floral - Aceite para masajes."
   },
   {
     "id": "prod-90",
@@ -3305,8 +3305,8 @@ export const allProductsKnowledge = [
     "id": "prod-129",
     "slug": "gel-de-ecografia",
     "sku": "PROD-129",
-    "nombre": "GEL DE ECOGRAFA",
-    "categoria": "Enfermería",
+    "nombre": "Gel de Ecografía",
+    "categoria": "Fisioterapia",
     "marca": "Agujas Acupuntura Perú",
     "precio": 50,
     "precioTexto": "S/ 50.00",
@@ -3317,10 +3317,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 32,
     "badge": "Calidad Premium",
     "medidas": [],
-    "resumen": "Gel de Ecografa - Conductor ultrasnico para fisioterapia y diagnóstico.",
+    "resumen": "• Gel de Ecografía - Conductor ultrasónico para fisioterapia y diagnóstico.",
     "descripcionCompleta": "• Gel Ecogrfico para Ultrasonido - 5 litros El gel ecogrfico es un producto esencial para obtener imgenes claras y precisas durante los estudios de ultrasonido. Facilita el contacto entre el transductor y la piel, mejorando la calidad del examen. Características y beneficios: • Mejora la calidad de imagen al eliminar el aire entre la piel y el transductor. • Reduce la friccin, brindando mayor comodidad durante el procedimiento. • Hipoalergnico y libre de ltex, seguro para la mayora de los pacientes. Disponible en presentaciones frías o calientes para mayor confort. Ideal para centros mdicos, fisioterapia, estética y diagnóstico por ultrasonido. • Gel de ultrasonido ideal para aplicaciones terapéuticas y estéticas. • Su frmula optimiza la conduccin y cuidado de la piel. • Presentación: bidn de 5 litros, práctico y rendidor. • Envío a todo el Perú • Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: GEL DE ECOGRAFA | SKU: PROD-129 | Precio: S/ 50.00 | Categoría: Enfermería | Medidas: Estándar | Stock: Disponible | Descripción: Gel de Ecografa - Conductor ultrasnico para fisioterapia y diagnóstico."
+    "fichaRAG": "Producto: Gel de Ecografía | SKU: PROD-129 | Precio: S/ 50.00 | Categoría: Fisioterapia | Medidas: Estándar | Stock: Disponible | Descripción: Gel de Ecografía - Conductor ultrasónico para fisioterapia y diagnóstico."
   },
   {
     "id": "prod-128",
@@ -3347,12 +3347,12 @@ export const allProductsKnowledge = [
     "id": "prod-143",
     "slug": "tintura-de-benjui",
     "sku": "PROD-143",
-    "nombre": "Tintura de Benjui",
-    "categoria": "Enfermería",
+    "nombre": "Tintura de Benjuí",
+    "categoria": "Auriculoterapia",
     "marca": "Agujas Acupuntura Perú",
-    "precio": 25,
-    "precioTexto": "S/ 25.00",
-    "precioOriginal": "S/ 30.00",
+    "precio": 30,
+    "precioTexto": "S/ 30.00",
+    "precioOriginal": "S/ 36.00",
     "descuento": "-15%",
     "enStock": true,
     "rating": 5,
@@ -3364,7 +3364,7 @@ export const allProductsKnowledge = [
     "resumen": "Tintura de Benjuí - Adhesivo natural para parches de auriculoterapia.",
     "descripcionCompleta": "• Tintura de Benjuí Fijación extra en verano • Asegura mayor duracin de balines y parches incluso con sudor y grasa. fácil aplicación sobre piel limpia Frasco de 30 ml • Envío a todo el Perú • Pedidos al: 930830427 • Más información aqu: Puedes revisar el empleo en el siguiente enlace: https://youtu.be/8aoTCVzHkX8si=3NY_oT0BVYFdyqEw",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Tintura de Benjui | SKU: PROD-143 | Precio: S/ 25.00 | Categoría: Enfermería | Medidas: 30 ml | Stock: Disponible | Descripción: Tintura de Benjuí - Adhesivo natural para parches de auriculoterapia."
+    "fichaRAG": "Producto: Tintura de Benjuí | SKU: PROD-143 | Precio: S/ 30.00 | Categoría: Auriculoterapia | Medidas: 30 ml | Stock: Disponible | Descripción: Tintura de Benjuí - Adhesivo natural para parches de auriculoterapia."
   },
   {
     "id": "oil-copaiba",
@@ -3457,6 +3457,102 @@ export const allProductsKnowledge = [
     "descripcionCompleta": "Sinergia botánica de aceite virgen de Aguaje amazónico (fuente natural #1 de provitamina A y fitoestrógenos) combinado con Rosa Mosqueta orgánica prensada en frío.",
     "especificaciones": "Ideal para protocolo de masaje facial con ventosas y guasha | Atenúa líneas de expresión y mejora elasticidad dérmica | Hidratación profunda sin obstruir los poros | Textura sedosa de rápida absorción clínica",
     "fichaRAG": "Producto: Elixir Terapéutico Aguaje & Rosa Mosqueta | Volumen: 30 ml | Precio: S/ 40.00 | Indicación: Nutrición Celular y Rejuvenecimiento Facial | Beneficios: Ideal para protocolo de masaje facial con ventosas y guasha, Atenúa líneas de expresión y mejora elasticidad dérmica, Hidratación profunda sin obstruir los poros, Textura sedosa de rápida absorción clínica"
+  },
+  {
+    "id": "prod-hs-bosque-frutos",
+    "slug": "home-spray-bosque-bambu-frutos-rojos",
+    "sku": "PROD-HS-01",
+    "nombre": "Home Spray - Bosque Bambú & Frutos Rojos",
+    "categoria": "Aromaterapia",
+    "marca": "Amazöni-K",
+    "precio": 30,
+    "precioTexto": "S/ 30.00",
+    "precioOriginal": "S/ 36.00",
+    "descuento": "-15%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 38,
+    "badge": "Nuevo",
+    "medidas": [
+      "120 ml",
+      "250 ml"
+    ],
+    "resumen": "• Home Spray Aromaterapia Ambiental - Bosque Bambú y Frutos Rojos.",
+    "descripcionCompleta": "• Línea HOME SPRAY Amazöni-K. Aromas: Bosque Bambú (Armonía, conexión natural, recuperación del estrés. Sensación de calma y reducción de tensión) y Frutos Rojos (Optimismo, vitalidad, alegría. Una dosis de energía y dinamismo). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perú. Pedidos al +51 930 830 427.",
+    "especificaciones": "Presentaciones: 120 ml | 250 ml | Aromas botánicos de alta fijación | Acción relajante y dinamizadora ambiental | Envío Seguro: Todo el Perú",
+    "fichaRAG": "Producto: Home Spray - Bosque Bambú & Frutos Rojos | SKU: PROD-HS-01 | Precio: S/ 30.00 | Categoría: Aromaterapia | Medidas: 120 ml, 250 ml | Stock: Disponible | Descripción: • Home Spray Aromaterapia Ambiental - Bosque Bambú y Frutos Rojos."
+  },
+  {
+    "id": "prod-hs-eucalipto-chanel",
+    "slug": "home-spray-eucalipto-chanel",
+    "sku": "PROD-HS-02",
+    "nombre": "Home Spray - Eucalipto & Chanel",
+    "categoria": "Aromaterapia",
+    "marca": "Amazöni-K",
+    "precio": 30,
+    "precioTexto": "S/ 30.00",
+    "precioOriginal": "S/ 36.00",
+    "descuento": "-15%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 27,
+    "badge": "Línea Premium",
+    "medidas": [
+      "120 ml",
+      "250 ml"
+    ],
+    "resumen": "• Home Spray Aromaterapia Ambiental - Eucalipto y Chanel Elegance.",
+    "descripcionCompleta": "• Línea HOME SPRAY Amazöni-K. Aromas: Eucalipto (Claridad, frescura, renovación. Aire limpio + Espacio + Claridad) y Chanel (Elegancia, confianza, sofisticación. Experiencia premium). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perú. Pedidos al +51 930 830 427.",
+    "especificaciones": "Presentaciones: 120 ml | 250 ml | Purificación y sofisticación ambiental | Ideal para consultorios y espacios de bienestar | Envío Seguro: Todo el Perú",
+    "fichaRAG": "Producto: Home Spray - Eucalipto & Chanel | SKU: PROD-HS-02 | Precio: S/ 30.00 | Categoría: Aromaterapia | Medidas: 120 ml, 250 ml | Stock: Disponible | Descripción: • Home Spray Aromaterapia Ambiental - Eucalipto y Chanel Elegance."
+  },
+  {
+    "id": "prod-hs-herbal-floral",
+    "slug": "home-spray-herbal-floral",
+    "sku": "PROD-HS-03",
+    "nombre": "Home Spray - Herbal & Floral",
+    "categoria": "Aromaterapia",
+    "marca": "Amazöni-K",
+    "precio": 30,
+    "precioTexto": "S/ 30.00",
+    "precioOriginal": "S/ 36.00",
+    "descuento": "-15%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 31,
+    "badge": "Recomendado",
+    "medidas": [
+      "120 ml",
+      "250 ml"
+    ],
+    "resumen": "• Home Spray Aromaterapia Ambiental - Herbal y Floral.",
+    "descripcionCompleta": "• Línea HOME SPRAY Amazöni-K. Aromas: Herbal (Equilibrio, naturalidad, estabilidad. La naturaleza dentro de tu espacio) y Floral (Relajación, confort, bienestar emocional). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perú. Pedidos al +51 930 830 427.",
+    "especificaciones": "Presentaciones: 120 ml | 250 ml | Aromas de lavanda, rosas y hierbas naturales | Ideal para relajación y armonización | Envío Seguro: Todo el Perú",
+    "fichaRAG": "Producto: Home Spray - Herbal & Floral | SKU: PROD-HS-03 | Precio: S/ 30.00 | Categoría: Aromaterapia | Medidas: 120 ml, 250 ml | Stock: Disponible | Descripción: • Home Spray Aromaterapia Ambiental - Herbal y Floral."
+  },
+  {
+    "id": "prod-hs-violeta",
+    "slug": "home-spray-violeta",
+    "sku": "PROD-HS-04",
+    "nombre": "Home Spray - Violeta",
+    "categoria": "Aromaterapia",
+    "marca": "Amazöni-K",
+    "precio": 30,
+    "precioTexto": "S/ 30.00",
+    "precioOriginal": "S/ 36.00",
+    "descuento": "-15%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 24,
+    "badge": "Bienestar Emocional",
+    "medidas": [
+      "120 ml",
+      "250 ml"
+    ],
+    "resumen": "• Home Spray Aromaterapia Ambiental - Violeta Suave e Íntima.",
+    "descripcionCompleta": "• Línea HOME SPRAY Amazöni-K - Violeta. Relajación, confort y bienestar emocional. Suave, empolvada, ligeramente dulce y elegante, generando una experiencia íntima. Presentaciones: 120 ml y 250 ml. Envíos a todo el Perú. Pedidos al +51 930 830 427.",
+    "especificaciones": "Presentaciones: 120 ml | 250 ml | Notas florales dulces y empolvadas | Favorece la tranquilidad e introspección | Envío Seguro: Todo el Perú",
+    "fichaRAG": "Producto: Home Spray - Violeta | SKU: PROD-HS-04 | Precio: S/ 30.00 | Categoría: Aromaterapia | Medidas: 120 ml, 250 ml | Stock: Disponible | Descripción: • Home Spray Aromaterapia Ambiental - Violeta Suave e Íntima."
   }
 ];
 export default allProductsKnowledge;

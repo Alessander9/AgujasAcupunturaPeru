@@ -43,7 +43,7 @@ const CATEGORIES = [
     image: '/img/categories/catEquiposTerapeuticos-opt.webp'
   },
   {
-    name: 'Accesorios',
+    name: 'Bioseguridad',
     slug: 'Enfermería',
     image: '/img/categories/catAccesorios-opt.webp'
   },
