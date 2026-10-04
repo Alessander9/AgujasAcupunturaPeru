@@ -1,5 +1,149 @@
 [
   {
+    "id": "prod-159",
+    "slug": "herramienta-masaje-modelo-peine",
+    "sku": "PROD-159",
+    "nombre": "Herramienta masaje modelo peine",
+    "categoria": "Herramientas de Masaje",
+    "marca": "Agujas Acupuntura Perú",
+    "precio": 20,
+    "precioTexto": "S/ 20.00",
+    "precioOriginal": "S/ 25.00",
+    "descuento": "-20%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 15,
+    "badge": "Nuevo",
+    "medidasDisponibles": [],
+    "descripcionResumen": "Herramienta de masaje y estimulación capilar / corporal con diseño ergonómico en forma de peine.",
+    "descripcionCompleta": "Herramienta de masaje profesional con diseño tipo peine ergonómico para estimulación de cuero cabelludo, puntos de acupresión y drenaje miofascial. Ideal para aliviar la tensión, mejorar la circulación sanguínea y complementar terapias de reflexología y relajación.\nDelivery en Lima y Callao\nPuedes recoger en nuestra oficina: Av. Julio C. Tello 438 Lince\nEnvío a todo el Perúú\nPedidos al: 930830427",
+    "descripcionBloques": [
+      "Herramienta de masaje profesional con diseño ergonómico tipo peine.",
+      "Estimulación de cuero cabelludo, puntos de acupresión y reflexología.",
+      "Diseño ergonómico, suave al tacto y fácil de usar en terapias corporales.",
+      "Delivery en Lima y Callao | Av. Julio C. Tello 438 Lince | Envíos a todo el Perúú | Pedidos al: 930830427"
+    ],
+    "caracteristicas": [
+      "Material: Ergonómico y resistente",
+      "Uso: Masaje y reflexología",
+      "Diseño: Modelo Peine terapéutico",
+      "Aplicación: Puntos de acupresión"
+    ],
+    "imagenes": [
+      "/img_productos/modelo_peine.webp"
+    ],
+    "pagina": 1,
+    "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/herramienta-masaje-modelo-peine"
+  },
+  {
+    "id": "prod-160",
+    "slug": "rodillera-gel",
+    "sku": "PROD-160",
+    "nombre": "Rodillera gel",
+    "categoria": "Ortopedia y Postura",
+    "marca": "Agujas Acupuntura Perú",
+    "precio": 35,
+    "precioTexto": "S/ 35.00",
+    "precioOriginal": "S/ 42.00",
+    "descuento": "-17%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 18,
+    "badge": "Nuevo",
+    "medidasDisponibles": [],
+    "descripcionResumen": "Rodillera con almohadilla de compresión y gel para soporte articular y alivio de dolor.",
+    "descripcionCompleta": "Rodillera elástica con soporte de gel ergonómico, diseñada para brindar estabilidad a la rótula y articulación de la rodilla. Brinda soporte firme durante la actividad física, rehabilitación o recuperación de lesiones ligamentarias y de meniscos.\nDelivery en Lima y Callao\nPuedes recoger en nuestra oficina: Av. Julio C. Tello 438 Lince\nEnvío a todo el Perúú\nPedidos al: 930830427",
+    "descripcionBloques": [
+      "Rodillera ortopédica con protección y soporte de gel central.",
+      "Compresión graduada para reducción de inflamación y soporte de rótula.",
+      "Material transpirable, elástico y de máxima comodidad para uso diario o deportivo.",
+      "Delivery en Lima y Callao | Av. Julio C. Tello 438 Lince | Envíos a todo el Perúú | Pedidos al: 930830427"
+    ],
+    "caracteristicas": [
+      "Almohadilla: Gel protector de rótula",
+      "Tejido: Elástico y transpirable",
+      "Soporte: Articular y ligamentario",
+      "Uso: Deportivo y terapéutico"
+    ],
+    "imagenes": [
+      "/img_productos/rodillera_gel.webp"
+    ],
+    "pagina": 1,
+    "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/rodillera-gel"
+  },
+  {
+    "id": "prod-161",
+    "slug": "esferas-chinas",
+    "sku": "PROD-161",
+    "nombre": "Esferas China",
+    "categoria": "Herramientas de Masaje",
+    "marca": "Agujas Acupuntura Perú",
+    "precio": 45,
+    "precioTexto": "S/ 45.00",
+    "precioOriginal": "S/ 55.00",
+    "descuento": "-18%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 22,
+    "badge": "Nuevo",
+    "medidasDisponibles": [],
+    "descripcionResumen": "Par de esferas chinas tradicionales de relajación Baoding con sonido armónico para estimulación de puntos en las manos.",
+    "descripcionCompleta": "Esferas chinas tradicionales de salud y relajación (Baoding Balls). Al rotarlas en la palma de la mano, emiten un suave sonido armónico y estimulan los puntos reflejos de acupuntura en la mano, mejorando la circulación, la destreza y disminuyendo los niveles de estrés y fatiga mental.\nDelivery en Lima y Callao\nPuedes recoger en nuestra oficina: Av. Julio C. Tello 438 Lince\nEnvío a todo el Perúú\nPedidos al: 930830427",
+    "descripcionBloques": [
+      "Par de esferas chinas Baoding en caja tradicional acolchada.",
+      "Estimulación de puntos de acupresión y meridianos en las manos.",
+      "Campanilla interna con sonido relajante y terapéutico.",
+      "Delivery en Lima y Callao | Av. Julio C. Tello 438 Lince | Envíos a todo el Perúú | Pedidos al: 930830427"
+    ],
+    "caracteristicas": [
+      "Presentación: Par de esferas en caja",
+      "Función: Acupresión y destreza",
+      "Acabado: Esmaltado tradicional chino",
+      "Efecto: Relajación y circulación"
+    ],
+    "imagenes": [
+      "/img_productos/esferas_chinas.webp"
+    ],
+    "pagina": 1,
+    "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/esferas-china"
+  },
+  {
+    "id": "prod-162",
+    "slug": "lapiz-electroacupuntor",
+    "sku": "PROD-162",
+    "nombre": "Lápiz electroacupuntor",
+    "categoria": "Acupuntura y Moxibustión",
+    "marca": "Agujas Acupuntura Perú",
+    "precio": 60,
+    "precioTexto": "S/ 60.00",
+    "precioOriginal": "S/ 75.00",
+    "descuento": "-20%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 26,
+    "badge": "Nuevo",
+    "medidasDisponibles": [],
+    "descripcionResumen": "Lápiz estimulador de electroacupuntura digital portátil con cabezales intercambiables para terapia sin agujas.",
+    "descripcionCompleta": "Lápiz electroacupuntor digital electrónico para estimulación de puntos de acupuntura sin agujas (acupresión eléctrica). Cuenta con niveles regulables de intensidad y cabezales intercambiables para tratamientos faciales, musculares y articulares. Portátil, seguro y fácil de usar en el hogar o consultorio.\nDelivery en Lima y Callao\nPuedes recoger en nuestra oficina: Av. Julio C. Tello 438 Lince\nEnvío a todo el Perúú\nPedidos al: 930830427",
+    "descripcionBloques": [
+      "Lápiz estimulador electrónico de acupuntura sin invasión.",
+      "Niveles de intensidad ajustables para diferentes tipos de sensibilidad y terapia.",
+      "Cabezales intercambiables para puntos específicos, zonas amplias y tratamientos faciales.",
+      "Delivery en Lima y Callao | Av. Julio C. Tello 438 Lince | Envíos a todo el Perúú | Pedidos al: 930830427"
+    ],
+    "caracteristicas": [
+      "Tecnología: Electroestimulación TENS / Acupuntura",
+      "Accesorios: Cabezales intercambiables",
+      "Control: Nivel de intensidad digital",
+      "Alimentación: Pila AA (portátil)"
+    ],
+    "imagenes": [
+      "/img_productos/lapiz_electroacupuntor.webp"
+    ],
+    "pagina": 1,
+    "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/lapiz-electroacupuntor"
+  },
+  {
     "id": "prod-150",
     "slug": "agujas-koreanas-x-caja-de-500-und",
     "sku": "PROD-150",
@@ -3057,50 +3201,6 @@
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/kinesio-tape"
   },
   {
-    "id": "prod-130",
-    "slug": "lampara-infrarroja",
-    "sku": "PROD-130",
-    "nombre": "Lampara infríarroja",
-    "categoria": "Fisioterapia",
-    "marca": "Agujas Acupuntura Perú",
-    "precio": 125,
-    "precioTexto": "S/ 125.00",
-    "precioOriginal": "S/ 150.00",
-    "descuento": "-15%",
-    "enStock": true,
-    "rating": 5,
-    "reviewsCount": 18,
-    "badge": "Más Vendido",
-    "medidasDisponibles": [
-      "25x20 cm"
-    ],
-    "descripcionResumen": "Lmpara Infríarroja TDP - Fisioterapia y moxibustión elctrica.",
-    "descripcionCompleta": "Lmpara Infríarroja con Pedestal Activa la circulación y relaja tus músculos! Dispositivo terapéutico que proporciona calor localizado mediante radiacin infríarroja, ideal para relajación y alivio muscular. Emisión de calor seco que favorece: ? Vasodilatación\n? Alivio del dolor\n? Relajación profunda ? Características: ? Potencia: 275 W para generación rápida y eficiente de calor. Diseño resistente: metal con recubrimiento anti-calor, pedestal ajustable y regulador de intensidad.\n Aplicaciones: alivia dolores musculares, mejora la circulación y reduce tensiones. Ideal para consultorios o uso personal.\n Base slida, foco incluido, fácil de montar\n Lista para usarse en casa o consultorio\n Altura máxima: 147 cm; tamao compacto en caja: 80x25x20 cm. Uso recomendado: consultorios, domicilios o centros de belleza para un tratamiento cómodo y efectivo. Envío a todo el Perúú\n Pedidos al: 930830427\n Más información aqu: https://youtu.be/KdLo4EfHchc?si=-P4-j2PYQOSbctBG\nhttps://youtu.be/KdLo4EfHchc",
-    "descripcionBloques": [
-      "Lmpara Infríarroja con Pedestal",
-      "Activa la circulación y relaja tus músculos!",
-      "Dispositivo terapéutico que proporciona calor localizado mediante radiacin infríarroja, ideal para relajación y alivio muscular.",
-      "Emisión de calor seco que favorece:",
-      "? Vasodilatación\n? Alivio del dolor\n? Relajación profunda",
-      "? Características:",
-      "? Potencia: 275 W para generación rápida y eficiente de calor. Diseño resistente: metal con recubrimiento anti-calor, pedestal ajustable y regulador de intensidad.\n Aplicaciones: alivia dolores musculares, mejora la circulación y reduce tensiones. Ideal para consultorios o uso personal.\n Base slida, foco incluido, fácil de montar\n Lista para usarse en casa o consultorio\n Altura máxima: 147 cm; tamao compacto en caja: 80x25x20 cm.",
-      "Uso recomendado: consultorios, domicilios o centros de belleza para un tratamiento cómodo y efectivo.",
-      "Envío a todo el Perúú\n Pedidos al: 930830427\n Más información aqu:",
-      "https://youtu.be/KdLo4EfHchc?si=-P4-j2PYQOSbctBG\nhttps://youtu.be/KdLo4EfHchc"
-    ],
-    "caracteristicas": [
-      "Grado Clínico: Certificado",
-      "Uso Profesional: Garantizado",
-      "Alta Precisión: Importado",
-      "Envío Seguro: Todo el Perú"
-    ],
-    "imagenes": [
-      "/img_productos/lamparaINFRARROJA-opt.webp"
-    ],
-    "pagina": 6,
-    "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/lampara-infrarroja"
-  },
-  {
     "id": "prod-137",
     "slug": "ligas-abiertas-x3",
     "sku": "PROD-137",
@@ -3250,44 +3350,6 @@
     ],
     "pagina": 6,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/tens7000"
-  },
-  {
-    "id": "prod-138",
-    "slug": "total-gun-pistola-percutora",
-    "sku": "PROD-138",
-    "nombre": "Total Gun - Pistola percutora",
-    "categoria": "Fisioterapia",
-    "marca": "Agujas Acupuntura Perú",
-    "precio": 350,
-    "precioTexto": "S/ 350.00",
-    "precioOriginal": "S/ 420.00",
-    "descuento": "-15%",
-    "enStock": true,
-    "rating": 5,
-    "reviewsCount": 17,
-    "badge": "Stock Limitado",
-    "medidasDisponibles": [],
-    "descripcionResumen": "Total Gun - Pistola Perúcutora Masajeadora Profesional.",
-    "descripcionCompleta": "Pistola percutora de masajes Total Gun Pistola percutora de alta potencia para masajes profundos. Alivia tensiones, mejora la circulación y acelera la recuperación muscular.\n20 Velocidades.\nPantalla LCD\n Diseño ergonmico y fácil de usar, ideal para uso personal o profesional.\nIncluye maleta protectora. Envío a todo el Perúú\n Pedidos al: 930830427\n Más información aqu: Para más detalles, consulta la descripción del video en el siguiente enlace. https://youtu.be/dJtlTeIWtpY",
-    "descripcionBloques": [
-      "Pistola percutora de masajes Total Gun",
-      "Pistola percutora de alta potencia para masajes profundos.",
-      "Alivia tensiones, mejora la circulación y acelera la recuperación muscular.\n20 Velocidades.\nPantalla LCD\n Diseño ergonmico y fácil de usar, ideal para uso personal o profesional.\nIncluye maleta protectora.",
-      "Envío a todo el Perúú\n Pedidos al: 930830427\n Más información aqu:",
-      "Para más detalles, consulta la descripción del video en el siguiente enlace.",
-      "https://youtu.be/dJtlTeIWtpY"
-    ],
-    "caracteristicas": [
-      "Grado Clínico: Certificado",
-      "Uso Profesional: Garantizado",
-      "Alta Precisión: Importado",
-      "Envío Seguro: Todo el Perú"
-    ],
-    "imagenes": [
-      "/img_productos/totalGUN-opt.webp"
-    ],
-    "pagina": 6,
-    "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/total-gun"
   },
   {
     "id": "prod-124",
@@ -4309,7 +4371,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/meridianoIntestino-opt.webp"
+      "/img_productos/meridiano-intestino-grueso_min.webp"
     ],
     "pagina": 4,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/lámina-meridiano-de-intestino-grueso"
@@ -4345,7 +4407,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/lamina-auriculoterapia1-opt.webp"
+      "/img_productos/lamina-auriculo1_min.webp"
     ],
     "pagina": 2,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/lamina-de-auriculoterapia-1"
@@ -4380,7 +4442,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/lamina-auriculoterapia2-opt.webp"
+      "/img_productos/lamina-auriculo2_min.webp"
     ],
     "pagina": 2,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/lamina-de-auriculoterapia-2"
@@ -4415,7 +4477,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/lamina-auriculoterapia3-opt.webp"
+      "/img_productos/lamina-auriculo3_min.webp"
     ],
     "pagina": 3,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/lamina-auriculoterapia-3"
@@ -4451,7 +4513,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/lamina-5elementos-china-opt.webp"
+      "/img_productos/lamina-5-elementos_min.webp"
     ],
     "pagina": 4,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/lámina-los-5-elementos"
@@ -4488,7 +4550,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/lamina-reflexologia1-opt.webp"
+      "/img_productos/lamina-reflexologia1_min.webp"
     ],
     "pagina": 2,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/lamina-de-reflexología"
@@ -4523,7 +4585,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/lamina-reflexologia1-opt.webp"
+      "/img_productos/lamina-reflexologia2_min.webp"
     ],
     "pagina": 4,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/lámina-reflexología-podal-1"
@@ -4558,7 +4620,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/lamina-reflexologia3-opt.webp"
+      "/img_productos/lamina-reflexologia3_min.webp"
     ],
     "pagina": 4,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/lámina-reflexología-podal-2"
@@ -4823,7 +4885,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/meridiano-higado-opt.webp"
+      "/img_productos/lamina-meridiano-higado_min.webp"
     ],
     "pagina": 2,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/meridiano-de-higado"
@@ -4860,7 +4922,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/meridianoIntestino-opt.webp"
+      "/img_productos/lamina-meridiano-vejiga_min.webp"
     ],
     "pagina": 2,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/lamina-meridiano-de-la-vejiga"
@@ -4897,7 +4959,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/meridiano-vesicula-opt.webp"
+      "/img_productos/meridiano-vesicula_min.webp"
     ],
     "pagina": 2,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/meridiano-de-la-vesicula-biliar"
@@ -4932,7 +4994,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/meridiano-corazon-opt.webp"
+      "/img_productos/lamina-meridiano-corazon_min.webp"
     ],
     "pagina": 2,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/meridiano-de-maestro-del-corazón"
@@ -4967,7 +5029,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/meridiano-riñon-opt.webp"
+      "/img_productos/lamina-meridiano-riñon_min.webp"
     ],
     "pagina": 2,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/meridiano-de-rinon"
@@ -5002,7 +5064,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/meridiano-bazo-pancreas-opt.webp"
+      "/img_productos/meridiano-vaso-pancreas_min.webp"
     ],
     "pagina": 2,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/meridiano-del-bazo-pancreas"
@@ -5037,7 +5099,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/meridiano-corazon-opt.webp"
+      "/img_productos/lamina-meridiano-corazon_min.webp"
     ],
     "pagina": 2,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/meridiano-del-corazón-1"
@@ -5072,7 +5134,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/meridiano-corazon-opt.webp"
+      "/img_productos/meridiano-corazon-2_min.webp"
     ],
     "pagina": 2,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/meridiano-del-corazón"
@@ -5107,7 +5169,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/meridiano-intestino-delgado-opt.webp"
+      "/img_productos/meridiano-intestino-delgado_min.webp"
     ],
     "pagina": 2,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/meridiano-del-intestino-delgado"
@@ -5179,7 +5241,7 @@
       "Envío Seguro: Todo el Perú"
     ],
     "imagenes": [
-      "/img_productos/meridiano-triple-calentador-opt.webp"
+      "/img_productos/meridiano-triple-recalentador_min.webp"
     ],
     "pagina": 2,
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/meridiano-triple-recalentador"
@@ -5795,6 +5857,167 @@
     "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/tintura-de-benjui"
   },
   {
+    "id": "prod-hs-bosque-frutos",
+    "slug": "home-spray-bosque-bambu-frutos-rojos",
+    "sku": "PROD-HS-01",
+    "nombre": "Home Spray - Bosque Bambú & Frutos Rojos",
+    "categoria": "Aromaterapia",
+    "marca": "Amazöni-K",
+    "precio": 30,
+    "precioTexto": "S/ 30.00",
+    "precioOriginal": "S/ 36.00",
+    "descuento": "-15%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 38,
+    "badge": "Nuevo",
+    "medidasDisponibles": [
+      "120 ml",
+      "250 ml"
+    ],
+    "descripcionResumen": "Home Spray Aromaterapia Ambiental - Bosque Bambú y Frutos Rojos.",
+    "descripcionCompleta": "Línea HOME SPRAY Amazöni-K. Aromas: Bosque Bambú (Armonía, conexión natural, recuperación del estrés) y Frutos Rojos (Optimismo, vitalidad, alegría). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perúú. Pedidos al +51 930 830 427.",
+    "descripcionBloques": [
+      "Línea HOME SPRAY - Amazöni-K",
+      "BOSQUE BAMBÚ: Armonía, conexión natural y recuperación del estrés. Entrar al centro y sentir que saliste del ruido de la ciudad. Sensación de calma, equilibrio y serenidad.",
+      "FRUTOS ROJOS: Optimismo, vitalidad y alegría. Una dosis de energía y optimismo. Favorece una atmósfera alegre y transmite dinamismo.",
+      "Presentaciones disponibles: 120 ml y 250 ml.",
+      "Envíos a todo el Perúú | Pedidos al +51 930 830 427"
+    ],
+    "caracteristicas": [
+      "Grado Clínico: Certificado",
+      "Presentación: 120 ml / 250 ml",
+      "Aroma Botánico: Alta Fijación",
+      "Envío Seguro: Todo el Perú"
+    ],
+    "imagenes": [
+      "/img_productos/HomeSpray_BosqueBambu_FrutosRojos.webp"
+    ],
+    "pagina": 1,
+    "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/home-spray-bosque-bambu-frutos-rojos"
+  },
+  {
+    "id": "prod-hs-eucalipto-chanel",
+    "slug": "home-spray-eucalipto-chanel",
+    "sku": "PROD-HS-02",
+    "nombre": "Home Spray - Eucalipto & Chanel",
+    "categoria": "Aromaterapia",
+    "marca": "Amazöni-K",
+    "precio": 30,
+    "precioTexto": "S/ 30.00",
+    "precioOriginal": "S/ 36.00",
+    "descuento": "-15%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 27,
+    "badge": "Línea Premium",
+    "medidasDisponibles": [
+      "120 ml",
+      "250 ml"
+    ],
+    "descripcionResumen": "Home Spray Aromaterapia Ambiental - Eucalipto y Chanel Elegance.",
+    "descripcionCompleta": "Línea HOME SPRAY Amazöni-K. Aromas: Eucalipto (Claridad, frescura, renovación. Aire limpio + Espacio + Claridad) y Chanel (Elegancia, confianza, sofisticación. Experiencia premium). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perúú. Pedidos al +51 930 830 427.",
+    "descripcionBloques": [
+      "Línea HOME SPRAY - Amazöni-K",
+      "EUCALIPTO: Claridad, frescura y renovación. Aire limpio + Espacio + Claridad. Mayor claridad mental y promueve la vitalidad y concentración.",
+      "CHANEL: Elegancia, confianza y sofisticación. La esencia de una experiencia premium: ambiente exclusivo, limpio y memorable.",
+      "Presentaciones disponibles: 120 ml y 250 ml.",
+      "Envíos a todo el Perúú | Pedidos al +51 930 830 427"
+    ],
+    "caracteristicas": [
+      "Grado Clínico: Certificado",
+      "Presentación: 120 ml / 250 ml",
+      "Aroma Botánico: Alta Fijación",
+      "Envío Seguro: Todo el Perú"
+    ],
+    "imagenes": [
+      "/img_productos/HomeSpray_Eucalipto_Channel.webp"
+    ],
+    "pagina": 1,
+    "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/home-spray-eucalipto-chanel"
+  },
+  {
+    "id": "prod-hs-herbal-floral",
+    "slug": "home-spray-herbal-floral",
+    "sku": "PROD-HS-03",
+    "nombre": "Home Spray - Herbal & Floral",
+    "categoria": "Aromaterapia",
+    "marca": "Amazöni-K",
+    "precio": 30,
+    "precioTexto": "S/ 30.00",
+    "precioOriginal": "S/ 36.00",
+    "descuento": "-15%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 31,
+    "badge": "Recomendado",
+    "medidasDisponibles": [
+      "120 ml",
+      "250 ml"
+    ],
+    "descripcionResumen": "Home Spray Aromaterapia Ambiental - Herbal y Floral.",
+    "descripcionCompleta": "Línea HOME SPRAY Amazöni-K. Aromas: Herbal (Equilibrio, naturalidad, estabilidad. La naturaleza dentro de tu espacio) y Floral (Relajación, confort, bienestar emocional). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perúú. Pedidos al +51 930 830 427.",
+    "descripcionBloques": [
+      "Línea HOME SPRAY - Amazöni-K",
+      "HERBAL: Equilibrio, naturalidad y estabilidad. La naturaleza dentro de tu espacio. Reduce tensión y fatiga.",
+      "FLORAL: Relajación, confort y bienestar emocional. Reduce la tensión ambiental y crea un ambiente acogedor y tranquilo.",
+      "Presentaciones disponibles: 120 ml y 250 ml.",
+      "Envíos a todo el Perúú | Pedidos al +51 930 830 427"
+    ],
+    "caracteristicas": [
+      "Grado Clínico: Certificado",
+      "Presentación: 120 ml / 250 ml",
+      "Aroma Botánico: Alta Fijación",
+      "Envío Seguro: Todo el Perú"
+    ],
+    "imagenes": [
+      "/img_productos/HomeSpray_herbal_floral.webp"
+    ],
+    "pagina": 1,
+    "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/home-spray-herbal-floral"
+  },
+  {
+    "id": "prod-hs-violeta",
+    "slug": "home-spray-violeta",
+    "sku": "PROD-HS-04",
+    "nombre": "Home Spray - Violeta",
+    "categoria": "Aromaterapia",
+    "marca": "Amazöni-K",
+    "precio": 30,
+    "precioTexto": "S/ 30.00",
+    "precioOriginal": "S/ 36.00",
+    "descuento": "-15%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 24,
+    "badge": "Bienestar Emocional",
+    "medidasDisponibles": [
+      "120 ml",
+      "250 ml"
+    ],
+    "descripcionResumen": "Home Spray Aromaterapia Ambiental - Violeta Suave e Íntima.",
+    "descripcionCompleta": "Línea HOME SPRAY Amazöni-K - Violeta. Relajación, confort y bienestar emocional. Suave, empolvada, ligeramente dulce y elegante, generando una experiencia íntima. Presentaciones: 120 ml y 250 ml. Envíos a todo el Perúú. Pedidos al +51 930 830 427.",
+    "descripcionBloques": [
+      "Línea HOME SPRAY - Amazöni-K: VIOLETA",
+      "Relajación, confort y bienestar emocional.",
+      "Es generalmente suave, empolvada, ligeramente dulce y elegante, por lo que puede generar una experiencia mucho más íntima.",
+      "Beneficios: Tranquilidad, Suavidad, Introspección, Confort, Estabilidad emocional.",
+      "Presentaciones disponibles: 120 ml y 250 ml.",
+      "Envíos a todo el Perúú | Pedidos al +51 930 830 427"
+    ],
+    "caracteristicas": [
+      "Grado Clínico: Certificado",
+      "Presentación: 120 ml / 250 ml",
+      "Aroma Botánico: Alta Fijación",
+      "Envío Seguro: Todo el Perú"
+    ],
+    "imagenes": [
+      "/img_productos/HomeSpray_Violeta.webp"
+    ],
+    "pagina": 1,
+    "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/home-spray-violeta"
+  },
+  {
     "id": "oil-copaiba",
     "slug": "oil-copaiba",
     "sku": "AMZ-COP30",
@@ -5953,255 +6176,5 @@
     ],
     "pagina": 1,
     "urlOriginal": "https://www.agujasacupunturaperu.com/aceites-amazonik"
-  },
-  {
-    "id": "prod-hs-bosque-frutos",
-    "slug": "home-spray-bosque-bambu-frutos-rojos",
-    "nombre": "Home Spray - Bosque Bambú & Frutos Rojos",
-    "precio": 30,
-    "precioTexto": "S/ 30.00",
-    "precioOriginal": "S/ 36.00",
-    "descuento": "-15%",
-    "marca": "Amazöni-K",
-    "sku": "PROD-HS-01",
-    "categoria": "Aromaterapia",
-    "rating": 5,
-    "reviewsCount": 38,
-    "enStock": true,
-    "badge": "Nuevo",
-    "medidasDisponibles": [
-      "120 ml",
-      "250 ml"
-    ],
-    "descripcionResumen": "Home Spray Aromaterapia Ambiental - Bosque Bambú y Frutos Rojos.",
-    "descripcionCompleta": "Línea HOME SPRAY Amazöni-K. Aromas: Bosque Bambú (Armonía, conexión natural, recuperación del estrés) y Frutos Rojos (Optimismo, vitalidad, alegría). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perú. Pedidos al +51 930 830 427.",
-    "descripcionBloques": [
-      "Línea HOME SPRAY - Amazöni-K",
-      "BOSQUE BAMBÚ: Armonía, conexión natural y recuperación del estrés. Entrar al centro y sentir que saliste del ruido de la ciudad. Sensación de calma, equilibrio y serenidad.",
-      "FRUTOS ROJOS: Optimismo, vitalidad y alegría. Una dosis de energía y optimismo. Favorece una atmósfera alegre y transmite dinamismo.",
-      "Presentaciones disponibles: 120 ml y 250 ml.",
-      "Envíos a todo el Perú | Pedidos al +51 930 830 427"
-    ],
-    "highlights": [
-      "Bosque Bambú: Calma & Serenidad",
-      "Frutos Rojos: Vitalidad & Alegría"
-    ],
-    "caracteristicas": [
-      "Presentaciones: 120 ml | 250 ml",
-      "Aromas botánicos de alta fijación",
-      "Acción relajante y dinamizadora ambiental",
-      "Envío Seguro: Todo el Perú"
-    ],
-    "features": [
-      {
-        "label": "Grado Clínico",
-        "sub": "Certificado"
-      },
-      {
-        "label": "Presentación",
-        "sub": "120 ml / 250 ml"
-      },
-      {
-        "label": "Aroma Botánico",
-        "sub": "Alta Fijación"
-      },
-      {
-        "label": "Envío Seguro",
-        "sub": "Todo el Perú"
-      }
-    ],
-    "imagenes": [
-      "/img_productos/HomeSpray_BosqueBambu_FrutosRojos.webp"
-    ],
-    "pagina": 1,
-    "url": "https://www.agujasacupunturaperu.com/product-page/home-spray-bosque-bambu-frutos-rojos",
-    "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/home-spray-bosque-bambu-frutos-rojos"
-  },
-  {
-    "id": "prod-hs-eucalipto-chanel",
-    "slug": "home-spray-eucalipto-chanel",
-    "nombre": "Home Spray - Eucalipto & Chanel",
-    "precio": 30,
-    "precioTexto": "S/ 30.00",
-    "precioOriginal": "S/ 36.00",
-    "descuento": "-15%",
-    "marca": "Amazöni-K",
-    "sku": "PROD-HS-02",
-    "categoria": "Aromaterapia",
-    "rating": 5,
-    "reviewsCount": 27,
-    "badge": "Línea Premium",
-    "medidasDisponibles": [
-      "120 ml",
-      "250 ml"
-    ],
-    "descripcionResumen": "Home Spray Aromaterapia Ambiental - Eucalipto y Chanel Elegance.",
-    "descripcionCompleta": "Línea HOME SPRAY Amazöni-K. Aromas: Eucalipto (Claridad, frescura, renovación. Aire limpio + Espacio + Claridad) y Chanel (Elegancia, confianza, sofisticación. Experiencia premium). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perú. Pedidos al +51 930 830 427.",
-    "descripcionBloques": [
-      "Línea HOME SPRAY - Amazöni-K",
-      "EUCALIPTO: Claridad, frescura y renovación. Aire limpio + Espacio + Claridad. Mayor claridad mental y promueve la vitalidad y concentración.",
-      "CHANEL: Elegancia, confianza y sofisticación. La esencia de una experiencia premium: ambiente exclusivo, limpio y memorable.",
-      "Presentaciones disponibles: 120 ml y 250 ml.",
-      "Envíos a todo el Perú | Pedidos al +51 930 830 427"
-    ],
-    "highlights": [
-      "Eucalipto: Aire Limpio & Claridad",
-      "Chanel: Experiencia Premium"
-    ],
-    "caracteristicas": [
-      "Presentaciones: 120 ml | 250 ml",
-      "Purificación y sofisticación ambiental",
-      "Ideal para consultorios y espacios de bienestar",
-      "Envío Seguro: Todo el Perú"
-    ],
-    "features": [
-      {
-        "label": "Grado Clínico",
-        "sub": "Certificado"
-      },
-      {
-        "label": "Presentación",
-        "sub": "120 ml / 250 ml"
-      },
-      {
-        "label": "Aroma Botánico",
-        "sub": "Alta Fijación"
-      },
-      {
-        "label": "Envío Seguro",
-        "sub": "Todo el Perú"
-      }
-    ],
-    "imagenes": [
-      "/img_productos/HomeSpray_Eucalipto_Channel.webp"
-    ],
-    "pagina": 1,
-    "url": "https://www.agujasacupunturaperu.com/product-page/home-spray-eucalipto-chanel",
-    "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/home-spray-eucalipto-chanel"
-  },
-  {
-    "id": "prod-hs-herbal-floral",
-    "slug": "home-spray-herbal-floral",
-    "nombre": "Home Spray - Herbal & Floral",
-    "precio": 30,
-    "precioTexto": "S/ 30.00",
-    "precioOriginal": "S/ 36.00",
-    "descuento": "-15%",
-    "marca": "Amazöni-K",
-    "sku": "PROD-HS-03",
-    "categoria": "Aromaterapia",
-    "rating": 5,
-    "reviewsCount": 31,
-    "badge": "Recomendado",
-    "medidasDisponibles": [
-      "120 ml",
-      "250 ml"
-    ],
-    "descripcionResumen": "Home Spray Aromaterapia Ambiental - Herbal y Floral.",
-    "descripcionCompleta": "Línea HOME SPRAY Amazöni-K. Aromas: Herbal (Equilibrio, naturalidad, estabilidad. La naturaleza dentro de tu espacio) y Floral (Relajación, confort, bienestar emocional). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perú. Pedidos al +51 930 830 427.",
-    "descripcionBloques": [
-      "Línea HOME SPRAY - Amazöni-K",
-      "HERBAL: Equilibrio, naturalidad y estabilidad. La naturaleza dentro de tu espacio. Reduce tensión y fatiga.",
-      "FLORAL: Relajación, confort y bienestar emocional. Reduce la tensión ambiental y crea un ambiente acogedor y tranquilo.",
-      "Presentaciones disponibles: 120 ml y 250 ml.",
-      "Envíos a todo el Perú | Pedidos al +51 930 830 427"
-    ],
-    "highlights": [
-      "Herbal: Equilibrio Natural",
-      "Floral: Relajación & Confort"
-    ],
-    "caracteristicas": [
-      "Presentaciones: 120 ml | 250 ml",
-      "Aromas de lavanda, rosas y hierbas naturales",
-      "Ideal para relajación y armonización",
-      "Envío Seguro: Todo el Perú"
-    ],
-    "features": [
-      {
-        "label": "Grado Clínico",
-        "sub": "Certificado"
-      },
-      {
-        "label": "Presentación",
-        "sub": "120 ml / 250 ml"
-      },
-      {
-        "label": "Aroma Botánico",
-        "sub": "Alta Fijación"
-      },
-      {
-        "label": "Envío Seguro",
-        "sub": "Todo el Perú"
-      }
-    ],
-    "imagenes": [
-      "/img_productos/HomeSpray_herbal_floral.webp"
-    ],
-    "pagina": 1,
-    "url": "https://www.agujasacupunturaperu.com/product-page/home-spray-herbal-floral",
-    "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/home-spray-herbal-floral"
-  },
-  {
-    "id": "prod-hs-violeta",
-    "slug": "home-spray-violeta",
-    "nombre": "Home Spray - Violeta",
-    "precio": 30,
-    "precioTexto": "S/ 30.00",
-    "precioOriginal": "S/ 36.00",
-    "descuento": "-15%",
-    "marca": "Amazöni-K",
-    "sku": "PROD-HS-04",
-    "categoria": "Aromaterapia",
-    "rating": 5,
-    "reviewsCount": 24,
-    "badge": "Bienestar Emocional",
-    "medidasDisponibles": [
-      "120 ml",
-      "250 ml"
-    ],
-    "descripcionResumen": "Home Spray Aromaterapia Ambiental - Violeta Suave e Íntima.",
-    "descripcionCompleta": "Línea HOME SPRAY Amazöni-K - Violeta. Relajación, confort y bienestar emocional. Suave, empolvada, ligeramente dulce y elegante, generando una experiencia íntima. Presentaciones: 120 ml y 250 ml. Envíos a todo el Perú. Pedidos al +51 930 830 427.",
-    "descripcionBloques": [
-      "Línea HOME SPRAY - Amazöni-K: VIOLETA",
-      "Relajación, confort y bienestar emocional.",
-      "Es generalmente suave, empolvada, ligeramente dulce y elegante, por lo que puede generar una experiencia mucho más íntima.",
-      "Beneficios: Tranquilidad, Suavidad, Introspección, Confort, Estabilidad emocional.",
-      "Presentaciones disponibles: 120 ml y 250 ml.",
-      "Envíos a todo el Perú | Pedidos al +51 930 830 427"
-    ],
-    "highlights": [
-      "Violeta: Suavidad & Confort",
-      "Experiencia Íntima & Relajante"
-    ],
-    "caracteristicas": [
-      "Presentaciones: 120 ml | 250 ml",
-      "Notas florales dulces y empolvadas",
-      "Favorece la tranquilidad e introspección",
-      "Envío Seguro: Todo el Perú"
-    ],
-    "features": [
-      {
-        "label": "Grado Clínico",
-        "sub": "Certificado"
-      },
-      {
-        "label": "Presentación",
-        "sub": "120 ml / 250 ml"
-      },
-      {
-        "label": "Aroma Botánico",
-        "sub": "Alta Fijación"
-      },
-      {
-        "label": "Envío Seguro",
-        "sub": "Todo el Perú"
-      }
-    ],
-    "imagenes": [
-      "/img_productos/HomeSpray_Violeta.webp"
-    ],
-    "pagina": 1,
-    "url": "https://www.agujasacupunturaperu.com/product-page/home-spray-violeta",
-    "urlOriginal": "https://www.agujasacupunturaperu.com/product-page/home-spray-violeta"
   }
 ]

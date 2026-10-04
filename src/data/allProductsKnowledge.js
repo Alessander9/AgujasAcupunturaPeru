@@ -1,8 +1,92 @@
 /**
- * Catálogo completo ultra-detallado de productos para el motor RAG
+ * Catálogo completo ultra-detallado de 159 productos para el motor RAG
  * Agujas Acupuntura Perú & Línea Amazoni-k
  */
 export const allProductsKnowledge = [
+  {
+    "id": "prod-159",
+    "slug": "herramienta-masaje-modelo-peine",
+    "sku": "PROD-159",
+    "nombre": "Herramienta masaje modelo peine",
+    "categoria": "Herramientas de Masaje",
+    "marca": "Agujas Acupuntura Perú",
+    "precio": 20,
+    "precioTexto": "S/ 20.00",
+    "precioOriginal": "S/ 25.00",
+    "descuento": "-20%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 15,
+    "badge": "Nuevo",
+    "medidas": [],
+    "resumen": "Herramienta de masaje y estimulación capilar / corporal con diseño ergonómico en forma de peine.",
+    "descripcionCompleta": "Herramienta de masaje profesional con diseño tipo peine ergonómico para estimulación de cuero cabelludo, puntos de acupresión y drenaje miofascial. Ideal para aliviar la tensión, mejorar la circulación sanguínea y complementar terapias de reflexología y relajación. Delivery en Lima y Callao Puedes recoger en nuestra oficina: Av. Julio C. Tello 438 Lince Envío a todo el Perúú Pedidos al: 930830427",
+    "especificaciones": "Material: Ergonómico y resistente | Uso: Masaje y reflexología | Diseño: Modelo Peine terapéutico | Aplicación: Puntos de acupresión",
+    "fichaRAG": "Producto: Herramienta masaje modelo peine | SKU: PROD-159 | Precio: S/ 20.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Herramienta de masaje y estimulación capilar / corporal con diseño ergonómico en forma de peine."
+  },
+  {
+    "id": "prod-160",
+    "slug": "rodillera-gel",
+    "sku": "PROD-160",
+    "nombre": "Rodillera gel",
+    "categoria": "Ortopedia y Postura",
+    "marca": "Agujas Acupuntura Perú",
+    "precio": 35,
+    "precioTexto": "S/ 35.00",
+    "precioOriginal": "S/ 42.00",
+    "descuento": "-17%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 18,
+    "badge": "Nuevo",
+    "medidas": [],
+    "resumen": "Rodillera con almohadilla de compresión y gel para soporte articular y alivio de dolor.",
+    "descripcionCompleta": "Rodillera elástica con soporte de gel ergonómico, diseñada para brindar estabilidad a la rótula y articulación de la rodilla. Brinda soporte firme durante la actividad física, rehabilitación o recuPerúación de lesiones ligamentarias y de meniscos. Delivery en Lima y Callao Puedes recoger en nuestra oficina: Av. Julio C. Tello 438 Lince Envío a todo el Perúú Pedidos al: 930830427",
+    "especificaciones": "Almohadilla: Gel protector de rótula | Tejido: Elástico y transpirable | Soporte: Articular y ligamentario | Uso: Deportivo y terapéutico",
+    "fichaRAG": "Producto: Rodillera gel | SKU: PROD-160 | Precio: S/ 35.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: Rodillera con almohadilla de compresión y gel para soporte articular y alivio de dolor."
+  },
+  {
+    "id": "prod-161",
+    "slug": "esferas-chinas",
+    "sku": "PROD-161",
+    "nombre": "Esferas China",
+    "categoria": "Herramientas de Masaje",
+    "marca": "Agujas Acupuntura Perú",
+    "precio": 45,
+    "precioTexto": "S/ 45.00",
+    "precioOriginal": "S/ 55.00",
+    "descuento": "-18%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 22,
+    "badge": "Nuevo",
+    "medidas": [],
+    "resumen": "Par de esferas chinas tradicionales de relajación Baoding con sonido armónico para estimulación de puntos en las manos.",
+    "descripcionCompleta": "Esferas chinas tradicionales de salud y relajación (Baoding Balls). Al rotarlas en la palma de la mano, emiten un suave sonido armónico y estimulan los puntos reflejos de acupuntura en la mano, mejorando la circulación, la destreza y disminuyendo los niveles de estrés y fatiga mental. Delivery en Lima y Callao Puedes recoger en nuestra oficina: Av. Julio C. Tello 438 Lince Envío a todo el Perúú Pedidos al: 930830427",
+    "especificaciones": "Presentación: Par de esferas en caja | Función: Acupresión y destreza | Acabado: Esmaltado tradicional chino | Efecto: Relajación y circulación",
+    "fichaRAG": "Producto: Esferas China | SKU: PROD-161 | Precio: S/ 45.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Par de esferas chinas tradicionales de relajación Baoding con sonido armónico para estimulación de puntos en las manos."
+  },
+  {
+    "id": "prod-162",
+    "slug": "lapiz-electroacupuntor",
+    "sku": "PROD-162",
+    "nombre": "Lápiz electroacupuntor",
+    "categoria": "Acupuntura y Moxibustión",
+    "marca": "Agujas Acupuntura Perú",
+    "precio": 60,
+    "precioTexto": "S/ 60.00",
+    "precioOriginal": "S/ 75.00",
+    "descuento": "-20%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 26,
+    "badge": "Nuevo",
+    "medidas": [],
+    "resumen": "Lápiz estimulador de electroacupuntura digital portátil con cabezales intercambiables para terapia sin agujas.",
+    "descripcionCompleta": "Lápiz electroacupuntor digital electrónico para estimulación de puntos de acupuntura sin agujas (acupresión eléctrica). Cuenta con niveles regulables de intensidad y cabezales intercambiables para tratamientos faciales, musculares y articulares. Portátil, seguro y fácil de usar en el hogar o consultorio. Delivery en Lima y Callao Puedes recoger en nuestra oficina: Av. Julio C. Tello 438 Lince Envío a todo el Perúú Pedidos al: 930830427",
+    "especificaciones": "Tecnología: Electroestimulación TENS / Acupuntura | Accesorios: Cabezales intercambiables | Control: Nivel de intensidad digital | Alimentación: Pila AA (portátil)",
+    "fichaRAG": "Producto: Lápiz electroacupuntor | SKU: PROD-162 | Precio: S/ 60.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Lápiz estimulador de electroacupuntura digital portátil con cabezales intercambiables para terapia sin agujas."
+  },
   {
     "id": "prod-150",
     "slug": "agujas-koreanas-x-caja-de-500-und",
@@ -33,7 +117,7 @@ export const allProductsKnowledge = [
       "0.30x75 mm"
     ],
     "resumen": "Agujas Koáreanas - Caja de 500 unidades.",
-    "descripcionCompleta": "• • Buscas agujas confiables y seguras para tus terapias • Tenemos lo que necesitas! Presentación: caja de 500 unidades en Presentación de 10 agujas por sobre, con tubo guía incluido para mayor comodidad. Perúfectas para tus sesiones de acupuntura y Punción seca. • Pruébalas! Serán tus grandes aliadas en el tratamiento de tus pacientes. • Disponibles en múltiples medidas: 0.16x7 mm 0.18x13 mm 0.18x25 mm 0.22x25 mm 0.25x25 mm 0.18x30 mm 0.22x40 mm 0.25x40 mm 0.30x40 mm 0.30x50 mm 0.30x75 mm Y muchas Más...! • Delivery en Lima y Callao • Puedes recoger en nuestra oficina: Av. Julio C. Tello 438 Lince • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Buscas agujas confiables y seguras para tus terapias Tenemos lo que necesitas! Presentación: caja de 500 unidades en presentación de 10 agujas por sobre, con tubo guía incluido para mayor comodidad. Perúfectas para tus sesiones de acupuntura y punción seca. Pruébalas! Serán tus grandes aliadas en el tratamiento de tus pacientes. Disponibles en múltiples medidas: 0.16x7 mm 0.18x13 mm 0.18x25 mm 0.22x25 mm 0.25x25 mm 0.18x30 mm 0.22x40 mm 0.25x40 mm 0.30x40 mm 0.30x50 mm 0.30x75 mm Y muchas más...! Delivery en Lima y Callao Puedes recoger en nuestra oficina: Av. Julio C. Tello 438 Lince Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Agujas Koáreanas x caja de 500 und | SKU: PROD-150 | Precio: S/ 85.00 | Categoría: Acupuntura y Moxibustión | Medidas: 500 unidades, 0.16x7 mm, 0.18x13 mm, 0.18x25 mm, 0.22x25 mm, 0.25x25 mm, 0.18x30 mm, 0.22x40 mm, 0.25x40 mm, 0.30x40 mm, 0.30x50 mm, 0.30x75 mm | Stock: Disponible | Descripción: Agujas Koáreanas - Caja de 500 unidades."
   },
@@ -41,7 +125,7 @@ export const allProductsKnowledge = [
     "id": "prod-149",
     "slug": "agujas-para-acupuntura",
     "sku": "PROD-149",
-    "nombre": "Agujas para acupuntura",
+    "nombre": "Agujas para acupuntura x 100 und",
     "categoria": "Acupuntura y Moxibustión",
     "marca": "Agujas Acupuntura Perú",
     "precio": 20,
@@ -63,9 +147,9 @@ export const allProductsKnowledge = [
       "0.30x75 mm"
     ],
     "resumen": "Agujas para Acupuntura - Agujas estándar de acero inoxidable.",
-    "descripcionCompleta": "AGUJAS DE ACUPUNTURA Y Punción SECA! • Caja de 100 unidades a solo S/20.00 La mejor calidad al mejor precio del mercado! • Disponibles en las siguientes medidas: 0.18x13 mm 0.25x13 mm 0.25x25 mm 0.25x40 mm 0.30x50 mm 0.30x60 mm 0.30x75 mm Esterilizadas y de uso profesional Aptas para tratamientos clínicos y terapias complementarias • Puedes recoger tu pedido en nuestra oficina: Av. Julio C. Tello 438 Lince • Envío a todo el Perú • Pedidos al: 930830427 • Más información aqu: Revisa el producto en el siguiente enlace https://youtube.com/shorts/AvOISXbtmP0si=h7ylF7wbo6rVA04k https://youtu.be/wmg5VG2HSNU https://youtu.be/9ZSsFhg61Ek https://youtu.be/ZbV9T7K6lfo https://youtu.be/QZek5girLfQ",
+    "descripcionCompleta": "AGUJAS DE ACUPUNTURA Y PUNCIÓN SECA! Caja de 100 unidades a solo S/20.00 La mejor calidad al mejor precio del mercado! Disponibles en las siguientes medidas: 0.18x13 mm 0.25x13 mm 0.25x25 mm 0.25x40 mm 0.30x50 mm 0.30x60 mm 0.30x75 mm Esterilizadas y de uso profesional Aptas para tratamientos clínicos y terapias complementarias Puedes recoger tu pedido en nuestra oficina: Av. Julio C. Tello 438 Lince Envío a todo el Perúú Pedidos al: 930830427 Más información aqu: Revisa el producto en el siguiente enlace https://youtube.com/shorts/AvOISXbtmP0si=h7ylF7wbo6rVA04k https://youtu.be/wmg5VG2HSNU https://youtu.be/9ZSsFhg61Ek https://youtu.be/ZbV9T7K6lfo https://youtu.be/QZek5girLfQ",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
-    "fichaRAG": "Producto: Agujas para acupuntura | SKU: PROD-149 | Precio: S/ 20.00 | Categoría: Acupuntura y Moxibustión | Medidas: 100 unidades, 0.18x13 mm, 0.25x13 mm, 0.25x25 mm, 0.25x40 mm, 0.30x50 mm, 0.30x60 mm, 0.30x75 mm | Stock: Disponible | Descripción: Agujas para Acupuntura - Agujas estándar de acero inoxidable."
+    "fichaRAG": "Producto: Agujas para acupuntura x 100 und | SKU: PROD-149 | Precio: S/ 20.00 | Categoría: Acupuntura y Moxibustión | Medidas: 100 unidades, 0.18x13 mm, 0.25x13 mm, 0.25x25 mm, 0.25x40 mm, 0.30x50 mm, 0.30x60 mm, 0.30x75 mm | Stock: Disponible | Descripción: Agujas para Acupuntura - Agujas estándar de acero inoxidable."
   },
   {
     "id": "prod-141",
@@ -84,7 +168,7 @@ export const allProductsKnowledge = [
     "badge": "Calidad Premium",
     "medidas": [],
     "resumen": "Aplicador de Agujas de Acupuntura - Gua insertora automática.",
-    "descripcionCompleta": "• Aplicador de Agujas Coloca con precisión • precisión, rapidez y seguridad en cada aplicación. El puntor de Auriculoterapia es indispensable ya que te brinda mayor precisión del punto auricular y ademas con una minima fuerza la aguja se inserta sin generar molestias en el paciente. Ideal para agujas de Acupuntura y de manopuntura Contacto directo y mejora la higiene Ligero, práctico y fácil de desinfectar Acero inoxidable de alta durabilidad • Recomendado para terapeutas, docentes y estudiantes. • Pedidos al 930830427 • Delivery a todo el pas • Para Más detalles, consulta la descripción del video en el siguiente enlace. https://youtube.com/shorts/NYuN7Q9b1Xgsi=jx04HGFJ8MD6JFb6",
+    "descripcionCompleta": "Aplicador de Agujas Coloca con precisión Precisión, rapidez y seguridad en cada aplicación. El puntor de Auriculoterapia es indispensable ya que te brinda mayor precisión del punto auricular y ademas con una minima fuerza la aguja se inserta sin generar molestias en el paciente. Ideal para agujas de Acupuntura y de manopuntura Contacto directo y mejora la higiene Ligero, práctico y fácil de desinfectar Acero inoxidable de alta durabilidad Recomendado para terapeutas, docentes y estudiantes. Pedidos al 930830427 Delivery a todo el pas Para más detalles, consulta la descripción del video en el siguiente enlace. https://youtube.com/shorts/NYuN7Q9b1Xgsi=jx04HGFJ8MD6JFb6",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Aplicador de agujas | SKU: PROD-141 | Precio: S/ 85.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Aplicador de Agujas de Acupuntura - Gua insertora automática."
   },
@@ -107,7 +191,7 @@ export const allProductsKnowledge = [
       "3 puros"
     ],
     "resumen": "Caja de Moxibustión para 3 moxas.",
-    "descripcionCompleta": "Caja de Moxibustión para 3 moxas. Caja de madera para aplicar Moxibustión con 3 puros de moxa simultáneamente. Mayor cobertura de tratamiento. Características: Capacidad para 3 puros de moxa Mayor área de calor terapéutico Material: Madera resistente Malla protectora incluida Ideal para tratar zona lumbar, abdomen, etc. • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Caja de Moxibustión para 3 moxas. Caja de madera para aplicar moxibustión con 3 puros de moxa simultáneamente. Mayor cobertura de tratamiento. Características: Capacidad para 3 puros de moxa Mayor área de calor terapéutico Material: Madera resistente Malla protectora incluida Ideal para tratar zona lumbar, abdomen, etc. Envío a todo el Perúú | 930830427",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Caja de moxibustión (3 moxas) | SKU: PROD-72 | Precio: S/ 55.00 | Categoría: Acupuntura y Moxibustión | Medidas: 3 puros | Stock: Disponible | Descripción: Caja de Moxibustión para 3 moxas."
   },
@@ -128,7 +212,7 @@ export const allProductsKnowledge = [
     "badge": "Envío Inmediato",
     "medidas": [],
     "resumen": "Caja de Moxibustión para 1 moxa - Aplicación directa de calor terapéutico.",
-    "descripcionCompleta": "• Cajas de Moxibustión de Bamb de 1 Moxa •Practicidad y seguridad en tus terapias Las cajas de Moxibustión de bamb te brindan comodidad y soporte durante la terapia, Perúmitiendo moxar puntos de acupuntura mientras trabajas otros sistemas en el paciente . • Incluyen una liga de sujeción que evita caídas y una malla metlica en la base para proteger la piel del paciente de las cenizas calientes . • Utilizan moxa de Artemisa, ideal para una combustin estable y terapéutica. • Contenido: • 1 Caja de bamb con accesorios de seguridad • Revisa el tutorial del producto en el siguiente enlace • https://youtube.com/shorts/wEvVAAHFjvQ • árealizamos Envíos a todo el Perú • Haz tu pedido al 930 830 427",
+    "descripcionCompleta": "Cajas de Moxibustión de Bamb de 1 Moxa Practicidad y seguridad en tus terapias Las cajas de moxibustión de bamb te brindan comodidad y soporte durante la terapia, Perúmitiendo moxar puntos de acupuntura mientras trabajas otros sistemas en el paciente . Incluyen una liga de sujeción que evita caídas y una malla metlica en la base para proteger la piel del paciente de las cenizas calientes . Utilizan moxa de Artemisa, ideal para una combustin estable y terapéutica. Contenido: 1 Caja de bamb con accesorios de seguridad Revisa el tutorial del producto en el siguiente enlace https://youtube.com/shorts/wEvVAAHFjvQ árealizamos envíos a todo el Perúú Haz tu pedido al 930 830 427",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Caja de Moxibustión (1 moxa) | SKU: PROD-29 | Precio: S/ 45.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Caja de Moxibustión para 1 moxa - Aplicación directa de calor terapéutico."
   },
@@ -136,7 +220,7 @@ export const allProductsKnowledge = [
     "id": "prod-153",
     "slug": "caja-de-moxibustion-2-moxas",
     "sku": "PROD-153",
-    "nombre": "Caja de Moxibustión (2 moxas)",
+    "nombre": "Caja de moxibustión (2 moxas)",
     "categoria": "Acupuntura y Moxibustión",
     "marca": "Agujas Acupuntura Perú",
     "precio": 50,
@@ -149,9 +233,9 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Caja de Moxibustión para 2 Moxas - Doble aplicación simultnea.",
-    "descripcionCompleta": "• Caja de Moxibustión de 2 entradas Características: • Elaborada con bamb para un uso seguro y natural. • Diseada para colocar un puro de moxa y árealizar una Moxibustión indirecta, aliviando el dolor . • Ideal para optimizar tratamientos de acupuntura, Perúmitiendo moxar un área mientras el terapeuta trabaja en otra parte del cuerpo •. Cuenta con una fina malla interna que protege al paciente de las cenizas calientes. Un accesorio esencial para terapias efectivas y seguras. • Envío a todo el Perú • Pedidos al: 930830427 • Para Más detalles, consulta la descripción del video en el siguiente enlace. https://youtube.com/shorts/wEvVAAHFjvQ",
+    "descripcionCompleta": "Caja de Moxibustión de 2 entradas Características: Elaborada con bamb para un uso seguro y natural. Diseada para colocar un puro de moxa y árealizar una moxibustión indirecta, aliviando el dolor . Ideal para optimizar tratamientos de acupuntura, Perúmitiendo moxar un área mientras el terapeuta trabaja en otra parte del cuerpo . Cuenta con una fina malla interna que protege al paciente de las cenizas calientes. Un accesorio esencial para terapias efectivas y seguras. Envío a todo el Perúú Pedidos al: 930830427 Para más detalles, consulta la descripción del video en el siguiente enlace. https://youtube.com/shorts/wEvVAAHFjvQ",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
-    "fichaRAG": "Producto: Caja de Moxibustión (2 moxas) | SKU: PROD-153 | Precio: S/ 50.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Caja de Moxibustión para 2 Moxas - Doble aplicación simultnea."
+    "fichaRAG": "Producto: Caja de moxibustión (2 moxas) | SKU: PROD-153 | Precio: S/ 50.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Caja de Moxibustión para 2 Moxas - Doble aplicación simultnea."
   },
   {
     "id": "prod-134",
@@ -172,7 +256,7 @@ export const allProductsKnowledge = [
       "4 piezas"
     ],
     "resumen": "Cocodrilos de Electroacupuntura - Pinzas conectoras para equipos.",
-    "descripcionCompleta": "Inicio / Productos / Cocodrilos de Electroacupuntura Cocodrilos de Electroacupuntura • Cables Cocodrilo para Electroacupuntura Accesorio esencial para tratamientos de electroacupuntura y electroterapia, diseñado para conectar de forma segura los equipos de electroestimulacin. Características: • Pinzas cocodrilo resistentes y adaptables. • Pinzas intercambiables para mayor practicidad. Conexin estándar, compatible con la mayora de equipos de electroacupuntura. • Juego de 4 piezas, adaptables y de alta resistencia. • Juego de cables ideal para tratamientos terapéuticos. Perúfectos como complemento para equipos de electroestimulacin en consultorios o terapias profesionales. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Inicio / Productos / Cocodrilos de Electroacupuntura Cocodrilos de Electroacupuntura Cables Cocodrilo para Electroacupuntura Accesorio esencial para tratamientos de electroacupuntura y electroterapia, diseñado para conectar de forma segura los equipos de electroestimulacin. Características: Pinzas cocodrilo resistentes y adaptables. Pinzas intercambiables para mayor practicidad. Conexin estándar, compatible con la mayora de equipos de electroacupuntura. Juego de 4 piezas, adaptables y de alta resistencia. Juego de cables ideal para tratamientos terapéuticos. Perúfectos como complemento para equipos de electroestimulacin en consultorios o terapias profesionales. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Cocodrilos de Electroacupuntura | SKU: PROD-134 | Precio: S/ 25.00 | Categoría: Acupuntura y Moxibustión | Medidas: 4 piezas | Stock: Disponible | Descripción: Cocodrilos de Electroacupuntura - Pinzas conectoras para equipos."
   },
@@ -193,7 +277,7 @@ export const allProductsKnowledge = [
     "badge": "Recomendado",
     "medidas": [],
     "resumen": "Estimulación nerviosa y muscular en un solo equipo",
-    "descripcionCompleta": "SDZ-IIB Electroacupuntura Portátil Estimulación nerviosa y muscular en un solo equipo El SDZ-IIB es el instrumento ideal para profesionales que buscan precisión, comodidad y resultados efectivos en sus tratamientos de electroacupuntura. • 3 formas de onda • 3 tipos de pulsaciones • 2 salidas independientes (Perúmite trabajar varios puntos simultáneamente) • Pantalla digital de fácil lectura • Incluye cocodrilos • Incluye parches TENS • Portátil y práctico Ideal para tratamientos de dolor Rehabilitación muscular Terapias complementarias Atención en consultorio o a domicilio Compacto, eficiente y fácil de usar. Tu mejor opción en electroacupuntura portátil. • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "SDZ-IIB Electroacupuntura Portátil Estimulación nerviosa y muscular en un solo equipo El SDZ-IIB es el instrumento ideal para profesionales que buscan precisión, comodidad y resultados efectivos en sus tratamientos de electroacupuntura. 3 formas de onda 3 tipos de pulsaciones 2 salidas independientes (Perúmite trabajar varios puntos simultáneamente) Pantalla digital de fácil lectura Incluye cocodrilos Incluye parches TENS Portátil y práctico Ideal para tratamientos de dolor Rehabilitación muscular Terapias complementarias Atención en consultorio o a domicilio Compacto, eficiente y fácil de usar. Tu mejor opción en electroacupuntura portátil. Envío a todo el Perúú | 930830427",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Electroacupuntor Portátil SDZ-IIB | SKU: PROD-2 | Precio: S/ 240.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Estimulación nerviosa y muscular en un solo equipo"
   },
@@ -214,7 +298,7 @@ export const allProductsKnowledge = [
     "badge": "Calidad Premium",
     "medidas": [],
     "resumen": "Electroacupuntura Tekno Bio Body - Equipo profesional multifunción.",
-    "descripcionCompleta": "Tekno Bio Body Acupuntura Electrónica Profesional El Tekno Bio Body es un dispositivo que combina tecnologa moderna con la medicina tradicional china, ideal para terapias de bienestar, rehabilitación y estética. Beneficios: • Alivia el dolor muscular y la tensión corporal. • Mejora la circulación sangunea. • Reduce el estrés y favorece la relajación. Apoya tratamientos estéticos y mejora la apariencia de la piel. • útil para rehabilitación y terapias de bienestar. • Características: • Temporizador programable para mayor control del tratamiento. Incluye cargador a corriente, 3 pares de electrodos TENS, 6 salidas y temporizador manual. • Diseño verstil para tratamientos terapéuticos completos. • 12 electrodos adhesivos para aplicación en distintas zonas del cuerpo. Ideal para uso en casa o en consultorios profesionales • Envío a todo el Perú • Pedidos al: 930830427 • Más información aqu: • Para Más detalles, consulta la descripción del video en el siguiente enlace. https://youtu.be/3hQ882MNImcsi=T9ScLSDhhNZ4DPeF https://youtu.be/FobvLLGqPlM https://youtu.be/3hQ882MNImc",
+    "descripcionCompleta": "Tekno Bio Body Acupuntura Electrónica Profesional El Tekno Bio Body es un dispositivo que combina tecnologa moderna con la medicina tradicional china, ideal para terapias de bienestar, rehabilitación y estética. Beneficios: Alivia el dolor muscular y la tensión corporal. Mejora la circulación sangunea. Reduce el estrés y favorece la relajación. Apoya tratamientos estéticos y mejora la apariencia de la piel. útil para rehabilitación y terapias de bienestar. Características: Temporizador programable para mayor control del tratamiento. Incluye cargador a corriente, 3 pares de electrodos TENS, 6 salidas y temporizador manual. Diseño verstil para tratamientos terapéuticos completos. 12 electrodos adhesivos para aplicación en distintas zonas del cuerpo. Ideal para uso en casa o en consultorios profesionales Envío a todo el Perúú Pedidos al: 930830427 Más información aqu: Para más detalles, consulta la descripción del video en el siguiente enlace. https://youtu.be/3hQ882MNImcsi=T9ScLSDhhNZ4DPeF https://youtu.be/FobvLLGqPlM https://youtu.be/3hQ882MNImc",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Electroacupuntura Tekno Bio Body | SKU: PROD-135 | Precio: S/ 250.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Electroacupuntura Tekno Bio Body - Equipo profesional multifunción."
   },
@@ -235,7 +319,7 @@ export const allProductsKnowledge = [
     "badge": "Garantizado",
     "medidas": [],
     "resumen": "Lpiz de Electroacupuntura - Estimulador de puntos de acupuntura.",
-    "descripcionCompleta": "• Lpiz Electroestimulador de Acupuntura • Emite 9 intensidades ajustables • Funciona con 1 sola pila AA • Ideal para masaje con corriente o para aplicar corriente en agujas en electroacupuntura • Incluye múltiples cabezales de recambio • fácil de usar • Revisa el modo de empleo en el siguiente enlace • https://youtu.be/t46oNxU5gFQ https://www.youtube.com/watchv=c7PVwvAd4ko • Presentación: 1 unidad. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Lpiz Electroestimulador de Acupuntura Emite 9 intensidades ajustables Funciona con 1 sola pila AA Ideal para masaje con corriente o para aplicar corriente en agujas en electroacupuntura Incluye múltiples cabezales de recambio Fácil de usar Revisa el modo de empleo en el siguiente enlace https://youtu.be/t46oNxU5gFQ https://www.youtube.com/watchv=c7PVwvAd4ko Presentación: 1 unidad. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Lápiz de electroacupuntura | SKU: PROD-28 | Precio: S/ 40.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Lpiz de Electroacupuntura - Estimulador de puntos de acupuntura."
   },
@@ -256,7 +340,7 @@ export const allProductsKnowledge = [
     "badge": "Envío Inmediato",
     "medidas": [],
     "resumen": "Lpiz Electroacupuntor \"Acu Doc\" - Localizador y estimulador de puntos.",
-    "descripcionCompleta": "Acupoint Mquina de Electroacupuntura Portátil Dispositivo práctico y fácil de usar para terapias de electroacupuntura, ideal para tratamientos de bienestar y alivio del dolor. Características: Intensidad regulable mediante Perúilla o sistema digital (según modelo). • Detector de puntos de acupuntura para localizar con precisión las zonas de tratamiento. • Rueda sensitiva que ayuda a calibrar y detectar el punto exacto. • Cable tierra que el paciente sostiene para una correcta transmisin de la corriente. • Recargable para mayor comodidad. • Incluye 3 cabezales intercambiables de diferentes calibres. Ideal para terapias profesionales o uso Perúsonal en tratamientos de acupuntura. • Envío a todo el Perú • Pedidos al: 930830427 • Más información aqu: • Conoce Más sobre este producto revisando el siguiente enlace! • https://youtu.be/dLaqlnTED3k https://youtu.be/dLaqlnTED3ksi=A9OYe1f0OhX3-NvE",
+    "descripcionCompleta": "Acupoint Mquina de Electroacupuntura Portátil Dispositivo práctico y fácil de usar para terapias de electroacupuntura, ideal para tratamientos de bienestar y alivio del dolor. Características: Intensidad regulable mediante Perúilla o sistema digital (según modelo). Detector de puntos de acupuntura para localizar con precisión las zonas de tratamiento. Rueda sensitiva que ayuda a calibrar y detectar el punto exacto. Cable tierra que el paciente sostiene para una correcta transmisin de la corriente. Recargable para mayor comodidad. Incluye 3 cabezales intercambiables de diferentes calibres. Ideal para terapias profesionales o uso Perúsonal en tratamientos de acupuntura. Envío a todo el Perúú Pedidos al: 930830427 Más información aqu: Conoce más sobre este producto revisando el siguiente enlace! https://youtu.be/dLaqlnTED3k https://youtu.be/dLaqlnTED3ksi=A9OYe1f0OhX3-NvE",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Lápiz Electroacupuntor \"Acu doc\" | SKU: PROD-136 | Precio: S/ 270.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Lpiz Electroacupuntor \"Acu Doc\" - Localizador y estimulador de puntos."
   },
@@ -277,7 +361,7 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Martillo de 5 Puntos (Plum Blossom Needle) - Aguja de flor de ciruelo.",
-    "descripcionCompleta": "• Kit Martillo 7 Puntas Flor de Ciruelo • Herramienta terapéutica con mango flexible de 14 cm para mayor comodidad. • Incluye 12 cabezales estriles desechables de recambio. Técnica de estimulación suave y repetida para activar el flujo energético en zonas o puntos específicos. Beneficios: Favorece la circulación sangunea y energética. Apoya en tratamientos de dolor y rigidez muscular. Ideal para reflexologa y puntos de acupuntura. • Contenido del kit: 1 martillo de 7 puntas. 12 cabezales de recambio. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Kit Martillo 7 Puntas Flor de Ciruelo Herramienta terapéutica con mango flexible de 14 cm para mayor comodidad. Incluye 12 cabezales estriles desechables de recambio. Técnica de estimulación suave y repetida para activar el flujo energético en zonas o puntos específicos. Beneficios: Favorece la circulación sangunea y energética. Apoya en tratamientos de dolor y rigidez muscular. Ideal para reflexologa y puntos de acupuntura. Contenido del kit: 1 martillo de 7 puntas. 12 cabezales de recambio. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Martillo de 5 puntos | SKU: PROD-156 | Precio: S/ 50.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Martillo de 5 Puntos (Plum Blossom Needle) - Aguja de flor de ciruelo."
   },
@@ -300,7 +384,7 @@ export const allProductsKnowledge = [
       "54 unidades"
     ],
     "resumen": "Mini Moxas Gold - Moxas pequeñas de alta pureza dorada.",
-    "descripcionCompleta": "• Mini Moxas Gold Calor preciso para tus terapias • Las Mini Moxas Gold están diseñadas especialmente para aplicar la técnica de agujas calientes y como repuesto ideal para el uso con el roller de jade •. • Están elaboradas con moxa fina dorada, conocida por su alta calidad y por mantener la combustin de manera constante, sin apagarse fácilmente . • Presentación: • Caja con 54 unidades • Puedes ver el tutorial del producto en el siguiente enlace",
+    "descripcionCompleta": "Mini Moxas Gold Calor preciso para tus terapias Las Mini Moxas Gold están diseñadas especialmente para aplicar la técnica de agujas calientes y como repuesto ideal para el uso con el roller de jade . Están elaboradas con moxa fina dorada, conocida por su alta calidad y por mantener la combustin de manera constante, sin apagarse fácilmente . Presentación: Caja con 54 unidades Puedes ver el tutorial del producto en el siguiente enlace",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Mini moxas gold | SKU: PROD-55 | Precio: S/ 35.00 | Categoría: Acupuntura y Moxibustión | Medidas: 54 unidades | Stock: Disponible | Descripción: Mini Moxas Gold - Moxas pequeñas de alta pureza dorada."
   },
@@ -323,7 +407,7 @@ export const allProductsKnowledge = [
       "100 unidades"
     ],
     "resumen": "Mini Moxas para Aguja Caliente (Warm Needle).",
-    "descripcionCompleta": "• Bolsa de Mini Moxas de Artemisa en Cono (100 unidades) Características: • Contiene 100 mini moxas de Artemisa en forma de cono. • Medidas de cada moxa: 1 cm x 1 cm. • Diseadas para colocarse en la cabeza de la aguja, utilizadas en la técnica de \"Aguja caliente\" •. • Ideales para complementar tratamientos de acupuntura y potenciar los resultados terapéuticos. Una herramienta tradicional para llevar tus terapias al siguiente nivel . • Para Más detalles, consulta la descripción del video en el siguiente enlace. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Bolsa de Mini Moxas de Artemisa en Cono (100 unidades) Características: Contiene 100 mini moxas de Artemisa en forma de cono. Medidas de cada moxa: 1 cm x 1 cm. Diseadas para colocarse en la cabeza de la aguja, utilizadas en la técnica de \"Aguja caliente\" . Ideales para complementar tratamientos de acupuntura y potenciar los resultados terapéuticos. Una herramienta tradicional para llevar tus terapias al siguiente nivel . Para más detalles, consulta la descripción del video en el siguiente enlace. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Mini moxas para aguja caliente | SKU: PROD-157 | Precio: S/ 28.00 | Categoría: Acupuntura y Moxibustión | Medidas: 100 unidades | Stock: Disponible | Descripción: Mini Moxas para Aguja Caliente (Warm Needle)."
   },
@@ -346,7 +430,7 @@ export const allProductsKnowledge = [
       "180 unidades"
     ],
     "resumen": "Mini Moxas Stick - Caja de 180 unidades.",
-    "descripcionCompleta": "Mini Moxas Stick - Caja de 180 unidades. Mini moxas en forma de stick para Moxibustión sobre agujas. Caja de 180 unidades para uso profesional. Características: 180 unidades por caja Forma de stick para colocar en agujas de acupuntura Quema lenta y uniforme Calor terapéutico penetrante Ideal para \"aguja caliente\" (warm needle technique) • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Mini Moxas Stick - Caja de 180 unidades. Mini moxas en forma de stick para moxibustión sobre agujas. Caja de 180 unidades para uso profesional. Características: 180 unidades por caja Forma de stick para colocar en agujas de acupuntura Quema lenta y uniforme Calor terapéutico penetrante Ideal para \"aguja caliente\" (warm needle technique) Envío a todo el Perúú | 930830427",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Mini moxas stick (180 und) | SKU: PROD-67 | Precio: S/ 65.00 | Categoría: Acupuntura y Moxibustión | Medidas: 180 unidades | Stock: Disponible | Descripción: Mini Moxas Stick - Caja de 180 unidades."
   },
@@ -366,10 +450,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 45,
     "badge": "Garantizado",
     "medidas": [],
-    "resumen": "Moxa Dorada Suelta - Artemisa de alta pureza para Moxibustión.",
-    "descripcionCompleta": "La moxa dorada es un tipo de Moxibustión refinada, utilizada en la medicina tradicional china, elaborada con Artemisa (mugwort) de alta calidad y procesada varias veces para obtener una textura Más suave, fina y eficaz. • Qu es la Moxibustión La Moxibustión es una técnica terapéutica en la que se quema Artemisa seca (una planta medicinal) cerca de la piel o sobre puntos de acupuntura para: Estimular el flujo de energía (Qi) Calentar canales energéticos Aliviar dolores, rigidez, fatiga o fro interno Qu hace especial a la moxa dorada Se le llama \"dorada\" por el color claro y brillante de la Artemisa finamente molida. Sus características: Alta pureza (pasada por múltiples filtros) Textura sedosa y sin impurezas Arde de manera suave y pareja Produce menos humo que otras moxas comunes • Envío a todo el Perú • Pedidos al: 930830427",
+    "resumen": "Moxa Dorada Suelta - Artemisa de alta pureza para moxibustión.",
+    "descripcionCompleta": "La moxa dorada es un tipo de moxibustión refinada, utilizada en la medicina tradicional china, elaborada con Artemisa (mugwort) de alta calidad y procesada varias veces para obtener una textura más suave, fina y eficaz. Qu es la moxibustión La moxibustión es una técnica terapéutica en la que se quema Artemisa seca (una planta medicinal) cerca de la piel o sobre puntos de acupuntura para: Estimular el flujo de energía (Qi) Calentar canales energéticos Aliviar dolores, rigidez, fatiga o fro interno Qu hace especial a la moxa dorada Se le llama \"dorada\" por el color claro y brillante de la Artemisa finamente molida. Sus características: Alta pureza (pasada por múltiples filtros) Textura sedosa y sin impurezas Arde de manera suave y pareja Produce menos humo que otras moxas comunes Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
-    "fichaRAG": "Producto: Moxa dorada suelta | SKU: PROD-45 | Precio: S/ 55.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Moxa Dorada Suelta - Artemisa de alta pureza para Moxibustión."
+    "fichaRAG": "Producto: Moxa dorada suelta | SKU: PROD-45 | Precio: S/ 55.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Moxa Dorada Suelta - Artemisa de alta pureza para moxibustión."
   },
   {
     "id": "prod-155",
@@ -390,7 +474,7 @@ export const allProductsKnowledge = [
       "2 unidades"
     ],
     "resumen": "Moxa Sin Humo - Carbn de Artemisa para espacios cerrados.",
-    "descripcionCompleta": "• Moxas Sin Humo El poder de la Moxibustión sin olor • Pack x2 unidades No manchan ni generan humo Ideales para pacientes con asma o alergias Uso profesional en puntos de acupuntura • Pedidos al 930830427 • Envíos a todo el pas",
+    "descripcionCompleta": "Moxas Sin Humo El poder de la moxibustión sin olor Pack x2 unidades No manchan ni generan humo Ideales para pacientes con asma o alergias Uso profesional en puntos de acupuntura Pedidos al 930830427 Envíos a todo el pas",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Moxa sin humo | SKU: PROD-155 | Precio: S/ 20.00 | Categoría: Acupuntura y Moxibustión | Medidas: 2 unidades | Stock: Disponible | Descripción: Moxa Sin Humo - Carbn de Artemisa para espacios cerrados."
   },
@@ -411,7 +495,7 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Pipa de Moxibustión - Aplicador de calor concentrado.",
-    "descripcionCompleta": "• Pipa de Bamb para Moxibustión • Herramienta tradicional de Medicina China utilizada para tonificar puntos de acupuntura mediante calor terapéutico. • Medidas: 23.5 cm de largo x 10 cm de ancho. • La cabeza de la pipa est separada del mango para un manejo cómodo. Incluye rejilla en la boca para evitar que las cenizas quemen al paciente. • Ideal para terapia de calor profunda y estimulación de meridianos. Beneficios: Tonifica la energía (Qi) y fortalece la circulación. Apoya en el tratamiento de dolores musculares y articulares. Segura y fácil de usar. • Presentación: 1 unidad. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Pipa de Bamb para Moxibustión Herramienta tradicional de Medicina China utilizada para tonificar puntos de acupuntura mediante calor terapéutico. Medidas: 23.5 cm de largo x 10 cm de ancho. La cabeza de la pipa est separada del mango para un manejo cómodo. Incluye rejilla en la boca para evitar que las cenizas quemen al paciente. Ideal para terapia de calor profunda y estimulación de meridianos. Beneficios: Tonifica la energía (Qi) y fortalece la circulación. Apoya en el tratamiento de dolores musculares y articulares. Segura y fácil de usar. Presentación: 1 unidad. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Pipa de Moxibustión | SKU: PROD-158 | Precio: S/ 55.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Pipa de Moxibustión - Aplicador de calor concentrado."
   },
@@ -432,7 +516,7 @@ export const allProductsKnowledge = [
     "badge": "Más Vendido",
     "medidas": [],
     "resumen": "Porta Moxa de Acero Inoxidable - Soporte para puros de moxa.",
-    "descripcionCompleta": "Porta Moxa de Acero Inoxidable Profesional y Duradero Un accesorio imprescindible para la práctica de Moxibustión. Fabricado en acero inoxidable de alta calidad, Perúmite esmerilar, sujetar y apagar la moxa con total seguridad. Ventajas: No se calienta al tacto gracias a su material aislante. Resistente y fácil de limpiar. Ideal para uso profesional o terapéutico. • Uso recomendado: Mantn tus sesiones seguras y cómodas controlando el calor y evitando quemaduras. • Pedidos al por mayor y menor: 930830427 • Envíos a todo el Perú",
+    "descripcionCompleta": "Porta Moxa de Acero Inoxidable Profesional y Duradero Un accesorio imprescindible para la práctica de moxibustión. Fabricado en acero inoxidable de alta calidad, Perúmite esmerilar, sujetar y apagar la moxa con total seguridad. Ventajas: No se calienta al tacto gracias a su material aislante. Resistente y fácil de limpiar. Ideal para uso profesional o terapéutico. Uso recomendado: Mantn tus sesiones seguras y cómodas controlando el calor y evitando quemaduras. Pedidos al por mayor y menor: 930830427 Envíos a todo el Perúú",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Porta moxa de acero inoxidable | SKU: PROD-152 | Precio: S/ 35.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Porta Moxa de Acero Inoxidable - Soporte para puros de moxa."
   },
@@ -452,10 +536,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 37,
     "badge": "Recomendado",
     "medidas": [],
-    "resumen": "Puros de Moxa - Cigarros de Artemisa para Moxibustión.",
-    "descripcionCompleta": "• Puros de Moxa de Artemisa Con Humo La Moxibustión es una terapia ancestral de calor que ayuda a tonificar la energía de los meridianos, promover la circulación y mejorar el bienestar integral. • Presentación: Caja con 10 moxas. • Elaboradas con Artemisa 100% natural, brindando un calor profundo y terapéutico. • Versión con humo, ideal para tratamientos tradicionales. Beneficios: Estimula la energía vital (Qi). Alivia molestias musculares y articulares. Favorece la relajación y el equilibrio corporal. • Envío a todo el Perú • Pedidos al: 930830427 • Más información aqu: www.agujasacupuntura.com/moxa-con-humo Revise los TIPS para moxar en el siguiente enlace: https://youtu.be/SEHHOCnQANI",
+    "resumen": "Puros de Moxa - Cigarros de Artemisa para moxibustión.",
+    "descripcionCompleta": "Puros de Moxa de Artemisa Con Humo La moxibustión es una terapia ancestral de calor que ayuda a tonificar la energía de los meridianos, promover la circulación y mejorar el bienestar integral. Presentación: Caja con 10 moxas. Elaboradas con Artemisa 100% natural, brindando un calor profundo y terapéutico. Versión con humo, ideal para tratamientos tradicionales. Beneficios: Estimula la energía vital (Qi). Alivia molestias musculares y articulares. Favorece la relajación y el equilibrio corporal. Envío a todo el Perúú Pedidos al: 930830427 Más información aqu: www.agujasacupuntura.com/moxa-con-humo Revise los TIPS para moxar en el siguiente enlace: https://youtu.be/SEHHOCnQANI",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
-    "fichaRAG": "Producto: Puros de moxa | SKU: PROD-151 | Precio: S/ 25.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Puros de Moxa - Cigarros de Artemisa para Moxibustión."
+    "fichaRAG": "Producto: Puros de moxa | SKU: PROD-151 | Precio: S/ 25.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Puros de Moxa - Cigarros de Artemisa para moxibustión."
   },
   {
     "id": "prod-17",
@@ -474,7 +558,7 @@ export const allProductsKnowledge = [
     "badge": "Calidad Premium",
     "medidas": [],
     "resumen": "Roller de Moxibustión - Aplicador rodante de calor terapéutico.",
-    "descripcionCompleta": "Roller de Moxibustión El roller de Moxibustión es un dispositivo portátil diseñado para calentar y masajear puntos específicos del cuerpo, combinando técnicas tradicionales de masaje con los beneficios de la Moxibustión. • Cmo funciona Este dispositivo utiliza moxa de Artemisa en su interior, generando calor que se transmite a travs de su cubierta exterior de metal cromado, Perúmitiendo aplicar calor de forma controlada durante el masaje. • Usos y Beneficios Ayuda a tonificar los meridianos energéticos Perúmite árealizar masajes terapéuticos y energéticos • Estimula puntos específicos del cuerpo • Proporciona calor localizado para mayor relajación • Características • Diseño portátil y práctico • Cubierta de metal cromado resistente • Utiliza moxa de Artemisa para generar calor terapéutico • Ideal para terapias de bienestar, medicina tradicional y masajes energéticos. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Roller de Moxibustión El roller de moxibustión es un dispositivo portátil diseñado para calentar y masajear puntos específicos del cuerpo, combinando técnicas tradicionales de masaje con los beneficios de la moxibustión. Cmo funciona Este dispositivo utiliza moxa de Artemisa en su interior, generando calor que se transmite a travs de su cubierta exterior de metal cromado, Perúmitiendo aplicar calor de forma controlada durante el masaje. Usos y Beneficios Ayuda a tonificar los meridianos energéticos Perúmite árealizar masajes terapéuticos y energéticos Estimula puntos específicos del cuerpo Proporciona calor localizado para mayor relajación Características Diseño portátil y práctico Cubierta de metal cromado resistente Utiliza moxa de Artemisa para generar calor terapéutico Ideal para terapias de bienestar, medicina tradicional y masajes energéticos. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Roller de Moxibustión | SKU: PROD-17 | Precio: S/ 70.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Roller de Moxibustión - Aplicador rodante de calor terapéutico."
   },
@@ -495,7 +579,7 @@ export const allProductsKnowledge = [
     "badge": "Garantizado",
     "medidas": [],
     "resumen": "Todo en Agujas de Acupuntura y Moxibustión.",
-    "descripcionCompleta": "• Agujas de Acupuntura y Moxibustión • Buen día, te saludamos desde Agujas de Acupuntura Perú. Tenemos una amplia gama de productos en: Agujas de Acupuntura • Moxas con humo • Moxas sin humo • Cajas de Moxibustión • Muñecos de Acupuntura • Láminas y Más... • Hacemos Envíos a todo el Perú. • Solicita tu pedido por WhatsApp al 930830427.",
+    "descripcionCompleta": "Agujas de Acupuntura y Moxibustión Buen día, te saludamos desde Agujas de Acupuntura Perúú. Tenemos una amplia gama de productos en: Agujas de Acupuntura Moxas con humo Moxas sin humo Cajas de moxibustión Muñecos de Acupuntura Láminas y más... Hacemos envíos a todo el Perúú. Solicita tu pedido por WhatsApp al 930830427.",
     "especificaciones": "Esterilizadas: Individualmente | Acero Quirúrgico: Inoxidable | Alta Precisión: Con Guía | Uso Clínico: Garantizado",
     "fichaRAG": "Producto: Todo en Agujas de Acupuntura y Moxibustión | SKU: PROD-27 | Precio: S/ 0.00 | Categoría: Acupuntura y Moxibustión | Medidas: Estándar | Stock: Disponible | Descripción: Todo en Agujas de Acupuntura y Moxibustión."
   },
@@ -518,7 +602,7 @@ export const allProductsKnowledge = [
       "180 unidades"
     ],
     "resumen": "Balines de Oro para Auriculoterapia.",
-    "descripcionCompleta": "• Balines de Oro de Auriculoterapia Tonificación premium • Balines de Oro para Auriculoterapia Los balines de oro son ideales para estimular puntos auriculares y apoyar tratamientos de bienestar y alivio de diversas dolencias. Características: • Dimetro: 1 mm. • Algunos imantados para aplicaciones magnéticas y mayor efectividad. • Diseño práctico para una aplicación rápida y profesional. Perúfectos para auriculoterapia profesional o terapias de cuidado Perúsonal. • Usados en medicina tradicional china para tonificar puntos auriculares. • Paquete de 180 unidades • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Balines de Oro de Auriculoterapia Tonificación premium Balines de Oro para Auriculoterapia Los balines de oro son ideales para estimular puntos auriculares y apoyar tratamientos de bienestar y alivio de diversas dolencias. Características: Dimetro: 1 mm. Algunos imantados para aplicaciones magnéticas y mayor efectividad. Diseño práctico para una aplicación rápida y profesional. Perúfectos para auriculoterapia profesional o terapias de cuidado Perúsonal. Usados en medicina tradicional china para tonificar puntos auriculares. Paquete de 180 unidades Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: BALINES DE ORO | SKU: PROD-147 | Precio: S/ 35.00 | Categoría: Auriculoterapia | Medidas: 180 unidades | Stock: Disponible | Descripción: Balines de Oro para Auriculoterapia."
   },
@@ -539,7 +623,7 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Balines de Plata para Auriculoterapia.",
-    "descripcionCompleta": "Balines de Plata para Auriculoterapia Pequeos balines de plata utilizados para estimular puntos auriculares y corporales en tratamientos de auriculoterapia. Características: • Dimetro aproximado: 1 mm. • Hechos de plata, Perúmitiendo buena respirabilidad y cuidado de la piel. • Montados en cinta micropore para fácil aplicación. • Estimulan puntos terapéuticos para apoyar el bienestar del paciente. Ideales para terapias de auriculoterapia y estimulación energética con aplicación rápida y práctica. • Envío a todo el Perú • Pedidos al: 930830427 • Más información aqu: • https://youtube.com/shorts/SLiX5u5Bjtk https://youtube.com/shorts/SLiX5u5Bjtkfeature=share Perúfectos para sesiones cómodas y efectivas de terapia.",
+    "descripcionCompleta": "Balines de Plata para Auriculoterapia Pequeos balines de plata utilizados para estimular puntos auriculares y corporales en tratamientos de auriculoterapia. Características: Dimetro aproximado: 1 mm. Hechos de plata, Perúmitiendo buena respirabilidad y cuidado de la piel. Montados en cinta micropore para fácil aplicación. Estimulan puntos terapéuticos para apoyar el bienestar del paciente. Ideales para terapias de auriculoterapia y estimulación energética con aplicación rápida y práctica. Envío a todo el Perúú Pedidos al: 930830427 Más información aqu: https://youtube.com/shorts/SLiX5u5Bjtk https://youtube.com/shorts/SLiX5u5Bjtkfeature=share Perúfectos para sesiones cómodas y efectivas de terapia.",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: Balines de Plata | SKU: PROD-148 | Precio: S/ 30.00 | Categoría: Auriculoterapia | Medidas: Estándar | Stock: Disponible | Descripción: Balines de Plata para Auriculoterapia."
   },
@@ -562,7 +646,7 @@ export const allProductsKnowledge = [
       "100 unidades"
     ],
     "resumen": "Balines Decorativos de Auriculoterapia - Transparentes con cristal.",
-    "descripcionCompleta": "Balines Transparentes para Auriculoterapia • Material Hipoalergnico: ideales para todo tipo de piel. • Con Ncleo de Plata: mantiene el efecto terapéutico. • Diseño Estético y Discreto: pensado para la comodidad y satisfacción de los pacientes. • Presentación: paquete de 100 unidades. • Envío a todo el Perú • Pedidos al: 930830427 • En el siguiente enlace puedes apreciar sus características: https://youtube.com/shorts/PujkCLVgOHUsi=J6gvfeZu0qjqQkMM",
+    "descripcionCompleta": "Balines Transparentes para Auriculoterapia Material Hipoalergnico: ideales para todo tipo de piel. Con Ncleo de Plata: mantiene el efecto terapéutico. Diseño Estético y Discreto: pensado para la comodidad y satisfacción de los pacientes. Presentación: paquete de 100 unidades. Envío a todo el Perúú Pedidos al: 930830427 En el siguiente enlace puedes apreciar sus características: https://youtube.com/shorts/PujkCLVgOHUsi=J6gvfeZu0qjqQkMM",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: Balines decorativos de Auriculoterapia | SKU: PROD-145 | Precio: S/ 40.00 | Categoría: Auriculoterapia | Medidas: 100 unidades | Stock: Disponible | Descripción: Balines Decorativos de Auriculoterapia - Transparentes con cristal."
   },
@@ -583,7 +667,7 @@ export const allProductsKnowledge = [
     "badge": "Recomendado",
     "medidas": [],
     "resumen": "Cero Smoke - Dispositivo auricular para dejar de fumar.",
-    "descripcionCompleta": "• ZEROSMOKE utiliza dos imanes biomagnéticos que estimulan puntos específicos en la oreja según la medicina tradicional china, ayudando a reducir la ansiedad por la nicotina sin qumicos ni medicamentos! Sin efectos secundarios. fácil de usar en cualquier momento del da. Discreto, cómodo y reutilizable. Empleo diario de 6 horas • El paquete incluye: • Par de imanes biomagnéticos • Manual de instrucciones • Contctanos al: 930830427",
+    "descripcionCompleta": "ZEROSMOKE utiliza dos imanes biomagnéticos que estimulan puntos específicos en la oreja según la medicina tradicional china, ayudando a reducir la ansiedad por la nicotina sin qumicos ni medicamentos! Sin efectos secundarios. Fácil de usar en cualquier momento del da. Discreto, cómodo y reutilizable. Empleo diario de 6 horas El paquete incluye: Par de imanes biomagnéticos Manual de instrucciones Contctanos al: 930830427",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: Cero Smoke | SKU: PROD-52 | Precio: S/ 20.00 | Categoría: Auriculoterapia | Medidas: Estándar | Stock: Disponible | Descripción: Cero Smoke - Dispositivo auricular para dejar de fumar."
   },
@@ -606,7 +690,7 @@ export const allProductsKnowledge = [
       "100 unidades"
     ],
     "resumen": "Chinchetas (Agujas SemiPerúmanentes) para Auriculoterapia.",
-    "descripcionCompleta": "• Chinchetas de Auriculoterapia Estmulo preciso y prolongado • Microagujas con adhesivo para estimulación continua de puntos auriculares. • Beneficios: Mayor efectividad Efecto profundo Caja x100 unidades • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Chinchetas de Auriculoterapia Estmulo preciso y prolongado Microagujas con adhesivo para estimulación continua de puntos auriculares. Beneficios: Mayor efectividad Efecto profundo Caja x100 unidades Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: Chinchetas para Auriculoterapia | SKU: PROD-146 | Precio: S/ 25.00 | Categoría: Auriculoterapia | Medidas: 100 unidades | Stock: Disponible | Descripción: Chinchetas (Agujas SemiPerúmanentes) para Auriculoterapia."
   },
@@ -627,7 +711,7 @@ export const allProductsKnowledge = [
     "badge": "Garantizado",
     "medidas": [],
     "resumen": "Cuaderno de Auriculoterapia - Material didáctico de estudio.",
-    "descripcionCompleta": "Cuaderno de Auriculoterapia - Material didáctico de estudio. Cuaderno con mapas, diagramas y puntos de auriculoterapia para estudio y práctica clnica. Contenido: Mapas del pabelln auricular Puntos de auriculoterapia Protocolos de tratamiento Espacio para notas clnicas Material de referencia para profesionales • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Cuaderno de Auriculoterapia - Material didáctico de estudio. Cuaderno con mapas, diagramas y puntos de auriculoterapia para estudio y práctica clínica. Contenido: Mapas del pabelln auricular Puntos de auriculoterapia Protocolos de tratamiento Espacio para notas clínicas Material de referencia para profesionales Envío a todo el Perúú | 930830427",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: Cuaderno de Auriculoterapia | SKU: PROD-69 | Precio: S/ 15.00 | Categoría: Auriculoterapia | Medidas: Estándar | Stock: Disponible | Descripción: Cuaderno de Auriculoterapia - Material didáctico de estudio."
   },
@@ -648,7 +732,7 @@ export const allProductsKnowledge = [
     "badge": "Envío Inmediato",
     "medidas": [],
     "resumen": "Detector de puntos de Auriculoterapia - Localizador electrónico.",
-    "descripcionCompleta": "• Detector de Puntos de Auriculoterapia precisión garantizada Qu hace el detector de puntos El detector Perúmite encontrar los puntos activos (puntos que responden al malestar o desequilibrio del cuerpo). Estos puntos suelen estar: Más sensibles al tacto Con menor resistencia elctrica (en detectores electrónicos) Levemente hundidos o duros al presionar (en detectores manuales) • Coloca la punta metlica en la oreja y esPerúa la luz verde: punto localizado! • Presentación en caja con instrucciones. • Pide el tuyo al 930830427 • Envíos a nivel nacional",
+    "descripcionCompleta": "Detector de Puntos de Auriculoterapia Precisión garantizada Qu hace el detector de puntos El detector Perúmite encontrar los puntos activos (puntos que responden al malestar o desequilibrio del cuerpo). Estos puntos suelen estar: Más sensibles al tacto Con menor resistencia elctrica (en detectores electrónicos) Levemente hundidos o duros al presionar (en detectores manuales) Coloca la punta metlica en la oreja y esPerúa la luz verde: punto localizado! Presentación en caja con instrucciones. Pide el tuyo al 930830427 Envíos a nivel nacional",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: Detector de puntos de Auriculoterapia | SKU: PROD-46 | Precio: S/ 299.00 | Categoría: Auriculoterapia | Medidas: Estándar | Stock: Disponible | Descripción: Detector de puntos de Auriculoterapia - Localizador electrónico."
   },
@@ -669,7 +753,7 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Imanes para Auriculoterapia - Estimulación magnética de puntos auriculares.",
-    "descripcionCompleta": "• Imanes para Auriculoterapia Beneficios y características: • Ideales para estimular puntos clave en la oreja • y promover el equilibrio energético •. Ayudan en tratamientos de dolor, ansiedad, estrés y otros desequilibrios . • Tamao pequeño y fáciles de usar para un tratamiento cómodo. • Favorecen la mejora del bienestar general de forma natural. Un complemento Perúfecto para tus sesiones de auriculoterapia. • Envío a todo el Perú • Pedidos al: 930830427 • Más información aqu: • Para Más detalles, consulta la descripción del video en el siguiente enlace. https://youtube.com/shorts/Po-yTgwLZiA",
+    "descripcionCompleta": "Imanes para Auriculoterapia Beneficios y características: Ideales para estimular puntos clave en la oreja y promover el equilibrio energético . Ayudan en tratamientos de dolor, ansiedad, estrés y otros desequilibrios . Tamao pequeño y fáciles de usar para un tratamiento cómodo. Favorecen la mejora del bienestar general de forma natural. Un complemento Perúfecto para tus sesiones de auriculoterapia. Envío a todo el Perúú Pedidos al: 930830427 Más información aqu: Para más detalles, consulta la descripción del video en el siguiente enlace. https://youtube.com/shorts/Po-yTgwLZiA",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: Imanes de Auriculoterapia | SKU: PROD-144 | Precio: S/ 30.00 | Categoría: Auriculoterapia | Medidas: Estándar | Stock: Disponible | Descripción: Imanes para Auriculoterapia - Estimulación magnética de puntos auriculares."
   },
@@ -690,7 +774,7 @@ export const allProductsKnowledge = [
     "badge": "Más Vendido",
     "medidas": [],
     "resumen": "Kit Completo de Auriculoterapia - Set profesional todo incluido.",
-    "descripcionCompleta": "Kit Completo de Auriculoterapia - Set profesional todo incluido. Kit profesional completo para auriculoterapia con todos los materiales necesarios para iniciar la práctica clnica. Incluye: Maqueta de oreja Láminas de puntos auriculares Cuaderno de auriculoterapia Agujas semiPerúmanentes Balines dorados y plateados Semillas de Vaccaria Pinzas para aplicación Detector de puntos Estuche de almacenamiento • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Kit Completo de Auriculoterapia - Set profesional todo incluido. Kit profesional completo para auriculoterapia con todos los materiales necesarios para iniciar la práctica clínica. Incluye: Maqueta de oreja Láminas de puntos auriculares Cuaderno de auriculoterapia Agujas semiPerúmanentes Balines dorados y plateados Semillas de Vaccaria Pinzas para aplicación Detector de puntos Estuche de almacenamiento Envío a todo el Perúú | 930830427",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: kit completo de Auriculoterapia | SKU: PROD-70 | Precio: S/ 190.00 | Categoría: Auriculoterapia | Medidas: Estándar | Stock: Disponible | Descripción: Kit Completo de Auriculoterapia - Set profesional todo incluido."
   },
@@ -711,7 +795,7 @@ export const allProductsKnowledge = [
     "badge": "Recomendado",
     "medidas": [],
     "resumen": "Kit Completo de Auriculoterapia.",
-    "descripcionCompleta": "Kit Completo de Auriculoterapia. Kit todo incluido para practicar auriculoterapia profesionalmente. Incluye: Agujas de auriculoterapia (semiPerúmanentes) Balines dorados y/o plateados Semillas de Vaccaria Pinzas para colocacin Maqueta de oreja Lmina de puntos auriculares Estuche o bolsa de almacenamiento Ideal para profesionales que inician en auriculoterapia. • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Kit Completo de Auriculoterapia. Kit todo incluido para practicar auriculoterapia profesionalmente. Incluye: Agujas de auriculoterapia (semiPerúmanentes) Balines dorados y/o plateados Semillas de Vaccaria Pinzas para colocacin Maqueta de oreja Lámina de puntos auriculares Estuche o bolsa de almacenamiento Ideal para profesionales que inician en auriculoterapia. Envío a todo el Perúú | 930830427",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: KIT DE AURICULOTERAPIA | SKU: PROD-62 | Precio: S/ 135.00 | Categoría: Auriculoterapia | Medidas: Estándar | Stock: Disponible | Descripción: Kit Completo de Auriculoterapia."
   },
@@ -731,10 +815,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 20,
     "badge": "Calidad Premium",
     "medidas": [],
-    "resumen": "• Línea completa de Auriculoterapia.",
-    "descripcionCompleta": "• Línea completa de Auriculoterapia. Catálogo completo de productos para auriculoterapia: agujas, balines, semillas de vaccaria, maquetas, láminas, kits completos y accesorios. Consultar disponibilidad y precios de productos específicos. • Envío a todo el Perú | • 930830427",
+    "resumen": "Línea completa de Auriculoterapia.",
+    "descripcionCompleta": "Línea completa de Auriculoterapia. Catálogo completo de productos para auriculoterapia: agujas, balines, semillas de vaccaria, maquetas, láminas, kits completos y accesorios. Consultar disponibilidad y precios de productos específicos. Envío a todo el Perúú | 930830427",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
-    "fichaRAG": "Producto: Línea de Auriculoterapia | SKU: PROD-26 | Precio: S/ 0.00 | Categoría: Auriculoterapia | Medidas: Estándar | Stock: Disponible | Descripción: • Línea completa de Auriculoterapia."
+    "fichaRAG": "Producto: Línea de Auriculoterapia | SKU: PROD-26 | Precio: S/ 0.00 | Categoría: Auriculoterapia | Medidas: Estándar | Stock: Disponible | Descripción: Línea completa de Auriculoterapia."
   },
   {
     "id": "prod-71",
@@ -753,7 +837,7 @@ export const allProductsKnowledge = [
     "badge": "Garantizado",
     "medidas": [],
     "resumen": "Oreja de Goma de 8 cm para práctica de Auriculoterapia.",
-    "descripcionCompleta": "Oreja de Goma de 8 cm para práctica de Auriculoterapia. Modelo de oreja en goma/silicona de 8 cm para practicar la localización y Punción de puntos auriculares. Características: Material: Goma/silicona flexible Tamao: 8 cm Textura similar a la piel para práctica áreal Ideal para entrenamiento y enseanza • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Oreja de Goma de 8 cm para práctica de Auriculoterapia. Modelo de oreja en goma/silicona de 8 cm para practicar la localización y punción de puntos auriculares. Características: Material: Goma/silicona flexible Tamao: 8 cm Textura similar a la piel para práctica áreal Ideal para entrenamiento y enseanza Envío a todo el Perúú | 930830427",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: Oreja de goma de 8 cm | SKU: PROD-71 | Precio: S/ 25.00 | Categoría: Auriculoterapia | Medidas: Estándar | Stock: Disponible | Descripción: Oreja de Goma de 8 cm para práctica de Auriculoterapia."
   },
@@ -774,7 +858,7 @@ export const allProductsKnowledge = [
     "badge": "Envío Inmediato",
     "medidas": [],
     "resumen": "Puntor de Auriculoterapia - Herramienta rgida de localización.",
-    "descripcionCompleta": "• Puntor de Auriculoterapia precisión en tus manos • Herramienta esencial para localizar y estimular puntos auriculares con exactitud. Punta fina para detectar puntos activos Ideal para diagnóstico y estimulación sin agujas Compacto, higinico y fácil de transportar Fabricado en metal resistente Recomendado para: Terapeutas de auriculoterapia Estudiantes y docentes de medicina china • Tamao práctico y ergonmico • Pedidos al 930830427 • Envíos a todo el Perú • www.agujasacupunturaPerúu.com • Más información aqu: https://youtu.be/o8ZXqNzTfI8si=SUGBt2EkyazHj6Ny https://youtu.be/o8ZXqNzTfI8",
+    "descripcionCompleta": "Puntor de Auriculoterapia Precisión en tus manos Herramienta esencial para localizar y estimular puntos auriculares con exactitud. Punta fina para detectar puntos activos Ideal para diagnóstico y estimulación sin agujas Compacto, higinico y fácil de transportar Fabricado en metal resistente Recomendado para: Terapeutas de auriculoterapia Estudiantes y docentes de medicina china Tamao práctico y ergonmico Pedidos al 930830427 Envíos a todo el Perúú www.agujasacupunturaPerúu.com Más información aqu: https://youtu.be/o8ZXqNzTfI8si=SUGBt2EkyazHj6Ny https://youtu.be/o8ZXqNzTfI8",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: Puntor de Auriculoterapia | SKU: PROD-139 | Precio: S/ 20.00 | Categoría: Auriculoterapia | Medidas: Estándar | Stock: Disponible | Descripción: Puntor de Auriculoterapia - Herramienta rgida de localización."
   },
@@ -795,7 +879,7 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Puntor Retrctil para Auriculoterapia y Acupuntura.",
-    "descripcionCompleta": "Los palpadores se emplean en Auriculoterapia • para explorar y determinar los puntos • como parte de la exploracin auricular •. También son ideales cuando el paciente no desea la colocacin de agujas en las orejas . Una herramienta práctica y verstil! • Envío a todo el Perú • Pedidos al: 930830427 • Para Más detalles, consulta la descripción del video en el siguiente enlace. https://youtu.be/o8ZXqNzTfI8si=SUGBt2EkyazHj6Ny",
+    "descripcionCompleta": "Los palpadores se emplean en Auriculoterapia para explorar y determinar los puntos como parte de la exploracin auricular . También son ideales cuando el paciente no desea la colocacin de agujas en las orejas . Una herramienta práctica y verstil! Envío a todo el Perúú Pedidos al: 930830427 Para más detalles, consulta la descripción del video en el siguiente enlace. https://youtu.be/o8ZXqNzTfI8si=SUGBt2EkyazHj6Ny",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: Puntor Retractil | SKU: PROD-140 | Precio: S/ 25.00 | Categoría: Auriculoterapia | Medidas: Estándar | Stock: Disponible | Descripción: Puntor Retrctil para Auriculoterapia y Acupuntura."
   },
@@ -816,7 +900,7 @@ export const allProductsKnowledge = [
     "badge": "Más Vendido",
     "medidas": [],
     "resumen": "Semilla de Vaccaria para Auriculoterapia.",
-    "descripcionCompleta": "Semilla de Vaccaria para Auriculoterapia. Semillas naturales de Vaccaria segetalis en parches adhesivos para estimulación continua de puntos auriculares. Características: Semillas naturales de Vaccaria Parches adhesivos de alta adherencia Estmulo continuo no invasivo Sin efectos secundarios fácil aplicación Diferentes presentaciones disponibles • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Semilla de Vaccaria para Auriculoterapia. Semillas naturales de Vaccaria segetalis en parches adhesivos para estimulación continua de puntos auriculares. Características: Semillas naturales de Vaccaria Parches adhesivos de alta adherencia Estmulo continuo no invasivo Sin efectos secundarios Fácil aplicación Diferentes presentaciones disponibles Envío a todo el Perúú | 930830427",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: SEMILLA DE VACCARIA | SKU: PROD-142 | Precio: S/ 25.00 | Categoría: Auriculoterapia | Medidas: Estándar | Stock: Disponible | Descripción: Semilla de Vaccaria para Auriculoterapia."
   },
@@ -837,7 +921,7 @@ export const allProductsKnowledge = [
     "badge": "Recomendado",
     "medidas": [],
     "resumen": "Semillas de Vaccaria para Auriculoterapia - 600 semillas por paquete.",
-    "descripcionCompleta": "• Semillas de Vaccaria para Auriculoterapia Las semillas de vaccaria son utilizadas en auriculoterapia para estimular puntos específicos del odo y ayudar a equilibrar la energía del cuerpo. Beneficios: • Ayudan a reducir estrés, ansiedad e insomnio. • Apoyan en el alivio del dolor y migraas. • Favorecen el equilibrio del organismo según la medicina tradicional. • Aplicación: Se colocan en puntos del pabelln auricular y se fijan con un adhesivo especial para estimular suavemente la zona durante el día. Ideales para terapias de auriculoterapia y bienestar natural. • Envío a todo el Perú • Pedidos al: 930830427 • Más información aqu: https://youtu.be/32lwZh1lW8Usi=y5tR1_CFWSjCHj-1",
+    "descripcionCompleta": "Semillas de Vaccaria para Auriculoterapia Las semillas de vaccaria son utilizadas en auriculoterapia para estimular puntos específicos del odo y ayudar a equilibrar la energía del cuerpo. Beneficios: Ayudan a reducir estrés, ansiedad e insomnio. Apoyan en el alivio del dolor y migraas. Favorecen el equilibrio del organismo según la medicina tradicional. Aplicación: Se colocan en puntos del pabelln auricular y se fijan con un adhesivo especial para estimular suavemente la zona durante el día. Ideales para terapias de auriculoterapia y bienestar natural. Envío a todo el Perúú Pedidos al: 930830427 Más información aqu: https://youtu.be/32lwZh1lW8Usi=y5tR1_CFWSjCHj-1",
     "especificaciones": "Puntos Reflejos: Localización | Hipoalergénico: Adhesivo Fuerte | Guía Clínica: Incluida | Uso Diario: Terapéutico",
     "fichaRAG": "Producto: Semillas de Vaccaria | SKU: PROD-68 | Precio: S/ 25.00 | Categoría: Auriculoterapia | Medidas: Estándar | Stock: Disponible | Descripción: Semillas de Vaccaria para Auriculoterapia - 600 semillas por paquete."
   },
@@ -858,7 +942,7 @@ export const allProductsKnowledge = [
     "badge": "Calidad Premium",
     "medidas": [],
     "resumen": "Almohada Ortopdica con Doble Curva para Cuello.",
-    "descripcionCompleta": "• Almohada Ortopdica con Curva para el Cuello • Tu cuello en la posición Perúfecta toda la noche Diseada con forma ergonmica que sostiene la curvatura natural cervical, reduciendo la presión en vértebras y Másculos. Ideal para prevenir dolores de cuello, rigidez matutina y mejorar la respiracin nocturna. Alinea columna y cuello. Reduce tensión y contracturas. Favorece la relajación muscular. • Disponible para entrega inmediata • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Almohada Ortopdica con Curva para el Cuello Tu cuello en la posición Perúfecta toda la noche Diseada con forma ergonmica que sostiene la curvatura natural cervical, reduciendo la presión en vértebras y músculos. Ideal para prevenir dolores de cuello, rigidez matutina y mejorar la respiracin nocturna. Alinea columna y cuello. Reduce tensión y contracturas. Favorece la relajación muscular. Disponible para entrega inmediata Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Almohada ortopdica con doble curva | SKU: PROD-114 | Precio: S/ 60.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: Almohada Ortopdica con Doble Curva para Cuello."
   },
@@ -879,7 +963,7 @@ export const allProductsKnowledge = [
     "badge": "Garantizado",
     "medidas": [],
     "resumen": "Almohada Viscoelástica con Gel - Ortopdica para cuello.",
-    "descripcionCompleta": "• Almohada Viscoelástica con Gel • Descansa mejor, despierta renovado Diseada para alinear correctamente tu columna durante el sueo, reduciendo tensión en cuello y hombros. El gel incorporado ayuda a regular la temPerúatura, evitando el exceso de calor y favoreciendo un sueo Más profundo y reparador. Mejora la postura cervical. Reduce dolores musculares y rigidez. Ideal para Perúsonas con insomnio o estrés. • Stock disponible • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Almohada Viscoelástica con Gel Descansa mejor, despierta renovado Diseada para alinear correctamente tu columna durante el sueo, reduciendo tensión en cuello y hombros. El gel incorporado ayuda a regular la temPerúatura, evitando el exceso de calor y favoreciendo un sueo más profundo y reparador. Mejora la postura cervical. Reduce dolores musculares y rigidez. Ideal para Perúsonas con insomnio o estrés. Stock disponible Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Almohada viscoelástica | SKU: PROD-113 | Precio: S/ 65.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: Almohada Viscoelástica con Gel - Ortopdica para cuello."
   },
@@ -900,7 +984,7 @@ export const allProductsKnowledge = [
     "badge": "Envío Inmediato",
     "medidas": [],
     "resumen": "Almohadilla protectora para codo y rodilla.",
-    "descripcionCompleta": "Almohadilla para Codo / Rodilla La almohadilla para codo o rodilla es un accesorio diseñado para brindar confort y protección durante actividades físicas y movimientos repetitivos. • Cuida tus articulaciones y mantente activo con mayor seguridad y comodidad. • Función Principal Reduce la presión en las articulaciones Disminuye molestias durante el ejercicio Ideal para entrenamientos y actividades deportivas útil también en actividades diarias • Beneficios • Mayor comodidad en cada movimiento • Protección adicional para tus articulaciones Apoyo en rutinas de rehabilitación o prevención • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Almohadilla para Codo / Rodilla La almohadilla para codo o rodilla es un accesorio diseñado para brindar confort y protección durante actividades físicas y movimientos repetitivos. Cuida tus articulaciones y mantente activo con mayor seguridad y comodidad. Función Principal Reduce la presión en las articulaciones Disminuye molestias durante el ejercicio Ideal para entrenamientos y actividades deportivas útil también en actividades diarias Beneficios Mayor comodidad en cada movimiento Protección adicional para tus articulaciones Apoyo en rutinas de rehabilitación o prevención Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Almohadilla codo/rodilla | SKU: PROD-12 | Precio: S/ 20.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: Almohadilla protectora para codo y rodilla."
   },
@@ -921,7 +1005,7 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Frula Stack - Para dedo en martillo y lesiones del tendón extensor.",
-    "descripcionCompleta": "• Frulas Digitales Protege tus dedos con confianza • Fractura, tendinitis o esguince de dedos • Tenemos frulas digitales para: Fracturas Lesiones por impacto Esguinces Rehabilitación en casa • Incluye tutorial digital con indicaciones de uso. • Contctanos al 930830427 • Envíos todo el Perú En el siguiente enlace puede ver el producto https://youtube.com/shorts/hIsaRLV4k2Qsi=FChqMAWFH41GQ7bp https://youtu.be/zvXGAvp_EMw https://youtu.be/Y0WR5Kn3Pas https://youtu.be/ThdxMKBLZVI https://youtube.com/shorts/PKfinFU46H4feature=share Tutorial masaje manos: https://youtu.be/vtuPvfHWrqY",
+    "descripcionCompleta": "Frulas Digitales Protege tus dedos con confianza Fractura, tendinitis o esguince de dedos Tenemos frulas digitales para: Fracturas Lesiones por impacto Esguinces Rehabilitación en casa Incluye tutorial digital con indicaciones de uso. Contctanos al 930830427 Envíos todo el Perúú En el siguiente enlace puede ver el producto https://youtube.com/shorts/hIsaRLV4k2Qsi=FChqMAWFH41GQ7bp https://youtu.be/zvXGAvp_EMw https://youtu.be/Y0WR5Kn3Pas https://youtu.be/ThdxMKBLZVI https://youtube.com/shorts/PKfinFU46H4feature=share Tutorial masaje manos: https://youtu.be/vtuPvfHWrqY",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Ferula Stack | SKU: PROD-121 | Precio: S/ 23.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: Frula Stack - Para dedo en martillo y lesiones del tendón extensor."
   },
@@ -942,7 +1026,7 @@ export const allProductsKnowledge = [
     "badge": "Más Vendido",
     "medidas": [],
     "resumen": "Frula de Aluminio con 4 Varillas - Inmovilización robusta de dedos.",
-    "descripcionCompleta": "• Frulas Digitales Protege tus dedos con confianza • Fractura, tendinitis o esguince de dedos Frula de aluminio de 4 varillas • Indicada para esguinces o fracturas en los dedos. Fabricada en aluminio con ajuste cómodo. • Tallas disponibles: S, M, L. • Envío a todo el Perú • Pedidos al: 930830427 • Para Más detalles, consulta la descripción del video en el siguiente enlace. https://youtube.com/shorts/Ij1NZ87CMDYsi=Uz6rgfOCv1oZucOC",
+    "descripcionCompleta": "Frulas Digitales Protege tus dedos con confianza Fractura, tendinitis o esguince de dedos Frula de aluminio de 4 varillas Indicada para esguinces o fracturas en los dedos. Fabricada en aluminio con ajuste cómodo. Tallas disponibles: S, M, L. Envío a todo el Perúú Pedidos al: 930830427 Para más detalles, consulta la descripción del video en el siguiente enlace. https://youtube.com/shorts/Ij1NZ87CMDYsi=Uz6rgfOCv1oZucOC",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Frula Aluminio 4 Varillas | SKU: PROD-120 | Precio: S/ 45.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: Frula de Aluminio con 4 Varillas - Inmovilización robusta de dedos."
   },
@@ -963,7 +1047,7 @@ export const allProductsKnowledge = [
     "badge": "Recomendado",
     "medidas": [],
     "resumen": "Frula en Gancho para dedos - Inmovilización de dedo en extensión.",
-    "descripcionCompleta": "• Frulas Digitales Protege tus dedos con confianza • Fractura, tendinitis o esguince de dedos • Tenemos frulas digitales para: Fracturas Lesiones por impacto Esguinces Rehabilitación en casa • Incluye tutorial digital con indicaciones de uso. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Frulas Digitales Protege tus dedos con confianza Fractura, tendinitis o esguince de dedos Tenemos frulas digitales para: Fracturas Lesiones por impacto Esguinces Rehabilitación en casa Incluye tutorial digital con indicaciones de uso. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Frula en gancho | SKU: PROD-117 | Precio: S/ 35.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: Frula en Gancho para dedos - Inmovilización de dedo en extensión."
   },
@@ -984,7 +1068,7 @@ export const allProductsKnowledge = [
     "badge": "Calidad Premium",
     "medidas": [],
     "resumen": "Frula en Resorte - Para correccin dinmica de dedos.",
-    "descripcionCompleta": "• Frulas Digitales Protege tus dedos con confianza • Fractura, tendinitis o esguince de dedos • Tenemos frulas digitales para: Fracturas Lesiones por impacto Esguinces Rehabilitación en casa • Incluye tutorial digital con indicaciones de uso. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Frulas Digitales Protege tus dedos con confianza Fractura, tendinitis o esguince de dedos Tenemos frulas digitales para: Fracturas Lesiones por impacto Esguinces Rehabilitación en casa Incluye tutorial digital con indicaciones de uso. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Frula en resorte | SKU: PROD-118 | Precio: S/ 60.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: Frula en Resorte - Para correccin dinmica de dedos."
   },
@@ -1005,7 +1089,7 @@ export const allProductsKnowledge = [
     "badge": "Garantizado",
     "medidas": [],
     "resumen": "Frula Modelo Sandalia - Para inmovilización de pie y tobillo.",
-    "descripcionCompleta": "• Frulas Digitales Protege tus dedos con confianza • Fractura, tendinitis o esguince de dedos • Tenemos frulas digitales para: Fracturas Lesiones por impacto Esguinces Rehabilitación en casa • Incluye tutorial digital con indicaciones de uso. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Frulas Digitales Protege tus dedos con confianza Fractura, tendinitis o esguince de dedos Tenemos frulas digitales para: Fracturas Lesiones por impacto Esguinces Rehabilitación en casa Incluye tutorial digital con indicaciones de uso. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Frula en sandalia | SKU: PROD-119 | Precio: S/ 30.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: Frula Modelo Sandalia - Para inmovilización de pie y tobillo."
   },
@@ -1028,7 +1112,7 @@ export const allProductsKnowledge = [
       "3Ml"
     ],
     "resumen": "Plantilla de Memory Foam - Soporte para pie plano y comodidad.",
-    "descripcionCompleta": "• Plantillas Memory Foam Máximo Confort • Absorben el impacto, distribuyen el peso y reducen el dolor. Perúfectas para deportistas y Perúsonas con: Pie plano Fascitis plantar Cansancio en los pies Deportistas • Tallas disponibles: 35 - 43 • OFERTA ESPECIAL: S/35.00 • Pedidos al por mayor y menor al 930830427 • Hacemos Envíos a todo el Perú • Revisa el producto en el siguiente enlace: https://youtu.be/cgcRGhY0U1ksi=NRDYSsR3MlUxrKIV",
+    "descripcionCompleta": "Plantillas Memory Foam Máximo Confort Absorben el impacto, distribuyen el peso y reducen el dolor. Perúfectas para deportistas y Perúsonas con: Pie plano Fascitis plantar Cansancio en los pies Deportistas Tallas disponibles: 35 - 43 OFERTA ESPECIAL: S/35.00 Pedidos al por mayor y menor al 930830427 Hacemos envíos a todo el Perúú Revisa el producto en el siguiente enlace: https://youtu.be/cgcRGhY0U1ksi=NRDYSsR3MlUxrKIV",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: PLANTILLA DE MEMORY FOAM | SKU: PROD-115 | Precio: S/ 35.00 | Categoría: Ortopedia y Postura | Medidas: 3Ml | Stock: Disponible | Descripción: Plantilla de Memory Foam - Soporte para pie plano y comodidad."
   },
@@ -1049,7 +1133,7 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Rodillera Articulada con Varilla de Polietileno - Soporte reforzado.",
-    "descripcionCompleta": "• Rodillera con Varillas de Polietileno Soporte y estabilidad Protege tus rodillas con nuestra Rodillera ortopdica reforzada con varillas de polietileno, ideal para brindar firmeza y compresión sin limitar el movimiento. Beneficios: Reduce inflamación y dolor articular Proporciona soporte en actividades físicas o recuPerúacin de lesiones Ajuste cómodo con velcro • Disponible en varias tallas • Envíos a todo el Perú • Pedidos al 930830427",
+    "descripcionCompleta": "Rodillera con Varillas de Polietileno Soporte y estabilidad Protege tus rodillas con nuestra Rodillera ortopdica reforzada con varillas de polietileno, ideal para brindar firmeza y compresión sin limitar el movimiento. Beneficios: Reduce inflamación y dolor articular Proporciona soporte en actividades físicas o recuPerúación de lesiones Ajuste cómodo con velcro Disponible en varias tallas Envíos a todo el Perúú Pedidos al 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Rodillera con varilla de Polietileno | SKU: PROD-123 | Precio: S/ 75.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: Rodillera Articulada con Varilla de Polietileno - Soporte reforzado."
   },
@@ -1069,10 +1153,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 24,
     "badge": "Más Vendido",
     "medidas": [],
-    "resumen": "• ARTROSIS DOLOR DE RODILLA SOBREPESO",
-    "descripcionCompleta": "• ARTROSIS DOLOR DE RODILLA SOBREPESO Meniscos inflamados Esguince de ligamentos Es momento de solicitar tu King Confort! • La rodillera que te brinda: Mayor seguridad y estabilidad Disminución del dolor Mejor movimiento Soporte ideal para tu día a día Ideal para Perúsonas con: Artrosis Lesiones de meniscos Esguince de ligamentos Dolor por sobrepeso • Talla: Standard • Precio: S/ 50.00 • Solictala ahora y siente la diferencia en cada paso. • Envío a todo el Perú • Pedidos al: 930830427",
+    "resumen": "ARTROSIS DOLOR DE RODILLA SOBREPESO",
+    "descripcionCompleta": "ARTROSIS DOLOR DE RODILLA SOBREPESO Meniscos inflamados Esguince de ligamentos Es momento de solicitar tu King Confort! La rodillera que te brinda: Mayor seguridad y estabilidad Disminución del dolor Mejor movimiento Soporte ideal para tu día a día Ideal para Perúsonas con: Artrosis Lesiones de meniscos Esguince de ligamentos Dolor por sobrepeso Talla: Standard Precio: S/ 50.00 Solictala ahora y siente la diferencia en cada paso. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Rodillera de doble varilla | SKU: PROD-6 | Precio: S/ 50.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: • ARTROSIS DOLOR DE RODILLA SOBREPESO"
+    "fichaRAG": "Producto: Rodillera de doble varilla | SKU: PROD-6 | Precio: S/ 50.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: ARTROSIS DOLOR DE RODILLA SOBREPESO"
   },
   {
     "id": "prod-122",
@@ -1091,7 +1175,7 @@ export const allProductsKnowledge = [
     "badge": "Recomendado",
     "medidas": [],
     "resumen": "Rodillera con Varillas de Polietileno - Soporte bsico para rodilla.",
-    "descripcionCompleta": "• Rodillera de Soporte con Varilla La rodillera con varilla es un dispositivo ortopdico diseñado para brindar estabilidad, compresión y soporte a la rodilla, ayudando a prevenir molestias y lesiones durante actividades diarias o deportivas. Características: • Materiales de calidad: neopreno, gel, fibra de cobre y tejido 3D transpirable. Varillas laterales de soporte que brindan mayor estabilidad a la articulacin. • Almohadillas EVA para mayor comodidad y protección. • Coráreas ajustables que Perúmiten un ajuste seguro y Perúsonalizado. • Beneficios: Ayuda a prevenir lesiones y brindar soporte a la rodilla. Favorece la circulación sangunea. Ideal para deporte, trabajo físico o actividades que requieren arrodillarse. Perúfecta para quienes buscan protección, estabilidad y comodidad en su rutina diaria. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Rodillera de Soporte con Varilla La rodillera con varilla es un dispositivo ortopdico diseñado para brindar estabilidad, compresión y soporte a la rodilla, ayudando a prevenir molestias y lesiones durante actividades diarias o deportivas. Características: Materiales de calidad: neopreno, gel, fibra de cobre y tejido 3D transpirable. Varillas laterales de soporte que brindan mayor estabilidad a la articulacin. Almohadillas EVA para mayor comodidad y protección. Coráreas ajustables que Perúmiten un ajuste seguro y Perúsonalizado. Beneficios: Ayuda a prevenir lesiones y brindar soporte a la rodilla. Favorece la circulación sangunea. Ideal para deporte, trabajo físico o actividades que requieren arrodillarse. Perúfecta para quienes buscan protección, estabilidad y comodidad en su rutina diaria. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Rodillera de varilla | SKU: PROD-122 | Precio: S/ 20.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: Rodillera con Varillas de Polietileno - Soporte bsico para rodilla."
   },
@@ -1112,7 +1196,7 @@ export const allProductsKnowledge = [
     "badge": "Calidad Premium",
     "medidas": [],
     "resumen": "Talonera con Herradura de Silicn",
-    "descripcionCompleta": "Talonera con Herradura de Silicn La Talonera con Herradura est elaborada en silicn de alta calidad y est indicada para Perúsonas que presentan espoln calcneo. Beneficios • Diseada para ayudar en casos de espoln calcneo. • Proporciona una pisada Más suave. Disminuye el dolor provocado por esta afeccin. Brinda descanso y confort durante el uso diario. • El silicn se distribuye en el interior del calzado para mayor comodidad. • Recomendacin Importante Este producto debe utilizarse nicamente bajo prescripcin mdica. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Talonera con Herradura de Silicn La Talonera con Herradura est elaborada en silicn de alta calidad y est indicada para Perúsonas que presentan espoln calcneo. Beneficios Diseada para ayudar en casos de espoln calcneo. Proporciona una pisada más suave. Disminuye el dolor provocado por esta afeccin. Brinda descanso y confort durante el uso diario. El silicn se distribuye en el interior del calzado para mayor comodidad. Recomendacin Importante Este producto debe utilizarse nicamente bajo prescripcin mdica. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Talonera en herradura | SKU: PROD-4 | Precio: S/ 28.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: Talonera con Herradura de Silicn"
   },
@@ -1133,7 +1217,7 @@ export const allProductsKnowledge = [
     "badge": "Garantizado",
     "medidas": [],
     "resumen": "Traccionador Cervical - Dispositivo de tracción para el cuello.",
-    "descripcionCompleta": "• Traccionador Cervical Relaja, ajusta y alivia! Ideal para Perúsonas con dolor de cuello, cefaleas, mala postura o estrés cervical. • Beneficios: Alivio inmediato de presión vertebral Mejora la postura Reduce tensión muscular Portátil y ajustable • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Traccionador Cervical Relaja, ajusta y alivia! Ideal para Perúsonas con dolor de cuello, cefaleas, mala postura o estrés cervical. Beneficios: Alivio inmediato de presión vertebral Mejora la postura Reduce tensión muscular Portátil y ajustable Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Traccionador Cervical | SKU: PROD-116 | Precio: S/ 35.00 | Categoría: Ortopedia y Postura | Medidas: Estándar | Stock: Disponible | Descripción: Traccionador Cervical - Dispositivo de tracción para el cuello."
   },
@@ -1156,7 +1240,7 @@ export const allProductsKnowledge = [
       "10 ml"
     ],
     "resumen": "Aceite Esencial de Bergamota - 100% puro.",
-    "descripcionCompleta": "• ACEITE ESENCIAL DE BERGAMOTA • El aroma del optimismo Eleva el ánimo y disipa la ansiedad El aceite esencial de Bergamota es un poderoso aliado para el equilibrio emocional: • Estimula la alegra y el bienestar Reduce el estrés, la tensión y los pensamientos negativos • Ayuda en casos de insomnio, depresin y ansiedad leve • Refresca la mente y armoniza el sistema nervioso Ideal para aromaterapia, masajes emocionales y difusores • Presentación: Frasco gotero o roll-on • Contenido: 10 ml • Marca: Amazonik • Pedidos al por mayor y menor al 930830427 • Hacemos Envíos a todo el Perú",
+    "descripcionCompleta": "ACEITE ESENCIAL DE BERGAMOTA El aroma del optimismo Eleva el ánimo y disipa la ansiedad El aceite esencial de Bergamota es un poderoso aliado para el equilibrio emocional: Estimula la alegra y el bienestar Reduce el estrés, la tensión y los pensamientos negativos Ayuda en casos de insomnio, depresin y ansiedad leve Refresca la mente y armoniza el sistema nervioso Ideal para aromaterapia, masajes emocionales y difusores Presentación: Frasco gotero o roll-on Contenido: 10 ml Marca: Amazonik Pedidos al por mayor y menor al 930830427 Hacemos envíos a todo el Perúú",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceite esencial de Bergamota | SKU: PROD-105 | Precio: S/ 30.00 | Categoría: Aromaterapia | Medidas: 10 ml | Stock: Disponible | Descripción: Aceite Esencial de Bergamota - 100% puro."
   },
@@ -1179,7 +1263,7 @@ export const allProductsKnowledge = [
       "10 ml"
     ],
     "resumen": "Aceite Esencial de Citronella - 100% puro.",
-    "descripcionCompleta": "• Aceite Esencial de Citronela El Aroma del Refugio Natural El aceite esencial de citronela se destaca por su aroma cítrico, fresco y herbal, ampliamente utilizado en aromaterapia, cuidado Perúsonal y protección natural. Beneficios principales: • Repelente natural de insectos, ideal para mantener alejadas a las moscas y mosquitos. • Ayuda a reducir el estrés y la tensión, generando sensación de calma. • Aromatiza y purifica espacios, cáreando un ambiente fresco y agradable. • Relajación y bienestar, ideal para masajes o difusión en casa. Cuidado de la piel, contribuyendo a mantenerla limpia y equilibrada. Perúfecto para quienes buscan protección natural, frescura y bienestar emocional en su día a día. • Presentación: Frasco gotero o roll-on • Contenido: 10 ml • Marca: Amazonik • Envío a todo el Perú • Pedidos: 930830427 | 930830427",
+    "descripcionCompleta": "Aceite Esencial de Citronela El Aroma del Refugio Natural El aceite esencial de citronela se destaca por su aroma cítrico, fresco y herbal, ampliamente utilizado en aromaterapia, cuidado Perúsonal y protección natural. Beneficios principales: Repelente natural de insectos, ideal para mantener alejadas a las moscas y mosquitos. Ayuda a reducir el estrés y la tensión, generando sensación de calma. Aromatiza y purifica espacios, cáreando un ambiente fresco y agradable. Relajación y bienestar, ideal para masajes o difusión en casa. Cuidado de la piel, contribuyendo a mantenerla limpia y equilibrada. Perúfecto para quienes buscan protección natural, frescura y bienestar emocional en su día a día. Presentación: Frasco gotero o roll-on Contenido: 10 ml Marca: Amazonik Envío a todo el Perúú Pedidos: 930830427 | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceite esencial de Citronella | SKU: PROD-104 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: 10 ml | Stock: Disponible | Descripción: Aceite Esencial de Citronella - 100% puro."
   },
@@ -1202,7 +1286,7 @@ export const allProductsKnowledge = [
       "10 ml"
     ],
     "resumen": "Aceite Esencial de Ciprs (Cypress) - 100% puro.",
-    "descripcionCompleta": "• Aceite Esencial de Cypress El Aroma del Enraizamiento y Transicin El aceite esencial de Cypress es reconocido por su aroma fresco, amaderado y equilibrante, muy valorado en aromaterapia y cuidado Perúsonal por sus propiedades relajantes y revitalizantes. Beneficios principales: • Ayuda a reducir el estrés y la ansiedad, promoviendo calma y bienestar emocional. • Estimula la energía y la vitalidad, ideal para combatir la fatiga. • Cuidado de la piel, ayudando a tonificar y equilibrar la piel grasa o con imPerúfecciones. • Aromatiza espacios, cáreando un ambiente fresco, limpio y armonioso. • Favorece la relajación muscular, ideal para masajes después de la actividad física. Perúfecto para quienes buscan equilibrio emocional, energía natural y cuidado Perúsonal en su rutina diaria. • Presentación: Frasco gotero o roll-on • Contenido: 10 ml • Marca: Amazonik • Envío a todo el Perú • Pedidos: 930830427 | 930830427",
+    "descripcionCompleta": "Aceite Esencial de Cypress El Aroma del Enraizamiento y Transicin El aceite esencial de Cypress es reconocido por su aroma fresco, amaderado y equilibrante, muy valorado en aromaterapia y cuidado Perúsonal por sus propiedades relajantes y revitalizantes. Beneficios principales: Ayuda a reducir el estrés y la ansiedad, promoviendo calma y bienestar emocional. Estimula la energía y la vitalidad, ideal para combatir la fatiga. Cuidado de la piel, ayudando a tonificar y equilibrar la piel grasa o con imPerúfecciones. Aromatiza espacios, cáreando un ambiente fresco, limpio y armonioso. Favorece la relajación muscular, ideal para masajes después de la actividad física. Perúfecto para quienes buscan equilibrio emocional, energía natural y cuidado Perúsonal en su rutina diaria. Presentación: Frasco gotero o roll-on Contenido: 10 ml Marca: Amazonik Envío a todo el Perúú Pedidos: 930830427 | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceite esencial de Cypress | SKU: PROD-101 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: 10 ml | Stock: Disponible | Descripción: Aceite Esencial de Ciprs (Cypress) - 100% puro."
   },
@@ -1225,7 +1309,7 @@ export const allProductsKnowledge = [
       "10 ml"
     ],
     "resumen": "Aceite Esencial de Eucalipto - 100% puro.",
-    "descripcionCompleta": "• Aceite Esencial de Eucalipto El Aroma del Alivio y Respiracin Emocional El aceite esencial de eucalipto se caracteriza por su aroma fresco, penetrante y revitalizante, muy valorado en aromaterapia y cuidado Perúsonal por sus propiedades refrescantes, descongestionantes y energizantes. Beneficios principales: Favorece la respiracin, ayudando a despejar las vas respiratorias y mejorar la sensación de frescura. • Reduce el estrés y la fatiga, promoviendo bienestar físico y mental. • Alivia Másculos y articulaciones, ideal para masajes relajantes después de la actividad física. • Purifica y aromatiza espacios, generando un ambiente fresco y limpio. • Cuidado de la piel, contribuyendo a mantenerla limpia y equilibrada. Perúfecto para quienes buscan energía, frescura y bienestar natural en su día a día. • Presentación: Frasco gotero o roll-on • Contenido: 10 ml • Marca: Amazonik • Envío a todo el Perú • Pedidos: 930830427 | 930830427",
+    "descripcionCompleta": "Aceite Esencial de Eucalipto El Aroma del Alivio y Respiracin Emocional El aceite esencial de eucalipto se caracteriza por su aroma fresco, penetrante y revitalizante, muy valorado en aromaterapia y cuidado Perúsonal por sus propiedades refrescantes, descongestionantes y energizantes. Beneficios principales: Favorece la respiracin, ayudando a despejar las vas respiratorias y mejorar la sensación de frescura. Reduce el estrés y la fatiga, promoviendo bienestar físico y mental. Alivia músculos y articulaciones, ideal para masajes relajantes después de la actividad física. Purifica y aromatiza espacios, generando un ambiente fresco y limpio. Cuidado de la piel, contribuyendo a mantenerla limpia y equilibrada. Perúfecto para quienes buscan energía, frescura y bienestar natural en su día a día. Presentación: Frasco gotero o roll-on Contenido: 10 ml Marca: Amazonik Envío a todo el Perúú Pedidos: 930830427 | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceite esencial de Eucalipto | SKU: PROD-102 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: 10 ml | Stock: Disponible | Descripción: Aceite Esencial de Eucalipto - 100% puro."
   },
@@ -1248,7 +1332,7 @@ export const allProductsKnowledge = [
       "10 ml"
     ],
     "resumen": "Aceite Esencial de Jazmín - 100% puro.",
-    "descripcionCompleta": "• Aceite Esencial de Jazmín El Aroma de la Confianza y Sensualidad El aceite esencial de jazmín es conocido por su aroma intenso, floral y exótico, apreciado en aromaterapia y Perúfumera por sus propiedades relajantes y estimulantes del bienestar emocional. Beneficios principales: • Ayuda a reducir el estrés y la ansiedad, promoviendo calma y equilibrio emocional. • Favorece el bienestar emocional, aportando sensación de alegra y armonía. • Propiedades afrodisíacas, estimulando la sensualidad y la conexin emocional. Cuidado de la piel, contribuyendo a mantenerla suave y radiante. • Aromatiza espacios, cáreando un ambiente elegante, clido y relajante. Ideal para quienes buscan equilibrio emocional, relajación y un aroma floral exótico en su día a día. • Presentación: Frasco gotero o roll-on • Contenido: 10 ml • Marca: Amazonik • Envío a todo el Perú • Pedidos: 930830427 | 930830427",
+    "descripcionCompleta": "Aceite Esencial de Jazmín El Aroma de la Confianza y Sensualidad El aceite esencial de jazmín es conocido por su aroma intenso, floral y exótico, apreciado en aromaterapia y Perúfumería por sus propiedades relajantes y estimulantes del bienestar emocional. Beneficios principales: Ayuda a reducir el estrés y la ansiedad, promoviendo calma y equilibrio emocional. Favorece el bienestar emocional, aportando sensación de alegra y armonía. Propiedades afrodisíacas, estimulando la sensualidad y la conexin emocional. Cuidado de la piel, contribuyendo a mantenerla suave y radiante. Aromatiza espacios, cáreando un ambiente elegante, clido y relajante. Ideal para quienes buscan equilibrio emocional, relajación y un aroma floral exótico en su día a día. Presentación: Frasco gotero o roll-on Contenido: 10 ml Marca: Amazonik Envío a todo el Perúú Pedidos: 930830427 | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceite esencial de Jazmín | SKU: PROD-99 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: 10 ml | Stock: Disponible | Descripción: Aceite Esencial de Jazmín - 100% puro."
   },
@@ -1271,7 +1355,7 @@ export const allProductsKnowledge = [
       "10 ml"
     ],
     "resumen": "Aceite Esencial de Lavanda - 100% puro.",
-    "descripcionCompleta": "• Aceite Esencial de Lavanda El Aroma de la Calma Profunda El aceite esencial de lavanda es uno de los Más populares en aromaterapia, gracias a su aroma suave, floral y relajante. Es conocido por ayudar a cárear una sensación de calma, equilibrio y bienestar. Beneficios principales: • Ayuda a reducir el estrés y la ansiedad, promoviendo la relajación. • Favorece el descanso y el sueo, ideal para usar antes de dormir. • Equilibra las emociones y aporta tranquilidad. Cuidado de la piel, ayudando a mantenerla suave y equilibrada. • Aromatiza espacios, cáreando un ambiente relajante y armonioso. Gracias a sus múltiples beneficios, el aceite esencial de lavanda es Perúfecto para quienes buscan relajación, descanso y bienestar natural. • Presentación: Frasco gotero o roll-on • Contenido: 10 ml • Marca: Amazonik • Envío a todo el Perú • Pedidos: 930830427 | 930830427",
+    "descripcionCompleta": "Aceite Esencial de Lavanda El Aroma de la Calma Profunda El aceite esencial de lavanda es uno de los más populares en aromaterapia, gracias a su aroma suave, floral y relajante. Es conocido por ayudar a cárear una sensación de calma, equilibrio y bienestar. Beneficios principales: Ayuda a reducir el estrés y la ansiedad, promoviendo la relajación. Favorece el descanso y el sueo, ideal para usar antes de dormir. Equilibra las emociones y aporta tranquilidad. Cuidado de la piel, ayudando a mantenerla suave y equilibrada. Aromatiza espacios, cáreando un ambiente relajante y armonioso. Gracias a sus múltiples beneficios, el aceite esencial de lavanda es Perúfecto para quienes buscan relajación, descanso y bienestar natural. Presentación: Frasco gotero o roll-on Contenido: 10 ml Marca: Amazonik Envío a todo el Perúú Pedidos: 930830427 | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceite esencial de Lavanda | SKU: PROD-97 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: 10 ml | Stock: Disponible | Descripción: Aceite Esencial de Lavanda - 100% puro."
   },
@@ -1294,7 +1378,7 @@ export const allProductsKnowledge = [
       "10 ml"
     ],
     "resumen": "Aceite Esencial de Lemongrass (Hierba de Limón) - 100% puro.",
-    "descripcionCompleta": "• Aceite Esencial de Lemon grass El Aroma del Enfoque y Desintoxicación Mental El aceite esencial de lemon grass se destaca por su aroma cítrico, fresco y revitalizante, muy apreciado en aromaterapia y cuidado Perúsonal por sus propiedades refrescantes y estimulantes. Beneficios principales: • Promueve la relajación y reduce el estrés, ayudando a equilibrar la mente y el cuerpo. • Revitaliza y energiza, ideal para combatir la fatiga y aumentar la concentración. • Cuidado de la piel, ayudando a mantenerla fresca y limpia. • Aromatiza espacios, generando un ambiente fresco y estimulante. • Efecto repelente natural, útil para alejar insectos de manera segura. Perúfecto para quienes buscan bienestar, frescura y energía natural en su rutina diaria. • Presentación: Frasco gotero o roll-on • Contenido: 10 ml • Marca: Amazonik • Envío a todo el Perú • Pedidos: 930830427 | 930830427",
+    "descripcionCompleta": "Aceite Esencial de Lemon grass El Aroma del Enfoque y Desintoxicación Mental El aceite esencial de lemon grass se destaca por su aroma cítrico, fresco y revitalizante, muy apreciado en aromaterapia y cuidado Perúsonal por sus propiedades refrescantes y estimulantes. Beneficios principales: Promueve la relajación y reduce el estrés, ayudando a equilibrar la mente y el cuerpo. Revitaliza y energiza, ideal para combatir la fatiga y aumentar la concentración. Cuidado de la piel, ayudando a mantenerla fresca y limpia. Aromatiza espacios, generando un ambiente fresco y estimulante. Efecto repelente natural, útil para alejar insectos de manera segura. Perúfecto para quienes buscan bienestar, frescura y energía natural en su rutina diaria. Presentación: Frasco gotero o roll-on Contenido: 10 ml Marca: Amazonik Envío a todo el Perúú Pedidos: 930830427 | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceite esencial de Lemongrass | SKU: PROD-100 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: 10 ml | Stock: Disponible | Descripción: Aceite Esencial de Lemongrass (Hierba de Limón) - 100% puro."
   },
@@ -1314,10 +1398,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 29,
     "badge": "Stock Limitado",
     "medidas": [],
-    "resumen": "• Aceite Esencial de Limón - 100% puro.",
-    "descripcionCompleta": "• Aceite Esencial de Limón - 100% puro. Aceite esencial puro de limón para aromaterapia, difusión y uso terapéutico. Propiedades: Purificante y antiséptico Estimulante mental y energizante Mejora el estado de ánimo Propiedades antivirales Limpieza del ambiente Usos: Difusión aromática Masajes diluido en aceite base Limpieza del hogar Cuidado Perúsonal • Envío a todo el Perú | • 930830427",
+    "resumen": "Aceite Esencial de Limón - 100% puro.",
+    "descripcionCompleta": "Aceite Esencial de Limón - 100% puro. Aceite esencial puro de limón para aromaterapia, difusión y uso terapéutico. Propiedades: Purificante y antiséptico Estimulante mental y energizante Mejora el estado de ánimo Propiedades antivirales Limpieza del ambiente Usos: Difusión aromática Masajes diluido en aceite base Limpieza del hogar Cuidado Perúsonal Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Aceite esencial de Limón | SKU: PROD-91 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: Estándar | Stock: Disponible | Descripción: • Aceite Esencial de Limón - 100% puro."
+    "fichaRAG": "Producto: Aceite esencial de Limón | SKU: PROD-91 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: Estándar | Stock: Disponible | Descripción: Aceite Esencial de Limón - 100% puro."
   },
   {
     "id": "prod-103",
@@ -1338,7 +1422,7 @@ export const allProductsKnowledge = [
       "10 ml"
     ],
     "resumen": "Aceite Esencial de Mandarina - 100% puro.",
-    "descripcionCompleta": "• Aceite Esencial de Mandarina El Aroma de la Serenidad Infantil El aceite esencial de mandarina destaca por su aroma dulce, cítrico y alegre, ideal para aromaterapia y cuidado Perúsonal por sus propiedades relajantes y revitalizantes. Beneficios principales: • Ayuda a reducir el estrés y la ansiedad, generando calma y bienestar emocional. • Mejora el estado de ánimo, aportando sensación de alegra y energía positiva. Cuidado de la piel, ayudando a mantenerla suave, luminosa y equilibrada. • Aromatiza espacios, cáreando un ambiente fresco, alegre y acogedor. • Favorece la relajación, siendo ideal para masajes y momentos de tranquilidad. Perúfecto para quienes buscan bienestar emocional, frescura y un aroma dulce y cítrico en su día a día. • Presentación: Frasco gotero o roll-on • Contenido: 10 ml • Marca: Amazonik • Envío a todo el Perú • Pedidos: 930830427 | 930830427",
+    "descripcionCompleta": "Aceite Esencial de Mandarina El Aroma de la Serenidad Infantil El aceite esencial de mandarina destaca por su aroma dulce, cítrico y alegre, ideal para aromaterapia y cuidado Perúsonal por sus propiedades relajantes y revitalizantes. Beneficios principales: Ayuda a reducir el estrés y la ansiedad, generando calma y bienestar emocional. Mejora el estado de ánimo, aportando sensación de alegra y energía positiva. Cuidado de la piel, ayudando a mantenerla suave, luminosa y equilibrada. Aromatiza espacios, cáreando un ambiente fresco, alegre y acogedor. Favorece la relajación, siendo ideal para masajes y momentos de tranquilidad. Perúfecto para quienes buscan bienestar emocional, frescura y un aroma dulce y cítrico en su día a día. Presentación: Frasco gotero o roll-on Contenido: 10 ml Marca: Amazonik Envío a todo el Perúú Pedidos: 930830427 | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceite esencial de Mandarina | SKU: PROD-103 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: 10 ml | Stock: Disponible | Descripción: Aceite Esencial de Mandarina - 100% puro."
   },
@@ -1361,7 +1445,7 @@ export const allProductsKnowledge = [
       "10 ml"
     ],
     "resumen": "Aceite Esencial de Melissa (Melisa) - 100% puro.",
-    "descripcionCompleta": "• Aceite Esencial de Melissa El Aroma de la Paz Emocional El aceite esencial de melisa es apreciado por su aroma suave, fresco y ligeramente cítrico, conocido por sus propiedades relajantes y equilibrantes. Es muy utilizado en aromaterapia para promover la calma y el bienestar emocional. Beneficios principales: • Ayuda a reducir el estrés y la ansiedad, promoviendo una sensación de calma. • Favorece el equilibrio emocional y el bienestar mental. • Apoya la relajación y el descanso, ideal para momentos de tranquilidad. Cuidado de la piel, ayudando a mantenerla fresca y equilibrada. • Aromatiza los espacios, cáreando un ambiente armonioso y relajante. Gracias a su aroma delicado y sus propiedades calmantes, el aceite esencial de melisa es ideal para quienes buscan relajación, equilibrio y bienestar natural. • Presentación: Frasco gotero o roll-on • Contenido: 10 ml • Marca: Amazonik • Envío a todo el Perú • Pedidos: 930830427 | 930830427",
+    "descripcionCompleta": "Aceite Esencial de Melissa El Aroma de la Paz Emocional El aceite esencial de melisa es apreciado por su aroma suave, fresco y ligeramente cítrico, conocido por sus propiedades relajantes y equilibrantes. Es muy utilizado en aromaterapia para promover la calma y el bienestar emocional. Beneficios principales: Ayuda a reducir el estrés y la ansiedad, promoviendo una sensación de calma. Favorece el equilibrio emocional y el bienestar mental. Apoya la relajación y el descanso, ideal para momentos de tranquilidad. Cuidado de la piel, ayudando a mantenerla fresca y equilibrada. Aromatiza los espacios, cáreando un ambiente armonioso y relajante. Gracias a su aroma delicado y sus propiedades calmantes, el aceite esencial de melisa es ideal para quienes buscan relajación, equilibrio y bienestar natural. Presentación: Frasco gotero o roll-on Contenido: 10 ml Marca: Amazonik Envío a todo el Perúú Pedidos: 930830427 | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceite esencial de Melissa | SKU: PROD-95 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: 10 ml | Stock: Disponible | Descripción: Aceite Esencial de Melissa (Melisa) - 100% puro."
   },
@@ -1384,7 +1468,7 @@ export const allProductsKnowledge = [
       "10 ml"
     ],
     "resumen": "Aceite Esencial de Menta - 100% puro.",
-    "descripcionCompleta": "• Aceite Esencial de Menta El Aroma de la Claridad El aceite esencial de menta se caracteriza por su aroma fresco, intenso y revitalizante. Es muy utilizado en aromaterapia y cuidado Perúsonal por su capacidad para refrescar, estimular la mente y brindar sensación de alivio. Beneficios principales: • Estimula la concentración y la claridad mental, ayudando a mantener la mente despierta. • Proporciona una sensación refrescante, ideal para momentos de cansancio o calor. • Alivia la tensión y la fatiga, especialmente en masajes aromáticos. Aporta sensación de frescura respiratoria gracias a su aroma mentolado. • Aromatiza espacios, cáreando un ambiente fresco y energizante. Gracias a su efecto refrescante y estimulante, el aceite esencial de menta es ideal para quienes buscan energía, claridad mental y bienestar natural. • Presentación: Frasco gotero o roll-on • Contenido: 10 ml • Marca: Amazonik • Envío a todo el Perú • Pedidos: 930830427 | 930830427",
+    "descripcionCompleta": "Aceite Esencial de Menta El Aroma de la Claridad El aceite esencial de menta se caracteriza por su aroma fresco, intenso y revitalizante. Es muy utilizado en aromaterapia y cuidado Perúsonal por su capacidad para refrescar, estimular la mente y brindar sensación de alivio. Beneficios principales: Estimula la concentración y la claridad mental, ayudando a mantener la mente despierta. Proporciona una sensación refrescante, ideal para momentos de cansancio o calor. Alivia la tensión y la fatiga, especialmente en masajes aromáticos. Aporta sensación de frescura respiratoria gracias a su aroma mentolado. Aromatiza espacios, cáreando un ambiente fresco y energizante. Gracias a su efecto refrescante y estimulante, el aceite esencial de menta es ideal para quienes buscan energía, claridad mental y bienestar natural. Presentación: Frasco gotero o roll-on Contenido: 10 ml Marca: Amazonik Envío a todo el Perúú Pedidos: 930830427 | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceite esencial de Menta | SKU: PROD-96 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: 10 ml | Stock: Disponible | Descripción: Aceite Esencial de Menta - 100% puro."
   },
@@ -1407,7 +1491,7 @@ export const allProductsKnowledge = [
       "10 ml"
     ],
     "resumen": "Aceite Esencial de Naranja - 100% puro.",
-    "descripcionCompleta": "• Aceite Esencial de Naranja El Aroma de la Felicidad Interior El aceite esencial de naranja destaca por su aroma cítrico, dulce y refrescante, ideal para cárear una sensación de bienestar, energía y armonía en el día a día. Beneficios principales: • Mejora el estado de ánimo y ayuda a reducir el estrés. • Promueve la relajación, aportando calma y bienestar emocional. Cuidado de la piel, ayudando a mantener una apariencia Más luminosa y fresca. • Aromatiza espacios, cáreando un ambiente limpio, alegre y revitalizante. • Muy utilizado en aromaterapia para generar sensaciones de optimismo y energía positiva. • Presentación: Frasco gotero o roll-on • Contenido: 10 ml • Marca: Amazonik • Envío a todo el Perú • Pedidos: 930830427 | 930830427",
+    "descripcionCompleta": "Aceite Esencial de Naranja El Aroma de la Felicidad Interior El aceite esencial de naranja destaca por su aroma cítrico, dulce y refrescante, ideal para cárear una sensación de bienestar, energía y armonía en el día a día. Beneficios principales: Mejora el estado de ánimo y ayuda a reducir el estrés. Promueve la relajación, aportando calma y bienestar emocional. Cuidado de la piel, ayudando a mantener una apariencia más luminosa y fresca. Aromatiza espacios, cáreando un ambiente limpio, alegre y revitalizante. Muy utilizado en aromaterapia para generar sensaciones de optimismo y energía positiva. Presentación: Frasco gotero o roll-on Contenido: 10 ml Marca: Amazonik Envío a todo el Perúú Pedidos: 930830427 | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceite esencial de Naranja | SKU: PROD-92 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: 10 ml | Stock: Disponible | Descripción: Aceite Esencial de Naranja - 100% puro."
   },
@@ -1430,7 +1514,7 @@ export const allProductsKnowledge = [
       "10 ml"
     ],
     "resumen": "Aceite Esencial de Romero - 100% puro.",
-    "descripcionCompleta": "• Aceite Esencial de Romero El Aroma de la Fuerza y Coraje El aceite esencial de romero es muy valorado por su aroma herbal, fresco y estimulante. Tradicionalmente se utiliza en aromaterapia y cuidado Perúsonal por sus propiedades revitalizantes que ayudan a mejorar el bienestar físico y mental. Beneficios principales: • Favorece la concentración y la memoria. • Cuidado del cabello. • Reduce la sensación de cansancio. • Ideal para masajes. • Aromatiza y purifica espacios. • Presentación: Frasco gotero o roll-on • Contenido: 10 ml • Marca: Amazonik • Envío a todo el Perú • Pedidos: 930830427 | 930830427",
+    "descripcionCompleta": "Aceite Esencial de Romero El Aroma de la Fuerza y Coraje El aceite esencial de romero es muy valorado por su aroma herbal, fresco y estimulante. Tradicionalmente se utiliza en aromaterapia y cuidado Perúsonal por sus propiedades revitalizantes que ayudan a mejorar el bienestar físico y mental. Beneficios principales: Favorece la concentración y la memoria. Cuidado del cabello. Reduce la sensación de cansancio. Ideal para masajes. Aromatiza y purifica espacios. Presentación: Frasco gotero o roll-on Contenido: 10 ml Marca: Amazonik Envío a todo el Perúú Pedidos: 930830427 | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceite esencial de Romero | SKU: PROD-94 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: 10 ml | Stock: Disponible | Descripción: Aceite Esencial de Romero - 100% puro."
   },
@@ -1453,7 +1537,7 @@ export const allProductsKnowledge = [
       "10 ml"
     ],
     "resumen": "Aceite Esencial de Rosas - 100% puro.",
-    "descripcionCompleta": "• Aceite Esencial de Rosas El Aroma del Amor y Autoestima El aceite esencial de rosas es reconocido por su aroma floral, dulce y elegante, altamente valorado en aromaterapia y Perúfumera por sus propiedades relajantes y estimulantes del bienestar emocional. Beneficios principales: • Favorece el equilibrio emocional, ayudando a reducir la ansiedad y el estrés. • Promueve la relajación y la calma, ideal para momentos de tranquilidad. • Cuidado de la piel, ayudando a hidratarla y mantenerla suave y luminosa. • Propiedades afrodisíacas, estimulando sensaciones de romanticismo y cercanía. • Aromatiza espacios, cáreando un ambiente acogedor y armonioso. Perúfecto para quienes buscan bienestar emocional, cuidado natural y un aroma exquisito en su día a día. • Presentación: Frasco gotero o roll-on • Contenido: 10 ml • Marca: Amazonik • Envío a todo el Perú • Pedidos: 930830427 | 930830427",
+    "descripcionCompleta": "Aceite Esencial de Rosas El Aroma del Amor y Autoestima El aceite esencial de rosas es reconocido por su aroma floral, dulce y elegante, altamente valorado en aromaterapia y Perúfumería por sus propiedades relajantes y estimulantes del bienestar emocional. Beneficios principales: Favorece el equilibrio emocional, ayudando a reducir la ansiedad y el estrés. Promueve la relajación y la calma, ideal para momentos de tranquilidad. Cuidado de la piel, ayudando a hidratarla y mantenerla suave y luminosa. Propiedades afrodisíacas, estimulando sensaciones de romanticismo y cercanía. Aromatiza espacios, cáreando un ambiente acogedor y armonioso. Perúfecto para quienes buscan bienestar emocional, cuidado natural y un aroma exquisito en su día a día. Presentación: Frasco gotero o roll-on Contenido: 10 ml Marca: Amazonik Envío a todo el Perúú Pedidos: 930830427 | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceite esencial de Rosas | SKU: PROD-98 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: 10 ml | Stock: Disponible | Descripción: Aceite Esencial de Rosas - 100% puro."
   },
@@ -1476,7 +1560,7 @@ export const allProductsKnowledge = [
       "10 ml"
     ],
     "resumen": "Aceite Esencial de Ylang Ylang - 100% puro.",
-    "descripcionCompleta": "• Aceite Esencial de Ylang Ylang El Aroma del Placer y Relajación El aceite esencial de ylang ylang es reconocido por sus propiedades calmantes, relajantes y equilibrantes. Su aroma floral y dulce lo convierte en un ingrediente muy valorado en aromaterapia, cuidado Perúsonal y Perúfumera. • Reducir el estrés y la ansiedad • Mejorar el bienestar emocional Cuidar la piel y el cabello (regula la grasa y aporta brillo) • Estimular la libido • Perúfumar naturalmente gracias a su fragancia dulce y exótica. • información del producto • Presentación: Frasco gotero o roll-on • Contenido: 10 ml • Marca: Amazonik • Envío a todo el Perú • Pedidos: 930830427 | 930830427",
+    "descripcionCompleta": "Aceite Esencial de Ylang Ylang El Aroma del Placer y Relajación El aceite esencial de ylang ylang es reconocido por sus propiedades calmantes, relajantes y equilibrantes. Su aroma floral y dulce lo convierte en un ingrediente muy valorado en aromaterapia, cuidado Perúsonal y Perúfumería. Reducir el estrés y la ansiedad Mejorar el bienestar emocional Cuidar la piel y el cabello (regula la grasa y aporta brillo) Estimular la libido Perúfumar naturalmente gracias a su fragancia dulce y exótica. Información del producto Presentación: Frasco gotero o roll-on Contenido: 10 ml Marca: Amazonik Envío a todo el Perúú Pedidos: 930830427 | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceite esencial de Ylang Ylang | SKU: PROD-93 | Precio: S/ 25.00 | Categoría: Aromaterapia | Medidas: 10 ml | Stock: Disponible | Descripción: Aceite Esencial de Ylang Ylang - 100% puro."
   },
@@ -1497,7 +1581,7 @@ export const allProductsKnowledge = [
     "badge": "Recomendado",
     "medidas": [],
     "resumen": "Línea completa de Aceites Esenciales para Aromaterapia.",
-    "descripcionCompleta": "Descubre el poder natural de los Aceites Esenciales Ideales para masajes, aromaterapia y bienestar. • Beneficios: Promueven la relajación y el equilibrio Ideales para masajes terapéuticos • Aromas naturales que ayudan a reducir el estrés • Favorecen un ambiente de calma y bienestar • Perúfectos para terapeutas, fisioterapeutas y uso Perúsonal • Precios al por mayor y menor • Envíos a todo el pas • Haz tu pedido ahora al 930830427",
+    "descripcionCompleta": "Descubre el poder natural de los Aceites Esenciales Ideales para masajes, aromaterapia y bienestar. Beneficios: Promueven la relajación y el equilibrio Ideales para masajes terapéuticos Aromas naturales que ayudan a reducir el estrés Favorecen un ambiente de calma y bienestar Perúfectos para terapeutas, fisioterapeutas y uso Perúsonal Precios al por mayor y menor Envíos a todo el pas Haz tu pedido ahora al 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aceites Esenciales | SKU: PROD-21 | Precio: S/ 0.00 | Categoría: Aromaterapia | Medidas: Estándar | Stock: Disponible | Descripción: Línea completa de Aceites Esenciales para Aromaterapia."
   },
@@ -1520,7 +1604,7 @@ export const allProductsKnowledge = [
       "120 ml"
     ],
     "resumen": "Aceite para Masaje Corporal - árnica y Romero.",
-    "descripcionCompleta": "• ÁRNICA Y ROMERO Aceite de Masaje terapéutico (120 ml) Alivio muscular y acción antiinflamatoria Este poderoso dúo natural es ideal para: • Contracturas musculares • Inflamaciones y golpes RecuPerúacin post-ejercicio • Estimular la circulación y reducir el dolor Perúfecto para terapeutas, deportistas y para casa! • Pedidos al por mayor y menor al 930830427 • Hacemos Envíos a todo el Perú",
+    "descripcionCompleta": "ÁRNICA Y ROMERO Aceite de Masaje Terapéutico (120 ml) Alivio muscular y acción antiinflamatoria Este poderoso dúo natural es ideal para: Contracturas musculares Inflamaciones y golpes RecuPerúación post-ejercicio Estimular la circulación y reducir el dolor Perúfecto para terapeutas, deportistas y para casa! Pedidos al por mayor y menor al 930830427 Hacemos envíos a todo el Perúú",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: ÁRNICA Y ROMERO - Aceite para masaje | SKU: PROD-87 | Precio: S/ 12.00 | Categoría: Aromaterapia | Medidas: 120 ml | Stock: Disponible | Descripción: Aceite para Masaje Corporal - árnica y Romero."
   },
@@ -1543,7 +1627,7 @@ export const allProductsKnowledge = [
       "120 ml"
     ],
     "resumen": "Aceite para Masaje Corporal - Canela.",
-    "descripcionCompleta": "• CANELA Aceite de Masaje (120 ml) Energizante, reconfortante y afrodisíaco natural Este aceite de aroma clido y especiado: • Activa la circulación sangunea • Estimula los sentidos y mejora el estado de ánimo • Ideal para masajes revitalizantes y sensuales • Potente efecto calor para aliviar zonas tensas o frías • Pedidos al por mayor y menor al 930830427 • Hacemos Envíos a todo el Perú",
+    "descripcionCompleta": "CANELA Aceite de Masaje (120 ml) Energizante, reconfortante y afrodisíaco natural Este aceite de aroma clido y especiado: Activa la circulación sangunea Estimula los sentidos y mejora el estado de ánimo Ideal para masajes revitalizantes y sensuales Potente efecto calor para aliviar zonas tensas o frías Pedidos al por mayor y menor al 930830427 Hacemos envíos a todo el Perúú",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: CANELA - Aceite para masaje | SKU: PROD-89 | Precio: S/ 12.00 | Categoría: Aromaterapia | Medidas: 120 ml | Stock: Disponible | Descripción: Aceite para Masaje Corporal - Canela."
   },
@@ -1567,7 +1651,7 @@ export const allProductsKnowledge = [
       "500 ml"
     ],
     "resumen": "Aceite para Masaje Corporal - Lavanda.",
-    "descripcionCompleta": "Aceite de Masaje de Lavanda El aceite de masaje de lavanda es ideal para brindar relajación y bienestar durante terapias de masaje. Su agradable aroma ayuda a generar una sensación de calma mientras contribuye a relajar los Másculos. • Beneficios Relajante muscular natural • Ayuda a calmar y reducir tensiones • Aroma suave que favorece la relajación y el bienestar • Presentaciones Disponibles • 120 ml • 500 ml • Ideal para masajes terapéuticos, relajantes y sesiones de bienestar. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Aceite de Masaje de Lavanda El aceite de masaje de lavanda es ideal para brindar relajación y bienestar durante terapias de masaje. Su agradable aroma ayuda a generar una sensación de calma mientras contribuye a relajar los músculos. Beneficios Relajante muscular natural Ayuda a calmar y reducir tensiones Aroma suave que favorece la relajación y el bienestar Presentaciones Disponibles 120 ml 500 ml Ideal para masajes terapéuticos, relajantes y sesiones de bienestar. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: LAVANDA - Aceite para masaje | SKU: PROD-88 | Precio: S/ 12.00 | Categoría: Aromaterapia | Medidas: 120 ml, 500 ml | Stock: Disponible | Descripción: Aceite para Masaje Corporal - Lavanda."
   },
@@ -1587,10 +1671,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 41,
     "badge": "Stock Limitado",
     "medidas": [],
-    "resumen": "• Mix Floral - Aceite para masajes.",
-    "descripcionCompleta": "• Aromaterapia • Buen día, te saludamos desde Agujas de Acupuntura Perú. Tenemos una amplia gama de productos de Aromaterapia: • Aceites esenciales Amazonik (aromas variados) • Aceites de masaje (aromas variados) • Probadores de esencias y Más... • Hacemos Envíos a todo el Perú. • Solicita tu pedido por WhatsApp al 930830427.",
+    "resumen": "Mix Floral - Aceite para masajes.",
+    "descripcionCompleta": "Aromaterapia Buen día, te saludamos desde Agujas de Acupuntura Perúú. Tenemos una amplia gama de productos de Aromaterapia: Aceites esenciales Amazonik (aromas variados) Aceites de masaje (aromas variados) Probadores de esencias y más... Hacemos envíos a todo el Perúú. Solicita tu pedido por WhatsApp al 930830427.",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Mix Floral - Aceite para masajes | SKU: PROD-25 | Precio: S/ 0.00 | Categoría: Aromaterapia | Medidas: Estándar | Stock: Disponible | Descripción: • Mix Floral - Aceite para masajes."
+    "fichaRAG": "Producto: Mix Floral - Aceite para masajes | SKU: PROD-25 | Precio: S/ 0.00 | Categoría: Aromaterapia | Medidas: Estándar | Stock: Disponible | Descripción: Mix Floral - Aceite para masajes."
   },
   {
     "id": "prod-90",
@@ -1612,7 +1696,7 @@ export const allProductsKnowledge = [
       "500 ml"
     ],
     "resumen": "Aceite para Masaje Corporal - Mix Floral (Rosa, Lavanda, Jazmín).",
-    "descripcionCompleta": "Aceite de Masaje Mix Floral El aceite de masaje Mix Floral combina delicadas esencias naturales de Rosas, Lavanda y Jazmín, cáreando una exPerúiencia aromática ideal para momentos de relajación y bienestar. Su mezcla floral ayuda a generar un ambiente armonioso durante las sesiones de masaje. • Beneficios de sus Aromas • Lavanda: Favorece la relajación y ayuda a disminuir la tensión. • Rosas: Promueven una sensación de tranquilidad y equilibrio. • Jazmín: Conocido por sus propiedades afrodisíacas y relajantes. • Presentaciones Disponibles • 120 ml • 500 ml Ideal para masajes relajantes, terapias de bienestar y aromaterapia. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Aceite de Masaje Mix Floral El aceite de masaje Mix Floral combina delicadas esencias naturales de Rosas, Lavanda y Jazmín, cáreando una exPerúiencia aromática ideal para momentos de relajación y bienestar. Su mezcla floral ayuda a generar un ambiente armonioso durante las sesiones de masaje. Beneficios de sus Aromas Lavanda: Favorece la relajación y ayuda a disminuir la tensión. Rosas: Promueven una sensación de tranquilidad y equilibrio. Jazmín: Conocido por sus propiedades afrodisíacas y relajantes. Presentaciones Disponibles 120 ml 500 ml Ideal para masajes relajantes, terapias de bienestar y aromaterapia. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: ROSA - LAVANDA - JAZMÍN (MIX FLORAL) - Aceite para masaje | SKU: PROD-90 | Precio: S/ 12.00 | Categoría: Aromaterapia | Medidas: 120 ml, 500 ml | Stock: Disponible | Descripción: Aceite para Masaje Corporal - Mix Floral (Rosa, Lavanda, Jazmín)."
   },
@@ -1633,7 +1717,7 @@ export const allProductsKnowledge = [
     "badge": "Recomendado",
     "medidas": [],
     "resumen": "Aro de pilates para ejercicios de tonificación y rehabilitación.",
-    "descripcionCompleta": "Aros de Pilates Los aros de Pilates están diseñados para trabajar los Másculos de todo el cuerpo, especialmente la zona central o core, Perúmitiendo árealizar una gran variedad de movimientos de forma controlada y efectiva. • Beneficios Principales • Fortalecen los Másculos centrales (core). Mejoran la flexibilidad y movilidad. Aumentan la fuerza y resistencia muscular. Favorecen una mejor postura corporal. • Ayudan a alinear la columna vertebral. Contribuyen a reducir el dolor de espalda. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Aros de Pilates Los aros de Pilates están diseñados para trabajar los músculos de todo el cuerpo, especialmente la zona central o core, Perúmitiendo árealizar una gran variedad de movimientos de forma controlada y efectiva. Beneficios Principales Fortalecen los músculos centrales (core). Mejoran la flexibilidad y movilidad. Aumentan la fuerza y resistencia muscular. Favorecen una mejor postura corporal. Ayudan a alinear la columna vertebral. Contribuyen a reducir el dolor de espalda. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Aro de pilates | SKU: PROD-7 | Precio: S/ 30.00 | Categoría: Fisioterapia | Medidas: Estándar | Stock: Disponible | Descripción: Aro de pilates para ejercicios de tonificación y rehabilitación."
   },
@@ -1654,7 +1738,7 @@ export const allProductsKnowledge = [
     "badge": "Calidad Premium",
     "medidas": [],
     "resumen": "Bandas elásticas con agarres para ejercicios de fisioterapia y rehabilitación.",
-    "descripcionCompleta": "Bandas elásticas con agarres para ejercicios de fisioterapia y rehabilitación. Ideales para: Fisioterapia y rehabilitación Ejercicios de fortalecimiento muscular Entrenamiento funcional Mejora de flexibilidad y movilidad Con agarres ergonmicos para mayor comodidad durante el ejercicio. • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Bandas elásticas con agarres para ejercicios de fisioterapia y rehabilitación. Ideales para: Fisioterapia y rehabilitación Ejercicios de fortalecimiento muscular Entrenamiento funcional Mejora de flexibilidad y movilidad Con agarres ergonmicos para mayor comodidad durante el ejercicio. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Bandas elásticas con agarre | SKU: PROD-8 | Precio: S/ 20.00 | Categoría: Fisioterapia | Medidas: Estándar | Stock: Disponible | Descripción: Bandas elásticas con agarres para ejercicios de fisioterapia y rehabilitación."
   },
@@ -1677,7 +1761,7 @@ export const allProductsKnowledge = [
       "2 unidades"
     ],
     "resumen": "Cables de Repuesto para TENS 7000.",
-    "descripcionCompleta": "Repuesto de cables para TENS 7000 • Cables de repuesto para tu equipo TENS 7000, garantizando conexin segura y confiable. • Incluye: 2 unidades por Presentación, resistentes y duraderas. • Perúfecto para mantener tus terapias sin interrupciones. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Repuesto de cables para TENS 7000 Cables de repuesto para tu equipo TENS 7000, garantizando conexin segura y confiable. Incluye: 2 unidades por presentación, resistentes y duraderas. Perúfecto para mantener tus terapias sin interrupciones. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: CABLES PARA TENS 7000 | SKU: PROD-132 | Precio: S/ 25.00 | Categoría: Fisioterapia | Medidas: 2 unidades | Stock: Disponible | Descripción: Cables de Repuesto para TENS 7000."
   },
@@ -1700,7 +1784,7 @@ export const allProductsKnowledge = [
       "5x9 cm"
     ],
     "resumen": "Electrodos 5x9 PALS - Parches para TENS y electroterapia.",
-    "descripcionCompleta": "ELECTRODOS RECTANGULARES 5x9 cm Potencia tus terapias de electroestimulacin • Los Electrodos Rectangulares 5x9 cm ofrecen excelente conductividad y durabilidad. Beneficios: Mayor área de contacto para zonas amplias. Adhesión segura y reutilizable. Compatible con la mayora de equipos de electroterapia. • Características: Gel conductor de alta calidad Forma rectangular para mejor cobertura fáciles de limpiar y guardar • Envíos a todo el Perú • Pedidos: 930830427",
+    "descripcionCompleta": "ELECTRODOS RECTANGULARES 5x9 cm Potencia tus terapias de electroestimulacin Los Electrodos Rectangulares 5x9 cm ofrecen excelente conductividad y durabilidad. Beneficios: Mayor área de contacto para zonas amplias. Adhesin segura y reutilizable. Compatible con la mayora de equipos de electroterapia. Características: Gel conductor de alta calidad Forma rectangular para mejor cobertura fáciles de limpiar y guardar Envíos a todo el Perúú Pedidos: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Electrodos 5x9 PALS | SKU: PROD-131 | Precio: S/ 15.00 | Categoría: Fisioterapia | Medidas: 5x9 cm | Stock: Disponible | Descripción: Electrodos 5x9 PALS - Parches para TENS y electroterapia."
   },
@@ -1721,32 +1805,9 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Kinesio Tape - Vendaje neuromuscular adhesivo.",
-    "descripcionCompleta": "Kinesio Tape Cinta Terapéutica Elástica La Kinesio Tape es una cinta adhesiva elástica diseñada para apoyar la recuPerúacin muscular y articular sin limitar el movimiento. Se adapta a la piel y Perúmite continuar con las actividades diarias o deportivas. Beneficios: • Reduce dolor e inflamación al mejorar la circulación. • Favorece la recuPerúacin muscular después del ejercicio o lesiones. Previene lesiones brindando soporte a Másculos y articulaciones. • Mejora la postura y ayuda a disminuir molestias en espalda y cuello. Apoya la rehabilitación en esguinces, contracturas y problemas articulares. • Material: algodn y elastano, transpirable, resistente al agua y cómodo para uso prolongado. • Vendaje neuromuscular para tratar lesiones en fisioterapia • Colores variados para elegir • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Kinesio Tape Cinta Terapéutica Elástica La Kinesio Tape es una cinta adhesiva elástica diseñada para apoyar la recuPerúación muscular y articular sin limitar el movimiento. Se adapta a la piel y Perúmite continuar con las actividades diarias o deportivas. Beneficios: Reduce dolor e inflamación al mejorar la circulación. Favorece la recuPerúación muscular después del ejercicio o lesiones. Previene lesiones brindando soporte a músculos y articulaciones. Mejora la postura y ayuda a disminuir molestias en espalda y cuello. Apoya la rehabilitación en esguinces, contracturas y problemas articulares. Material: algodn y elastano, transpirable, resistente al agua y cómodo para uso prolongado. Vendaje neuromuscular para tratar lesiones en fisioterapia Colores variados para elegir Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: KINESIO TAPE | SKU: PROD-127 | Precio: S/ 15.00 | Categoría: Fisioterapia | Medidas: Estándar | Stock: Disponible | Descripción: Kinesio Tape - Vendaje neuromuscular adhesivo."
-  },
-  {
-    "id": "prod-130",
-    "slug": "lampara-infrarroja",
-    "sku": "PROD-130",
-    "nombre": "Lampara infrarroja",
-    "categoria": "Fisioterapia",
-    "marca": "Agujas Acupuntura Perú",
-    "precio": 125,
-    "precioTexto": "S/ 125.00",
-    "precioOriginal": "S/ 150.00",
-    "descuento": "-15%",
-    "enStock": true,
-    "rating": 5,
-    "reviewsCount": 18,
-    "badge": "Más Vendido",
-    "medidas": [
-      "25x20 cm"
-    ],
-    "resumen": "Lmpara Infrarroja TDP - Fisioterapia y Moxibustión elctrica.",
-    "descripcionCompleta": "Lmpara Infrarroja con Pedestal Activa la circulación y relaja tus Másculos! Dispositivo terapéutico que proporciona calor localizado mediante radiacin infrarroja, ideal para relajación y alivio muscular. • Emisión de calor seco que favorece: Vasodilatación Alivio del dolor Relajación profunda Características: Potencia: 275 W para generación rápida y eficiente de calor. Diseño resistente: metal con recubrimiento anti-calor, pedestal ajustable y regulador de intensidad. • Aplicaciones: alivia dolores musculares, mejora la circulación y reduce tensiones. Ideal para consultorios o uso Perúsonal. • Base slida, foco incluido, fácil de montar • Lista para usarse en casa o consultorio • Altura máxima: 147 cm; tamao compacto en caja: 80x25x20 cm. • Uso recomendado: consultorios, domicilios o centros de belleza para un tratamiento cómodo y efectivo. • Envío a todo el Perú • Pedidos al: 930830427 • Más información aqu: https://youtu.be/KdLo4EfHchcsi=-P4-j2PYQOSbctBG https://youtu.be/KdLo4EfHchc",
-    "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Lampara infrarroja | SKU: PROD-130 | Precio: S/ 125.00 | Categoría: Fisioterapia | Medidas: 25x20 cm | Stock: Disponible | Descripción: Lmpara Infrarroja TDP - Fisioterapia y Moxibustión elctrica."
   },
   {
     "id": "prod-137",
@@ -1767,7 +1828,7 @@ export const allProductsKnowledge = [
       "3 piezas"
     ],
     "resumen": "Ligas Abiertas - Set de 3 piezas para ejercicios de fisioterapia.",
-    "descripcionCompleta": "Ligas Abiertas - Set de 3 piezas para ejercicios de fisioterapia. Set de 3 ligas/bandas elásticas abiertas (con extremos) para ejercicios de fisioterapia y rehabilitación. Características: 3 ligas de diferente resistencia Formato abierto (con extremos para atar) múltiples niveles de resistencia Verstil para diferentes ejercicios Material: Ltex o TPE • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Ligas Abiertas - Set de 3 piezas para ejercicios de fisioterapia. Set de 3 ligas/bandas elásticas abiertas (con extremos) para ejercicios de fisioterapia y rehabilitación. Características: 3 ligas de diferente resistencia Formato abierto (con extremos para atar) Múltiples niveles de resistencia Verstil para diferentes ejercicios Material: Ltex o TPE Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: LIGAS ABIERTAS (X3) | SKU: PROD-137 | Precio: S/ 35.00 | Categoría: Fisioterapia | Medidas: 3 piezas | Stock: Disponible | Descripción: Ligas Abiertas - Set de 3 piezas para ejercicios de fisioterapia."
   },
@@ -1788,7 +1849,7 @@ export const allProductsKnowledge = [
     "badge": "Calidad Premium",
     "medidas": [],
     "resumen": "Ligas cerradas para ejercicios de rehabilitación y fisioterapia.",
-    "descripcionCompleta": "Nuestros productos se presentan en diversos niveles de resistencia, Perúmitiendo elegir la opción que mejor se adapte a cada necesidad. • Por qu elegirlos • Diferentes tamaos para mayor comodidad. • Distintos niveles de resistencia según el objetivo. Ideales para un ejercicio estructurado y controlado. • Perúfectos tanto para profesionales de la salud como para uso Perúsonal. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Nuestros productos se presentan en diversos niveles de resistencia, Perúmitiendo elegir la opción que mejor se adapte a cada necesidad. Por qu elegirlos Diferentes tamaos para mayor comodidad. Distintos niveles de resistencia según el objetivo. Ideales para un ejercicio estructurado y controlado. Perúfectos tanto para profesionales de la salud como para uso Perúsonal. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Ligas cerradas | SKU: PROD-5 | Precio: S/ 30.00 | Categoría: Fisioterapia | Medidas: Estándar | Stock: Disponible | Descripción: Ligas cerradas para ejercicios de rehabilitación y fisioterapia."
   },
@@ -1809,7 +1870,7 @@ export const allProductsKnowledge = [
     "badge": "Garantizado",
     "medidas": [],
     "resumen": "Línea completa de Fisioterapia.",
-    "descripcionCompleta": "• Fisioterapia • Buen día, te saludamos desde Agujas de Acupuntura Perú. Tenemos una amplia gama de productos de Fisioterapia: • Pistola Perúcutora Total Gun Electroacupuntor de mesa Electroacupuntor portátil • Electrodos cuadrados, rectangulares y faciales Kinesio tape • Lmparas infrarrojo y Más... • Hacemos Envíos a todo el Perú. • Solicita tu pedido por WhatsApp al 930830427.",
+    "descripcionCompleta": "Fisioterapia Buen día, te saludamos desde Agujas de Acupuntura Perúú. Tenemos una amplia gama de productos de Fisioterapia: Pistola Perúcutora Total Gun Electroacupuntor de mesa Electroacupuntor portátil Electrodos cuadrados, rectangulares y faciales Kinesio tape Lmparas infrarrojo y más... Hacemos envíos a todo el Perúú. Solicita tu pedido por WhatsApp al 930830427.",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Línea de Fisioterapia | SKU: PROD-24 | Precio: S/ 0.00 | Categoría: Fisioterapia | Medidas: Estándar | Stock: Disponible | Descripción: Línea completa de Fisioterapia."
   },
@@ -1832,30 +1893,9 @@ export const allProductsKnowledge = [
       "5x5 cm"
     ],
     "resumen": "TENS 7000 - Estimulador elctrico transcutneo para alivio del dolor.",
-    "descripcionCompleta": "TENS 7000 Electroestimulador para Alivio del Dolor El TENS 7000 es un dispositivo portátil de estimulación nerviosa elctrica transcutnea diseñado para aliviar dolor muscular, articular y neuroptico. Funciona mediante impulsos elctricos que ayudan a bloquear las seales de dolor y estimular la liberacin de endorfinas. Características principales: 5 modos de oPerúacin: Burst, Normal, Modulacin, Strength Duration y ChopPerú. • Intensidad ajustable: de 0 a 100 mA. • Frecuencia: 1 a 150 Hz. • 2 canales independientes para trabajar diferentes zonas del cuerpo. • 4 electrodos adhesivos reutilizables incluidos. • Autonoma: hasta 25 horas con batera de 9V. Moderno y práctico • 2 salidas para mayor efectividad • Funciona a pilas • Incluye maleta y 4 electrodos de 5x5 cm Garanta de 6 meses • Ideal para fisioterapia y uso en casa, proporcionando alivio del dolor de forma rápida, segura y no invasiva. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "TENS 7000 Electroestimulador para Alivio del Dolor El TENS 7000 es un dispositivo portátil de estimulación nerviosa elctrica transcutnea diseñado para aliviar dolor muscular, articular y neuroptico. Funciona mediante impulsos elctricos que ayudan a bloquear las seales de dolor y estimular la liberacin de endorfinas. Características principales: 5 modos de oPerúacin: Burst, Normal, Modulacin, Strength Duration y ChopPerú. Intensidad ajustable: de 0 a 100 mA. Frecuencia: 1 a 150 Hz. 2 canales independientes para trabajar diferentes zonas del cuerpo. 4 electrodos adhesivos reutilizables incluidos. Autonoma: hasta 25 horas con batera de 9V. Moderno y práctico 2 salidas para mayor efectividad Funciona a pilas Incluye maleta y 4 electrodos de 5x5 cm Garanta de 6 meses Ideal para fisioterapia y uso en casa, proporcionando alivio del dolor de forma rápida, segura y no invasiva. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: TENS 7000 | SKU: PROD-133 | Precio: S/ 140.00 | Categoría: Fisioterapia | Medidas: 5x5 cm | Stock: Disponible | Descripción: TENS 7000 - Estimulador elctrico transcutneo para alivio del dolor."
-  },
-  {
-    "id": "prod-138",
-    "slug": "total-gun-pistola-percutora",
-    "sku": "PROD-138",
-    "nombre": "Total Gun - Pistola Perúcutora",
-    "categoria": "Fisioterapia",
-    "marca": "Agujas Acupuntura Perú",
-    "precio": 350,
-    "precioTexto": "S/ 350.00",
-    "precioOriginal": "S/ 420.00",
-    "descuento": "-15%",
-    "enStock": true,
-    "rating": 5,
-    "reviewsCount": 17,
-    "badge": "Stock Limitado",
-    "medidas": [],
-    "resumen": "Total Gun - Pistola Perúcutora Masajeadora Profesional.",
-    "descripcionCompleta": "Pistola Perúcutora de masajes Total Gun • Pistola Perúcutora de alta potencia para masajes profundos. • Alivia tensiones, mejora la circulación y acelera la recuPerúacin muscular. •20 Velocidades. •Pantalla LCD • Diseño ergonmico y fácil de usar, ideal para uso Perúsonal o profesional. •Incluye maleta protectora. • Envío a todo el Perú • Pedidos al: 930830427 • Más información aqu: • Para Más detalles, consulta la descripción del video en el siguiente enlace. https://youtu.be/dJtlTeIWtpY",
-    "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Total Gun - Pistola Perúcutora | SKU: PROD-138 | Precio: S/ 350.00 | Categoría: Fisioterapia | Medidas: Estándar | Stock: Disponible | Descripción: Total Gun - Pistola Perúcutora Masajeadora Profesional."
   },
   {
     "id": "prod-124",
@@ -1874,7 +1914,7 @@ export const allProductsKnowledge = [
     "badge": "Más Vendido",
     "medidas": [],
     "resumen": "Compresa de Semillas Modelo Guantes - Para manos y muñecas.",
-    "descripcionCompleta": "• Guantes terapéuticos • Contiene: • 1 par de guantes de buldemin con semillas y girasoles. • 1 par de guantes de felpa para proteger las manos del calor. • Beneficio: Favorecen la circulación sangunea en las manos. • Especialmente útiles para Perúsonas con artritis y artrosis. • Envío a todo el Perú • Pedidos al: 930830427 • Más información aqu: En el siguiente enlace puede revisar sus características: https://youtu.be/gG9m0mU5WmUsi=xTNqTHVSNphN9zeb",
+    "descripcionCompleta": "Guantes Terapéuticos Contiene: 1 par de guantes de buldemin con semillas y girasoles. 1 par de guantes de felpa para proteger las manos del calor. Beneficio: Favorecen la circulación sangunea en las manos. Especialmente útiles para Perúsonas con artritis y artrosis. Envío a todo el Perúú Pedidos al: 930830427 Más información aqu: En el siguiente enlace puede revisar sus características: https://youtu.be/gG9m0mU5WmUsi=xTNqTHVSNphN9zeb",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: COMPRESA DE SEMILLAS: MODELO GUANTES | SKU: PROD-124 | Precio: S/ 58.00 | Categoría: Compresas | Medidas: Estándar | Stock: Disponible | Descripción: Compresa de Semillas Modelo Guantes - Para manos y muñecas."
   },
@@ -1895,7 +1935,7 @@ export const allProductsKnowledge = [
     "badge": "Recomendado",
     "medidas": [],
     "resumen": "Compresas en forma de Botas - Terapia trmica para pies y tobillos.",
-    "descripcionCompleta": "• Compresas en forma de Botas Calor terapéutico • Estimula la circulación y alivia molestias en los pies • Se calientan en microondas (2 min 20 seg.) • Hechas con semillas de girasol •Ideal para: •pie cansado •espoln calcneo •falta de circulación • Pedidos al por mayor y menor al 930830427 • Hacemos Envíos a todo el Perú",
+    "descripcionCompleta": "Compresas en forma de Botas Calor Terapéutico Estimula la circulación y alivia molestias en los pies Se calientan en microondas (2 min 20 seg.) Hechas con semillas de girasol Ideal para: pie cansado espoln calcneo falta de circulación Pedidos al por mayor y menor al 930830427 Hacemos envíos a todo el Perúú",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Compresa en botas | SKU: PROD-58 | Precio: S/ 80.00 | Categoría: Compresas | Medidas: Estándar | Stock: Disponible | Descripción: Compresas en forma de Botas - Terapia trmica para pies y tobillos."
   },
@@ -1918,7 +1958,7 @@ export const allProductsKnowledge = [
       "5 unidades"
     ],
     "resumen": "Pack de Compresas de Gel Fras - Terapia de fro.",
-    "descripcionCompleta": "• Pack de 5 Compresas Fras Reutilizables • Alivio inmediato y práctico para tus terapias y cuidados diarios! Este pack de 4 compresas frías es ideal para reducir inflamaciones, aliviar dolores musculares, controlar hematomas y desinflamar lesiones deportivas. Perúfectas para tener siempre a mano en clnicas, consultorios o en casa. Beneficios: Disminuyen la inflamación y el dolor. Ayudan en la recuPerúacin post-entrenamiento. útiles para lesiones, golpes, esguinces y dolores musculares. Reutilizables y de larga duracin. • Presentación: Pack de 5 unidades. • Medidas: variadas • Modo de uso: Conservar en congelador y aplicar en la zona afectada. • Pedidos al por mayor y menor: +51 930 830 427 • Envíos a todo el Perú",
+    "descripcionCompleta": "Pack de 5 Compresas Fras Reutilizables Alivio inmediato y práctico para tus terapias y cuidados diarios! Este pack de 4 compresas frías es ideal para reducir inflamaciones, aliviar dolores musculares, controlar hematomas y desinflamar lesiones deportivas. Perúfectas para tener siempre a mano en clínicas, consultorios o en casa. Beneficios: Disminuyen la inflamación y el dolor. Ayudan en la recuPerúación post-entrenamiento. útiles para lesiones, golpes, esguinces y dolores musculares. Reutilizables y de larga duracin. Presentación: Pack de 5 unidades. Medidas: variadas Modo de uso: Conservar en congelador y aplicar en la zona afectada. Pedidos al por mayor y menor: +51 930 830 427 Envíos a todo el Perúú",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Compresas de gel frias | SKU: PROD-125 | Precio: S/ 110.00 | Categoría: Compresas | Medidas: 5 unidades | Stock: Disponible | Descripción: Pack de Compresas de Gel Fras - Terapia de fro."
   },
@@ -1939,7 +1979,7 @@ export const allProductsKnowledge = [
     "badge": "Garantizado",
     "medidas": [],
     "resumen": "Pack de Compresas de Semillas - Terapia trmica natural.",
-    "descripcionCompleta": "• Pack de Compresas de Semillas Terapia natural calor. Disfruta de una terapia relajante con nuestras Compresas de Semillas, rellenas de granos y hierbas naturales, ideales para terapia de calor. Beneficios: Alivia contracturas, dolores musculares y clicos Aroma relajante Reutilizables y fáciles de calentar/enfriar • Pack disponible en varios tamaos • Envíos a todo el Perú • Pedidos al 930830427 • Revisa el video aqu: https://youtu.be/fCo6F6r0W2A",
+    "descripcionCompleta": "Pack de Compresas de Semillas Terapia natural calor. Disfruta de una terapia relajante con nuestras Compresas de Semillas, rellenas de granos y hierbas naturales, ideales para terapia de calor. Beneficios: Alivia contracturas, dolores musculares y clicos Aroma relajante Reutilizables y fáciles de calentar/enfriar Pack disponible en varios tamaos Envíos a todo el Perúú Pedidos al 930830427 Revisa el video aqu: https://youtu.be/fCo6F6r0W2A",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Compresas de semillas | SKU: PROD-126 | Precio: S/ 60.00 | Categoría: Compresas | Medidas: Estándar | Stock: Disponible | Descripción: Pack de Compresas de Semillas - Terapia trmica natural."
   },
@@ -1959,10 +1999,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 16,
     "badge": "Envío Inmediato",
     "medidas": [],
-    "resumen": "• Línea completa de Compresas •",
-    "descripcionCompleta": "• Línea completa de Compresas • Catálogo de compresas frías y calientes: compresas de semillas, compresas de gel, botas terapéuticas y Más. Consultar disponibilidad y precios de productos específicos. • Envío a todo el Perú | • 930830427",
+    "resumen": "Línea completa de Compresas",
+    "descripcionCompleta": "Línea completa de Compresas Catálogo de compresas frías y calientes: compresas de semillas, compresas de gel, botas terapéuticas y más. Consultar disponibilidad y precios de productos específicos. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Línea de Compresas | SKU: PROD-23 | Precio: S/ 0.00 | Categoría: Compresas | Medidas: Estándar | Stock: Disponible | Descripción: • Línea completa de Compresas •"
+    "fichaRAG": "Producto: Línea de Compresas | SKU: PROD-23 | Precio: S/ 0.00 | Categoría: Compresas | Medidas: Estándar | Stock: Disponible | Descripción: Línea completa de Compresas"
   },
   {
     "id": "prod-49",
@@ -1981,7 +2021,7 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Digitopresor de Reflexologa - Herramienta de presión para puntos reflejos.",
-    "descripcionCompleta": "Este instrumento terapéutico est diseñado para facilitar la estimulación de zonas reflejas y puntos específicos del cuerpo, Perúmitiendo aplicar presión de forma precisa durante terapias de acupresión y reflexologa. • Materiales Puede estar fabricado en diferentes materiales resistentes como: • Madera • Acero • Plástico • Resina • Funciones Principales • Estimular zonas reflejas con mayor precisión • Aplicar presión sin usar directamente los dedos • Trabajar puntos reflejos específicos del cuerpo Ayudar a liberar bloqueos de energía (Qi) según la medicina oriental • Beneficios Apoyo en el tratamiento de dolores y tensiones • Puede ayudar a reducir estrés • Contribuye al bienestar en casos de problemas digestivos o insomnio • Perúmite árealizar acupresión sin el uso de agujas • Una herramienta práctica para terapias de reflexologa, acupresión y bienestar integral. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Este instrumento terapéutico est diseñado para facilitar la estimulación de zonas reflejas y puntos específicos del cuerpo, Perúmitiendo aplicar presión de forma precisa durante terapias de acupresión y reflexologa. Materiales Puede estar fabricado en diferentes materiales resistentes como: Madera Acero Plástico Resina Funciones Principales Estimular zonas reflejas con mayor precisión Aplicar presión sin usar directamente los dedos Trabajar puntos reflejos específicos del cuerpo Ayudar a liberar bloqueos de energía (Qi) según la medicina oriental Beneficios Apoyo en el tratamiento de dolores y tensiones Puede ayudar a reducir estrés Contribuye al bienestar en casos de problemas digestivos o insomnio Perúmite árealizar acupresión sin el uso de agujas Una herramienta práctica para terapias de reflexologa, acupresión y bienestar integral. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Digitopresor de reflexologa | SKU: PROD-49 | Precio: S/ 30.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Digitopresor de Reflexologa - Herramienta de presión para puntos reflejos."
   },
@@ -2002,7 +2042,7 @@ export const allProductsKnowledge = [
     "badge": "Más Vendido",
     "medidas": [],
     "resumen": "Digitopresor Flex Confort - Herramienta ergonmica de presión.",
-    "descripcionCompleta": "Digitopresor Flex Confort • Ideal para auto masaje y alivio de tensión muscular • Fabricado en PVC resistente • Doble punta: redonda y plana Reduce el desgaste de las manos del terapeuta • Pedidos al por mayor y menor al 930830427 • Hacemos Envíos a todo el Perú",
+    "descripcionCompleta": "Digitopresor Flex Confort Ideal para auto masaje y alivio de tensión muscular Fabricado en PVC resistente Doble punta: redonda y plana Reduce el desgaste de las manos del terapeuta Pedidos al por mayor y menor al 930830427 Hacemos envíos a todo el Perúú",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Digitopresor Flex confort | SKU: PROD-60 | Precio: S/ 35.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Digitopresor Flex Confort - Herramienta ergonmica de presión."
   },
@@ -2023,7 +2063,7 @@ export const allProductsKnowledge = [
     "badge": "Recomendado",
     "medidas": [],
     "resumen": "Digitopresor Thera Press - Herramienta de presión profesional de acrlico.",
-    "descripcionCompleta": "Thera Press • Thera Press, herramienta de PVC azul para masajes profundos. • Relaja puntos gatillo, mejora la flexibilidad muscular y promueve la vascularización. Ligero, ergonmico y efectivo para terapias. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Thera Press Thera Press, herramienta de PVC azul para masajes profundos. Relaja puntos gatillo, mejora la flexibilidad muscular y promueve la vascularización. Ligero, ergonmico y efectivo para terapias. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Digitopresor Thera Press | SKU: PROD-108 | Precio: S/ 45.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Digitopresor Thera Press - Herramienta de presión profesional de acrlico."
   },
@@ -2044,7 +2084,7 @@ export const allProductsKnowledge = [
     "badge": "Calidad Premium",
     "medidas": [],
     "resumen": "Digitopresor triangular para reflexologa y acupresión.",
-    "descripcionCompleta": "Gua Sha Triangular Libera contracturas y activa la energía La herramienta Gua Sha en forma de triángulo es ideal para la liberacin miofascial, puntos gatillo y masajes energéticos, combinando la tradicin oriental con técnicas modernas . • Usos ideales: Fisioterapia Masajes terapéuticos Terapia física Quiropraxia • Medicina complementaria • Características: Diseño ergonmico para mejor manejo • Material: madera natural o acrlico resistente Presentación: triangular • Mira el uso del producto en el siguiente enlace • Envíos a todo el Perú • Delivery en Lima y Callao • Medios de pago: Yape y Plin al 930 830 427",
+    "descripcionCompleta": "Gua Sha Triangular Libera contracturas y activa la energía La herramienta Gua Sha en forma de triángulo es ideal para la liberacin miofascial, puntos gatillo y masajes energéticos, combinando la tradicin oriental con técnicas modernas . Usos ideales: Fisioterapia Masajes terapéuticos Terapia física Quiropraxia Medicina complementaria Características: Diseño ergonmico para mejor manejo Material: madera natural o acrlico resistente Presentación: triangular Mira el uso del producto en el siguiente enlace Envíos a todo el Perúú Delivery en Lima y Callao Medios de pago: Yape y Plin al 930 830 427",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Digitopresor triangular | SKU: PROD-9 | Precio: S/ 25.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Digitopresor triangular para reflexologa y acupresión."
   },
@@ -2065,7 +2105,7 @@ export const allProductsKnowledge = [
     "badge": "Garantizado",
     "medidas": [],
     "resumen": "Digitopresor Triangular de Acrlico.",
-    "descripcionCompleta": "Digitopresor Triangular de Acrlico. Herramienta triangular de acrlico para reflexologa y acupresión con múltiples ngulos de trabajo. Características: Material: Acrlico transparente Forma triangular para diferentes ngulos Punta de precisión Ligero y resistente • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Digitopresor Triangular de Acrlico. Herramienta triangular de acrlico para reflexologa y acupresión con múltiples ngulos de trabajo. Características: Material: Acrlico transparente Forma triangular para diferentes ngulos Punta de precisión Ligero y resistente Envío a todo el Perúú | 930830427",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Digitopresor triangular (acrilico) | SKU: PROD-107 | Precio: S/ 25.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Digitopresor Triangular de Acrlico."
   },
@@ -2086,7 +2126,7 @@ export const allProductsKnowledge = [
     "badge": "Envío Inmediato",
     "medidas": [],
     "resumen": "Gua Sha - Herramienta de masaje tradicional chino.",
-    "descripcionCompleta": "Gua Sha: Belleza y Bienestar Natural Gua sha significa raspar en chino, Perúo no te dejes engaar por su nombre •. Los masajes actuales con piedras gua sha son suaves, relajantes e increblemente efectivos. Cuando se árealizan con la presión adecuada y utilizando aceite facial, pueden aportar múltiples beneficios a tu piel. Beneficios del Gua Sha • Reduce la hinchazn y la retención de lquidos Ilumina y áreafirma la piel • Mejora el drenaje linftico y la circulación Alivia la tensión muscular • Favorece la produccin de colgeno a largo plazo • Incorpora el gua sha a tu rutina de cuidado facial y disfruta de una piel Más firme, luminosa y revitalizada de forma natural. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Gua Sha: Belleza y Bienestar Natural Gua sha significa raspar en chino, Perúo no te dejes engaar por su nombre . Los masajes actuales con piedras gua sha son suaves, relajantes e increblemente efectivos. Cuando se árealizan con la presión adecuada y utilizando aceite facial, pueden aportar múltiples beneficios a tu piel. Beneficios del Gua Sha Reduce la hinchazn y la retención de lquidos Ilumina y áreafirma la piel Mejora el drenaje linftico y la circulación Alivia la tensión muscular Favorece la produccin de colgeno a largo plazo Incorpora el gua sha a tu rutina de cuidado facial y disfruta de una piel más firme, luminosa y revitalizada de forma natural. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Gua Sha | SKU: PROD-10 | Precio: S/ 5.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Gua Sha - Herramienta de masaje tradicional chino."
   },
@@ -2107,7 +2147,7 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Gua Sha en forma de media luna - Herramienta de masaje facial y corporal.",
-    "descripcionCompleta": "Gua Sha Técnica de Bienestar y Cuidado de la Piel El Gua Sha es una técnica ancestral de la medicina tradicional china que consiste en deslizar o raspar suavemente la piel con una herramienta especial para estimular diferentes procesos naturales del cuerpo. • Beneficios del Gua Sha • Estimula la circulación sangunea Ayuda a reducir tensiones musculares • Favorece la desintoxicación del organismo Contribuye a mejorar el aspecto y luminosidad de la piel • Diseño de la Herramienta La herramienta de forma de medialuna tiene una curvatura suave que Perúmite adaptarse fácilmente a distintas zonas del rostro y del cuerpo. • Zonas de Aplicación • Mandbula • Pmulos Cuello Frente • Espalda o brazos • Ideal para complementar rutinas de cuidado facial, relajación y terapias de bienestar. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Gua Sha Técnica de Bienestar y Cuidado de la Piel El Gua Sha es una técnica ancestral de la medicina tradicional china que consiste en deslizar o raspar suavemente la piel con una herramienta especial para estimular diferentes procesos naturales del cuerpo. Beneficios del Gua Sha Estimula la circulación sangunea Ayuda a reducir tensiones musculares Favorece la desintoxicación del organismo Contribuye a mejorar el aspecto y luminosidad de la piel Diseño de la Herramienta La herramienta de forma de medialuna tiene una curvatura suave que Perúmite adaptarse fácilmente a distintas zonas del rostro y del cuerpo. Zonas de Aplicación Mandbula Pmulos Cuello Frente Espalda o brazos Ideal para complementar rutinas de cuidado facial, relajación y terapias de bienestar. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Gua sha en media luna | SKU: PROD-50 | Precio: S/ 28.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Gua Sha en forma de media luna - Herramienta de masaje facial y corporal."
   },
@@ -2128,7 +2168,7 @@ export const allProductsKnowledge = [
     "badge": "Más Vendido",
     "medidas": [],
     "resumen": "Herramienta miofascial IASTM (Instrumento Asistido para la Movilizacin de Tejidos Blandos).",
-    "descripcionCompleta": "Herramienta Miofascial La herramienta miofascial es un instrumento terapéutico utilizado para trabajar el sistema miofascial, que incluye la fascia y los Másculos del cuerpo. Se emplea principalmente en terapias físicas para ayudar a liberar tensiones y mejorar el bienestar muscular. • Cmo funciona Perúmite al fisioterapeuta aplicar presión suave y sostenida sobre las zonas afectadas, ayudando a relajar los tejidos y mejorar su funcionamiento. • Beneficios • Libera tensiones musculares acumuladas • Mejora la circulación sangunea • Favorece el flujo linftico Ayuda a mejorar la movilidad y relajación muscular • Una herramienta ideal para terapias de fisioterapia, rehabilitación y cuidado del sistema muscular. • Presentación: 1 unidad. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Herramienta Miofascial La herramienta miofascial es un instrumento terapéutico utilizado para trabajar el sistema miofascial, que incluye la fascia y los músculos del cuerpo. Se emplea principalmente en terapias físicas para ayudar a liberar tensiones y mejorar el bienestar muscular. Cmo funciona Perúmite al fisioterapeuta aplicar presión suave y sostenida sobre las zonas afectadas, ayudando a relajar los tejidos y mejorar su funcionamiento. Beneficios Libera tensiones musculares acumuladas Mejora la circulación sangunea Favorece el flujo linftico Ayuda a mejorar la movilidad y relajación muscular Una herramienta ideal para terapias de fisioterapia, rehabilitación y cuidado del sistema muscular. Presentación: 1 unidad. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Herramienta miofascial | SKU: PROD-14 | Precio: S/ 55.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Herramienta miofascial IASTM (Instrumento Asistido para la Movilizacin de Tejidos Blandos)."
   },
@@ -2148,10 +2188,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 43,
     "badge": "Recomendado",
     "medidas": [],
-    "resumen": "• Línea completa de Herramientas de Masaje.",
-    "descripcionCompleta": "• Herramientas de masaje • Buen día, te saludamos desde Agujas de Acupuntura Perú. Tenemos una amplia gama de herramientas de masaje: • Thera Press • Flex Confort • Digitopresor en lpiz • Gua Sha para masajes y Más • Hacemos Envíos a todo el Perú. • Solicita tu pedido por WhatsApp al 930830427.",
+    "resumen": "Línea completa de Herramientas de Masaje.",
+    "descripcionCompleta": "Herramientas de masaje Buen día, te saludamos desde Agujas de Acupuntura Perúú. Tenemos una amplia gama de herramientas de masaje: Thera Press Flex Confort Digitopresor en lpiz Gua Sha para masajes y más Hacemos envíos a todo el Perúú. Solicita tu pedido por WhatsApp al 930830427.",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
-    "fichaRAG": "Producto: Herramientas de masaje | SKU: PROD-22 | Precio: S/ 0.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: • Línea completa de Herramientas de Masaje."
+    "fichaRAG": "Producto: Herramientas de masaje | SKU: PROD-22 | Precio: S/ 0.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Línea completa de Herramientas de Masaje."
   },
   {
     "id": "prod-15",
@@ -2170,7 +2210,7 @@ export const allProductsKnowledge = [
     "badge": "Calidad Premium",
     "medidas": [],
     "resumen": "Kit Miofascial - 3 herramientas IASTM de acero inoxidable.",
-    "descripcionCompleta": "Kit Miofascial Los kits miofasciales son herramientas esenciales para profesionales de la salud que buscan mejorar la técnica de liberacin miofascial y aumentar la eficacia de sus tratamientos. Están diseñados para facilitar la aplicación de técnicas terapéuticas, Perúmitiendo trabajar con mayor profundidad y precisión, reduciendo al mismo tiempo la fatiga manual del terapeuta. • Características Principales • Piezas anatmicamente diseñadas para adaptarse a diferentes zonas del cuerpo • Diseño ergonmico que facilita el manejo durante la terapia Fabricados con materiales conductores y resistentes • Perúmiten aplicar técnicas de liberacin Más profundas y efectivas • Beneficios • Mejora la eficacia del tratamiento miofascial Ayuda a liberar tensiones musculares y fasciales • Reduce la fatiga en las manos del terapeuta • Ideal para fisioterapia, rehabilitación y terapias manuales • Una solución profesional para optimizar las terapias y mejorar la exPerúiencia tanto del terapeuta como del paciente. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Kit Miofascial Los kits miofasciales son herramientas esenciales para profesionales de la salud que buscan mejorar la técnica de liberacin miofascial y aumentar la eficacia de sus tratamientos. Están diseñados para facilitar la aplicación de técnicas terapéuticas, Perúmitiendo trabajar con mayor profundidad y precisión, reduciendo al mismo tiempo la fatiga manual del terapeuta. Características Principales Piezas anatmicamente diseñadas para adaptarse a diferentes zonas del cuerpo Diseño ergonmico que facilita el manejo durante la terapia Fabricados con materiales conductores y resistentes Perúmiten aplicar técnicas de liberacin más profundas y efectivas Beneficios Mejora la eficacia del tratamiento miofascial Ayuda a liberar tensiones musculares y fasciales Reduce la fatiga en las manos del terapeuta Ideal para fisioterapia, rehabilitación y terapias manuales Una solución profesional para optimizar las terapias y mejorar la exPerúiencia tanto del terapeuta como del paciente. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Kit Miofascial x 3 pzs | SKU: PROD-15 | Precio: S/ 95.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Kit Miofascial - 3 herramientas IASTM de acero inoxidable."
   },
@@ -2191,7 +2231,7 @@ export const allProductsKnowledge = [
     "badge": "Garantizado",
     "medidas": [],
     "resumen": "Lpiz Digitopresor de Reflexologa - Acrlico.",
-    "descripcionCompleta": "• Lpiz Digitopresor de Reflexologa precisión y alivio en tus manos! • Herramienta de madera natural para estimular puntos reflexológicos y de acupuntura. • útil también para activar puntos gatillo. Beneficios: Estimula zonas reflejas del pie. Ergonmico y fácil de usar. Alivio muscular sin necesidad de agujas. • Haz tu pedido al 930830427 • Delivery en todo el pas",
+    "descripcionCompleta": "Lpiz Digitopresor de Reflexologa Precisión y alivio en tus manos! Herramienta de madera natural para estimular puntos reflexológicos y de acupuntura. útil también para activar puntos gatillo. Beneficios: Estimula zonas reflejas del pie. Ergonmico y fácil de usar. Alivio muscular sin necesidad de agujas. Haz tu pedido al 930830427 Delivery en todo el pas",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Lápiz digitopresor de reflexologa (Acrilico) | SKU: PROD-109 | Precio: S/ 20.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Lpiz Digitopresor de Reflexologa - Acrlico."
   },
@@ -2212,7 +2252,7 @@ export const allProductsKnowledge = [
     "badge": "Envío Inmediato",
     "medidas": [],
     "resumen": "Lpiz de Reflexologa - Digitopresor de madera.",
-    "descripcionCompleta": "• Lpiz Digitopresor de Reflexologa precisión y alivio en tus manos! • Herramienta de madera natural para estimular puntos reflexológicos y de acupuntura. • útil también para activar puntos gatillo. Beneficios: Estimula zonas reflejas del pie. Ergonmico y fácil de usar. Alivio muscular sin necesidad de agujas. • Haz tu pedido al 930830427 • Delivery en todo el pas",
+    "descripcionCompleta": "Lpiz Digitopresor de Reflexologa Precisión y alivio en tus manos! Herramienta de madera natural para estimular puntos reflexológicos y de acupuntura. útil también para activar puntos gatillo. Beneficios: Estimula zonas reflejas del pie. Ergonmico y fácil de usar. Alivio muscular sin necesidad de agujas. Haz tu pedido al 930830427 Delivery en todo el pas",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Lpiz de Reflexologa | SKU: PROD-106 | Precio: S/ 25.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Lpiz de Reflexologa - Digitopresor de madera."
   },
@@ -2220,7 +2260,7 @@ export const allProductsKnowledge = [
     "id": "prod-59",
     "slug": "mani-terapeutico",
     "sku": "PROD-59",
-    "nombre": "Man terapéutico",
+    "nombre": "Man Terapéutico",
     "categoria": "Herramientas de Masaje",
     "marca": "Agujas Acupuntura Perú",
     "precio": 25,
@@ -2232,10 +2272,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 35,
     "badge": "Stock Limitado",
     "medidas": [],
-    "resumen": "Man terapéutico (Peanut Ball) - Rodillo doble para masaje de columna.",
-    "descripcionCompleta": "• Man terapéutico Para Estiramiento y Masaje Ayuda a mejorar el rango articular • Material resistente al peso del usuario • Ideal para estiramientos y liberacin muscular • Pedidos al por mayor y menor al 930830427 • Hacemos Envíos a todo el Perú",
+    "resumen": "Man Terapéutico (Peanut Ball) - Rodillo doble para masaje de columna.",
+    "descripcionCompleta": "Man Terapéutico Para Estiramiento y Masaje Ayuda a mejorar el rango articular Material resistente al peso del usuario Ideal para estiramientos y liberacin muscular Pedidos al por mayor y menor al 930830427 Hacemos envíos a todo el Perúú",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
-    "fichaRAG": "Producto: Man terapéutico | SKU: PROD-59 | Precio: S/ 25.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Man terapéutico (Peanut Ball) - Rodillo doble para masaje de columna."
+    "fichaRAG": "Producto: Man Terapéutico | SKU: PROD-59 | Precio: S/ 25.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Man Terapéutico (Peanut Ball) - Rodillo doble para masaje de columna."
   },
   {
     "id": "prod-48",
@@ -2256,7 +2296,7 @@ export const allProductsKnowledge = [
       "2 piezas"
     ],
     "resumen": "Pack Miofascial - Set de herramientas IASTM de acero.",
-    "descripcionCompleta": "• Pack de Herramientas Miofasciales Libera tensión en cada movimiento! • Libera adherencias y relaja profundamente con este pack de herramientas para liberacin miofascial. Incluye 2 modelos esenciales: • Modelo alargado para zonas amplias. • Modelo tipo manopla para mayor control y precisión. Ideal para fisioterapia, masajes y recuPerúacin muscular. Material resistente y ergonmico. • Pack x2 piezas. • Pide el tuyo al 930830427 • Envío a todo el Perú",
+    "descripcionCompleta": "Pack de Herramientas Miofasciales Libera tensión en cada movimiento! Libera adherencias y relaja profundamente con este pack de herramientas para liberacin miofascial. Incluye 2 modelos esenciales: Modelo alargado para zonas amplias. Modelo tipo manopla para mayor control y precisión. Ideal para fisioterapia, masajes y recuPerúación muscular. Material resistente y ergonmico. Pack x2 piezas. Pide el tuyo al 930830427 Envío a todo el Perúú",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Pack Miofascial | SKU: PROD-48 | Precio: S/ 85.00 | Categoría: Herramientas de Masaje | Medidas: 2 piezas | Stock: Disponible | Descripción: Pack Miofascial - Set de herramientas IASTM de acero."
   },
@@ -2279,7 +2319,7 @@ export const allProductsKnowledge = [
       "16 Unidades"
     ],
     "resumen": "Piedras Calientes - Set de 16 unidades para masaje de lito terapia.",
-    "descripcionCompleta": "• Kit de piedras calientes 16 Unidades Set ideal para masajes de relajación y alivio muscular, hecho con basalto natural y potencia de 60W, alcanzando hasta 60C 10C. Beneficios: • Relajación profunda y reduccin del estrés • Alivia tensiones y contracturas • Mejora la circulación sangunea • ExPerúiencia de spa en casa o en centros de masajes Perúfecto para masajes terapéuticos y profesionales con resultados visibles desde la primera sesión. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Kit de piedras calientes 16 Unidades Set ideal para masajes de relajación y alivio muscular, hecho con basalto natural y potencia de 60W, alcanzando hasta 60C 10C. Beneficios: Relajación profunda y reduccin del estrés Alivia tensiones y contracturas Mejora la circulación sangunea ExPerúiencia de spa en casa o en centros de masajes Perúfecto para masajes terapéuticos y profesionales con resultados visibles desde la primera sesión. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: PIEDRAS CALIENTES (X16U) | SKU: PROD-110 | Precio: S/ 79.00 | Categoría: Herramientas de Masaje | Medidas: 16 Unidades | Stock: Disponible | Descripción: Piedras Calientes - Set de 16 unidades para masaje de lito terapia."
   },
@@ -2302,7 +2342,7 @@ export const allProductsKnowledge = [
       "20 Unidades"
     ],
     "resumen": "Piedras Calientes - Set de 20 piezas para litoterapia profesional.",
-    "descripcionCompleta": "• Maleta de Piedras Calientes 20 Unidades • Maleta completa con 20 piedras calientes de diferentes tamaos, Perúfecta para masajes terapéuticos y relajantes. • Calentador integrado para mantener la temPerúatura ideal y mayor comodidad durante las sesiones. Ideal para aliviar tensiones, contracturas y estrés, ofreciendo una exPerúiencia de spa profesional en casa o en tu centro de masajes. • Más información: consulta la descripción del video en el siguiente enlace. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Maleta de Piedras Calientes 20 Unidades Maleta completa con 20 piedras calientes de diferentes tamaos, Perúfecta para masajes terapéuticos y relajantes. Calentador integrado para mantener la temPerúatura ideal y mayor comodidad durante las sesiones. Ideal para aliviar tensiones, contracturas y estrés, ofreciendo una exPerúiencia de spa profesional en casa o en tu centro de masajes. Más información: consulta la descripción del video en el siguiente enlace. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: PIEDRAS CALIENTES 20 pzs | SKU: PROD-112 | Precio: S/ 160.00 | Categoría: Herramientas de Masaje | Medidas: 20 Unidades | Stock: Disponible | Descripción: Piedras Calientes - Set de 20 piezas para litoterapia profesional."
   },
@@ -2323,7 +2363,7 @@ export const allProductsKnowledge = [
     "badge": "Garantizado",
     "medidas": [],
     "resumen": "Puntor de Acero Inoxidable para acupresión y masaje.",
-    "descripcionCompleta": "Un puntor de acero inoxidable es una herramienta terapéutica pequeña, fina y alargada, diseñada para estimular puntos específicos del cuerpo, especialmente en técnicas como: Digitopuntura Reflexologa Auriculoterapia Acupresión sin agujas • Qu es exactamente un puntor Es como un palillo metlico terminado en una punta redondeada o aguda (Perúo no Perúforante). Se usa para presionar con precisión puntos energéticos del cuerpo, similares a los de la acupuntura, Perúo sin agujas ni penetración. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Un puntor de acero inoxidable es una herramienta terapéutica pequeña, fina y alargada, diseñada para estimular puntos específicos del cuerpo, especialmente en técnicas como: Digitopuntura Reflexologa Auriculoterapia Acupresin sin agujas Qu es exactamente un puntor Es como un palillo metlico terminado en una punta redondeada o aguda (Perúo no Perúforante). Se usa para presionar con precisión puntos energéticos del cuerpo, similares a los de la acupuntura, Perúo sin agujas ni penetración. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Puntor de Acero Inoxidable | SKU: PROD-47 | Precio: S/ 35.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Puntor de Acero Inoxidable para acupresión y masaje."
   },
@@ -2344,7 +2384,7 @@ export const allProductsKnowledge = [
     "badge": "Envío Inmediato",
     "medidas": [],
     "resumen": "Puntor de Reflexologa - Herramienta para estimulación de puntos reflejos.",
-    "descripcionCompleta": "Reflexologa Podal La reflexologa podal es una técnica terapéutica que consiste en aplicar presión en puntos específicos del pie, los cuales se relacionan con diferentes órganos y sistemas del cuerpo. Su objetivo es ayudar a equilibrar la energía del organismo y contribuir al bienestar general. • Cmo se árealiza La técnica es aplicada por un reflexoterapeuta, quien utiliza principalmente el pulgar para ejercer presión en distintas zonas del pie, estimulando los puntos reflejos correspondientes. Durante la sesión, el especialista puede identificar posibles desequilibrios energéticos mediante: • Sensibilidad en ciertas zonas del pie • Sensación similar a pequeños granos de arena bajo la piel Beneficios Potenciales La reflexologa podal puede ayudar como apoyo para: • Ansiedad y estrés • Insomnio • Dolores corporales • Problemas digestivos como estreimiento • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Reflexologa Podal La reflexologa podal es una técnica terapéutica que consiste en aplicar presión en puntos específicos del pie, los cuales se relacionan con diferentes órganos y sistemas del cuerpo. Su objetivo es ayudar a equilibrar la energía del organismo y contribuir al bienestar general. Cmo se árealiza La técnica es aplicada por un reflexoterapeuta, quien utiliza principalmente el pulgar para ejercer presión en distintas zonas del pie, estimulando los puntos reflejos correspondientes. Durante la sesión, el especialista puede identificar posibles desequilibrios energéticos mediante: Sensibilidad en ciertas zonas del pie Sensación similar a pequeños granos de arena bajo la piel Beneficios Potenciales La reflexologa podal puede ayudar como apoyo para: Ansiedad y estrés Insomnio Dolores corporales Problemas digestivos como estreimiento Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Puntor de reflexologa | SKU: PROD-51 | Precio: S/ 20.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Puntor de Reflexologa - Herramienta para estimulación de puntos reflejos."
   },
@@ -2365,7 +2405,7 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Roller de Jade - Rodillo de masaje facial de piedra jade.",
-    "descripcionCompleta": "• Roller de Jade Trmico para Acupuntura Estética Ideal para tonificación de puntos de acupuntura y tratamientos faciales. • Funciona con moxa interna que calienta la cabeza de jade, estimulando la vasodilatación y produccin de colgeno. • Incluye: Roller con cabeza tipo jade 5 mini moxas doradas de repuesto • Pedidos al por mayor y menor al 930830427 • Hacemos Envíos a todo el Perú • Revisa el producto en el siguiente enlace https://youtu.be/Fuc0mjPiO8A",
+    "descripcionCompleta": "Roller de Jade Trmico para Acupuntura Estética Ideal para tonificación de puntos de acupuntura y tratamientos faciales. Funciona con moxa interna que calienta la cabeza de jade, estimulando la vasodilatación y produccin de colgeno. Incluye: Roller con cabeza tipo jade 5 mini moxas doradas de repuesto Pedidos al por mayor y menor al 930830427 Hacemos envíos a todo el Perúú Revisa el producto en el siguiente enlace https://youtu.be/Fuc0mjPiO8A",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Roller jade | SKU: PROD-154 | Precio: S/ 59.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Roller de Jade - Rodillo de masaje facial de piedra jade."
   },
@@ -2386,7 +2426,7 @@ export const allProductsKnowledge = [
     "badge": "Más Vendido",
     "medidas": [],
     "resumen": "Triángulo de Acrlico para reflexologa y acupresión.",
-    "descripcionCompleta": "Digitopresor triangular de acrlico • Herramienta de masaje triangular, fabricada en acrlico resistente. • Relaja contracturas y activa puntos energéticos del cuerpo. práctico para tratamientos Perúsonalizados y precisos. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Digitopresor triangular de acrlico Herramienta de masaje triangular, fabricada en acrlico resistente. Relaja contracturas y activa puntos energéticos del cuerpo. Práctico para tratamientos Perúsonalizados y precisos. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
     "fichaRAG": "Producto: Triangulo de acrilico | SKU: PROD-56 | Precio: S/ 25.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Triángulo de Acrlico para reflexologa y acupresión."
   },
@@ -2406,10 +2446,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 19,
     "badge": "Recomendado",
     "medidas": [],
-    "resumen": "Lmina de la Columna Vertebral - Anatomía y patologas.",
-    "descripcionCompleta": "Lmina de la Columna Vertebral - Anatomía y patologas. Lmina didáctica de la columna vertebral con anatomía detallada, vértebras, discos intervertebrales y nervios asociados. • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina de la Columna Vertebral - Anatomía y patologas.",
+    "descripcionCompleta": "Lámina de la Columna Vertebral - Anatomía y patologas. Lámina didáctica de la columna vertebral con anatomía detallada, vértebras, discos intervertebrales y nervios asociados. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Columna Vertebral | SKU: PROD-86 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina de la Columna Vertebral - Anatomía y patologas."
+    "fichaRAG": "Producto: Columna Vertebral | SKU: PROD-86 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina de la Columna Vertebral - Anatomía y patologas."
   },
   {
     "id": "prod-84",
@@ -2427,31 +2467,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 26,
     "badge": "Calidad Premium",
     "medidas": [],
-    "resumen": "Lmina del Meridiano de Intestino Grueso.",
-    "descripcionCompleta": "Lmina del Meridiano de Intestino Grueso. Lmina didáctica con el trayecto del Meridiano de Intestino Grueso y sus 20 puntos de acupuntura. • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina del Meridiano de Intestino Grueso.",
+    "descripcionCompleta": "Lámina del Meridiano de Intestino Grueso. Lámina didáctica con el trayecto del Meridiano de Intestino Grueso y sus 20 puntos de acupuntura. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Intestino Grueso | SKU: PROD-84 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina del Meridiano de Intestino Grueso."
-  },
-  {
-    "id": "prod-65",
-    "slug": "lamina-auriculoterapia-topografica",
-    "sku": "PROD-65",
-    "nombre": "Lámina Auriculoterapia topogrfica",
-    "categoria": "Láminas y Modelos Anatómicos",
-    "marca": "Agujas Acupuntura Perú",
-    "precio": 20,
-    "precioTexto": "S/ 20.00",
-    "precioOriginal": "S/ 24.00",
-    "descuento": "-15%",
-    "enStock": true,
-    "rating": 5,
-    "reviewsCount": 33,
-    "badge": "Garantizado",
-    "medidas": [],
-    "resumen": "Lmina de Auriculoterapia Topogrfica.",
-    "descripcionCompleta": "• LMINA AURICULOTERAPIA • \"Conoce el universo del cuerpo reflejado en la oreja\" • Explora los puntos reflejos del pabelln auricular según la medicina china. Ideal para terapeutas, estudiantes y profesionales de la salud integral. • Identificación precisa de órganos, sistemas y puntos emocionales • Herramienta de apoyo visual en consultas clnicas y clases • Tamao A3 | Impresin lser | Alto relieve | Plastificado con celulosa • Pedidos al por mayor y menor al 930830427 • Hacemos Envíos a todo el Perú",
-    "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Lámina Auriculoterapia topogrfica | SKU: PROD-65 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina de Auriculoterapia Topogrfica."
+    "fichaRAG": "Producto: Intestino Grueso | SKU: PROD-84 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina del Meridiano de Intestino Grueso."
   },
   {
     "id": "prod-31",
@@ -2469,10 +2488,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 40,
     "badge": "Envío Inmediato",
     "medidas": [],
-    "resumen": "Lmina de Auriculoterapia - Puntos del pabelln auricular.",
-    "descripcionCompleta": "Lmina de Auriculoterapia - Puntos del pabelln auricular. Lmina didáctica con los puntos de auriculoterapia del pabelln auricular claramente identificados. Para uso en consultorios y enseanza. Características: Impresin de alta resolucin Puntos auriculares identificados múltiples vistas del pabelln auricular Tamao adecuado para consultorios • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina de Auriculoterapia 1 - Puntos del pabellón auricular.",
+    "descripcionCompleta": "Lámina de Auriculoterapia 1 - Puntos del pabellón auricular. Lámina didáctica con los puntos de auriculoterapia del pabellón auricular claramente identificados. Para uso en consultorios y enseñanza. Características: Impresión de alta resolución, puntos auriculares identificados, múltiples vistas del pabellón auricular, tamaño adecuado para consultorios. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Lámina de Auriculoterapia 1 | SKU: PROD-31 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina de Auriculoterapia - Puntos del pabelln auricular."
+    "fichaRAG": "Producto: Lámina de Auriculoterapia 1 | SKU: PROD-31 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina de Auriculoterapia 1 - Puntos del pabellón auricular."
   },
   {
     "id": "prod-32",
@@ -2490,14 +2509,14 @@ export const allProductsKnowledge = [
     "reviewsCount": 47,
     "badge": "Stock Limitado",
     "medidas": [],
-    "resumen": "Lmina de Auriculoterapia - Diseño alternativo con puntos del pabelln auricular.",
-    "descripcionCompleta": "Lmina de Auriculoterapia - Diseño alternativo con puntos del pabelln auricular. Lmina didáctica con puntos de auriculoterapia. Diseño diferente al modelo anterior con información complementaria. • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina de Auriculoterapia 2 - Diseño alternativo con puntos del pabellón auricular.",
+    "descripcionCompleta": "Lámina de Auriculoterapia 2 - Diseño alternativo con puntos del pabellón auricular. Lámina didáctica con puntos de auriculoterapia. Diseño diferente al modelo anterior con información complementaria. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Lámina de Auriculoterapia 2 | SKU: PROD-32 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina de Auriculoterapia - Diseño alternativo con puntos del pabelln auricular."
+    "fichaRAG": "Producto: Lámina de Auriculoterapia 2 | SKU: PROD-32 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina de Auriculoterapia 2 - Diseño alternativo con puntos del pabellón auricular."
   },
   {
     "id": "prod-66",
-    "slug": "lamina-auriculoterapia",
+    "slug": "lamina-auriculoterapia-3",
     "sku": "PROD-66",
     "nombre": "Lámina de Auriculoterapia 3",
     "categoria": "Láminas y Modelos Anatómicos",
@@ -2511,52 +2530,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 18,
     "badge": "Más Vendido",
     "medidas": [],
-    "resumen": "Lmina de Auriculoterapia - Puntos principales.",
-    "descripcionCompleta": "Lmina de Auriculoterapia - Puntos principales. Lmina didáctica con los puntos principales de auriculoterapia para uso en consultorios y enseanza. • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina de Auriculoterapia 3 - Puntos principales y canales.",
+    "descripcionCompleta": "Lámina de Auriculoterapia 3 - Puntos principales y canales. Lámina didáctica con los puntos principales de auriculoterapia para uso en consultorios y enseñanza. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Lámina de Auriculoterapia 3 | SKU: PROD-66 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina de Auriculoterapia - Puntos principales."
-  },
-  {
-    "id": "prod-85",
-    "slug": "lamina-auriculoterapia",
-    "sku": "PROD-85",
-    "nombre": "Lámina de Auriculoterapia 4",
-    "categoria": "Láminas y Modelos Anatómicos",
-    "marca": "Agujas Acupuntura Perú",
-    "precio": 20,
-    "precioTexto": "S/ 20.00",
-    "precioOriginal": "S/ 24.00",
-    "descuento": "-15%",
-    "enStock": true,
-    "rating": 5,
-    "reviewsCount": 25,
-    "badge": "Recomendado",
-    "medidas": [],
-    "resumen": "Lmina de Auriculoterapia - Versión completa.",
-    "descripcionCompleta": "Lmina de Auriculoterapia - Versión completa. Lmina completa de auriculoterapia con todos los puntos del pabelln auricular según clasificación internacional. • Envío a todo el Perú | • 930830427",
-    "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Lámina de Auriculoterapia 4 | SKU: PROD-85 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina de Auriculoterapia - Versión completa."
-  },
-  {
-    "id": "prod-77",
-    "slug": "auriculoterapia-china",
-    "sku": "PROD-77",
-    "nombre": "Lámina de Auriculoterapia China",
-    "categoria": "Láminas y Modelos Anatómicos",
-    "marca": "Agujas Acupuntura Perú",
-    "precio": 20,
-    "precioTexto": "S/ 20.00",
-    "precioOriginal": "S/ 24.00",
-    "descuento": "-15%",
-    "enStock": true,
-    "rating": 5,
-    "reviewsCount": 32,
-    "badge": "Calidad Premium",
-    "medidas": [],
-    "resumen": "Lmina de Auriculoterapia China - Sistema de puntos auriculares chino.",
-    "descripcionCompleta": "Lmina de Auriculoterapia China - Sistema de puntos auriculares chino. Lmina con el sistema chino de auriculoterapia y sus puntos según la nomenclatura tradicional china. • Envío a todo el Perú | • 930830427",
-    "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Lámina de Auriculoterapia China | SKU: PROD-77 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina de Auriculoterapia China - Sistema de puntos auriculares chino."
+    "fichaRAG": "Producto: Lámina de Auriculoterapia 3 | SKU: PROD-66 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina de Auriculoterapia 3 - Puntos principales y canales."
   },
   {
     "id": "prod-82",
@@ -2574,10 +2551,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 39,
     "badge": "Garantizado",
     "medidas": [],
-    "resumen": "Lmina de los 5 Elementos de la Medicina China.",
-    "descripcionCompleta": "Lmina de los 5 Elementos de la Medicina China. Lmina didáctica con el sistema de los 5 elementos (Madera, Fuego, Tierra, Metal, Agua) de la Medicina Tradicional China con sus correspondencias. Contenido: Los 5 elementos y sus correspondencias órganos y vsceras asociados Emociones, colores, sabores y estaciones Meridianos relacionados Ciclos de generación y control • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina de los 5 Elementos de la Medicina China.",
+    "descripcionCompleta": "Lámina de los 5 Elementos de la Medicina China. Lámina didáctica con el sistema de los 5 elementos (Madera, Fuego, Tierra, Metal, Agua) de la Medicina Tradicional China con sus correspondencias. Contenido: Los 5 elementos y sus correspondencias órganos y vsceras asociados Emociones, colores, sabores y estaciones Meridianos relacionados Ciclos de generación y control Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Lámina de los 5 elementos | SKU: PROD-82 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina de los 5 Elementos de la Medicina China."
+    "fichaRAG": "Producto: Lámina de los 5 elementos | SKU: PROD-82 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina de los 5 Elementos de la Medicina China."
   },
   {
     "id": "prod-30",
@@ -2595,10 +2572,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 46,
     "badge": "Envío Inmediato",
     "medidas": [],
-    "resumen": "Lmina de Reflexologa Podal.",
-    "descripcionCompleta": "• LMINA REFLEXOLOGA PODAL • \"Conecta con el cuerpo a travs de tus pies\" • RePresentación completa de los órganos y sistemas reflejados en la planta del pie. • Apoyo para sesiones de reflexologa, masajes o estudios de terapias holísticas • Tamao A3 | Impresin lser | Alto relieve | Plastificado con celulosa • Pedidos al por mayor y menor al 930830427 • Hacemos Envíos a todo el Perú • Revisa el producto en el siguiente enlace",
+    "resumen": "Lámina de Reflexologa Podal.",
+    "descripcionCompleta": "LMINA REFLEXOLOGA PODAL \"Conecta con el cuerpo a travs de tus pies\" Representación completa de los órganos y sistemas reflejados en la planta del pie. Apoyo para sesiones de reflexologa, masajes o estudios de terapias holísticas Tamao A3 | Impresin lser | Alto relieve | Plastificado con celulosa Pedidos al por mayor y menor al 930830427 Hacemos envíos a todo el Perúú Revisa el producto en el siguiente enlace",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Lámina de Reflexologa | SKU: PROD-30 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina de Reflexologa Podal."
+    "fichaRAG": "Producto: Lámina de Reflexologa | SKU: PROD-30 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina de Reflexologa Podal."
   },
   {
     "id": "prod-80",
@@ -2616,37 +2593,16 @@ export const allProductsKnowledge = [
     "reviewsCount": 17,
     "badge": "Stock Limitado",
     "medidas": [],
-    "resumen": "Lmina de Reflexologa Podal - Segunda versión.",
-    "descripcionCompleta": "Lmina de Reflexologa Podal - Segunda versión. Lmina de reflexologa podal con diseño alternativo que muestra las zonas reflejas del pie desde diferentes ngulos. • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina de Reflexologa Podal - Segunda versión.",
+    "descripcionCompleta": "Lámina de Reflexologa Podal - Segunda versión. Lámina de reflexologa podal con diseño alternativo que muestra las zonas reflejas del pie desde diferentes ngulos. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Lámina de Reflexologa (2) | SKU: PROD-80 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina de Reflexologa Podal - Segunda versión."
-  },
-  {
-    "id": "prod-83",
-    "slug": "lamina-de-reflexologia-3",
-    "sku": "PROD-83",
-    "nombre": "Lámina de Reflexologa (3)",
-    "categoria": "Láminas y Modelos Anatómicos",
-    "marca": "Agujas Acupuntura Perú",
-    "precio": 20,
-    "precioTexto": "S/ 20.00",
-    "precioOriginal": "S/ 24.00",
-    "descuento": "-15%",
-    "enStock": true,
-    "rating": 5,
-    "reviewsCount": 24,
-    "badge": "Más Vendido",
-    "medidas": [],
-    "resumen": "Lmina de Reflexologa - Tercera versión.",
-    "descripcionCompleta": "Lmina de Reflexologa - Tercera versión. Lmina de reflexologa con diseño adicional que complementa las series anteriores. • Envío a todo el Perú | • 930830427",
-    "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Lámina de Reflexologa (3) | SKU: PROD-83 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina de Reflexologa - Tercera versión."
+    "fichaRAG": "Producto: Lámina de Reflexologa (2) | SKU: PROD-80 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina de Reflexologa Podal - Segunda versión."
   },
   {
     "id": "prod-79",
     "slug": "lamina-reflexologia-podal-3d",
     "sku": "PROD-79",
-    "nombre": "Lmina reflexologa podal 3D",
+    "nombre": "Lámina reflexologa podal 3D",
     "categoria": "Láminas y Modelos Anatómicos",
     "marca": "Agujas Acupuntura Perú",
     "precio": 20,
@@ -2658,10 +2614,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 31,
     "badge": "Recomendado",
     "medidas": [],
-    "resumen": "Lmina de Reflexologa Podal 3D.",
-    "descripcionCompleta": "Lmina de Reflexologa Podal 3D. Lmina con rePresentación tridimensional de las zonas reflejas del pie para reflexologa podal. Diseño moderno y detallado. • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina de Reflexologa Podal 3D.",
+    "descripcionCompleta": "Lámina de Reflexologa Podal 3D. Lámina con representación tridimensional de las zonas reflejas del pie para reflexologa podal. Diseño moderno y detallado. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Lmina reflexologa podal 3D | SKU: PROD-79 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina de Reflexologa Podal 3D."
+    "fichaRAG": "Producto: Lámina reflexologa podal 3D | SKU: PROD-79 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina de Reflexologa Podal 3D."
   },
   {
     "id": "prod-57",
@@ -2680,7 +2636,7 @@ export const allProductsKnowledge = [
     "badge": "Calidad Premium",
     "medidas": [],
     "resumen": "Maqueta Cabeza de Acupuntura - Modelo anatómico con puntos de acupuntura en el crneo.",
-    "descripcionCompleta": "• Maqueta de Cabeza de Acupuntura • Perúmite ubicar los meridianos y puntos específicos • Tamao: 18 cm • Material: PVC resistente • Pedidos al por mayor y menor al 930830427 • Hacemos Envíos a todo el Perú",
+    "descripcionCompleta": "Maqueta de Cabeza de Acupuntura Perúmite ubicar los meridianos y puntos específicos Tamao: 18 cm Material: PVC resistente Pedidos al por mayor y menor al 930830427 Hacemos envíos a todo el Perúú",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Maqueta cabeza de Acupuntura | SKU: PROD-57 | Precio: S/ 85.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Maqueta Cabeza de Acupuntura - Modelo anatómico con puntos de acupuntura en el crneo."
   },
@@ -2701,7 +2657,7 @@ export const allProductsKnowledge = [
     "badge": "Garantizado",
     "medidas": [],
     "resumen": "Maqueta de Auriculoterapia 12 cm - Modelo de oreja para consultorios.",
-    "descripcionCompleta": "Maqueta de Auriculoterapia 12 cm - Modelo de oreja para consultorios. Maqueta de oreja de 12 cm con puntos de auriculoterapia marcados. Versión compacta ideal para escritorios de consultorio. Características: Tamao: 12 cm Puntos de auriculoterapia identificados Base incluida Tamao ideal para escritorio • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Maqueta de Auriculoterapia 12 cm - Modelo de oreja para consultorios. Maqueta de oreja de 12 cm con puntos de auriculoterapia marcados. Versión compacta ideal para escritorios de consultorio. Características: Tamao: 12 cm Puntos de auriculoterapia identificados Base incluida Tamao ideal para escritorio Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Maqueta de Auriculoterapia 12 cm | SKU: PROD-61 | Precio: S/ 35.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Maqueta de Auriculoterapia 12 cm - Modelo de oreja para consultorios."
   },
@@ -2722,7 +2678,7 @@ export const allProductsKnowledge = [
     "badge": "Envío Inmediato",
     "medidas": [],
     "resumen": "Maqueta de Manopuntura - Puntos de acupuntura en la mano.",
-    "descripcionCompleta": "• Maqueta de Manopuntura El modelo de manopuntura es una herramienta educativa ideal para quienes estudian acupuntura y medicina tradicional oriental. Perúmite visualizar de forma clara la ubicación de los puntos de acupuntura en la mano humana, facilitando el aprendizaje y la práctica. • Herramienta de Aprendizaje Este modelo ayuda a comprender la relación entre los puntos de acupuntura de la mano y su correspondencia con los órganos del cuerpo según la medicina tradicional. • Identificación Detallada • Puntos de acupuntura claramente sealados • Identificación con caracteres chinos • Incluye numeracin en nmeros arbigos • Facilita el estudio y reconocimiento de cada punto • Ideal Para Estudiantes de acupuntura y medicina tradicional • Profesionales y practicantes de terapias orientales • Uso en clases, demostraciones y prácticas educativas • Una herramienta práctica y visual para aprender y aplicar correctamente los puntos de acupuntura en la mano. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Maqueta de Manopuntura El modelo de manopuntura es una herramienta educativa ideal para quienes estudian acupuntura y medicina tradicional oriental. Perúmite visualizar de forma clara la ubicación de los puntos de acupuntura en la mano humana, facilitando el aprendizaje y la práctica. Herramienta de Aprendizaje Este modelo ayuda a comprender la relación entre los puntos de acupuntura de la mano y su correspondencia con los órganos del cuerpo según la medicina tradicional. Identificación Detallada Puntos de acupuntura claramente sealados Identificación con caracteres chinos Incluye numeracin en nmeros arbigos Facilita el estudio y reconocimiento de cada punto Ideal Para Estudiantes de acupuntura y medicina tradicional Profesionales y practicantes de terapias orientales Uso en clases, demostraciones y prácticas educativas Una herramienta práctica y visual para aprender y aplicar correctamente los puntos de acupuntura en la mano. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Maqueta de Manopuntura | SKU: PROD-18 | Precio: S/ 49.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Maqueta de Manopuntura - Puntos de acupuntura en la mano."
   },
@@ -2743,7 +2699,7 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Maqueta de Reflexologa Podal - Zonas reflejas del pie.",
-    "descripcionCompleta": "Maqueta de Reflexologa Es una herramienta educativa que muestra la relación entre puntos específicos en los pies, manos y orejas y los diferentes órganos y sistemas del cuerpo. Esta técnica se basa en la estimulación de estos puntos para favorecer el equilibrio natural del organismo. • Cmo funciona Al aplicar presión en puntos reflejos específicos, se busca estimular diferentes áreas del cuerpo, promoviendo una sensación de bienestar y equilibrio. Beneficios • Ayuda a restablecer el equilibrio natural del cuerpo • Favorece el bienestar general Promueve la relajación y estimulación de puntos reflejos • Uso Educativo y terapéutico Ideal para estudiantes y profesionales de terapias complementarias • útil como herramienta didáctica en formacin Apoyo en el aprendizaje de técnicas de reflexologa • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Maqueta de Reflexologa Es una herramienta educativa que muestra la relación entre puntos específicos en los pies, manos y orejas y los diferentes órganos y sistemas del cuerpo. Esta técnica se basa en la estimulación de estos puntos para favorecer el equilibrio natural del organismo. Cmo funciona Al aplicar presión en puntos reflejos específicos, se busca estimular diferentes áreas del cuerpo, promoviendo una sensación de bienestar y equilibrio. Beneficios Ayuda a restablecer el equilibrio natural del cuerpo Favorece el bienestar general Promueve la relajación y estimulación de puntos reflejos Uso Educativo y Terapéutico Ideal para estudiantes y profesionales de terapias complementarias útil como herramienta didáctica en formacin Apoyo en el aprendizaje de técnicas de reflexologa Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Maqueta de Reflexologa | SKU: PROD-19 | Precio: S/ 65.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Maqueta de Reflexologa Podal - Zonas reflejas del pie."
   },
@@ -2764,7 +2720,7 @@ export const allProductsKnowledge = [
     "badge": "Más Vendido",
     "medidas": [],
     "resumen": "Maqueta de oreja para Auriculoterapia - 18 cm.",
-    "descripcionCompleta": "Maqueta de Oreja de 18cm Es una herramienta didáctica diseñada para el estudio y la enseanza de los puntos de acupuntura y meridianos del cuerpo humano. Ideal para estudiantes, profesionales de la salud y Perúsonas interesadas en la medicina tradicional. • descripción: • Fabricado en PVC blando de alta calidad • Material ecológico y resistente • Perúmite visualizar claramente los puntos de acupuntura en el odo • Letras en alta definición (HD) • Puntos de acupuntura claramente marcados • Facilita el aprendizaje de los meridianos del odo • Tamao del Modelo • Modelo de 18 cm altamente detallado • Seala cuidadosamente los puntos de presión y meridianos • Textura clara que facilita la observacin y el estudio Ideal para acupunturistas y profesionales de la salud • Excelente para estudiantes de medicina y terapias alternativas • útil para aprendizaje, demostraciones y estudio de meridianos También puede utilizarse como herramienta de exhibicin educativa • Una herramienta práctica y detallada para el aprendizaje y la enseanza de la acupuntura auricular. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Maqueta de Oreja de 18cm Es una herramienta didáctica diseñada para el estudio y la enseanza de los puntos de acupuntura y meridianos del cuerpo humano. Ideal para estudiantes, profesionales de la salud y Perúsonas interesadas en la medicina tradicional. Descripción: Fabricado en PVC blando de alta calidad Material ecológico y resistente Perúmite visualizar claramente los puntos de acupuntura en el odo Letras en alta definición (HD) Puntos de acupuntura claramente marcados Facilita el aprendizaje de los meridianos del odo Tamao del Modelo Modelo de 18 cm altamente detallado Seala cuidadosamente los puntos de presión y meridianos Textura clara que facilita la observacin y el estudio Ideal para acupunturistas y profesionales de la salud Excelente para estudiantes de medicina y terapias alternativas útil para aprendizaje, demostraciones y estudio de meridianos También puede utilizarse como herramienta de exhibicin educativa Una herramienta práctica y detallada para el aprendizaje y la enseanza de la acupuntura auricular. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Maqueta oreja 18 cm | SKU: PROD-16 | Precio: S/ 75.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Maqueta de oreja para Auriculoterapia - 18 cm."
   },
@@ -2784,10 +2740,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 37,
     "badge": "Recomendado",
     "medidas": [],
-    "resumen": "Lmina del Meridiano de Estómago.",
-    "descripcionCompleta": "Lmina del Meridiano de Estómago. Lmina didáctica con el trayecto del Meridiano de Estómago y sus 45 puntos de acupuntura claramente identificados. • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina del Meridiano de Estómago.",
+    "descripcionCompleta": "Lámina del Meridiano de Estómago. Lámina didáctica con el trayecto del Meridiano de Estómago y sus 45 puntos de acupuntura claramente identificados. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Meridiano de Estómago | SKU: PROD-43 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina del Meridiano de Estómago."
+    "fichaRAG": "Producto: Meridiano de Estómago | SKU: PROD-43 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina del Meridiano de Estómago."
   },
   {
     "id": "prod-34",
@@ -2805,10 +2761,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 44,
     "badge": "Calidad Premium",
     "medidas": [],
-    "resumen": "• Lmina del Meridiano de Hígado.",
-    "descripcionCompleta": "• Lmina del Meridiano de Hígado. Lmina didáctica del trayecto del Meridiano de Hígado con todos sus puntos de acupuntura identificados. Contenido: Trayecto completo del meridiano Puntos de acupuntura numerados y nombrados Indicaciones terapéuticas Material de alta calidad para consultorios • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina del Meridiano de Hígado.",
+    "descripcionCompleta": "Lámina del Meridiano de Hígado. Lámina didáctica del trayecto del Meridiano de Hígado con todos sus puntos de acupuntura identificados. Contenido: Trayecto completo del meridiano Puntos de acupuntura numerados y nombrados Indicaciones terapéuticas Material de alta calidad para consultorios Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Meridiano de Higado | SKU: PROD-34 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: • Lmina del Meridiano de Hígado."
+    "fichaRAG": "Producto: Meridiano de Higado | SKU: PROD-34 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina del Meridiano de Hígado."
   },
   {
     "id": "prod-39",
@@ -2826,10 +2782,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 15,
     "badge": "Garantizado",
     "medidas": [],
-    "resumen": "Lmina del Meridiano de la Vejiga.",
-    "descripcionCompleta": "LMINA DEL MERIDIANO DE LA VEJIGA Medicina Tradicional China (A3) • Fluye y libera lo que ya no necesitas El Meridiano de la Vejiga es el Más largo del cuerpo. Relacionado con el sistema nervioso, tensiones musculares, estrés, miedos profundos y rigidez tanto física como emocional. Ideal para terapias descontracturantes. • Qu incluye Lmina independiente A3 Impresin lser profesional + alto relieve Plastificado protector de celulosa Cdigo QR escaneable: • Explicación detallada de cada punto • Video 3D del recorrido completo del meridiano • Pedidos al por mayor y menor al 930830427 • Envíos a todo el Perú",
+    "resumen": "Lámina del Meridiano de la Vejiga.",
+    "descripcionCompleta": "LMINA DEL MERIDIANO DE LA VEJIGA Medicina Tradicional China (A3) Fluye y libera lo que ya no necesitas El Meridiano de la Vejiga es el más largo del cuerpo. Relacionado con el sistema nervioso, tensiones musculares, estrés, miedos profundos y rigidez tanto física como emocional. Ideal para terapias descontracturantes. Qu incluye Lámina independiente A3 Impresin lser profesional + alto relieve Plastificado protector de celulosa Cdigo QR escaneable: Explicación detallada de cada punto Video 3D del recorrido completo del meridiano Pedidos al por mayor y menor al 930830427 Envíos a todo el Perúú",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Meridiano de la Vejiga | SKU: PROD-39 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina del Meridiano de la Vejiga."
+    "fichaRAG": "Producto: Meridiano de la Vejiga | SKU: PROD-39 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina del Meridiano de la Vejiga."
   },
   {
     "id": "prod-35",
@@ -2847,10 +2803,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 22,
     "badge": "Envío Inmediato",
     "medidas": [],
-    "resumen": "Lmina del Meridiano de la Vescula Biliar.",
-    "descripcionCompleta": "• LMINA DEL MERIDIANO DE LA VESCULA BILIAR Medicina Tradicional China (A3) • Toma decisiones con claridad y firmeza El Meridiano de la Vescula Biliar se vincula con la toma de decisiones, coraje, y liberacin de la ira. Tratamiento ideal para migraas, contracturas del cuello y lateral del cuerpo, as como bloqueos emocionales. • Qu incluye Lmina A3 independiente Impresin lser profesional con relieve Plastificado resistente de celulosa Cdigo QR con: • descripción terapéutica de todos los puntos • Video 3D del recorrido energético completo • Pedidos al por mayor y menor al 930830427 • Envíos a todo el Perú",
+    "resumen": "Lámina del Meridiano de la Vescula Biliar.",
+    "descripcionCompleta": "LMINA DEL MERIDIANO DE LA VESCULA BILIAR Medicina Tradicional China (A3) Toma decisiones con claridad y firmeza El Meridiano de la Vescula Biliar se vincula con la toma de decisiones, coraje, y liberacin de la ira. Tratamiento ideal para migraas, contracturas del cuello y lateral del cuerpo, as como bloqueos emocionales. Qu incluye Lámina A3 independiente Impresin lser profesional con relieve Plastificado resistente de celulosa Cdigo QR con: Descripción terapéutica de todos los puntos Video 3D del recorrido energético completo Pedidos al por mayor y menor al 930830427 Envíos a todo el Perúú",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Meridiano de la Vescula Biliar | SKU: PROD-35 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina del Meridiano de la Vescula Biliar."
+    "fichaRAG": "Producto: Meridiano de la Vescula Biliar | SKU: PROD-35 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina del Meridiano de la Vescula Biliar."
   },
   {
     "id": "prod-37",
@@ -2868,10 +2824,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 29,
     "badge": "Stock Limitado",
     "medidas": [],
-    "resumen": "• Lmina del Meridiano de Maestro del Corazón (Perúicardio).",
-    "descripcionCompleta": "• Lmina del Meridiano de Maestro del Corazón (Perúicardio). Lmina didáctica con el trayecto del Meridiano de Perúicardio y sus 9 puntos de acupuntura. • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina del Meridiano de Maestro del Corazón (Perúicardio).",
+    "descripcionCompleta": "Lámina del Meridiano de Maestro del Corazón (Perúicardio). Lámina didáctica con el trayecto del Meridiano de Perúicardio y sus 9 puntos de acupuntura. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Meridiano de Maestro del Corazón | SKU: PROD-37 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: • Lmina del Meridiano de Maestro del Corazón (Perúicardio)."
+    "fichaRAG": "Producto: Meridiano de Maestro del Corazón | SKU: PROD-37 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina del Meridiano de Maestro del Corazón (Perúicardio)."
   },
   {
     "id": "prod-38",
@@ -2889,10 +2845,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 36,
     "badge": "Más Vendido",
     "medidas": [],
-    "resumen": "• Lmina del Meridiano de Riñón.",
-    "descripcionCompleta": "• Lmina del Meridiano de Riñón. Lmina didáctica con el trayecto completo del Meridiano de Riñón y sus 27 puntos de acupuntura identificados. • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina del Meridiano de Riñón.",
+    "descripcionCompleta": "Lámina del Meridiano de Riñón. Lámina didáctica con el trayecto completo del Meridiano de Riñón y sus 27 puntos de acupuntura identificados. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Meridiano de Riñón | SKU: PROD-38 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: • Lmina del Meridiano de Riñón."
+    "fichaRAG": "Producto: Meridiano de Riñón | SKU: PROD-38 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina del Meridiano de Riñón."
   },
   {
     "id": "prod-42",
@@ -2910,10 +2866,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 43,
     "badge": "Recomendado",
     "medidas": [],
-    "resumen": "Lmina didáctica con el trayecto completo del Meridiano de Bazo-Pncáreas y sus 21 puntos de acupuntura.",
-    "descripcionCompleta": "• Lmina del Meridiano del Bazo-Pncáreas. Lmina didáctica con el trayecto completo del Meridiano de Bazo-Pncáreas y sus 21 puntos de acupuntura. • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina didáctica con el trayecto completo del Meridiano de Bazo-Pncáreas y sus 21 puntos de acupuntura.",
+    "descripcionCompleta": "Lámina del Meridiano del Bazo-Pncáreas. Lámina didáctica con el trayecto completo del Meridiano de Bazo-Pncáreas y sus 21 puntos de acupuntura. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Meridiano del Bazo-Pncáreas | SKU: PROD-42 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina didáctica con el trayecto completo del Meridiano de Bazo-Pncáreas y sus 21 puntos de acupuntura."
+    "fichaRAG": "Producto: Meridiano del Bazo-Pncáreas | SKU: PROD-42 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina didáctica con el trayecto completo del Meridiano de Bazo-Pncáreas y sus 21 puntos de acupuntura."
   },
   {
     "id": "prod-41",
@@ -2931,10 +2887,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 14,
     "badge": "Calidad Premium",
     "medidas": [],
-    "resumen": "• Lmina del Meridiano del Corazón.",
-    "descripcionCompleta": "• Lmina del Meridiano del Corazón. Lmina didáctica con el trayecto del Meridiano de Corazón y sus 9 puntos de acupuntura. • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina del Meridiano del Corazón.",
+    "descripcionCompleta": "Lámina del Meridiano del Corazón. Lámina didáctica con el trayecto del Meridiano de Corazón y sus 9 puntos de acupuntura. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Meridiano del Corazón | SKU: PROD-41 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: • Lmina del Meridiano del Corazón."
+    "fichaRAG": "Producto: Meridiano del Corazón | SKU: PROD-41 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina del Meridiano del Corazón."
   },
   {
     "id": "prod-44",
@@ -2952,10 +2908,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 21,
     "badge": "Garantizado",
     "medidas": [],
-    "resumen": "Lmina del Meridiano del Corazón - Versión alternativa.",
-    "descripcionCompleta": "Lmina del Meridiano del Corazón - Versión alternativa. Segunda versión de la lmina del Meridiano de Corazón con diferente diseño grfico e información complementaria. • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina del Meridiano del Corazón - Versión alternativa.",
+    "descripcionCompleta": "Lámina del Meridiano del Corazón - Versión alternativa. Segunda versión de la lámina del Meridiano de Corazón con diferente diseño grfico e información complementaria. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Meridiano del corazón (versión 2) | SKU: PROD-44 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina del Meridiano del Corazón - Versión alternativa."
+    "fichaRAG": "Producto: Meridiano del corazón (versión 2) | SKU: PROD-44 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina del Meridiano del Corazón - Versión alternativa."
   },
   {
     "id": "prod-40",
@@ -2973,10 +2929,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 28,
     "badge": "Envío Inmediato",
     "medidas": [],
-    "resumen": "• Lmina del Meridiano del Intestino Delgado.",
-    "descripcionCompleta": "• Lmina del Meridiano del Intestino Delgado. Lmina didáctica con el trayecto del Meridiano de Intestino Delgado y sus 19 puntos de acupuntura. • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina del Meridiano del Intestino Delgado.",
+    "descripcionCompleta": "Lámina del Meridiano del Intestino Delgado. Lámina didáctica con el trayecto del Meridiano de Intestino Delgado y sus 19 puntos de acupuntura. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Meridiano del Intestino Delgado | SKU: PROD-40 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: • Lmina del Meridiano del Intestino Delgado."
+    "fichaRAG": "Producto: Meridiano del Intestino Delgado | SKU: PROD-40 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina del Meridiano del Intestino Delgado."
   },
   {
     "id": "prod-78",
@@ -2994,10 +2950,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 35,
     "badge": "Stock Limitado",
     "medidas": [],
-    "resumen": "Lmina del Meridiano del Pulmón.",
-    "descripcionCompleta": "Lmina del Meridiano del Pulmón. Lmina didáctica con el trayecto del Meridiano de Pulmón y sus 11 puntos de acupuntura claramente identificados. • Envío a todo el Perú | • 930830427",
+    "resumen": "Lámina del Meridiano del Pulmón.",
+    "descripcionCompleta": "Lámina del Meridiano del Pulmón. Lámina didáctica con el trayecto del Meridiano de Pulmón y sus 11 puntos de acupuntura claramente identificados. Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Meridiano del pulmón | SKU: PROD-78 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina del Meridiano del Pulmón."
+    "fichaRAG": "Producto: Meridiano del pulmón | SKU: PROD-78 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina del Meridiano del Pulmón."
   },
   {
     "id": "prod-36",
@@ -3015,10 +2971,10 @@ export const allProductsKnowledge = [
     "reviewsCount": 42,
     "badge": "Más Vendido",
     "medidas": [],
-    "resumen": "Lmina del Meridiano Triple Recalentador (San Jiao).",
-    "descripcionCompleta": "• LMINA DEL MERIDIANO DEL TRIPLE REGENERADOR (TR o San Jiao) Medicina Tradicional China (A3) • Armoniza tus órganos y sistemas internos Este meridiano regula las tres cavidades del cuerpo: digestiva, respiratoria y excretora. Excelente para equilibrio metablico, estrés, regulacin hormonal y control de la temPerúatura corporal. • Qu incluye Lmina A3 independiente Impresa en lser con alto relieve Plastificado protector de celulosa Cdigo QR con: • Uso terapéutico de cada punto • Video 3D explicativo del recorrido completo • Pedidos al por mayor y menor al 930830427 • Envíos a todo el Perú",
+    "resumen": "Lámina del Meridiano Triple Recalentador (San Jiao).",
+    "descripcionCompleta": "LMINA DEL MERIDIANO DEL TRIPLE REGENERADOR (TR o San Jiao) Medicina Tradicional China (A3) Armoniza tus órganos y sistemas internos Este meridiano regula las tres cavidades del cuerpo: digestiva, respiratoria y excretora. Excelente para equilibrio metablico, estrés, regulacin hormonal y control de la temPerúatura corporal. Qu incluye Lámina A3 independiente Impresa en lser con alto relieve Plastificado protector de celulosa Cdigo QR con: Uso terapéutico de cada punto Video 3D explicativo del recorrido completo Pedidos al por mayor y menor al 930830427 Envíos a todo el Perúú",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Meridiano Triple Recalentador | SKU: PROD-36 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lmina del Meridiano Triple Recalentador (San Jiao)."
+    "fichaRAG": "Producto: Meridiano Triple Recalentador | SKU: PROD-36 | Precio: S/ 20.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Lámina del Meridiano Triple Recalentador (San Jiao)."
   },
   {
     "id": "prod-64",
@@ -3037,7 +2993,7 @@ export const allProductsKnowledge = [
     "badge": "Recomendado",
     "medidas": [],
     "resumen": "Muñeco de Acupuntura de 50 cm con Base - Modelo anatómico completo.",
-    "descripcionCompleta": "Muñeco de Acupuntura de 50 cm con Base - Modelo anatómico completo. Figura anatómica de 50 cm de altura con los meridianos y puntos de acupuntura marcados. Con base de soporte incluida. Características: Altura: 50 cm Meridianos completos marcados Puntos de acupuntura identificados con nmeros Base de apoyo incluida Material: Plástico de alta calidad Ideal para consultorios y enseanza • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Muñeco de Acupuntura de 50 cm con Base - Modelo anatómico completo. Figura anatómica de 50 cm de altura con los meridianos y puntos de acupuntura marcados. Con base de soporte incluida. Características: Altura: 50 cm Meridianos completos marcados Puntos de acupuntura identificados con nmeros Base de apoyo incluida Material: Plástico de alta calidad Ideal para consultorios y enseanza Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Muñeco Acupuntura de 50 cm | SKU: PROD-64 | Precio: S/ 190.00 | Categoría: Láminas y Modelos Anatómicos | Medidas: Estándar | Stock: Disponible | Descripción: Muñeco de Acupuntura de 50 cm con Base - Modelo anatómico completo."
   },
@@ -3058,7 +3014,7 @@ export const allProductsKnowledge = [
     "badge": "Calidad Premium",
     "medidas": [],
     "resumen": "Kit Completo de Ventosas de Vidrio para Ventosaterapia Tradicional.",
-    "descripcionCompleta": "• Kit de Ventosas de Vidrio Todo lo que necesitas para terapia de ventosas y bienestar facial en un solo paquete. Incluye: • 12 ventosas de vidrio • Pomo aceitero • Ventosas faciales • Aceite de rosa mosqueta • Lmina de acupuntura Perúfecto para quienes buscan relajación, cuidado facial y terapia profesional en casa o en el consultorio. • Pedidos al por mayor y menor al 930830427 • Hacemos Envíos a todo el Perú • Revisa el producto en el siguiente enlace https://youtu.be/7zxIj6uwbEcsi=NdLkrpEnG2ueQC_r https://youtu.be/7zxIj6uwbEc https://youtu.be/1MCt6E6dC6g",
+    "descripcionCompleta": "Kit de Ventosas de Vidrio Todo lo que necesitas para terapia de ventosas y bienestar facial en un solo paquete. Incluye: 12 ventosas de vidrio Pomo aceitero Ventosas faciales Aceite de rosa mosqueta Lámina de acupuntura Perúfecto para quienes buscan relajación, cuidado facial y terapia profesional en casa o en el consultorio. Pedidos al por mayor y menor al 930830427 Hacemos envíos a todo el Perúú Revisa el producto en el siguiente enlace https://youtu.be/7zxIj6uwbEcsi=NdLkrpEnG2ueQC_r https://youtu.be/7zxIj6uwbEc https://youtu.be/1MCt6E6dC6g",
     "especificaciones": "Policarbonato: Ultra Resistente | Pistón Ergonómico: Succión Suave | Puntos Magnéticos: Polaridad | Uso Profesional: Clínico",
     "fichaRAG": "Producto: KIT DE VENTOSAS DE VIDRIO | SKU: PROD-111 | Precio: S/ 120.00 | Categoría: Ventosa Terapia | Medidas: Estándar | Stock: Disponible | Descripción: Kit Completo de Ventosas de Vidrio para Ventosaterapia Tradicional."
   },
@@ -3081,7 +3037,7 @@ export const allProductsKnowledge = [
       "5 piezas"
     ],
     "resumen": "Kit de Ventosas Giratorias - 5 piezas.",
-    "descripcionCompleta": "Kit de Ventosas Giratorias - 5 piezas. Kit de ventosas con sistema giratorio para masaje deslizante. Ideal para técnicas de masaje con ventosa en movimiento. Características: 5 ventosas con sistema de giro Ideal para masaje deslizante Estimulación suPerúficial y profunda fácil de usar Seguras para todo tipo de piel • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Kit de Ventosas Giratorias - 5 piezas. Kit de ventosas con sistema giratorio para masaje deslizante. Ideal para técnicas de masaje con ventosa en movimiento. Características: 5 ventosas con sistema de giro Ideal para masaje deslizante Estimulación suPerúficial y profunda Fácil de usar Seguras para todo tipo de piel Envío a todo el Perúú | 930830427",
     "especificaciones": "Policarbonato: Ultra Resistente | Pistón Ergonómico: Succión Suave | Puntos Magnéticos: Polaridad | Uso Profesional: Clínico",
     "fichaRAG": "Producto: Kit Ventosas Giratorias (5pzs) | SKU: PROD-75 | Precio: S/ 60.00 | Categoría: Ventosa Terapia | Medidas: 5 piezas | Stock: Disponible | Descripción: Kit de Ventosas Giratorias - 5 piezas."
   },
@@ -3102,7 +3058,7 @@ export const allProductsKnowledge = [
     "badge": "Envío Inmediato",
     "medidas": [],
     "resumen": "Línea completa de productos de Ventosaterapia.",
-    "descripcionCompleta": "• Ventosaterapia • Buen día, te saludamos desde Agujas de Acupuntura Perú. Tenemos una amplia gama de productos en Ventosaterapia: • Ventosas de vidrio • Ventosas giratorias • Ventosas biomagnéticas • Ventosas reductoras • Ventosas faciales y Más... • Hacemos Envíos a todo el Perú. • Solicita tu pedido por WhatsApp al 930830427.",
+    "descripcionCompleta": "Ventosaterapia Buen día, te saludamos desde Agujas de Acupuntura Perúú. Tenemos una amplia gama de productos en Ventosaterapia: Ventosas de vidrio Ventosas giratorias Ventosas biomagnéticas Ventosas reductoras Ventosas faciales y más... Hacemos envíos a todo el Perúú. Solicita tu pedido por WhatsApp al 930830427.",
     "especificaciones": "Policarbonato: Ultra Resistente | Pistón Ergonómico: Succión Suave | Puntos Magnéticos: Polaridad | Uso Profesional: Clínico",
     "fichaRAG": "Producto: Línea de Ventosaterapia | SKU: PROD-20 | Precio: S/ 0.00 | Categoría: Ventosa Terapia | Medidas: Estándar | Stock: Disponible | Descripción: Línea completa de productos de Ventosaterapia."
   },
@@ -3123,7 +3079,7 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Mechero para Ventosas - Accesorio para ventosaterapia con fuego.",
-    "descripcionCompleta": "Mechero para ventosas • Mechero para Ventosaterapia • El Mechero de Ventosas es una herramienta esencial en las terapias con ventosas de vidrio o bamb . Ofrece mayor seguridad para evitar quemaduras Favorece una combustin Más eficiente • Mejora la adhesión al cuerpo del paciente • Material: • Manija de madera • Cesto de metal • Modo de uso: • Coloca algodn dentro, roca alcohol, enciende y trabaja con ventosas de bamb o vidrio. • Previene accidentes como quemaduras en pacientes. • Solictalo ya! • 930 830 427 • Revisa el producto en el siguiente enlace https://youtu.be/o9SVmCqd55gsi=BL_Ag5TKIK-t9i1c",
+    "descripcionCompleta": "Mechero para ventosas Mechero para Ventosaterapia El Mechero de Ventosas es una herramienta esencial en las terapias con ventosas de vidrio o bamb . Ofrece mayor seguridad para evitar quemaduras Favorece una combustin más eficiente Mejora la adhesión al cuerpo del paciente Material: Manija de madera Cesto de metal Modo de uso: Coloca algodn dentro, roca alcohol, enciende y trabaja con ventosas de bamb o vidrio. Previene accidentes como quemaduras en pacientes. Solictalo ya! 930 830 427 Revisa el producto en el siguiente enlace https://youtu.be/o9SVmCqd55gsi=BL_Ag5TKIK-t9i1c",
     "especificaciones": "Policarbonato: Ultra Resistente | Pistón Ergonómico: Succión Suave | Puntos Magnéticos: Polaridad | Uso Profesional: Clínico",
     "fichaRAG": "Producto: Mechero para ventosas | SKU: PROD-53 | Precio: S/ 20.00 | Categoría: Ventosa Terapia | Medidas: Estándar | Stock: Disponible | Descripción: Mechero para Ventosas - Accesorio para ventosaterapia con fuego."
   },
@@ -3144,7 +3100,7 @@ export const allProductsKnowledge = [
     "badge": "Más Vendido",
     "medidas": [],
     "resumen": "Mini ventosas - Set de 4 piezas para ventosaterapia.",
-    "descripcionCompleta": "Mini Ventosas Las mini ventosas son herramientas prácticas, verstiles y resistentes, ideales para complementar rutinas de masaje y terapias de bienestar. • Compactas y eficientes, son una excelente opción para quienes buscan practicidad y rendimiento en cada sesión. • Características Principales • Verstiles y funcionales para diferentes aplicaciones Duraderas y resistentes al uso continuo • Fabricadas con plástico de alta calidad • fáciles de manipular y limpiar",
+    "descripcionCompleta": "Mini Ventosas Las mini ventosas son herramientas prácticas, verstiles y resistentes, ideales para complementar rutinas de masaje y terapias de bienestar. Compactas y eficientes, son una excelente opción para quienes buscan practicidad y rendimiento en cada sesión. Características Principales Verstiles y funcionales para diferentes aplicaciones Duraderas y resistentes al uso continuo Fabricadas con plástico de alta calidad fáciles de manipular y limpiar",
     "especificaciones": "Policarbonato: Ultra Resistente | Pistón Ergonómico: Succión Suave | Puntos Magnéticos: Polaridad | Uso Profesional: Clínico",
     "fichaRAG": "Producto: Mini ventosas (4 pzs) | SKU: PROD-11 | Precio: S/ 20.00 | Categoría: Ventosa Terapia | Medidas: Estándar | Stock: Disponible | Descripción: Mini ventosas - Set de 4 piezas para ventosaterapia."
   },
@@ -3167,7 +3123,7 @@ export const allProductsKnowledge = [
       "12 piezas"
     ],
     "resumen": "Ventosas Acrlicas - Set de 12 piezas con bomba de vaco.",
-    "descripcionCompleta": "Ventosas Acrlicas - Set de 12 piezas con bomba de vaco. Set de 12 ventosas de acrlico transparente con bomba de pistn para aplicar ventosaterapia sin fuego. Características: 12 ventosas de diferentes tamaos Acrlico transparente de alta calidad Bomba de pistn incluida Sin necesidad de fuego fácil control del vaco Seguras y reutilizables • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Ventosas Acrlicas - Set de 12 piezas con bomba de vaco. Set de 12 ventosas de acrlico transparente con bomba de pistn para aplicar ventosaterapia sin fuego. Características: 12 ventosas de diferentes tamaos Acrlico transparente de alta calidad Bomba de pistn incluida Sin necesidad de fuego Fácil control del vaco Seguras y reutilizables Envío a todo el Perúú | 930830427",
     "especificaciones": "Policarbonato: Ultra Resistente | Pistón Ergonómico: Succión Suave | Puntos Magnéticos: Polaridad | Uso Profesional: Clínico",
     "fichaRAG": "Producto: Ventosas acrlicas 12 pzs | SKU: PROD-73 | Precio: S/ 45.00 | Categoría: Ventosa Terapia | Medidas: 12 piezas | Stock: Disponible | Descripción: Ventosas Acrlicas - Set de 12 piezas con bomba de vaco."
   },
@@ -3190,7 +3146,7 @@ export const allProductsKnowledge = [
       "24 piezas"
     ],
     "resumen": "Ventosas Acrlicas - Set de 24 piezas con bomba de vaco.",
-    "descripcionCompleta": "Ventosas Acrlicas - Set de 24 piezas con bomba de vaco. Set completo de 24 ventosas de acrlico transparente con bomba de pistn. Set profesional para consultorio. Características: 24 ventosas de diferentes tamaos Acrlico transparente de alta calidad Bomba de pistn incluida Sin necesidad de fuego fácil control del vaco Set completo para uso profesional • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Ventosas Acrlicas - Set de 24 piezas con bomba de vaco. Set completo de 24 ventosas de acrlico transparente con bomba de pistn. Set profesional para consultorio. Características: 24 ventosas de diferentes tamaos Acrlico transparente de alta calidad Bomba de pistn incluida Sin necesidad de fuego Fácil control del vaco Set completo para uso profesional Envío a todo el Perúú | 930830427",
     "especificaciones": "Policarbonato: Ultra Resistente | Pistón Ergonómico: Succión Suave | Puntos Magnéticos: Polaridad | Uso Profesional: Clínico",
     "fichaRAG": "Producto: Ventosas acrlicas 24 pzs | SKU: PROD-74 | Precio: S/ 75.00 | Categoría: Ventosa Terapia | Medidas: 24 piezas | Stock: Disponible | Descripción: Ventosas Acrlicas - Set de 24 piezas con bomba de vaco."
   },
@@ -3213,7 +3169,7 @@ export const allProductsKnowledge = [
       "8 piezas"
     ],
     "resumen": "Ventosas Biomagnéticas - Terapia combinada de ventosas e imanes.",
-    "descripcionCompleta": "• Ventosas Biomagnéticas 3 Terapias en 1 Estas ventosas combinan tres poderosos beneficios en una sola herramienta terapéutica: 1• Absorción del cupping para estimular la circulación • 2• Digitopresión gracias a su punta imantada • 3• Biomagnetismo con polos positivo (+) y negativo () que generan un campo biomagnético terapéutico • Presentación: Incluye juego de 8 piezas: • 4 ventosas con punta positiva • 4 ventosas con punta negativa • Perúmite tonificar o disPerúsar según los principios de la Medicina Tradicional China • Ideal para acupuntura estética, tratamientos energéticos y terapias complementarias. • Incluye maletn portátil y manual de puntos para su correcta aplicación. • Muy fácil de usar! • árealiza tu pedido al 930 830 427 • Hacemos Envíos a todo el Perú",
+    "descripcionCompleta": "Ventosas Biomagnéticas 3 Terapias en 1 Estas ventosas combinan tres poderosos beneficios en una sola herramienta terapéutica: 1 Absorción del cupping para estimular la circulación 2 Digitopresión gracias a su punta imantada 3 Biomagnetismo con polos positivo (+) y negativo () que generan un campo biomagnético terapéutico Presentación: Incluye juego de 8 piezas: 4 ventosas con punta positiva 4 ventosas con punta negativa Perúmite tonificar o disPerúsar según los principios de la Medicina Tradicional China Ideal para acupuntura estética, tratamientos energéticos y terapias complementarias. Incluye maletn portátil y manual de puntos para su correcta aplicación. Muy fácil de usar! árealiza tu pedido al 930 830 427 Hacemos envíos a todo el Perúú",
     "especificaciones": "Policarbonato: Ultra Resistente | Pistón Ergonómico: Succión Suave | Puntos Magnéticos: Polaridad | Uso Profesional: Clínico",
     "fichaRAG": "Producto: Ventosas Biomagneticas | SKU: PROD-54 | Precio: S/ 150.00 | Categoría: Ventosa Terapia | Medidas: 8 piezas | Stock: Disponible | Descripción: Ventosas Biomagnéticas - Terapia combinada de ventosas e imanes."
   },
@@ -3234,7 +3190,7 @@ export const allProductsKnowledge = [
     "badge": "Envío Inmediato",
     "medidas": [],
     "resumen": "Ventosas Faciales de Silicona",
-    "descripcionCompleta": "Ventosas Faciales de Silicona Las ventosas faciales de silicona son herramientas de masaje diseñadas para revitalizar y cuidar tu piel de manera natural. • Beneficios Principales Mejoran la circulación sangunea en el rostro. • Estimulan la circulación linftica. Favorecen la oxigenación de la piel. Promueven la eliminación de toxinas. • Ayudan a lograr un rostro Más firme y luminoso. • Material de Alta Calidad • Fabricadas con silicona suave y flexible. • Generan un efecto de succión leve y controlado. • Se adaptan fácilmente a los contornos del rostro. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Ventosas Faciales de Silicona Las ventosas faciales de silicona son herramientas de masaje diseñadas para revitalizar y cuidar tu piel de manera natural. Beneficios Principales Mejoran la circulación sangunea en el rostro. Estimulan la circulación linftica. Favorecen la oxigenación de la piel. Promueven la eliminación de toxinas. Ayudan a lograr un rostro más firme y luminoso. Material de Alta Calidad Fabricadas con silicona suave y flexible. Generan un efecto de succión leve y controlado. Se adaptan fácilmente a los contornos del rostro. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Policarbonato: Ultra Resistente | Pistón Ergonómico: Succión Suave | Puntos Magnéticos: Polaridad | Uso Profesional: Clínico",
     "fichaRAG": "Producto: Ventosas faciales | SKU: PROD-3 | Precio: S/ 20.00 | Categoría: Ventosa Terapia | Medidas: Estándar | Stock: Disponible | Descripción: Ventosas Faciales de Silicona"
   },
@@ -3255,7 +3211,7 @@ export const allProductsKnowledge = [
     "badge": "Stock Limitado",
     "medidas": [],
     "resumen": "Ventosas Therapy Pro - Pack de 3 ventosas fasciales profesionales.",
-    "descripcionCompleta": "Ventosas Therapy Pro - Pack de 3 ventosas fasciales profesionales. Pack de 3 ventosas de silicona de alta resistencia para técnicas de liberacin fascial y ventosaterapia profesional. Características: 3 ventosas de diferentes tamaos Silicona de alta resistencia Para técnicas de ventosa fascial Control preciso de la presión Aptas para técnicas de deslizamiento Material premium • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Ventosas Therapy Pro - Pack de 3 ventosas fasciales profesionales. Pack de 3 ventosas de silicona de alta resistencia para técnicas de liberacin fascial y ventosaterapia profesional. Características: 3 ventosas de diferentes tamaos Silicona de alta resistencia Para técnicas de ventosa fascial Control preciso de la presión Aptas para técnicas de deslizamiento Material premium Envío a todo el Perúú | 930830427",
     "especificaciones": "Policarbonato: Ultra Resistente | Pistón Ergonómico: Succión Suave | Puntos Magnéticos: Polaridad | Uso Profesional: Clínico",
     "fichaRAG": "Producto: Ventosas Therapy Pro | SKU: PROD-76 | Precio: S/ 90.00 | Categoría: Ventosa Terapia | Medidas: Estándar | Stock: Disponible | Descripción: Ventosas Therapy Pro - Pack de 3 ventosas fasciales profesionales."
   },
@@ -3276,7 +3232,7 @@ export const allProductsKnowledge = [
     "badge": "Más Vendido",
     "medidas": [],
     "resumen": "Bandeja de acero inoxidable para instrumental mdico.",
-    "descripcionCompleta": "Bandejas de Acero Las bandejas de acero son recipientes verstiles, resistentes y duraderos, utilizados en diversas aplicaciones en tu consultorio. • Material de Alta Calidad • Resistentes a la corrosin • fáciles de limpiar y desinfectar • Material duradero para uso continuo • Una opción práctica, higinica y confiable para múltiples necesidades. • Envío a todo el Perú • Pedidos al: 930830427",
+    "descripcionCompleta": "Bandejas de Acero Las bandejas de acero son recipientes verstiles, resistentes y duraderos, utilizados en diversas aplicaciones en tu consultorio. Material de Alta Calidad Resistentes a la corrosin fáciles de limpiar y desinfectar Material duradero para uso continuo Una opción práctica, higinica y confiable para múltiples necesidades. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Bandeja de acero | SKU: PROD-13 | Precio: S/ 15.00 | Categoría: Enfermería | Medidas: Estándar | Stock: Disponible | Descripción: Bandeja de acero inoxidable para instrumental mdico."
   },
@@ -3297,7 +3253,7 @@ export const allProductsKnowledge = [
     "badge": "Recomendado",
     "medidas": [],
     "resumen": "Cajas para Instrumental Quirúrgico y clínico.",
-    "descripcionCompleta": "Cajas para Instrumental Quirúrgico y clínico. Cajas de acero inoxidable para almacenar, transportar y esterilizar instrumental clínico. Características: Acero inoxidable quirúrgico Cierre hermético Resistente a la esterilizacin Varios tamaos disponibles Uso en consultorios, clnicas y hospitales • Envío a todo el Perú | • 930830427",
+    "descripcionCompleta": "Cajas para Instrumental Quirúrgico y clínico. Cajas de acero inoxidable para almacenar, transportar y esterilizar instrumental clínico. Características: Acero inoxidable quirúrgico Cierre hermético Resistente a la esterilizacin Varios tamaos disponibles Uso en consultorios, clínicas y hospitales Envío a todo el Perúú | 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Cajas para instrumental | SKU: PROD-63 | Precio: S/ 20.00 | Categoría: Enfermería | Medidas: Estándar | Stock: Disponible | Descripción: Cajas para Instrumental Quirúrgico y clínico."
   },
@@ -3317,8 +3273,8 @@ export const allProductsKnowledge = [
     "reviewsCount": 32,
     "badge": "Calidad Premium",
     "medidas": [],
-    "resumen": "• Gel de Ecografía - Conductor ultrasónico para fisioterapia y diagnóstico.",
-    "descripcionCompleta": "• Gel Ecogrfico para Ultrasonido - 5 litros El gel ecogrfico es un producto esencial para obtener imgenes claras y precisas durante los estudios de ultrasonido. Facilita el contacto entre el transductor y la piel, mejorando la calidad del examen. Características y beneficios: • Mejora la calidad de imagen al eliminar el aire entre la piel y el transductor. • Reduce la friccin, brindando mayor comodidad durante el procedimiento. • Hipoalergnico y libre de ltex, seguro para la mayora de los pacientes. Disponible en presentaciones frías o calientes para mayor confort. Ideal para centros mdicos, fisioterapia, estética y diagnóstico por ultrasonido. • Gel de ultrasonido ideal para aplicaciones terapéuticas y estéticas. • Su frmula optimiza la conduccin y cuidado de la piel. • Presentación: bidn de 5 litros, práctico y rendidor. • Envío a todo el Perú • Pedidos al: 930830427",
+    "resumen": "Gel de Ecografía - Conductor ultrasónico para fisioterapia y diagnóstico.",
+    "descripcionCompleta": "Gel Ecogrfico para Ultrasonido - 5 litros El gel ecogrfico es un producto esencial para obtener imgenes claras y precisas durante los estudios de ultrasonido. Facilita el contacto entre el transductor y la piel, mejorando la calidad del examen. Características y beneficios: Mejora la calidad de imagen al eliminar el aire entre la piel y el transductor. Reduce la friccin, brindando mayor comodidad durante el procedimiento. Hipoalergnico y libre de ltex, seguro para la mayora de los pacientes. Disponible en presentaciones frías o calientes para mayor confort. Ideal para centros mdicos, fisioterapia, estética y diagnóstico por ultrasonido. Gel de ultrasonido ideal para aplicaciones terapéuticas y estéticas. Su frmula optimiza la conduccin y cuidado de la piel. Presentación: bidn de 5 litros, práctico y rendidor. Envío a todo el Perúú Pedidos al: 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Gel de Ecografía | SKU: PROD-129 | Precio: S/ 50.00 | Categoría: Fisioterapia | Medidas: Estándar | Stock: Disponible | Descripción: Gel de Ecografía - Conductor ultrasónico para fisioterapia y diagnóstico."
   },
@@ -3339,7 +3295,7 @@ export const allProductsKnowledge = [
     "badge": "Garantizado",
     "medidas": [],
     "resumen": "Tacho de Bioseguridad - Descartador de agujas y material punzocortante.",
-    "descripcionCompleta": "• Tacho de Bioseguridad Gestin segura de residuos Con nuestros Tachos de Bioseguridad, garantizas una correcta eliminación de residuos clínicos y contaminantes. • Ideales para: Consultorios mdicos Clnicas y hospitales Centros estéticos y de tatuajes Laboratorios y veterinarias Características: Material resistente y fácil de limpiar Tapa hermética Cumplen normas sanitarias y de bioseguridad Capacidad: 1.5 litros • Envíos a todo el Perú • Pedidos al 930830427",
+    "descripcionCompleta": "Tacho de Bioseguridad Gestin segura de residuos Con nuestros Tachos de Bioseguridad, garantizas una correcta eliminación de residuos clínicos y contaminantes. Ideales para: Consultorios mdicos Clnicas y hospitales Centros estéticos y de tatuajes Laboratorios y veterinarias Características: Material resistente y fácil de limpiar Tapa hermética Cumplen normas sanitarias y de bioseguridad Capacidad: 1.5 litros Envíos a todo el Perúú Pedidos al 930830427",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Tacho de Bioseguridad | SKU: PROD-128 | Precio: S/ 11.00 | Categoría: Enfermería | Medidas: Estándar | Stock: Disponible | Descripción: Tacho de Bioseguridad - Descartador de agujas y material punzocortante."
   },
@@ -3362,9 +3318,105 @@ export const allProductsKnowledge = [
       "30 ml"
     ],
     "resumen": "Tintura de Benjuí - Adhesivo natural para parches de auriculoterapia.",
-    "descripcionCompleta": "• Tintura de Benjuí Fijación extra en verano • Asegura mayor duracin de balines y parches incluso con sudor y grasa. fácil aplicación sobre piel limpia Frasco de 30 ml • Envío a todo el Perú • Pedidos al: 930830427 • Más información aqu: Puedes revisar el empleo en el siguiente enlace: https://youtu.be/8aoTCVzHkX8si=3NY_oT0BVYFdyqEw",
+    "descripcionCompleta": "Tintura de Benjuí Fijación extra en verano Asegura mayor duracin de balines y parches incluso con sudor y grasa. Fácil aplicación sobre piel limpia Frasco de 30 ml Envío a todo el Perúú Pedidos al: 930830427 Más información aqu: Puedes revisar el empleo en el siguiente enlace: https://youtu.be/8aoTCVzHkX8si=3NY_oT0BVYFdyqEw",
     "especificaciones": "Grado Clínico: Certificado | Uso Profesional: Garantizado | Alta Precisión: Importado | Envío Seguro: Todo el Perú",
     "fichaRAG": "Producto: Tintura de Benjuí | SKU: PROD-143 | Precio: S/ 30.00 | Categoría: Auriculoterapia | Medidas: 30 ml | Stock: Disponible | Descripción: Tintura de Benjuí - Adhesivo natural para parches de auriculoterapia."
+  },
+  {
+    "id": "prod-hs-bosque-frutos",
+    "slug": "home-spray-bosque-bambu-frutos-rojos",
+    "sku": "PROD-HS-01",
+    "nombre": "Home Spray - Bosque Bambú & Frutos Rojos",
+    "categoria": "Aromaterapia",
+    "marca": "Amazöni-K",
+    "precio": 30,
+    "precioTexto": "S/ 30.00",
+    "precioOriginal": "S/ 36.00",
+    "descuento": "-15%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 38,
+    "badge": "Nuevo",
+    "medidas": [
+      "120 ml",
+      "250 ml"
+    ],
+    "resumen": "Home Spray Aromaterapia Ambiental - Bosque Bambú y Frutos Rojos.",
+    "descripcionCompleta": "Línea HOME SPRAY Amazöni-K. Aromas: Bosque Bambú (Armonía, conexión natural, recuPerúación del estrés) y Frutos Rojos (Optimismo, vitalidad, alegría). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perúú. Pedidos al +51 930 830 427.",
+    "especificaciones": "Grado Clínico: Certificado | Presentación: 120 ml / 250 ml | Aroma Botánico: Alta Fijación | Envío Seguro: Todo el Perú",
+    "fichaRAG": "Producto: Home Spray - Bosque Bambú & Frutos Rojos | SKU: PROD-HS-01 | Precio: S/ 30.00 | Categoría: Aromaterapia | Medidas: 120 ml, 250 ml | Stock: Disponible | Descripción: Home Spray Aromaterapia Ambiental - Bosque Bambú y Frutos Rojos."
+  },
+  {
+    "id": "prod-hs-eucalipto-chanel",
+    "slug": "home-spray-eucalipto-chanel",
+    "sku": "PROD-HS-02",
+    "nombre": "Home Spray - Eucalipto & Chanel",
+    "categoria": "Aromaterapia",
+    "marca": "Amazöni-K",
+    "precio": 30,
+    "precioTexto": "S/ 30.00",
+    "precioOriginal": "S/ 36.00",
+    "descuento": "-15%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 27,
+    "badge": "Línea Premium",
+    "medidas": [
+      "120 ml",
+      "250 ml"
+    ],
+    "resumen": "Home Spray Aromaterapia Ambiental - Eucalipto y Chanel Elegance.",
+    "descripcionCompleta": "Línea HOME SPRAY Amazöni-K. Aromas: Eucalipto (Claridad, frescura, renovación. Aire limpio + Espacio + Claridad) y Chanel (Elegancia, confianza, sofisticación. ExPerúiencia premium). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perúú. Pedidos al +51 930 830 427.",
+    "especificaciones": "Grado Clínico: Certificado | Presentación: 120 ml / 250 ml | Aroma Botánico: Alta Fijación | Envío Seguro: Todo el Perú",
+    "fichaRAG": "Producto: Home Spray - Eucalipto & Chanel | SKU: PROD-HS-02 | Precio: S/ 30.00 | Categoría: Aromaterapia | Medidas: 120 ml, 250 ml | Stock: Disponible | Descripción: Home Spray Aromaterapia Ambiental - Eucalipto y Chanel Elegance."
+  },
+  {
+    "id": "prod-hs-herbal-floral",
+    "slug": "home-spray-herbal-floral",
+    "sku": "PROD-HS-03",
+    "nombre": "Home Spray - Herbal & Floral",
+    "categoria": "Aromaterapia",
+    "marca": "Amazöni-K",
+    "precio": 30,
+    "precioTexto": "S/ 30.00",
+    "precioOriginal": "S/ 36.00",
+    "descuento": "-15%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 31,
+    "badge": "Recomendado",
+    "medidas": [
+      "120 ml",
+      "250 ml"
+    ],
+    "resumen": "Home Spray Aromaterapia Ambiental - Herbal y Floral.",
+    "descripcionCompleta": "Línea HOME SPRAY Amazöni-K. Aromas: Herbal (Equilibrio, naturalidad, estabilidad. La naturaleza dentro de tu espacio) y Floral (Relajación, confort, bienestar emocional). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perúú. Pedidos al +51 930 830 427.",
+    "especificaciones": "Grado Clínico: Certificado | Presentación: 120 ml / 250 ml | Aroma Botánico: Alta Fijación | Envío Seguro: Todo el Perú",
+    "fichaRAG": "Producto: Home Spray - Herbal & Floral | SKU: PROD-HS-03 | Precio: S/ 30.00 | Categoría: Aromaterapia | Medidas: 120 ml, 250 ml | Stock: Disponible | Descripción: Home Spray Aromaterapia Ambiental - Herbal y Floral."
+  },
+  {
+    "id": "prod-hs-violeta",
+    "slug": "home-spray-violeta",
+    "sku": "PROD-HS-04",
+    "nombre": "Home Spray - Violeta",
+    "categoria": "Aromaterapia",
+    "marca": "Amazöni-K",
+    "precio": 30,
+    "precioTexto": "S/ 30.00",
+    "precioOriginal": "S/ 36.00",
+    "descuento": "-15%",
+    "enStock": true,
+    "rating": 5,
+    "reviewsCount": 24,
+    "badge": "Bienestar Emocional",
+    "medidas": [
+      "120 ml",
+      "250 ml"
+    ],
+    "resumen": "Home Spray Aromaterapia Ambiental - Violeta Suave e Íntima.",
+    "descripcionCompleta": "Línea HOME SPRAY Amazöni-K - Violeta. Relajación, confort y bienestar emocional. Suave, empolvada, ligeramente dulce y elegante, generando una exPerúiencia íntima. Presentaciones: 120 ml y 250 ml. Envíos a todo el Perúú. Pedidos al +51 930 830 427.",
+    "especificaciones": "Grado Clínico: Certificado | Presentación: 120 ml / 250 ml | Aroma Botánico: Alta Fijación | Envío Seguro: Todo el Perú",
+    "fichaRAG": "Producto: Home Spray - Violeta | SKU: PROD-HS-04 | Precio: S/ 30.00 | Categoría: Aromaterapia | Medidas: 120 ml, 250 ml | Stock: Disponible | Descripción: Home Spray Aromaterapia Ambiental - Violeta Suave e Íntima."
   },
   {
     "id": "oil-copaiba",
@@ -3457,102 +3509,6 @@ export const allProductsKnowledge = [
     "descripcionCompleta": "Sinergia botánica de aceite virgen de Aguaje amazónico (fuente natural #1 de provitamina A y fitoestrógenos) combinado con Rosa Mosqueta orgánica prensada en frío.",
     "especificaciones": "Ideal para protocolo de masaje facial con ventosas y guasha | Atenúa líneas de expresión y mejora elasticidad dérmica | Hidratación profunda sin obstruir los poros | Textura sedosa de rápida absorción clínica",
     "fichaRAG": "Producto: Elixir Terapéutico Aguaje & Rosa Mosqueta | Volumen: 30 ml | Precio: S/ 40.00 | Indicación: Nutrición Celular y Rejuvenecimiento Facial | Beneficios: Ideal para protocolo de masaje facial con ventosas y guasha, Atenúa líneas de expresión y mejora elasticidad dérmica, Hidratación profunda sin obstruir los poros, Textura sedosa de rápida absorción clínica"
-  },
-  {
-    "id": "prod-hs-bosque-frutos",
-    "slug": "home-spray-bosque-bambu-frutos-rojos",
-    "sku": "PROD-HS-01",
-    "nombre": "Home Spray - Bosque Bambú & Frutos Rojos",
-    "categoria": "Aromaterapia",
-    "marca": "Amazöni-K",
-    "precio": 30,
-    "precioTexto": "S/ 30.00",
-    "precioOriginal": "S/ 36.00",
-    "descuento": "-15%",
-    "enStock": true,
-    "rating": 5,
-    "reviewsCount": 38,
-    "badge": "Nuevo",
-    "medidas": [
-      "120 ml",
-      "250 ml"
-    ],
-    "resumen": "• Home Spray Aromaterapia Ambiental - Bosque Bambú y Frutos Rojos.",
-    "descripcionCompleta": "• Línea HOME SPRAY Amazöni-K. Aromas: Bosque Bambú (Armonía, conexión natural, recuperación del estrés. Sensación de calma y reducción de tensión) y Frutos Rojos (Optimismo, vitalidad, alegría. Una dosis de energía y dinamismo). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perú. Pedidos al +51 930 830 427.",
-    "especificaciones": "Presentaciones: 120 ml | 250 ml | Aromas botánicos de alta fijación | Acción relajante y dinamizadora ambiental | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Home Spray - Bosque Bambú & Frutos Rojos | SKU: PROD-HS-01 | Precio: S/ 30.00 | Categoría: Aromaterapia | Medidas: 120 ml, 250 ml | Stock: Disponible | Descripción: • Home Spray Aromaterapia Ambiental - Bosque Bambú y Frutos Rojos."
-  },
-  {
-    "id": "prod-hs-eucalipto-chanel",
-    "slug": "home-spray-eucalipto-chanel",
-    "sku": "PROD-HS-02",
-    "nombre": "Home Spray - Eucalipto & Chanel",
-    "categoria": "Aromaterapia",
-    "marca": "Amazöni-K",
-    "precio": 30,
-    "precioTexto": "S/ 30.00",
-    "precioOriginal": "S/ 36.00",
-    "descuento": "-15%",
-    "enStock": true,
-    "rating": 5,
-    "reviewsCount": 27,
-    "badge": "Línea Premium",
-    "medidas": [
-      "120 ml",
-      "250 ml"
-    ],
-    "resumen": "• Home Spray Aromaterapia Ambiental - Eucalipto y Chanel Elegance.",
-    "descripcionCompleta": "• Línea HOME SPRAY Amazöni-K. Aromas: Eucalipto (Claridad, frescura, renovación. Aire limpio + Espacio + Claridad) y Chanel (Elegancia, confianza, sofisticación. Experiencia premium). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perú. Pedidos al +51 930 830 427.",
-    "especificaciones": "Presentaciones: 120 ml | 250 ml | Purificación y sofisticación ambiental | Ideal para consultorios y espacios de bienestar | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Home Spray - Eucalipto & Chanel | SKU: PROD-HS-02 | Precio: S/ 30.00 | Categoría: Aromaterapia | Medidas: 120 ml, 250 ml | Stock: Disponible | Descripción: • Home Spray Aromaterapia Ambiental - Eucalipto y Chanel Elegance."
-  },
-  {
-    "id": "prod-hs-herbal-floral",
-    "slug": "home-spray-herbal-floral",
-    "sku": "PROD-HS-03",
-    "nombre": "Home Spray - Herbal & Floral",
-    "categoria": "Aromaterapia",
-    "marca": "Amazöni-K",
-    "precio": 30,
-    "precioTexto": "S/ 30.00",
-    "precioOriginal": "S/ 36.00",
-    "descuento": "-15%",
-    "enStock": true,
-    "rating": 5,
-    "reviewsCount": 31,
-    "badge": "Recomendado",
-    "medidas": [
-      "120 ml",
-      "250 ml"
-    ],
-    "resumen": "• Home Spray Aromaterapia Ambiental - Herbal y Floral.",
-    "descripcionCompleta": "• Línea HOME SPRAY Amazöni-K. Aromas: Herbal (Equilibrio, naturalidad, estabilidad. La naturaleza dentro de tu espacio) y Floral (Relajación, confort, bienestar emocional). Presentaciones: 120 ml y 250 ml. Envíos a todo el Perú. Pedidos al +51 930 830 427.",
-    "especificaciones": "Presentaciones: 120 ml | 250 ml | Aromas de lavanda, rosas y hierbas naturales | Ideal para relajación y armonización | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Home Spray - Herbal & Floral | SKU: PROD-HS-03 | Precio: S/ 30.00 | Categoría: Aromaterapia | Medidas: 120 ml, 250 ml | Stock: Disponible | Descripción: • Home Spray Aromaterapia Ambiental - Herbal y Floral."
-  },
-  {
-    "id": "prod-hs-violeta",
-    "slug": "home-spray-violeta",
-    "sku": "PROD-HS-04",
-    "nombre": "Home Spray - Violeta",
-    "categoria": "Aromaterapia",
-    "marca": "Amazöni-K",
-    "precio": 30,
-    "precioTexto": "S/ 30.00",
-    "precioOriginal": "S/ 36.00",
-    "descuento": "-15%",
-    "enStock": true,
-    "rating": 5,
-    "reviewsCount": 24,
-    "badge": "Bienestar Emocional",
-    "medidas": [
-      "120 ml",
-      "250 ml"
-    ],
-    "resumen": "• Home Spray Aromaterapia Ambiental - Violeta Suave e Íntima.",
-    "descripcionCompleta": "• Línea HOME SPRAY Amazöni-K - Violeta. Relajación, confort y bienestar emocional. Suave, empolvada, ligeramente dulce y elegante, generando una experiencia íntima. Presentaciones: 120 ml y 250 ml. Envíos a todo el Perú. Pedidos al +51 930 830 427.",
-    "especificaciones": "Presentaciones: 120 ml | 250 ml | Notas florales dulces y empolvadas | Favorece la tranquilidad e introspección | Envío Seguro: Todo el Perú",
-    "fichaRAG": "Producto: Home Spray - Violeta | SKU: PROD-HS-04 | Precio: S/ 30.00 | Categoría: Aromaterapia | Medidas: 120 ml, 250 ml | Stock: Disponible | Descripción: • Home Spray Aromaterapia Ambiental - Violeta Suave e Íntima."
   }
 ];
 export default allProductsKnowledge;

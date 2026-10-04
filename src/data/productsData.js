@@ -1,5 +1,214 @@
 export const PRODUCTS_CATALOG = [
   {
+    "id": "prod-159",
+    "slug": "herramienta-masaje-modelo-peine",
+    "nombre": "Herramienta masaje modelo peine",
+    "precio": 20,
+    "precioTexto": "S/ 20.00",
+    "precioOriginal": "S/ 25.00",
+    "descuento": "-20%",
+    "marca": "Agujas Acupuntura Perú",
+    "sku": "PROD-159",
+    "categoria": "Herramientas de Masaje",
+    "rating": 5,
+    "reviewsCount": 15,
+    "enStock": true,
+    "badge": "Nuevo",
+    "descripcionResumen": "Herramienta de masaje y estimulación capilar / corporal con diseño ergonómico en forma de peine.",
+    "descripcionCompleta": "Herramienta de masaje profesional con diseño tipo peine ergonómico para estimulación de cuero cabelludo, puntos de acupresión y drenaje miofascial. Ideal para aliviar la tensión, mejorar la circulación sanguínea y complementar terapias de reflexología y relajación.\n\nDelivery en Lima y Callao\nPuedes recoger en nuestra oficina: Av. Julio C. Tello 438 Lince\nEnvío a todo el Perú\nPedidos al: 930830427",
+    "descripcionBloques": [
+      "Herramienta de masaje profesional con diseño ergonómico tipo peine.",
+      "Estimulación de cuero cabelludo, puntos de acupresión y reflexología.",
+      "Diseño ergonómico, suave al tacto y fácil de usar en terapias corporales.",
+      "Delivery en Lima y Callao | Av. Julio C. Tello 438 Lince | Envíos a todo el Perú | Pedidos al: 930830427"
+    ],
+    "highlights": [
+      "Ergonómico y portátil",
+      "Estimulación de puntos reflejos",
+      "Alivio de tensión y estrés"
+    ],
+    "imagenes": [
+      "/img_productos/modelo_peine.webp"
+    ],
+    "features": [
+      {
+        "label": "Material",
+        "sub": "Ergonómico y resistente"
+      },
+      {
+        "label": "Uso",
+        "sub": "Masaje y reflexología"
+      },
+      {
+        "label": "Diseño",
+        "sub": "Modelo Peine terapéutico"
+      },
+      {
+        "label": "Aplicación",
+        "sub": "Puntos de acupresión"
+      }
+    ],
+    "pagina": 1,
+    "url": "https://www.agujasacupunturaperu.com/product-page/herramienta-masaje-modelo-peine"
+  },
+  {
+    "id": "prod-160",
+    "slug": "rodillera-gel",
+    "nombre": "Rodillera gel",
+    "precio": 35,
+    "precioTexto": "S/ 35.00",
+    "precioOriginal": "S/ 42.00",
+    "descuento": "-17%",
+    "marca": "Agujas Acupuntura Perú",
+    "sku": "PROD-160",
+    "categoria": "Ortopedia y Postura",
+    "rating": 5,
+    "reviewsCount": 18,
+    "enStock": true,
+    "badge": "Nuevo",
+    "descripcionResumen": "Rodillera con almohadilla de compresión y gel para soporte articular y alivio de dolor.",
+    "descripcionCompleta": "Rodillera elástica con soporte de gel ergonómico, diseñada para brindar estabilidad a la rótula y articulación de la rodilla. Brinda soporte firme durante la actividad física, rehabilitación o recuperación de lesiones ligamentarias y de meniscos.\n\nDelivery en Lima y Callao\nPuedes recoger en nuestra oficina: Av. Julio C. Tello 438 Lince\nEnvío a todo el Perú\nPedidos al: 930830427",
+    "descripcionBloques": [
+      "Rodillera ortopédica con protección y soporte de gel central.",
+      "Compresión graduada para reducción de inflamación y soporte de rótula.",
+      "Material transpirable, elástico y de máxima comodidad para uso diario o deportivo.",
+      "Delivery en Lima y Callao | Av. Julio C. Tello 438 Lince | Envíos a todo el Perú | Pedidos al: 930830427"
+    ],
+    "highlights": [
+      "Soporte de gel ergonómico",
+      "Compresión y estabilidad",
+      "Transpirable y ajustable"
+    ],
+    "imagenes": [
+      "/img_productos/rodillera_gel.webp"
+    ],
+    "features": [
+      {
+        "label": "Almohadilla",
+        "sub": "Gel protector de rótula"
+      },
+      {
+        "label": "Tejido",
+        "sub": "Elástico y transpirable"
+      },
+      {
+        "label": "Soporte",
+        "sub": "Articular y ligamentario"
+      },
+      {
+        "label": "Uso",
+        "sub": "Deportivo y terapéutico"
+      }
+    ],
+    "pagina": 1,
+    "url": "https://www.agujasacupunturaperu.com/product-page/rodillera-gel"
+  },
+  {
+    "id": "prod-161",
+    "slug": "esferas-chinas",
+    "nombre": "Esferas China",
+    "precio": 45,
+    "precioTexto": "S/ 45.00",
+    "precioOriginal": "S/ 55.00",
+    "descuento": "-18%",
+    "marca": "Agujas Acupuntura Perú",
+    "sku": "PROD-161",
+    "categoria": "Herramientas de Masaje",
+    "rating": 5,
+    "reviewsCount": 22,
+    "enStock": true,
+    "badge": "Nuevo",
+    "descripcionResumen": "Par de esferas chinas tradicionales de relajación Baoding con sonido armónico para estimulación de puntos en las manos.",
+    "descripcionCompleta": "Esferas chinas tradicionales de salud y relajación (Baoding Balls). Al rotarlas en la palma de la mano, emiten un suave sonido armónico y estimulan los puntos reflejos de acupuntura en la mano, mejorando la circulación, la destreza y disminuyendo los niveles de estrés y fatiga mental.\n\nDelivery en Lima y Callao\nPuedes recoger en nuestra oficina: Av. Julio C. Tello 438 Lince\nEnvío a todo el Perú\nPedidos al: 930830427",
+    "descripcionBloques": [
+      "Par de esferas chinas Baoding en caja tradicional acolchada.",
+      "Estimulación de puntos de acupresión y meridianos en las manos.",
+      "Campanilla interna con sonido relajante y terapéutico.",
+      "Delivery en Lima y Callao | Av. Julio C. Tello 438 Lince | Envíos a todo el Perú | Pedidos al: 930830427"
+    ],
+    "highlights": [
+      "Estimulación de puntos reflejos",
+      "Sonido armónico relajante",
+      "Incluye estuche tradicional"
+    ],
+    "imagenes": [
+      "/img_productos/esferas_chinas.webp"
+    ],
+    "features": [
+      {
+        "label": "Presentación",
+        "sub": "Par de esferas en caja"
+      },
+      {
+        "label": "Función",
+        "sub": "Acupresión y destreza"
+      },
+      {
+        "label": "Acabado",
+        "sub": "Esmaltado tradicional chino"
+      },
+      {
+        "label": "Efecto",
+        "sub": "Relajación y circulación"
+      }
+    ],
+    "pagina": 1,
+    "url": "https://www.agujasacupunturaperu.com/product-page/esferas-china"
+  },
+  {
+    "id": "prod-162",
+    "slug": "lapiz-electroacupuntor",
+    "nombre": "Lápiz electroacupuntor",
+    "precio": 60,
+    "precioTexto": "S/ 60.00",
+    "precioOriginal": "S/ 75.00",
+    "descuento": "-20%",
+    "marca": "Agujas Acupuntura Perú",
+    "sku": "PROD-162",
+    "categoria": "Acupuntura y Moxibustión",
+    "rating": 5,
+    "reviewsCount": 26,
+    "enStock": true,
+    "badge": "Nuevo",
+    "descripcionResumen": "Lápiz estimulador de electroacupuntura digital portátil con cabezales intercambiables para terapia sin agujas.",
+    "descripcionCompleta": "Lápiz electroacupuntor digital electrónico para estimulación de puntos de acupuntura sin agujas (acupresión eléctrica). Cuenta con niveles regulables de intensidad y cabezales intercambiables para tratamientos faciales, musculares y articulares. Portátil, seguro y fácil de usar en el hogar o consultorio.\n\nDelivery en Lima y Callao\nPuedes recoger en nuestra oficina: Av. Julio C. Tello 438 Lince\nEnvío a todo el Perú\nPedidos al: 930830427",
+    "descripcionBloques": [
+      "Lápiz estimulador electrónico de acupuntura sin invasión.",
+      "Niveles de intensidad ajustables para diferentes tipos de sensibilidad y terapia.",
+      "Cabezales intercambiables para puntos específicos, zonas amplias y tratamientos faciales.",
+      "Delivery en Lima y Callao | Av. Julio C. Tello 438 Lince | Envíos a todo el Perú | Pedidos al: 930830427"
+    ],
+    "highlights": [
+      "Electroestimulación sin agujas",
+      "Intensidad ajustable",
+      "Cabezales intercambiables",
+      "Portátil a batería"
+    ],
+    "imagenes": [
+      "/img_productos/lapiz_electroacupuntor.webp"
+    ],
+    "features": [
+      {
+        "label": "Tecnología",
+        "sub": "Electroestimulación TENS / Acupuntura"
+      },
+      {
+        "label": "Accesorios",
+        "sub": "Cabezales intercambiables"
+      },
+      {
+        "label": "Control",
+        "sub": "Nivel de intensidad digital"
+      },
+      {
+        "label": "Alimentación",
+        "sub": "Pila AA (portátil)"
+      }
+    ],
+    "pagina": 1,
+    "url": "https://www.agujasacupunturaperu.com/product-page/lapiz-electroacupuntor"
+  },
+  {
     "id": "prod-150",
     "slug": "agujas-koreanas-x-caja-de-500-und",
     "nombre": "Agujas Koreanas x caja de 500 und",
