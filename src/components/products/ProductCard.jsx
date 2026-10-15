@@ -27,15 +27,19 @@ export default function ProductCard({ product, viewMode = 'grid' }) {
 
   if (!product) return null;
 
+  const isOutOfStock = product.enStock === false;
   const inWishlist = isWishlisted(product.id);
   const rawImageUrl = product.imagen || (product.imagenes && product.imagenes[0]) || '/LOGO.png';
   const imageUrl = imageError ? rawImageUrl : CLOUDINARY_PRESETS.cardGrid(rawImageUrl);
-  const numericPrice = typeof product.precio === 'number' 
-    ? product.precio 
-    : parseFloat(String(product.precio).replace(/[^0-9.]/g, '')) || 0;
+  const hasPrice = product.precio !== null && product.precio !== undefined && product.precio > 0 && !product.sinPrecio;
+  const numericPrice = hasPrice
+    ? (typeof product.precio === 'number' 
+        ? product.precio 
+        : parseFloat(String(product.precio).replace(/[^0-9.]/g, '')) || 0)
+    : null;
 
-  const formattedPrice = `S/ ${numericPrice.toFixed(2)}`;
-  const originalPrice = product.precioOriginal 
+  const formattedPrice = hasPrice ? `S/ ${numericPrice.toFixed(2)}` : null;
+  const originalPrice = (hasPrice && product.precioOriginal) 
     ? (product.precioOriginal.startsWith('S/') ? product.precioOriginal : `S/ ${parseFloat(String(product.precioOriginal).replace(/[^0-9.]/g, '')).toFixed(2)}`)
     : null;
 
@@ -59,17 +63,20 @@ export default function ProductCard({ product, viewMode = 'grid' }) {
     : null;
 
   const badgeColorClass = () => {
+    if (isOutOfStock) return 'bg-[#D84A38] text-white';
     if (!product.badge && !product.descuento) return null;
     const b = (product.badge || '').toLowerCase();
+    if (b.includes('agotad')) return 'bg-[#D84A38] text-white';
     if (b.includes('vendido') || b.includes('bestseller')) return 'bg-[#123329] text-white';
     if (b.includes('nuevo')) return 'bg-[#1E5142] text-white';
     if (b.includes('profesional') || b.includes('premium')) return 'bg-[#123329] text-white';
-    if (product.descuento) return 'bg-[#E5534B] text-white';
+    if (product.descuento && hasPrice) return 'bg-[#E5534B] text-white';
     return 'bg-[#123329] text-white';
   };
 
   const handleAddToCart = (e) => {
     e.stopPropagation();
+    if (isOutOfStock || !hasPrice) return;
     setIsAdded(true);
     addToCart(product, 1);
     setTimeout(() => setIsAdded(false), 1200);
@@ -86,10 +93,16 @@ export default function ProductCard({ product, viewMode = 'grid' }) {
         {/* Left image container */}
         <div className="relative w-full sm:w-48 aspect-square rounded-xl bg-[#F9F6F0] p-3 flex items-center justify-center shrink-0 overflow-hidden cursor-pointer" onClick={handleOpenDetail}>
           {/* Badge */}
-          {(product.descuento || product.badge) && (
-            <span className={`absolute top-2.5 left-2.5 z-10 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider ${badgeColorClass()}`}>
-              {product.descuento || product.badge}
+          {isOutOfStock ? (
+            <span className="absolute top-2.5 left-2.5 z-10 px-2.5 py-0.5 rounded-md text-[10px] font-black uppercase tracking-wider bg-[#D84A38] text-white shadow-xs">
+              Agotado
             </span>
+          ) : (
+            (((hasPrice && product.descuento) || product.badge)) && (
+              <span className={`absolute top-2.5 left-2.5 z-10 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider ${badgeColorClass()}`}>
+                {(hasPrice && product.descuento) || product.badge}
+              </span>
+            )
           )}
 
           {/* Wishlist */}
@@ -110,7 +123,7 @@ export default function ProductCard({ product, viewMode = 'grid' }) {
             src={imageUrl}
             alt={`${product.nombre} - Insumo médico y de acupuntura en Perú`}
             onError={() => setImageError(true)}
-            className="w-full h-full object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-105"
+            className={`w-full h-full object-contain mix-blend-multiply transition-transform duration-500 group-hover:scale-105 ${isOutOfStock ? 'grayscale contrast-75 opacity-75' : ''}`}
             loading="lazy"
             decoding="async"
           />
@@ -168,12 +181,20 @@ export default function ProductCard({ product, viewMode = 'grid' }) {
           {/* Price and actions */}
           <div className="flex items-center justify-between pt-3 border-t border-[#F0EAE1]">
             <div className="flex items-baseline gap-2">
-              <span className="text-xl font-bold text-[#D84A38]">
-                {formattedPrice}
-              </span>
-              {originalPrice && (
-                <span className="text-xs text-[#8C9690] line-through">
-                  {originalPrice}
+              {hasPrice ? (
+                <>
+                  <span className="text-xl font-bold text-[#D84A38]">
+                    {formattedPrice}
+                  </span>
+                  {originalPrice && (
+                    <span className="text-xs text-[#8C9690] line-through">
+                      {originalPrice}
+                    </span>
+                  )}
+                </>
+              ) : (
+                <span className="text-xs font-bold text-[#2C7A62] bg-[#EBF5F1] px-2.5 py-1 rounded-full border border-[#2C7A62]/20">
+                  Consultar catálogo
                 </span>
               )}
             </div>
@@ -187,28 +208,43 @@ export default function ProductCard({ product, viewMode = 'grid' }) {
                 Ver detalle
               </button>
               <a
-                href={buildWhatsAppUrl(product.nombre, formattedPrice)}
+                href={
+                  isOutOfStock
+                    ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hola! Deseo consultar si volverá a haber stock de: *${product.nombre}*.`)}`
+                    : !hasPrice
+                      ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hola! Deseo consultar la lista de productos y precios de: *${product.nombre}*.`)}`
+                      : buildWhatsAppUrl(product.nombre, formattedPrice)
+                }
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
-                className="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#25D366] hover:bg-[#1ebe5d] text-white text-xs font-bold transition-all duration-200 hover:scale-105 active:scale-95 shadow-sm"
-                title="Comprar por WhatsApp"
+                className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-white text-xs font-bold transition-all duration-200 hover:scale-105 active:scale-95 shadow-sm ${
+                  isOutOfStock ? 'bg-[#46534C] hover:bg-[#323D37]' : !hasPrice ? 'bg-[#123329] hover:bg-[#1B4538]' : 'bg-[#25D366] hover:bg-[#1ebe5d]'
+                }`}
+                title={isOutOfStock ? "Consultar por WhatsApp" : !hasPrice ? "Consultar catálogo por WhatsApp" : "Comprar por WhatsApp"}
               >
                 <WhatsAppIcon className="w-3.5 h-3.5 shrink-0" />
-                Comprar
+                {isOutOfStock ? 'Consultar' : !hasPrice ? 'Consultar' : 'Comprar'}
               </a>
               <button
                 type="button"
-                onClick={handleAddToCart}
-                className={`w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300 shadow-xs cursor-pointer ${
-                  isAdded
-                    ? 'bg-[#1F6B4F] text-white scale-110 shadow-md ring-2 ring-[#2C7A62]/40'
-                    : 'bg-[#123329] text-white hover:bg-[#1B4538] hover:scale-105 active:scale-95'
+                onClick={!hasPrice ? handleOpenDetail : handleAddToCart}
+                disabled={isOutOfStock}
+                className={`w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300 shadow-xs ${
+                  isOutOfStock
+                    ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                    : isAdded
+                      ? 'bg-[#1F6B4F] text-white scale-110 shadow-md ring-2 ring-[#2C7A62]/40 cursor-pointer'
+                      : !hasPrice
+                        ? 'bg-[#F9F6F0] text-[#123329] hover:bg-[#EDE4D6] border border-[#E2D9CC] cursor-pointer'
+                        : 'bg-[#123329] text-white hover:bg-[#1B4538] hover:scale-105 active:scale-95 cursor-pointer'
                 }`}
-                title={isAdded ? "¡Agregado!" : "Agregar al carrito"}
+                title={isOutOfStock ? "Producto agotado" : !hasPrice ? "Ver detalles de línea" : isAdded ? "¡Agregado!" : "Agregar al carrito"}
               >
                 {isAdded ? (
                   <Check className="w-4 h-4 text-white stroke-[3] animate-in zoom-in-75" />
+                ) : !hasPrice ? (
+                  <Eye className="w-4 h-4 text-[#123329]" />
                 ) : (
                   <ShoppingCart className="w-4 h-4 text-[#EDE4D6]" />
                 )}
@@ -230,10 +266,16 @@ export default function ProductCard({ product, viewMode = 'grid' }) {
           className="relative aspect-square w-full rounded-xl bg-[#F9F6F0] p-3 flex items-center justify-center overflow-hidden cursor-pointer select-none"
         >
           {/* Top-Left Badge */}
-          {(product.descuento || product.badge) && (
-            <span className={`absolute top-2.5 left-2.5 z-10 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider shadow-xs ${badgeColorClass()}`}>
-              {product.descuento || product.badge}
+          {isOutOfStock ? (
+            <span className="absolute top-2.5 left-2.5 z-10 px-2.5 py-0.5 rounded-md text-[10px] font-black uppercase tracking-wider bg-[#D84A38] text-white shadow-xs">
+              Agotado
             </span>
+          ) : (
+            (hasPrice ? (product.descuento || product.badge) : product.badge) && (
+              <span className={`absolute top-2.5 left-2.5 z-10 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider shadow-xs ${badgeColorClass()}`}>
+                {hasPrice ? (product.descuento || product.badge) : product.badge}
+              </span>
+            )
           )}
 
           {/* Top-Right Favorite Button */}
@@ -256,10 +298,18 @@ export default function ProductCard({ product, viewMode = 'grid' }) {
             src={imageUrl}
             alt={`${product.nombre} - Insumo médico y de acupuntura en Perú`}
             onError={() => setImageError(true)}
-            className="w-full h-full object-contain mix-blend-multiply transition-transform duration-500 ease-out group-hover:scale-108"
+            className={`w-full h-full object-contain mix-blend-multiply transition-transform duration-500 ease-out group-hover:scale-108 ${isOutOfStock ? 'grayscale contrast-75 opacity-75' : ''}`}
             loading="lazy"
             decoding="async"
           />
+
+          {isOutOfStock && (
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <span className="px-3 py-1 bg-[#18221D]/85 backdrop-blur-xs text-white text-[11px] font-black tracking-widest uppercase rounded-full border border-white/20 shadow-md">
+                Agotado
+              </span>
+            </div>
+          )}
         </div>
 
         {/* DETAILS SECTION */}
@@ -312,17 +362,23 @@ export default function ProductCard({ product, viewMode = 'grid' }) {
           </div>
 
           {/* Price Row + SKU */}
-          <div className="flex items-baseline justify-between gap-1 mt-1.5">
-            <div className="flex items-baseline gap-1.5">
-              <span className="text-sm sm:text-base font-extrabold text-[#D84A38]">
-                {formattedPrice}
-              </span>
-              {originalPrice && (
-                <span className="text-[10.5px] text-[#8C9690] line-through font-normal">
-                  {originalPrice}
+          <div className="flex items-baseline justify-between gap-1 mt-1.5 min-h-[1.5rem]">
+            {hasPrice ? (
+              <div className="flex items-baseline gap-1.5">
+                <span className="text-sm sm:text-base font-extrabold text-[#D84A38]">
+                  {formattedPrice}
                 </span>
-              )}
-            </div>
+                {originalPrice && (
+                  <span className="text-[10.5px] text-[#8C9690] line-through font-normal">
+                    {originalPrice}
+                  </span>
+                )}
+              </div>
+            ) : (
+              <span className="inline-flex items-center gap-1 text-[11px] sm:text-xs font-bold text-[#2C7A62] bg-[#EBF5F1] px-2 py-0.5 rounded-md border border-[#2C7A62]/20">
+                Línea de productos
+              </span>
+            )}
             {sku && (
               <span className="text-[8.5px] font-mono font-bold text-[#4A6FA5] bg-[#EBF0FA] border border-[#C5D3EE] px-1.5 py-0.5 rounded shrink-0 hidden sm:block">
                 {sku}
@@ -334,18 +390,36 @@ export default function ProductCard({ product, viewMode = 'grid' }) {
 
       {/* BOTTOM ACTIONS */}
       <div className="flex flex-col gap-2 mt-3.5 pt-2 border-t border-[#F0EAE1]">
-        {/* Comprar WhatsApp — full width */}
+        {/* Comprar / Consultar WhatsApp — full width */}
         <a
-          href={buildWhatsAppUrl(product.nombre, formattedPrice)}
+          href={
+            isOutOfStock
+              ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hola! Deseo consultar si volverá a haber stock de: *${product.nombre}*.`)}`
+              : !hasPrice
+                ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hola! Deseo consultar la lista y precios de su catálogo: *${product.nombre}*.`)}`
+                : buildWhatsAppUrl(product.nombre, formattedPrice)
+          }
           target="_blank"
           rel="noopener noreferrer"
           onClick={(e) => e.stopPropagation()}
-          className="w-full h-9 sm:h-9.5 flex items-center justify-center gap-1.5 px-2 rounded-xl bg-[#25D366] hover:bg-[#1ebe5d] active:bg-[#18a854] text-white text-[11px] sm:text-xs font-bold tracking-tight whitespace-nowrap transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 active:scale-[0.98] shadow-xs"
+          className={`w-full h-9 sm:h-9.5 flex items-center justify-center gap-1.5 px-2 rounded-xl text-white text-[11px] sm:text-xs font-bold tracking-tight whitespace-nowrap transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 active:scale-[0.98] shadow-xs ${
+            isOutOfStock
+              ? 'bg-[#46534C] hover:bg-[#323D37]'
+              : !hasPrice
+                ? 'bg-[#123329] hover:bg-[#1B4538]'
+                : 'bg-[#25D366] hover:bg-[#1ebe5d] active:bg-[#18a854]'
+          }`}
         >
           <WhatsAppIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-          <span className="hidden sm:inline">Comprar por WhatsApp</span>
-          <span className="hidden min-[350px]:inline sm:hidden">Pedir por WhatsApp</span>
-          <span className="min-[350px]:hidden">Pedir WhatsApp</span>
+          <span className="hidden sm:inline">
+            {isOutOfStock ? 'Consultar stock WhatsApp' : !hasPrice ? 'Consultar catálogo WhatsApp' : 'Comprar por WhatsApp'}
+          </span>
+          <span className="hidden min-[350px]:inline sm:hidden">
+            {isOutOfStock ? 'Consultar stock' : !hasPrice ? 'Consultar catálogo' : 'Pedir por WhatsApp'}
+          </span>
+          <span className="min-[350px]:hidden">
+            {isOutOfStock ? 'Consultar' : !hasPrice ? 'Catálogo' : 'Pedir WhatsApp'}
+          </span>
         </a>
         {/* Ver detalle + Carrito */}
         <div className="flex items-center gap-2">
@@ -356,23 +430,37 @@ export default function ProductCard({ product, viewMode = 'grid' }) {
           >
             Ver detalle
           </button>
-          <button
-            type="button"
-            onClick={handleAddToCart}
-            aria-label="Agregar al carrito"
-            className={`w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center transition-all duration-300 shadow-xs shrink-0 cursor-pointer ${
-              isAdded
-                ? 'bg-[#1F6B4F] text-white scale-110 shadow-md ring-2 ring-[#2C7A62]/40'
-                : 'bg-[#123329] text-white hover:bg-[#1B4538] hover:scale-105 active:scale-95'
-            }`}
-            title={isAdded ? "¡Agregado al carrito!" : "Agregar al carrito"}
-          >
-            {isAdded ? (
-              <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white stroke-[3] animate-in zoom-in-75 duration-150" />
-            ) : (
-              <ShoppingCart className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#EDE4D6]" />
-            )}
-          </button>
+          {!hasPrice ? (
+            <button
+              type="button"
+              onClick={handleOpenDetail}
+              className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center border border-[#123329]/20 bg-[#F9F6F0] text-[#123329] hover:bg-[#123329] hover:text-white transition-all duration-200 shadow-xs shrink-0 cursor-pointer"
+              title="Ver detalle del catálogo"
+            >
+              <Eye className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={handleAddToCart}
+              disabled={isOutOfStock}
+              aria-label={isOutOfStock ? "Producto agotado" : "Agregar al carrito"}
+              className={`w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center transition-all duration-300 shadow-xs shrink-0 ${
+                isOutOfStock
+                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                  : isAdded
+                    ? 'bg-[#1F6B4F] text-white scale-110 shadow-md ring-2 ring-[#2C7A62]/40 cursor-pointer'
+                    : 'bg-[#123329] text-white hover:bg-[#1B4538] hover:scale-105 active:scale-95 cursor-pointer'
+              }`}
+              title={isOutOfStock ? "Producto agotado" : isAdded ? "¡Agregado al carrito!" : "Agregar al carrito"}
+            >
+              {isAdded ? (
+                <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white stroke-[3] animate-in zoom-in-75 duration-150" />
+              ) : (
+                <ShoppingCart className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#EDE4D6]" />
+              )}
+            </button>
+          )}
         </div>
       </div>
     </article>

@@ -53,7 +53,7 @@ const getPromosForProduct = (p) => {
   const badge = (p.badge || '').toLowerCase();
   const title = (p.nombre || '').toLowerCase();
 
-  if (badge.includes('nuevo') || badge.includes('envío') || p.id === 'prod-155' || p.id === 'prod-154' || p.id === 'prod-153') {
+  if (p.enStock !== false && (badge.includes('nuevo') || badge.includes('envío') || p.id === 'prod-154' || p.id === 'prod-153')) {
     promos.push('new');
   }
   if (badge.includes('vendido') || (p.reviewsCount && p.reviewsCount >= 40)) {
@@ -82,13 +82,15 @@ export default function ProductsPage() {
     let min = Infinity;
     let max = -Infinity;
     PRODUCTS_CATALOG.forEach((p) => {
-      const price = typeof p.precio === 'number' ? p.precio : parseFloat(String(p.precio).replace(/[^0-9.]/g, '')) || 0;
+      if (p.sinPrecio || p.precio === null || p.precio === undefined) return;
+      const price = typeof p.precio === 'number' ? p.precio : parseFloat(String(p.precio).replace(/[^0-9.]/g, ''));
+      if (isNaN(price)) return;
       if (price < min) min = price;
       if (price > max) max = price;
     });
     return {
-      min: Math.floor(min) || 0,
-      max: Math.ceil(max) || 350
+      min: min === Infinity ? 0 : Math.floor(min),
+      max: max === -Infinity ? 350 : Math.ceil(max)
     };
   }, []);
 
@@ -431,8 +433,13 @@ export default function ProductsPage() {
       }
 
       // 4. Price filter
-      const price = typeof prod.precio === 'number' ? prod.precio : parseFloat(String(prod.precio).replace(/[^0-9.]/g, '')) || 0;
-      if (price < priceRange[0] || price > priceRange[1]) {
+      const isPriceFree = prod.sinPrecio || prod.precio === null || prod.precio === undefined;
+      if (!isPriceFree) {
+        const price = typeof prod.precio === 'number' ? prod.precio : parseFloat(String(prod.precio).replace(/[^0-9.]/g, '')) || 0;
+        if (price < priceRange[0] || price > priceRange[1]) {
+          return false;
+        }
+      } else if (priceRange[0] > priceBounds.min || priceRange[1] < priceBounds.max) {
         return false;
       }
 
@@ -468,10 +475,18 @@ export default function ProductsPage() {
         sorted.sort((a, b) => (b.reviewsCount || 0) - (a.reviewsCount || 0));
         break;
       case 'price_asc':
-        sorted.sort((a, b) => a.precio - b.precio);
+        sorted.sort((a, b) => {
+          const pA = a.precio ?? Infinity;
+          const pB = b.precio ?? Infinity;
+          return pA - pB;
+        });
         break;
       case 'price_desc':
-        sorted.sort((a, b) => b.precio - a.precio);
+        sorted.sort((a, b) => {
+          const pA = a.precio ?? -Infinity;
+          const pB = b.precio ?? -Infinity;
+          return pB - pA;
+        });
         break;
       case 'name_asc':
         sorted.sort((a, b) => (a.nombre || '').localeCompare(b.nombre || ''));

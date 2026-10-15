@@ -38,8 +38,10 @@ export const FEATURED_ITEMS = RAW_FEATURED.map((p) => ({
   slug: p.slug,
   nombre: p.nombre,
   categoria: p.categoria,
-  badge: p.badge || (p.descuento ? 'OFERTA' : null),
-  badgeType: p.descuento ? 'discount'
+  enStock: p.enStock !== false,
+  badge: p.enStock === false ? 'AGOTADO' : (p.badge || (p.descuento ? 'OFERTA' : null)),
+  badgeType: p.enStock === false ? 'out_of_stock'
+    : p.descuento ? 'discount'
     : (p.badge || '').toLowerCase().includes('premium') ? 'pro'
     : (p.badge || '').toLowerCase().includes('nuevo') ? 'new'
     : 'best',
@@ -133,6 +135,8 @@ export default function FeaturedProducts() {
 
   const getBadgeClass = (type) => {
     switch (type) {
+      case 'out_of_stock':
+        return 'bg-[#D84A38] text-white';
       case 'discount':
         return 'bg-[#D84A38] text-white';
       case 'best':
@@ -255,13 +259,20 @@ export default function FeaturedProducts() {
                       <img
                         src={product.imagen}
                         alt={product.nombre}
-                        className="w-full h-full object-contain mix-blend-multiply group-hover:scale-108 transition-transform duration-300"
+                        className={`w-full h-full object-contain mix-blend-multiply group-hover:scale-108 transition-transform duration-300 ${product.enStock === false ? 'grayscale contrast-75 opacity-75' : ''}`}
                         loading="eager"
                         decoding="async"
                         onError={(e) => {
                           e.currentTarget.src = '/LOGO.png';
                         }}
                       />
+                      {product.enStock === false && (
+                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                          <span className="px-2.5 py-0.5 bg-[#18221D]/85 backdrop-blur-xs text-white text-[10px] font-black tracking-widest uppercase rounded-full border border-white/20 shadow-md">
+                            Agotado
+                          </span>
+                        </div>
+                      )}
                     </div>
 
                     {/* Details */}
@@ -297,18 +308,18 @@ export default function FeaturedProducts() {
 
                     {/* Action Row */}
                     <div className="flex flex-col gap-1.5 pt-1">
-                      {/* Comprar WhatsApp — full width */}
+                      {/* Comprar / Consultar WhatsApp — full width */}
                       <a
-                        href={buildWhatsAppUrl(product.nombre, product.precio.toFixed(2))}
+                        href={product.enStock === false ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hola! Deseo consultar si volverá a haber stock de: *${product.nombre}*.`)}` : buildWhatsAppUrl(product.nombre, product.precio.toFixed(2))}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="w-full h-8.5 sm:h-9 flex items-center justify-center gap-1.5 px-2 rounded-xl bg-[#25D366] hover:bg-[#1ebe5d] active:bg-[#18a854] text-white text-[11px] sm:text-xs font-bold tracking-tight whitespace-nowrap transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 active:scale-[0.98] shadow-xs"
+                        className={`w-full h-8.5 sm:h-9 flex items-center justify-center gap-1.5 px-2 rounded-xl text-white text-[11px] sm:text-xs font-bold tracking-tight whitespace-nowrap transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 active:scale-[0.98] shadow-xs ${
+                          product.enStock === false ? 'bg-[#46534C] hover:bg-[#323D37]' : 'bg-[#25D366] hover:bg-[#1ebe5d] active:bg-[#18a854]'
+                        }`}
                       >
                         <WhatsAppIcon className="w-3.5 h-3.5 shrink-0" />
-                        <span className="hidden sm:inline">Comprar por WhatsApp</span>
-                        <span className="hidden min-[350px]:inline sm:hidden">Pedir por WhatsApp</span>
-                        <span className="min-[350px]:hidden">Pedir WhatsApp</span>
+                        <span>{product.enStock === false ? 'Consultar stock' : 'Comprar por WhatsApp'}</span>
                       </a>
                       {/* Ver detalle + Carrito */}
                       <div className="flex items-center gap-1.5">
@@ -320,10 +331,15 @@ export default function FeaturedProducts() {
                           Ver detalle
                         </button>
                         <button
-                          onClick={() => addToCart(product)}
-                          aria-label="Agregar al carrito"
+                          onClick={() => product.enStock !== false && addToCart(product)}
+                          disabled={product.enStock === false}
+                          aria-label={product.enStock === false ? "Producto agotado" : "Agregar al carrito"}
                           type="button"
-                          className="w-8 h-8 rounded-lg bg-[#123329] hover:bg-[#1B4538] text-white flex items-center justify-center transition-colors cursor-pointer shrink-0 shadow-xs"
+                          className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors shrink-0 shadow-xs ${
+                            product.enStock === false
+                              ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                              : 'bg-[#123329] hover:bg-[#1B4538] text-white cursor-pointer'
+                          }`}
                         >
                           <ShoppingCart className="w-3.5 h-3.5 text-[#EDE4D6]" />
                         </button>

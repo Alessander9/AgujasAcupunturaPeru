@@ -3649,6 +3649,8 @@ window.PRODUCTS_DATA = [
                 nombre: "Moxa sin humo",
                 precio: 20,
                 precioTexto: "S/ 20.00",
+                enStock: false,
+                badge: "Agotado",
                 categoria: "Acupuntura y moxibustión",
                 categoriaOrden: 1,
                 descripcionResumen:

@@ -10,6 +10,7 @@ import { trackViewItem } from '../../lib/analytics';
 
 function getBadgeStyle(badge = '') {
   const b = badge.toLowerCase();
+  if (b.includes('agotad')) return 'bg-[#D84A38] text-white';
   if (b.includes('vend') || b.includes('popular')) return 'bg-[#123329] text-white';
   if (b.includes('%') || b.includes('dcto') || b.includes('ofert')) return 'bg-[#D84A38] text-white';
   if (b.includes('nuevo') || b.includes('new')) return 'bg-[#2C7A62] text-white';
@@ -46,17 +47,21 @@ export default function QuickViewModal() {
   const product = quickViewProduct;
   const inWishlist = isWishlisted(product.id);
 
-  const price = typeof product.precio === 'number'
-    ? product.precio
-    : parseFloat(String(product.precio).replace(/[^0-9.]/g, '')) || 0;
+  const hasPrice = product.precio !== null && product.precio !== undefined && product.precio > 0 && !product.sinPrecio;
 
-  const originalPrice = product.precioOriginal
+  const price = hasPrice
+    ? (typeof product.precio === 'number'
+      ? product.precio
+      : parseFloat(String(product.precio).replace(/[^0-9.]/g, '')) || 0)
+    : null;
+
+  const originalPrice = (hasPrice && product.precioOriginal)
     ? (typeof product.precioOriginal === 'number'
       ? product.precioOriginal
       : parseFloat(String(product.precioOriginal).replace(/[^0-9.]/g, '')) || null)
     : null;
 
-  const discountPct = originalPrice && originalPrice > price
+  const discountPct = (hasPrice && originalPrice && originalPrice > price)
     ? Math.round((1 - price / originalPrice) * 100)
     : null;
 
@@ -68,18 +73,23 @@ export default function QuickViewModal() {
       : ['/LOGO.png'];
 
   const handleAddToCart = () => {
+    if (!hasPrice) return;
     addToCart(product, quantity);
     setAddedAnim(true);
     setTimeout(() => setAddedAnim(false), 1800);
   };
 
   const handleWhatsApp = () => {
-    const text = `Hola, deseo consultar por: *${product.nombre}* — S/ ${price.toFixed(2)} (SKU: ${product.sku || product.id}). ¿Tienen stock disponible?`;
+    const text = hasPrice
+      ? `Hola, deseo consultar por: *${product.nombre}* — S/ ${price.toFixed(2)} (SKU: ${product.sku || product.id}). ¿Tienen stock disponible?`
+      : `Hola! Deseo consultar la lista de productos y precios de: *${product.nombre}* (SKU: ${product.sku || product.id}).`;
     window.open(`https://wa.me/51930830427?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   const handleShare = async () => {
-    const shareText = `${product.nombre} — S/ ${price.toFixed(2)} | Agujas Acupuntura Perú`;
+    const shareText = hasPrice
+      ? `${product.nombre} — S/ ${price.toFixed(2)} | Agujas Acupuntura Perú`
+      : `${product.nombre} | Agujas Acupuntura Perú`;
     if (navigator.share) {
       await navigator.share({ title: shareText, url: window.location.href });
     } else {
@@ -105,19 +115,20 @@ export default function QuickViewModal() {
           {/* ── TOP HEADER BAR ── */}
           <div className="flex items-center justify-between px-5 py-3.5 border-b border-[#EDE4D6] bg-[#F9F6F0]">
             <div className="flex items-center gap-2">
-              {product.badge && (
-                <span className={`text-[10px] font-black uppercase px-2.5 py-1 rounded-full tracking-wider ${getBadgeStyle(product.badge)}`}>
-                  {product.badge}
+              {isOutOfStock ? (
+                <span className="text-[10px] font-black uppercase px-2.5 py-1 rounded-full tracking-wider bg-[#D84A38] text-white shadow-xs">
+                  Agotado
                 </span>
+              ) : (
+                product.badge && (
+                  <span className={`text-[10px] font-black uppercase px-2.5 py-1 rounded-full tracking-wider ${getBadgeStyle(product.badge)}`}>
+                    {product.badge}
+                  </span>
+                )
               )}
-              {discountPct && (
+              {discountPct && !isOutOfStock && hasPrice && (
                 <span className="text-[10px] font-black bg-[#D84A38] text-white px-2.5 py-1 rounded-full">
                   -{discountPct}%
-                </span>
-              )}
-              {isOutOfStock && (
-                <span className="text-[10px] font-bold bg-amber-100 text-amber-700 border border-amber-300 px-2.5 py-1 rounded-full">
-                  Sin stock
                 </span>
               )}
             </div>
@@ -153,8 +164,16 @@ export default function QuickViewModal() {
                   src={CLOUDINARY_PRESETS.modalDetail(images[selectedImg]) || images[selectedImg]}
                   alt={product.nombre}
                   onError={(e) => { e.target.src = images[selectedImg]; }}
-                  className="w-full h-full object-contain mix-blend-multiply transition-all duration-300 group-hover:scale-105"
+                  className={`w-full h-full object-contain mix-blend-multiply transition-all duration-300 group-hover:scale-105 ${isOutOfStock ? 'grayscale contrast-75 opacity-80' : ''}`}
                 />
+
+                {isOutOfStock && (
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <span className="px-4 py-1.5 bg-[#18221D]/85 backdrop-blur-xs text-white text-xs font-black tracking-widest uppercase rounded-full border border-white/20 shadow-lg">
+                      Agotado
+                    </span>
+                  </div>
+                )}
 
                 {/* Arrow navigation */}
                 {images.length > 1 && (
@@ -188,7 +207,7 @@ export default function QuickViewModal() {
                           : 'border-[#EDE4D6] hover:border-[#C29B62]'
                       }`}
                     >
-                      <img src={img} alt="" className="w-full h-full object-contain mix-blend-multiply p-1" />
+                      <img src={img} alt="" className={`w-full h-full object-contain mix-blend-multiply p-1 ${isOutOfStock ? 'grayscale opacity-80' : ''}`} />
                     </button>
                   ))}
                 </div>
@@ -248,38 +267,61 @@ export default function QuickViewModal() {
                   </div>
                   <span className="text-xs font-bold text-[#123329]">{rating.toFixed(1)}</span>
                   <span className="text-xs text-[#65726B]">({reviews} reseñas)</span>
-                  {product.enStock !== false && (
+                  {product.enStock !== false ? (
                     <span className="ml-auto text-[10.5px] font-bold text-[#2C7A62] flex items-center gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#2C7A62] inline-block animate-pulse" />
                       En stock
+                    </span>
+                  ) : (
+                    <span className="ml-auto text-[10.5px] font-bold text-[#D84A38] flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#D84A38] inline-block" />
+                      Agotado
                     </span>
                   )}
                 </div>
 
                 {/* Price block */}
-                <div className="flex items-end gap-3 py-3 px-4 bg-gradient-to-r from-[#F9F6F0] to-white rounded-2xl border border-[#EDE4D6]">
-                  <div>
-                    <span className="text-2xl sm:text-3xl font-black text-[#123329] leading-none">
-                      S/ {price.toFixed(2)}
-                    </span>
-                    {originalPrice && originalPrice > price && (
-                      <div className="flex items-center gap-2 mt-0.5">
-                        <span className="text-sm text-[#8C9690] line-through">
-                          S/ {originalPrice.toFixed(2)}
-                        </span>
-                        {discountPct && (
-                          <span className="text-xs font-extrabold text-[#D84A38] bg-red-50 px-1.5 py-0.5 rounded">
-                            Ahorras {discountPct}%
+                {hasPrice ? (
+                  <div className="flex items-end gap-3 py-3 px-4 bg-gradient-to-r from-[#F9F6F0] to-white rounded-2xl border border-[#EDE4D6]">
+                    <div>
+                      <span className="text-2xl sm:text-3xl font-black text-[#123329] leading-none">
+                        S/ {price.toFixed(2)}
+                      </span>
+                      {originalPrice && originalPrice > price && (
+                        <div className="flex items-center gap-2 mt-0.5">
+                          <span className="text-sm text-[#8C9690] line-through">
+                            S/ {originalPrice.toFixed(2)}
                           </span>
-                        )}
-                      </div>
-                    )}
+                          {discountPct && (
+                            <span className="text-xs font-extrabold text-[#D84A38] bg-red-50 px-1.5 py-0.5 rounded">
+                              Ahorras {discountPct}%
+                            </span>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                    <div className="ml-auto text-right">
+                      <span className="text-[10px] text-[#65726B] block">precio</span>
+                      <span className="text-[10px] font-bold text-[#2C7A62]">Sin comisiones</span>
+                    </div>
                   </div>
-                  <div className="ml-auto text-right">
-                    <span className="text-[10px] text-[#65726B] block">precio</span>
-                    <span className="text-[10px] font-bold text-[#2C7A62]">Sin comisiones</span>
+                ) : (
+                  <div className="flex items-center justify-between py-3.5 px-4 bg-gradient-to-r from-[#F9F6F0] to-white rounded-2xl border border-[#EDE4D6]">
+                    <div>
+                      <span className="text-base sm:text-lg font-extrabold text-[#123329] block">
+                        Línea de Productos
+                      </span>
+                      <span className="text-xs text-[#65726B]">
+                        Precios por producto y por mayor
+                      </span>
+                    </div>
+                    <div className="text-right">
+                      <span className="text-[11px] font-bold text-[#2C7A62] bg-[#EBF5F1] px-3 py-1 rounded-full border border-[#2C7A62]/20">
+                        Precios al WhatsApp
+                      </span>
+                    </div>
                   </div>
-                </div>
+                )}
 
                 {/* Description */}
                 <p className="text-xs text-[#46534C] leading-relaxed">
@@ -329,96 +371,130 @@ export default function QuickViewModal() {
                 )}
 
                 {/* Quantity + Add to Cart */}
-                <div className="space-y-3 pt-3 border-t border-[#EDE4D6]">
-                  {/* Selector de cantidad + Subtotal + Favoritos */}
-                  <div className="flex items-center justify-between gap-2.5">
-                    {/* Qty stepper */}
-                    <div className="flex items-center border border-[#EDE4D6] rounded-xl bg-[#F9F6F0] overflow-hidden shadow-xs shrink-0">
+                {hasPrice ? (
+                  <div className="space-y-3 pt-3 border-t border-[#EDE4D6]">
+                    {/* Selector de cantidad + Subtotal + Favoritos */}
+                    <div className="flex items-center justify-between gap-2.5">
+                      {/* Qty stepper */}
+                      <div className="flex items-center border border-[#EDE4D6] rounded-xl bg-[#F9F6F0] overflow-hidden shadow-xs shrink-0">
+                        <button
+                          onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                          className="w-10 h-10 flex items-center justify-center text-[#123329] hover:bg-white active:bg-gray-100 transition cursor-pointer"
+                          aria-label="Reducir cantidad"
+                        >
+                          <Minus className="w-4 h-4" />
+                        </button>
+                        <span className="w-10 text-center text-sm font-extrabold text-[#123329] select-none">
+                          {quantity}
+                        </span>
+                        <button
+                          onClick={() => setQuantity(quantity + 1)}
+                          className="w-10 h-10 flex items-center justify-center text-[#123329] hover:bg-white active:bg-gray-100 transition cursor-pointer"
+                          aria-label="Aumentar cantidad"
+                        >
+                          <Plus className="w-4 h-4" />
+                        </button>
+                      </div>
+
+                      {/* Subtotal si quantity > 1 */}
+                      {quantity > 1 ? (
+                        <div className="text-right flex-1 px-1">
+                          <span className="text-[10px] uppercase font-bold text-[#8C9891] block leading-none">Subtotal</span>
+                          <span className="font-extrabold text-[#123329] text-xs sm:text-sm">
+                            S/ {(price * quantity).toFixed(2)}
+                          </span>
+                        </div>
+                      ) : (
+                        <div className="flex-1" />
+                      )}
+
+                      {/* Wishlist */}
                       <button
-                        onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                        className="w-10 h-10 flex items-center justify-center text-[#123329] hover:bg-white active:bg-gray-100 transition cursor-pointer"
-                        aria-label="Reducir cantidad"
+                        onClick={() => toggleWishlist(product.id, product.nombre)}
+                        className={`h-10 px-3 rounded-xl border flex items-center gap-1.5 transition-all cursor-pointer shrink-0 ${
+                          inWishlist
+                            ? 'bg-red-50 border-red-200 text-[#D84A38]'
+                            : 'border-[#EDE4D6] bg-[#F9F6F0] text-[#65726B] hover:text-[#D84A38] hover:bg-red-50'
+                        }`}
+                        title={inWishlist ? 'Quitar de favoritos' : 'Guardar en favoritos'}
                       >
-                        <Minus className="w-4 h-4" />
-                      </button>
-                      <span className="w-10 text-center text-sm font-extrabold text-[#123329] select-none">
-                        {quantity}
-                      </span>
-                      <button
-                        onClick={() => setQuantity(quantity + 1)}
-                        className="w-10 h-10 flex items-center justify-center text-[#123329] hover:bg-white active:bg-gray-100 transition cursor-pointer"
-                        aria-label="Aumentar cantidad"
-                      >
-                        <Plus className="w-4 h-4" />
+                        <Heart className={`w-4 h-4 transition-transform ${inWishlist ? 'fill-[#D84A38] scale-110' : ''}`} />
+                        <span className="text-xs font-semibold hidden min-[370px]:inline">
+                          {inWishlist ? 'Guardado' : 'Favoritos'}
+                        </span>
                       </button>
                     </div>
 
-                    {/* Subtotal si quantity > 1 */}
-                    {quantity > 1 ? (
-                      <div className="text-right flex-1 px-1">
-                        <span className="text-[10px] uppercase font-bold text-[#8C9891] block leading-none">Subtotal</span>
-                        <span className="font-extrabold text-[#123329] text-xs sm:text-sm">
-                          S/ {(price * quantity).toFixed(2)}
-                        </span>
-                      </div>
-                    ) : (
-                      <div className="flex-1" />
-                    )}
-
-                    {/* Wishlist */}
+                    {/* Add to cart - Botón Principal a Ancho Completo */}
                     <button
-                      onClick={() => toggleWishlist(product.id, product.nombre)}
-                      className={`h-10 px-3 rounded-xl border flex items-center gap-1.5 transition-all cursor-pointer shrink-0 ${
-                        inWishlist
-                          ? 'bg-red-50 border-red-200 text-[#D84A38]'
-                          : 'border-[#EDE4D6] bg-[#F9F6F0] text-[#65726B] hover:text-[#D84A38] hover:bg-red-50'
+                      onClick={handleAddToCart}
+                      disabled={isOutOfStock}
+                      className={`w-full h-12 rounded-xl font-bold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-md transition-all duration-200 cursor-pointer ${
+                        isOutOfStock
+                          ? 'bg-gray-200 text-gray-400 cursor-not-allowed shadow-none'
+                          : addedAnim
+                            ? 'bg-[#2C7A62] text-white scale-[0.99] shadow-lg shadow-[#2C7A62]/25'
+                            : 'bg-[#123329] hover:bg-[#1B4538] active:scale-[0.98] text-white hover:shadow-lg'
                       }`}
-                      title={inWishlist ? 'Quitar de favoritos' : 'Guardar en favoritos'}
                     >
-                      <Heart className={`w-4 h-4 transition-transform ${inWishlist ? 'fill-[#D84A38] scale-110' : ''}`} />
-                      <span className="text-xs font-semibold hidden min-[370px]:inline">
-                        {inWishlist ? 'Guardado' : 'Favoritos'}
-                      </span>
+                      {addedAnim ? (
+                        <>
+                          <Check className="w-5 h-5 text-emerald-300 stroke-[3]" />
+                          <span className="tracking-wide">¡Agregado al Carrito!</span>
+                        </>
+                      ) : (
+                        <>
+                          <ShoppingCart className="w-5 h-5 text-[#EDE4D6]" />
+                          <span className="tracking-wide">
+                            {isOutOfStock ? 'Producto Agotado' : 'Agregar al Carrito'}
+                          </span>
+                        </>
+                      )}
+                    </button>
+
+                    {/* WhatsApp button */}
+                    <button
+                      onClick={handleWhatsApp}
+                      className="w-full h-10.5 rounded-xl border border-[#2C7A62]/40 bg-[#2C7A62]/8 hover:bg-[#2C7A62]/15 text-[#123329] text-xs sm:text-sm font-bold flex items-center justify-center gap-2 transition cursor-pointer"
+                    >
+                      <MessageCircle className="w-4 h-4 text-[#2C7A62]" />
+                      <span>Consultar por WhatsApp</span>
+                      <ArrowRight className="w-3.5 h-3.5 text-[#2C7A62]" />
                     </button>
                   </div>
-
-                  {/* Add to cart - Botón Principal a Ancho Completo */}
-                  <button
-                    onClick={handleAddToCart}
-                    disabled={isOutOfStock}
-                    className={`w-full h-12 rounded-xl font-bold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-md transition-all duration-200 cursor-pointer ${
-                      isOutOfStock
-                        ? 'bg-gray-200 text-gray-400 cursor-not-allowed shadow-none'
-                        : addedAnim
-                          ? 'bg-[#2C7A62] text-white scale-[0.99] shadow-lg shadow-[#2C7A62]/25'
-                          : 'bg-[#123329] hover:bg-[#1B4538] active:scale-[0.98] text-white hover:shadow-lg'
-                    }`}
-                  >
-                    {addedAnim ? (
-                      <>
-                        <Check className="w-5 h-5 text-emerald-300 stroke-[3]" />
-                        <span className="tracking-wide">¡Agregado al Carrito!</span>
-                      </>
-                    ) : (
-                      <>
-                        <ShoppingCart className="w-5 h-5 text-[#EDE4D6]" />
-                        <span className="tracking-wide">
-                          {isOutOfStock ? 'Sin stock disponible' : 'Agregar al Carrito'}
+                ) : (
+                  <div className="space-y-3 pt-3 border-t border-[#EDE4D6]">
+                    <div className="flex items-center justify-between gap-2.5">
+                      <span className="text-xs text-[#65726B]">
+                        Solicita la lista completa con precios individuales y al por mayor:
+                      </span>
+                      {/* Wishlist */}
+                      <button
+                        onClick={() => toggleWishlist(product.id, product.nombre)}
+                        className={`h-10 px-3 rounded-xl border flex items-center gap-1.5 transition-all cursor-pointer shrink-0 ${
+                          inWishlist
+                            ? 'bg-red-50 border-red-200 text-[#D84A38]'
+                            : 'border-[#EDE4D6] bg-[#F9F6F0] text-[#65726B] hover:text-[#D84A38] hover:bg-red-50'
+                        }`}
+                        title={inWishlist ? 'Quitar de favoritos' : 'Guardar en favoritos'}
+                      >
+                        <Heart className={`w-4 h-4 transition-transform ${inWishlist ? 'fill-[#D84A38] scale-110' : ''}`} />
+                        <span className="text-xs font-semibold hidden min-[370px]:inline">
+                          {inWishlist ? 'Guardado' : 'Favoritos'}
                         </span>
-                      </>
-                    )}
-                  </button>
+                      </button>
+                    </div>
 
-                  {/* WhatsApp button */}
-                  <button
-                    onClick={handleWhatsApp}
-                    className="w-full h-10.5 rounded-xl border border-[#2C7A62]/40 bg-[#2C7A62]/8 hover:bg-[#2C7A62]/15 text-[#123329] text-xs sm:text-sm font-bold flex items-center justify-center gap-2 transition cursor-pointer"
-                  >
-                    <MessageCircle className="w-4 h-4 text-[#2C7A62]" />
-                    <span>Consultar por WhatsApp</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-[#2C7A62]" />
-                  </button>
-                </div>
+                    <button
+                      onClick={handleWhatsApp}
+                      className="w-full h-12 rounded-xl bg-[#25D366] hover:bg-[#1ebe5d] active:scale-[0.98] text-white font-bold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-md shadow-[#25D366]/25 transition cursor-pointer"
+                    >
+                      <MessageCircle className="w-5 h-5 text-white" />
+                      <span>Solicitar Catálogo y Precios por WhatsApp</span>
+                      <ArrowRight className="w-4 h-4 text-white" />
+                    </button>
+                  </div>
+                )}
 
                 {/* Delivery info footer */}
                 <div className="flex items-center gap-3 text-[10.5px] text-[#65726B] bg-[#F9F6F0] border border-[#EDE4D6] rounded-xl px-3 py-2.5">

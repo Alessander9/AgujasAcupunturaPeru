@@ -62,9 +62,10 @@ export default function ProductCard({ product, className = "" }) {
   const title = product.title || product.nombre || "Agujas de Acupuntura";
   const brand = product.brand || product.marca || "Agujas Acupuntura Perú";
   const category = product.category || product.categoria || "Insumos Clínicos";
-  const price = product.price || product.precioTexto || "S/ 35.00";
-  const originalPrice = product.originalPrice || product.precioOriginal || "";
-  const discount = product.discount || product.descuento || "-15%";
+  const hasPrice = product.precio !== null && product.precio !== undefined && product.precio > 0 && !product.sinPrecio;
+  const price = hasPrice ? (product.price || product.precioTexto || "S/ 35.00") : null;
+  const originalPrice = hasPrice ? (product.originalPrice || product.precioOriginal || "") : "";
+  const discount = hasPrice ? (product.discount || product.descuento || "") : "";
   const sku = product.sku || "PROD-001";
   const rating = product.rating || 5;
   const reviewsCount = product.reviewsCount || 24;
@@ -88,7 +89,9 @@ export default function ProductCard({ product, className = "" }) {
   const currentImageUrl = typeof currentImage === 'string' ? currentImage : (currentImage.url || currentImage);
 
   const whatsappMessage = encodeURIComponent(
-    `Hola, deseo comprar ${quantity} unidad(es) de: ${title} (Precio: ${price}, SKU: ${sku}, Categoría: ${category}). ¿Tienen disponibilidad para envío inmediato?`
+    hasPrice 
+      ? `Hola, deseo comprar ${quantity} unidad(es) de: ${title} (Precio: ${price}, SKU: ${sku}, Categoría: ${category}). ¿Tienen disponibilidad para envío inmediato?`
+      : `Hola, deseo consultar la lista completa y precios de su catálogo: ${title} (SKU: ${sku}, Categoría: ${category}).`
   );
   const whatsappUrl = `https://wa.me/51930830427?text=${whatsappMessage}`;
 
@@ -112,7 +115,7 @@ export default function ProductCard({ product, className = "" }) {
             <img
               src={currentImageUrl}
               alt={title}
-              className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+              className={`w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105 ${product.enStock === false ? 'grayscale contrast-75 opacity-75' : ''}`}
               loading="lazy"
             />
 
@@ -121,13 +124,19 @@ export default function ProductCard({ product, className = "" }) {
 
             {/* Top-Left Floating Badges */}
             <div className="absolute top-2.5 left-2.5 flex flex-col gap-1.5 z-10">
-              {badge && (
-                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#23483C] text-white text-[10px] font-extrabold shadow-md tracking-wider uppercase">
-                  <Flame className="h-3 w-3 fill-[#A47C52] text-[#A47C52]" />
-                  <span>{badge}</span>
+              {product.enStock === false ? (
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#D84A38] text-white text-[10px] font-extrabold shadow-md tracking-wider uppercase">
+                  <span>Agotado</span>
                 </span>
+              ) : (
+                badge && (
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#23483C] text-white text-[10px] font-extrabold shadow-md tracking-wider uppercase">
+                    <Flame className="h-3 w-3 fill-[#A47C52] text-[#A47C52]" />
+                    <span>{badge}</span>
+                  </span>
+                )
               )}
-              {discount && (
+              {discount && product.enStock !== false && (
                 <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-[#B56F55] text-white text-[10px] font-bold shadow-sm">
                   {discount}
                 </span>
@@ -261,47 +270,61 @@ export default function ProductCard({ product, className = "" }) {
           <div>
             {/* Price & Stock Row */}
             <div className="flex items-baseline justify-between gap-2 mb-3.5">
-              <div className="flex items-baseline gap-2">
-                <span className="text-2xl font-black text-[#16332B] tracking-tight">
-                  {price}
-                </span>
-                {originalPrice && (
-                  <span className="text-xs line-through font-semibold text-[#687067]/70">
-                    {originalPrice}
+              {hasPrice ? (
+                <div className="flex items-baseline gap-2">
+                  <span className="text-2xl font-black text-[#16332B] tracking-tight">
+                    {price}
                   </span>
-                )}
-              </div>
+                  {originalPrice && (
+                    <span className="text-xs line-through font-semibold text-[#687067]/70">
+                      {originalPrice}
+                    </span>
+                  )}
+                </div>
+              ) : (
+                <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#23483C] bg-[#E8F3EE] px-3 py-1 rounded-full border border-[#23483C]/20">
+                  Línea de productos
+                </span>
+              )}
 
-              <span className="inline-flex items-center gap-1 text-[11px] font-bold text-[#23483C]">
-                <span className="w-2 h-2 rounded-full bg-[#3F7D5B] animate-pulse" />
-                En stock
-              </span>
+              {product.enStock !== false ? (
+                <span className="inline-flex items-center gap-1 text-[11px] font-bold text-[#23483C]">
+                  <span className="w-2 h-2 rounded-full bg-[#3F7D5B] animate-pulse" />
+                  En stock
+                </span>
+              ) : (
+                <span className="inline-flex items-center gap-1 text-[11px] font-bold text-[#D84A38]">
+                  <span className="w-2 h-2 rounded-full bg-[#D84A38]" />
+                  Agotado
+                </span>
+              )}
             </div>
 
             {/* CTA Buttons Row */}
             <div className="flex items-center gap-2">
-              {/* Quantity selector */}
-              <div className="flex items-center justify-between border border-[#E6D3BC] rounded-xl bg-[#F7F2EA] h-11 px-1.5 w-20 flex-shrink-0">
-                <button
-                  onClick={decreaseQty}
-                  type="button"
-                  aria-label="Restar unidad"
-                  className="w-6 h-6 rounded-lg bg-white border border-[#E6D3BC]/80 text-[#202520] font-bold text-xs flex items-center justify-center hover:bg-[#E6D3BC] transition-colors cursor-pointer"
-                >
-                  -
-                </button>
-                <span className="font-bold text-xs text-[#202520] select-none">
-                  {quantity}
-                </span>
-                <button
-                  onClick={increaseQty}
-                  type="button"
-                  aria-label="Sumar unidad"
-                  className="w-6 h-6 rounded-lg bg-white border border-[#E6D3BC]/80 text-[#202520] font-bold text-xs flex items-center justify-center hover:bg-[#E6D3BC] transition-colors cursor-pointer"
-                >
-                  +
-                </button>
-              </div>
+              {hasPrice && (
+                <div className="flex items-center justify-between border border-[#E6D3BC] rounded-xl bg-[#F7F2EA] h-11 px-1.5 w-20 flex-shrink-0">
+                  <button
+                    onClick={decreaseQty}
+                    type="button"
+                    aria-label="Restar unidad"
+                    className="w-6 h-6 rounded-lg bg-white border border-[#E6D3BC]/80 text-[#202520] font-bold text-xs flex items-center justify-center hover:bg-[#E6D3BC] transition-colors cursor-pointer"
+                  >
+                    -
+                  </button>
+                  <span className="font-bold text-xs text-[#202520] select-none">
+                    {quantity}
+                  </span>
+                  <button
+                    onClick={increaseQty}
+                    type="button"
+                    aria-label="Sumar unidad"
+                    className="w-6 h-6 rounded-lg bg-white border border-[#E6D3BC]/80 text-[#202520] font-bold text-xs flex items-center justify-center hover:bg-[#E6D3BC] transition-colors cursor-pointer"
+                  >
+                    +
+                  </button>
+                </div>
+              )}
 
               {/* Direct WhatsApp CTA Button */}
               <a
@@ -310,8 +333,8 @@ export default function ProductCard({ product, className = "" }) {
                 rel="noopener noreferrer"
                 className="flex-1 inline-flex items-center justify-center gap-2 h-11 px-3 rounded-xl bg-[#23483C] hover:bg-[#16332B] text-white font-bold text-xs sm:text-[13px] shadow-md shadow-[#23483C]/20 transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
               >
-                <ShoppingCart className="h-4 w-4" />
-                <span>Pedir</span>
+                {hasPrice ? <ShoppingCart className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                <span>{hasPrice ? 'Pedir' : 'Consultar catálogo'}</span>
               </a>
 
               {/* Quick View Button */}

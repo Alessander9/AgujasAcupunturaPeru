@@ -2395,9 +2395,9 @@ export const allProductsKnowledge = [
     "nombre": "Roller jade",
     "categoria": "Herramientas de Masaje",
     "marca": "Agujas Acupuntura Perú",
-    "precio": 59,
-    "precioTexto": "S/ 59.00",
-    "precioOriginal": "S/ 70.80",
+    "precio": 75,
+    "precioTexto": "S/ 75.00",
+    "precioOriginal": "S/ 90.00",
     "descuento": "-15%",
     "enStock": true,
     "rating": 5,
@@ -2407,7 +2407,7 @@ export const allProductsKnowledge = [
     "resumen": "Roller de Jade - Rodillo de masaje facial de piedra jade.",
     "descripcionCompleta": "Roller de Jade Trmico para Acupuntura Estética Ideal para tonificación de puntos de acupuntura y tratamientos faciales. Funciona con moxa interna que calienta la cabeza de jade, estimulando la vasodilatación y produccin de colgeno. Incluye: Roller con cabeza tipo jade 5 mini moxas doradas de repuesto Pedidos al por mayor y menor al 930830427 Hacemos envíos a todo el Perúú Revisa el producto en el siguiente enlace https://youtu.be/Fuc0mjPiO8A",
     "especificaciones": "Madera Noble: Pulida | Ergonómico: Fácil Agarre | Maderoterapia: Reductor / Relajante | Larga Duración: Alta Calidad",
-    "fichaRAG": "Producto: Roller jade | SKU: PROD-154 | Precio: S/ 59.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Roller de Jade - Rodillo de masaje facial de piedra jade."
+    "fichaRAG": "Producto: Roller jade | SKU: PROD-154 | Precio: S/ 75.00 | Categoría: Herramientas de Masaje | Medidas: Estándar | Stock: Disponible | Descripción: Roller de Jade - Rodillo de masaje facial de piedra jade."
   },
   {
     "id": "prod-56",

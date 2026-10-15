@@ -919,7 +919,7 @@
 | 16 | `PROD-112` | **PIEDRAS CALIENTES 20 pzs** | Agujas Acupuntura Perú | S/ 160.00 | ~~S/ 192.00~~ (**-15%**) | 🟢 En Stock | 20 Unidades |
 | 17 | `PROD-47` | **Puntor de Acero Inoxidable** | Agujas Acupuntura Perú | S/ 35.00 | ~~S/ 42.00~~ (**-15%**) | 🟢 En Stock | Puntor de Acero Inoxidable para acupresin y masaje. |
 | 18 | `PROD-51` | **Puntor de reflexologa** | Agujas Acupuntura Perú | S/ 20.00 | ~~S/ 24.00~~ (**-15%**) | 🟢 En Stock | Puntor de Reflexologa - Herramienta para estimulacin de puntos reflejos. |
-| 19 | `PROD-154` | **Roller jade** | Agujas Acupuntura Perú | S/ 59.00 | ~~S/ 70.80~~ (**-15%**) | 🟢 En Stock | Roller de Jade - Rodillo de masaje facial de piedra jade. |
+| 19 | `PROD-154` | **Roller jade** | Agujas Acupuntura Perú | S/ 75.00 | ~~S/ 90.00~~ (**-15%**) | 🟢 En Stock | Roller de Jade - Rodillo de masaje facial de piedra jade. |
 | 20 | `PROD-56` | **Triangulo de acrilico** | Agujas Acupuntura Perú | S/ 25.00 | ~~S/ 30.00~~ (**-15%**) | 🟢 En Stock | Tringulo de Acrlico para reflexologa y acupresin. |
 
 ### 📝 Detalle de Fichas Técnicas (Herramientas de Masaje)
@@ -1072,7 +1072,7 @@
 - **Enlace de referencia:** [Ver Producto](https://www.agujasacupunturaperu.com/product-page/puntos-de-reflexolog�a)
 
 #### 19. Roller jade (`PROD-154`)
-- **Precio:** S/ 59.00 (Antes: S/ 70.80 | Ahorro: -15%)
+- **Precio:** S/ 75.00 (Antes: S/ 90.00 | Ahorro: -15%)
 - **Marca / Fabricante:** Agujas Acupuntura Perú
 - **Categoría:** Herramientas de Masaje
 - **Especificaciones:** Madera Noble: Pulida • Ergonómico: Fácil Agarre • Maderoterapia: Reductor / Relajante • Larga Duración: Alta Calidad
