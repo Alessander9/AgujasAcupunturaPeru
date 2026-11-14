@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
 import { CheckCircle2, ShoppingBag, X, ArrowRight } from 'lucide-react';
 import { PRODUCTS_CATALOG } from '../data/productsData';
+import { trackAddToCart, trackRemoveFromCart, trackAddToWishlist } from '../lib/analytics';
 
 const ShopContext = createContext();
 
@@ -75,6 +76,9 @@ export function ShopProvider({ children }) {
       return [...prevCart, { ...product, quantity }];
     });
 
+    // Track GA4 e-commerce add_to_cart event
+    trackAddToCart(product, quantity);
+
     // Trigger cart icon pop animation
     setCartAnimTrigger(true);
     setTimeout(() => setCartAnimTrigger(false), 800);
@@ -90,6 +94,10 @@ export function ShopProvider({ children }) {
   };
 
   const removeFromCart = (productId) => {
+    const itemToRemove = cart.find((item) => item.id === productId);
+    if (itemToRemove) {
+      trackRemoveFromCart(itemToRemove);
+    }
     setCart((prev) => prev.filter((item) => item.id !== productId));
   };
 
@@ -118,6 +126,10 @@ export function ShopProvider({ children }) {
         });
         return prev.filter((id) => id !== productId);
       } else {
+        const product = PRODUCTS_CATALOG.find((p) => p.id === productId);
+        if (product) {
+          trackAddToWishlist(product);
+        }
         showToast({
           title: '¡Guardado en favoritos! ❤️',
           name: productName || 'Producto agregado a tu lista de deseos.',

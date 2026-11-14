@@ -18,7 +18,8 @@ const __dirname = path.dirname(__filename);
 // Read keys from environment or .env file
 let envConfig = {};
 try {
-  const envContent = fs.readFileSync(path.join(__dirname, '.env'), 'utf8');
+  const rootEnv = path.join(__dirname, '..', '..', '.env');
+  const envContent = fs.readFileSync(fs.existsSync(rootEnv) ? rootEnv : path.join(__dirname, '.env'), 'utf8');
   envContent.split('\n').forEach(line => {
     const trimmed = line.trim();
     if (trimmed && !trimmed.startsWith('#')) {
@@ -28,8 +29,8 @@ try {
   });
 } catch (e) {}
 
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY || process.env.VITE_GEMINI_API_KEY || envConfig.VITE_GEMINI_API_KEY;
-const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY || process.env.VITE_OPENROUTER_API_KEY || envConfig.VITE_OPENROUTER_API_KEY;
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || envConfig.GEMINI_API_KEY;
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY || envConfig.OPENROUTER_API_KEY;
 
 const [, , inputPathArg = './products.json', outputPathArg = './embeddings.json'] = process.argv;
 
@@ -54,10 +55,10 @@ async function embedText(text) {
     const models = ['models/text-embedding-004', 'models/gemini-embedding-001', 'models/gemini-embedding-2'];
     for (const model of models) {
       try {
-        const url = `https://generativelanguage.googleapis.com/v1beta/${model}:embedContent?key=${GEMINI_API_KEY}`;
+        const url = `https://generativelanguage.googleapis.com/v1beta/${model}:embedContent`;
         const res = await fetch(url, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'application/json', 'x-goog-api-key': GEMINI_API_KEY },
           body: JSON.stringify({ content: { parts: [{ text }] } }),
         });
         if (res.ok) {

@@ -16,14 +16,29 @@ import { logLowConfidence } from './low-confidence-logger.js';
 let _products = productsData;
 let _embeddings = embeddingsData;
 
-function getApiKey(keyName) {
-  if (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env[keyName]) {
-    return import.meta.env[keyName];
-  }
+// SEGURIDAD: nunca leer API keys con import.meta.env aquí. Un acceso dinámico
+// (import.meta.env[x]) hace que Vite incruste TODAS las variables VITE_* en el bundle público.
+const IS_BROWSER = typeof window !== 'undefined';
+
+function getServerKey(keyName) {
+  if (IS_BROWSER) return '';
   if (typeof process !== 'undefined' && process.env && process.env[keyName]) {
     return process.env[keyName];
   }
   return '';
+}
+
+// En el navegador el embedding se pide al endpoint serverless (la key queda en el servidor)
+async function embedViaServer(text) {
+  const res = await fetch('/api/embed', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text }),
+  });
+  if (!res.ok) throw new Error(`/api/embed status ${res.status}`);
+  const data = await res.json();
+  if (!Array.isArray(data?.vector)) throw new Error('/api/embed sin vector');
+  return data.vector;
 }
 
 export function loadData() {
@@ -44,17 +59,20 @@ export function cosineSimilarity(a, b) {
 }
 
 export async function embedQuery(text) {
-  const geminiKey = getApiKey('GEMINI_API_KEY') || getApiKey('VITE_GEMINI_API_KEY');
-  const openRouterKey = getApiKey('OPENROUTER_API_KEY') || getApiKey('VITE_OPENROUTER_API_KEY');
+  if (IS_BROWSER) return embedViaServer(text);
+
+  // Solo Node.js (eval / scripts locales): keys desde variables de entorno del sistema
+  const geminiKey = getServerKey('GEMINI_API_KEY');
+  const openRouterKey = getServerKey('OPENROUTER_API_KEY');
 
   if (geminiKey) {
     const models = ['models/text-embedding-004', 'models/gemini-embedding-001', 'models/gemini-embedding-2'];
     for (const model of models) {
       try {
-        const url = `https://generativelanguage.googleapis.com/v1beta/${model}:embedContent?key=${geminiKey}`;
+        const url = `https://generativelanguage.googleapis.com/v1beta/${model}:embedContent`;
         const res = await fetch(url, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'application/json', 'x-goog-api-key': geminiKey },
           body: JSON.stringify({ content: { parts: [{ text }] } }),
         });
         if (res.ok) {

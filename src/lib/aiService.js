@@ -11,13 +11,15 @@
  * 6. Registro de memoria (pushTurn / setLastProduct).
  */
 
-import { buildGroundedSystemPrompt, retrieveKnowledgeChunks, retrieveCatalogProducts } from './ragEngine.js';
+import { buildRAGContext, retrieveKnowledgeChunks, retrieveCatalogProducts } from './ragEngine.js';
 import { classifyIntent } from './intent-router.js';
 import { pushTurn, getLastProduct, setLastProduct, isAmbiguousFollowup } from './conversation-memory.js';
 import { retrieveTopProducts } from './retrieval.js';
 
-// Helper: Serverless Vercel AI Gateway (/api/chat)
-async function callServerlessAPI(messages, systemPrompt) {
+// Única vía hacia los LLM: el endpoint serverless /api/chat.
+// SEGURIDAD: el navegador NUNCA llama directo a Groq/OpenRouter/Mistral/Gemini ni lee API keys.
+// El system prompt lo arma el servidor; aquí solo se envía el contexto RAG como datos.
+async function callServerlessAPI(messages, context) {
   try {
     const response = await fetch('/api/chat', {
       method: 'POST',
@@ -26,7 +28,7 @@ async function callServerlessAPI(messages, systemPrompt) {
       },
       body: JSON.stringify({
         messages,
-        systemPrompt
+        context
       })
     });
 
@@ -38,166 +40,13 @@ async function callServerlessAPI(messages, systemPrompt) {
     if (data && data.text && data.text.trim().length > 0) {
       return {
         text: data.text.trim(),
-        provider: data.provider || 'Asistente IA Seguro (Vercel Serverless)'
+        provider: data.provider || 'Asistente IA'
       };
     }
   } catch (err) {
-    // Silently fall back to client cascade / local RAG
+    // Silenciosamente cae al motor RAG local
   }
   return null;
-}
-
-// Helper: Groq API Call
-async function callGroq(messages, systemPrompt) {
-  const apiKey = typeof import.meta !== 'undefined' && import.meta.env?.VITE_GROQ_API_KEY
-    ? import.meta.env.VITE_GROQ_API_KEY
-    : process.env.VITE_GROQ_API_KEY || process.env.GROQ_API_KEY;
-
-  if (!apiKey) throw new Error('No Groq API Key found');
-
-  const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${apiKey}`
-    },
-    body: JSON.stringify({
-      model: 'llama-3.3-70b-versatile',
-      messages: [
-        { role: 'system', content: systemPrompt },
-        ...messages
-      ],
-      temperature: 0.2,
-      max_tokens: 500
-    })
-  });
-
-  if (!response.ok) {
-    const errText = await response.text();
-    throw new Error(`Groq error ${response.status}: ${errText}`);
-  }
-
-  const data = await response.json();
-  const text = data.choices?.[0]?.message?.content;
-  if (!text) throw new Error('Groq returned empty response');
-  return text;
-}
-
-// Helper: OpenRouter API Call
-async function callOpenRouter(messages, systemPrompt) {
-  const apiKey = typeof import.meta !== 'undefined' && import.meta.env?.VITE_OPENROUTER_API_KEY
-    ? import.meta.env.VITE_OPENROUTER_API_KEY
-    : process.env.VITE_OPENROUTER_API_KEY || process.env.OPENROUTER_API_KEY;
-
-  if (!apiKey) throw new Error('No OpenRouter API Key found');
-
-  const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${apiKey}`,
-      'HTTP-Referer': typeof window !== 'undefined' ? window.location.origin : 'https://agujasacupuntura.pe',
-      'X-Title': 'Agujas Acupuntura Perú'
-    },
-    body: JSON.stringify({
-      model: 'meta-llama/llama-3.3-70b-instruct:free',
-      messages: [
-        { role: 'system', content: systemPrompt },
-        ...messages
-      ],
-      temperature: 0.2,
-      max_tokens: 500
-    })
-  });
-
-  if (!response.ok) {
-    const errText = await response.text();
-    throw new Error(`OpenRouter error ${response.status}: ${errText}`);
-  }
-
-  const data = await response.json();
-  const text = data.choices?.[0]?.message?.content;
-  if (!text) throw new Error('OpenRouter returned empty response');
-  return text;
-}
-
-// Helper: Mistral AI Call
-async function callMistral(messages, systemPrompt) {
-  const apiKey = typeof import.meta !== 'undefined' && import.meta.env?.VITE_MISTRAL_API_KEY
-    ? import.meta.env.VITE_MISTRAL_API_KEY
-    : process.env.VITE_MISTRAL_API_KEY || process.env.MISTRAL_API_KEY;
-
-  if (!apiKey) throw new Error('No Mistral API Key found');
-
-  const response = await fetch('https://api.mistral.ai/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${apiKey}`
-    },
-    body: JSON.stringify({
-      model: 'mistral-small-latest',
-      messages: [
-        { role: 'system', content: systemPrompt },
-        ...messages
-      ],
-      temperature: 0.2,
-      max_tokens: 500
-    })
-  });
-
-  if (!response.ok) {
-    const errText = await response.text();
-    throw new Error(`Mistral error ${response.status}: ${errText}`);
-  }
-
-  const data = await response.json();
-  const text = data.choices?.[0]?.message?.content;
-  if (!text) throw new Error('Mistral returned empty response');
-  return text;
-}
-
-// Helper: Gemini API Call
-async function callGemini(messages, systemPrompt) {
-  const apiKey = typeof import.meta !== 'undefined' && import.meta.env?.VITE_GEMINI_API_KEY
-    ? import.meta.env.VITE_GEMINI_API_KEY
-    : process.env.VITE_GEMINI_API_KEY || process.env.GEMINI_API_KEY;
-
-  if (!apiKey) throw new Error('No Gemini API Key found');
-
-  const contents = messages.map(m => ({
-    role: m.role === 'assistant' ? 'model' : 'user',
-    parts: [{ text: m.content }]
-  }));
-
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
-
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      systemInstruction: {
-        parts: [{ text: systemPrompt }]
-      },
-      contents: contents,
-      generationConfig: {
-        temperature: 0.2,
-        maxOutputTokens: 500
-      }
-    })
-  });
-
-  if (!response.ok) {
-    const errText = await response.text();
-    throw new Error(`Gemini error ${response.status}: ${errText}`);
-  }
-
-  const data = await response.json();
-  const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (!text) throw new Error('Gemini returned empty response');
-  return text;
 }
 
 /**
@@ -309,8 +158,8 @@ export async function generateChatResponse(chatHistory, userMessage, sessionId =
   // =========================================================================
   const topProducts = await retrieveTopProducts(queryForRetrieval, 3, sessionId);
 
-  // Armar el System Prompt unificado con los datos aislados
-  const systemPrompt = await buildGroundedSystemPrompt(queryForRetrieval, sessionId);
+  // Contexto RAG (solo datos). El servidor lo envuelve con su propio system prompt.
+  const { fullContext: ragContext } = await buildRAGContext(queryForRetrieval, sessionId);
 
   const messages = (chatHistory || [])
     .filter(m => m.sender === 'user' || m.sender === 'bot')
@@ -328,37 +177,14 @@ export async function generateChatResponse(chatHistory, userMessage, sessionId =
   let finalReply = '';
   let chosenProvider = 'Motor RAG Local';
 
-  // 1. Intentar primero a través del Endpoint Serverless Seguro de Vercel (/api/chat)
-  const serverlessResult = await callServerlessAPI(messages, systemPrompt);
+  // 1. Único camino a los LLM: endpoint serverless (/api/chat). Las keys viven en el servidor.
+  const serverlessResult = await callServerlessAPI(messages, ragContext);
   if (serverlessResult && serverlessResult.text) {
     finalReply = serverlessResult.text;
     chosenProvider = serverlessResult.provider;
   }
 
-  // 2. Si el endpoint serverless no está disponible (ej. desarrollo local), intentar cliente
-  if (!finalReply) {
-    const providers = [
-      { name: 'Groq (Llama 3.3 RAG)', fn: () => callGroq(messages, systemPrompt) },
-      { name: 'OpenRouter RAG', fn: () => callOpenRouter(messages, systemPrompt) },
-      { name: 'Mistral RAG', fn: () => callMistral(messages, systemPrompt) },
-      { name: 'Gemini RAG', fn: () => callGemini(messages, systemPrompt) }
-    ];
-
-    for (const provider of providers) {
-      try {
-        const reply = await provider.fn();
-        if (reply && reply.trim().length > 0) {
-          finalReply = reply.trim();
-          chosenProvider = provider.name;
-          break;
-        }
-      } catch (err) {
-        // Cascade to next provider
-      }
-    }
-  }
-
-  // 3. Fallback determinístico local 0ms si todo lo anterior falla
+  // 2. Fallback determinístico local 0ms si el endpoint no responde
   if (!finalReply) {
     finalReply = await localDeterministicRAG(queryForRetrieval, sessionId);
   }

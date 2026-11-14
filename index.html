@@ -41,6 +41,12 @@
   <link rel="dns-prefetch" href="https://i.ytimg.com" />
   <link rel="dns-prefetch" href="https://googlevideo.com" />
 
+  <!-- Analytics DNS & Preconnect -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://static.cloudflareinsights.com" />
+  <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+  <link rel="dns-prefetch" href="https://static.cloudflareinsights.com" />
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -55,7 +61,7 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     
-    // Configuración inicial de Consent Mode (Respeta la Ley de Protección de Datos Personales N.° 29733)
+    // Configuración inicial de Consent Mode (Ley de Protección de Datos Personales N.° 29733)
     gtag('consent', 'default', {
       'analytics_storage': 'granted',
       'ad_storage': 'denied',
@@ -64,10 +70,12 @@
     });
 
     gtag('js', new Date());
+    // send_page_view: false evita conteo duplicado en SPAs ya que AnalyticsTracker en React Router gestiona el tracking preciso por ruta
     gtag('config', 'G-D949ZJGZ5Q', {
-      send_page_view: true
+      send_page_view: false
     });
   </script>
+
 </head>
 <body class="bg-[#F7F2EA] text-slate-900 font-sans antialiased selection:bg-[#23483C] selection:text-[#EDE4D6]">
   <div id="root"></div>

@@ -3,8 +3,9 @@
  * Agujas Acupuntura Perú
  */
 
+// Solo el cloud name es público (aparece en todas las URLs de imágenes).
+// La API key y el API secret de Cloudinary NUNCA deben estar en el frontend.
 const CLOUD_NAME = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || '';
-const API_KEY = import.meta.env.VITE_CLOUDINARY_API_KEY || '';
 
 /**
  * Generates an optimized Cloudinary delivery URL with automatic format (WebP/AVIF) and compression
@@ -95,6 +96,5 @@ export const CLOUDINARY_PRESETS = {
 export default {
   getCloudinaryUrl,
   CLOUDINARY_PRESETS,
-  CLOUD_NAME,
-  API_KEY
+  CLOUD_NAME
 };

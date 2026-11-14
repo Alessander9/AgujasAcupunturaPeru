@@ -1,10 +1,10 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useShop } from '../context/ShopContext';
 import { YapeBadge, BcpBadge } from '../components/common/PaymentLogos';
 
 import SEOHead from '../components/common/SEOHead';
-import { trackWhatsAppPurchase } from '../lib/analytics';
+import { trackWhatsAppPurchase, trackBeginCheckout } from '../lib/analytics';
 import {
   ShieldCheck,
   Truck,
@@ -72,6 +72,13 @@ export default function CheckoutPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [orderCompleted, setOrderCompleted] = useState(null);
   const [copiedAccount, setCopiedAccount] = useState('');
+
+  // Track GA4 begin_checkout funnel step
+  useEffect(() => {
+    if (cart && cart.length > 0) {
+      trackBeginCheckout(cart, cartTotalPrice);
+    }
+  }, []);
 
   // Financial calculations
   const shippingCost = useMemo(() => {

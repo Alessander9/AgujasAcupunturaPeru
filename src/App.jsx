@@ -20,6 +20,7 @@ import WishlistModal from './components/ui/WishlistModal';
 import QuickViewModal from './components/ui/QuickViewModal';
 import SmoothScroll from './components/common/SmoothScroll';
 import PrivacyConsentBar from './components/common/PrivacyConsentBar';
+import { initAnalytics, trackPageView } from './lib/analytics';
 
 // Scroll to top on route change (compatible with Lenis)
 function ScrollToTop() {
@@ -34,12 +35,26 @@ function ScrollToTop() {
   return null;
 }
 
+// Track virtual page views for GA4 & Cloudflare Web Analytics on route transitions
+function AnalyticsTracker() {
+  const location = useLocation();
+  useEffect(() => {
+    trackPageView(location.pathname + location.search, document.title);
+  }, [location.pathname, location.search]);
+  return null;
+}
+
 export default function App() {
+  useEffect(() => {
+    initAnalytics();
+  }, []);
+
   return (
     <ShopProvider>
       <SmoothScroll>
         <Router>
           <ScrollToTop />
+          <AnalyticsTracker />
           {/* Universal Institutional Shell Layout (TopBar + Header/Navbar + Footer + AI FAB) */}
           <MainLayout>
             {/* Self-dismissing preloader */}
