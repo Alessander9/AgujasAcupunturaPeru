@@ -70,7 +70,7 @@ const getPromosForProduct = (p) => {
 
 export default function ProductsPage() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const { searchQuery, setSearchQuery } = useShop();
+  const { searchQuery, setSearchQuery, setQuickViewProduct } = useShop();
 
   // Mobile menu & drawer states
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -165,7 +165,18 @@ export default function ProductsPage() {
     if (p === 'ofertas') setSelectedPromos(['onsale']);
     else if (p === 'novedades') setSelectedPromos(['new']);
     else if (p) setSelectedPromos(p.split(','));
-  }, [searchParams]);
+
+    // Deep-linking de producto (?prod=slug o ?prod=id) para indexación SEO individual y GEO
+    const prodParam = searchParams.get('prod');
+    if (prodParam) {
+      const targetProduct = PRODUCTS_CATALOG.find(
+        (item) => item.slug === prodParam || String(item.id).toLowerCase() === prodParam.toLowerCase()
+      );
+      if (targetProduct) {
+        setQuickViewProduct(targetProduct);
+      }
+    }
+  }, [searchParams, setQuickViewProduct]);
 
   // Sync state back to URL params
   useEffect(() => {

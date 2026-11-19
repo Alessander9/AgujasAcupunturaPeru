@@ -12,6 +12,7 @@ export default function SEOHead({
   image = DEFAULT_IMAGE,
   type = 'website',
   canonicalUrl,
+  schemaData = null,
 }) {
   const location = useLocation();
   const currentUrl = canonicalUrl || `${BASE_URL}${location.pathname}`;
@@ -63,7 +64,22 @@ export default function SEOHead({
     }
     linkCanonical.setAttribute('href', currentUrl);
 
-  }, [fullTitle, description, image, currentUrl, type]);
+    // 6. Dynamic JSON-LD Structured Data (Schema.org)
+    const scriptId = 'dynamic-page-schema';
+    let dynamicScript = document.getElementById(scriptId);
+    if (schemaData) {
+      if (!dynamicScript) {
+        dynamicScript = document.createElement('script');
+        dynamicScript.id = scriptId;
+        dynamicScript.type = 'application/ld+json';
+        document.head.appendChild(dynamicScript);
+      }
+      dynamicScript.textContent = JSON.stringify(schemaData);
+    } else if (dynamicScript) {
+      dynamicScript.remove();
+    }
+
+  }, [fullTitle, description, image, currentUrl, type, schemaData]);
 
   return null;
 }

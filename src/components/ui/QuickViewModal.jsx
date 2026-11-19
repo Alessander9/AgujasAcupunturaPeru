@@ -32,6 +32,66 @@ export default function QuickViewModal() {
       setSelectedImg(0);
       setAddedAnim(false);
       trackViewItem(quickViewProduct);
+
+      // Inyectar Schema.org JSON-LD de Product para SEO y GEO (ChatGPT / Gemini / Perplexity)
+      const scriptId = 'product-jsonld-schema';
+      let scriptEl = document.getElementById(scriptId);
+      if (!scriptEl) {
+        scriptEl = document.createElement('script');
+        scriptEl.id = scriptId;
+        scriptEl.type = 'application/ld+json';
+        document.head.appendChild(scriptEl);
+      }
+
+      const pPrice = quickViewProduct.precio !== null && quickViewProduct.precio !== undefined
+        ? (typeof quickViewProduct.precio === 'number'
+            ? quickViewProduct.precio
+            : parseFloat(String(quickViewProduct.precio).replace(/[^0-9.]/g, '')) || 0)
+        : null;
+
+      const productImages = quickViewProduct.imagenes?.length
+        ? quickViewProduct.imagenes.map(img => img.startsWith('http') ? img : `https://www.agujasacupunturaperu.com${img.startsWith('/') ? '' : '/'}${img}`)
+        : quickViewProduct.imagen
+          ? [quickViewProduct.imagen.startsWith('http') ? quickViewProduct.imagen : `https://www.agujasacupunturaperu.com${quickViewProduct.imagen.startsWith('/') ? '' : '/'}${quickViewProduct.imagen}`]
+          : ['https://www.agujasacupunturaperu.com/agujaslogo.png'];
+
+      const schema = {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        'name': quickViewProduct.nombre,
+        'image': productImages,
+        'description': quickViewProduct.descripcionCompleta || quickViewProduct.descripcionResumen || `Insumo médico profesional para acupuntura y medicina tradicional china: ${quickViewProduct.nombre}. Disponible en Lima y todo el Perú.`,
+        'sku': quickViewProduct.sku || quickViewProduct.id,
+        'mpn': quickViewProduct.id,
+        'brand': {
+          '@type': 'Brand',
+          'name': quickViewProduct.marca || 'Agujas Acupuntura Perú'
+        },
+        'category': quickViewProduct.categoria || 'Insumos de Acupuntura'
+      };
+
+      if (pPrice && pPrice > 0) {
+        schema.offers = {
+          '@type': 'Offer',
+          'url': window.location.href,
+          'priceCurrency': 'PEN',
+          'price': pPrice.toFixed(2),
+          'priceValidUntil': '2027-12-31',
+          'itemCondition': 'https://schema.org/NewCondition',
+          'availability': quickViewProduct.enStock !== false ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+          'seller': {
+            '@type': 'Organization',
+            'name': 'Agujas Acupuntura Perú - Instituto de Terapias Integrales Perú'
+          }
+        };
+      }
+
+      scriptEl.textContent = JSON.stringify(schema);
+
+      return () => {
+        const el = document.getElementById(scriptId);
+        if (el) el.remove();
+      };
     }
   }, [quickViewProduct?.id]);
 

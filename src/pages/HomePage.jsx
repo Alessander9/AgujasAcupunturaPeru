@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import SEOHead from '../components/common/SEOHead';
+import { faqsData } from '../data/faqsData';
 import Hero from '../components/home/Hero';
 import OffersMarquee from '../components/home/OffersMarquee';
 import CategoryBadges from '../components/home/CategoryBadges';
@@ -11,11 +12,25 @@ import Newsletter from '../components/home/Newsletter';
 import BenefitsBar from '../components/home/BenefitsBar';
 
 export default function HomePage() {
+  const faqSchema = useMemo(() => ({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqsData.map(f => ({
+      '@type': 'Question',
+      'name': f.question,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': f.answer
+      }
+    }))
+  }), []);
+
   return (
     <>
       <SEOHead 
         title="Agujas de Acupuntura en Perú | Insumos Médicos & Terapéuticos Certificados"
         description="Especialistas en venta de agujas de acupuntura estériles, moxibustión, ventosas, semillas de auriculoterapia y aceites amazónicos en Lima y todo el Perú. Envíos 24-48h."
+        schemaData={faqSchema}
       />
       {/* 1. HERO PRINCIPAL */}
       <Hero />

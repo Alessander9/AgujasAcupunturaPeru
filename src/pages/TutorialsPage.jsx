@@ -61,7 +61,7 @@ export default function TutorialsPage() {
                       <div className="relative aspect-[16/9] bg-[#16332B] overflow-hidden">
                         <img
                           src={`https://img.youtube.com/vi/${vid.youtubeId}/hqdefault.jpg`}
-                          alt={vid.title}
+                          alt={`Tutorial de ${vid.title} en Lima Perú`}
                           className="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-500"
                         />
                         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
@@ -98,6 +98,101 @@ export default function TutorialsPage() {
               </div>
             </section>
           ))}
+        </div>
+
+        {/* GUÍA TÉCNICA CLÍNICA Y DE COBERTURA DE ENVÍOS (GEO / LLM OPTIMIZATION) */}
+        <div className="mt-16 space-y-10 border-t border-[#E6D3BC] pt-12">
+          
+          {/* 1. Tabla de calibres y aplicaciones clínicas */}
+          <div className="bg-white rounded-3xl p-6 sm:p-10 border border-[#E6D3BC] shadow-md space-y-6">
+            <div className="space-y-2">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#A47C52] block">
+                Guía Técnica para Terapeutas & Estudiantes
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-black text-[#202520]">
+                Tabla de Calibres de Agujas de Acupuntura & Zonas de Aplicación
+              </h2>
+              <p className="text-sm text-[#687067] leading-relaxed">
+                Referencia estándar para selección de agujas estériles de acero quirúrgico según zona anatómica y técnica terapéutica en Perú.
+              </p>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs sm:text-sm border-collapse">
+                <thead>
+                  <tr className="bg-[#16332B] text-white">
+                    <th className="py-3 px-4 font-bold rounded-tl-xl">Medida (mm)</th>
+                    <th className="py-3 px-4 font-bold">Calibre / Grosor</th>
+                    <th className="py-3 px-4 font-bold">Zona de Aplicación Recomendada</th>
+                    <th className="py-3 px-4 font-bold rounded-tr-xl">Tipo de Paciente / Técnica</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#E6D3BC]/60">
+                  <tr className="hover:bg-[#F9F6F0]">
+                    <td className="py-3 px-4 font-bold text-[#16332B]">0.18 x 13 mm</td>
+                    <td className="py-3 px-4">Ultra fina</td>
+                    <td className="py-3 px-4">Rostro, cabeza, manos y pies (auriculoterapia)</td>
+                    <td className="py-3 px-4">Acupuntura estética facial, niños y pacientes sensibles</td>
+                  </tr>
+                  <tr className="hover:bg-[#F9F6F0]">
+                    <td className="py-3 px-4 font-bold text-[#16332B]">0.25 x 25 mm (1 pulgada)</td>
+                    <td className="py-3 px-4">Fina estándar</td>
+                    <td className="py-3 px-4">Brazos, piernas, tórax, puntos de cuello y cara</td>
+                    <td className="py-3 px-4">Uso general en extremidades y zonas de poco grosor muscular</td>
+                  </tr>
+                  <tr className="hover:bg-[#F9F6F0]">
+                    <td className="py-3 px-4 font-bold text-[#16332B]">0.25 x 40 mm (1.5 pulgadas)</td>
+                    <td className="py-3 px-4">Estándar universal</td>
+                    <td className="py-3 px-4">Espalda dorsal/lumbar, abdomen, muslos y pantorrillas</td>
+                    <td className="py-3 px-4">La aguja más utilizada en la práctica clínica diaria</td>
+                  </tr>
+                  <tr className="hover:bg-[#F9F6F0]">
+                    <td className="py-3 px-4 font-bold text-[#16332B]">0.30 x 50 mm (2 pulgadas)</td>
+                    <td className="py-3 px-4">Media gruesa</td>
+                    <td className="py-3 px-4">Zona glútea, ciática (puntos Huantiao VB30)</td>
+                    <td className="py-3 px-4">Pacientes con mayor masa muscular o electroacupuntura profunda</td>
+                  </tr>
+                  <tr className="hover:bg-[#F9F6F0]">
+                    <td className="py-3 px-4 font-bold text-[#16332B]">0.30 x 75 mm (3 pulgadas)</td>
+                    <td className="py-3 px-4">Larga profesional</td>
+                    <td className="py-3 px-4">Glúteos profundos, descompresión del nervio ciático</td>
+                    <td className="py-3 px-4">Especialistas en traumatología y rehabilitación deportiva</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* 2. Cobertura de Envíos en Lima y Provincias (GEO Perú) */}
+          <div className="bg-[#16332B] text-white rounded-3xl p-6 sm:p-10 border border-[#A47C52]/40 shadow-xl space-y-4">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#E6D3BC] block">
+              Distribución & Despacho Oficial en Todo el Territorio Peruano
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-black text-white">
+              Cobertura de Envíos en Lima Metropolitana & Provincias
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm text-[#E6D3BC]/95 pt-2">
+              <div className="space-y-2 bg-[#23483C]/70 p-5 rounded-2xl border border-[#A47C52]/30">
+                <h3 className="font-bold text-white text-base">🚚 Lima Metropolitana y Callao (24 a 48 horas)</h3>
+                <p>
+                  Delivery motorizado directo a consultorios, clínicas, policlínicos y domicilios en Lince, San Isidro, Miraflores, Surco, San Borja, Jesús María, Los Olivos, Ate y todos los distritos de Lima.
+                </p>
+                <p className="text-[#A47C52] font-semibold">
+                  Opción de recojo presencial sin costo adicional en nuestra sede: Av. Julio César Tello 438, Lince, Lima.
+                </p>
+              </div>
+              <div className="space-y-2 bg-[#23483C]/70 p-5 rounded-2xl border border-[#A47C52]/30">
+                <h3 className="font-bold text-white text-base">📦 Envíos a Nivel Nacional (Provincias del Perú)</h3>
+                <p>
+                  Despachos diarios y seguimiento vía agencias autorizadas y certificadas: <strong>Agencias Shalom</strong> (recojo en agencia más rápida), <strong>Olva Courier</strong> (entrega a puerta) y <strong>Marvisur</strong> para bultos pesados.
+                </p>
+                <p>
+                  Envíos frecuentes a Arequipa, Trujillo, Cusco, Chiclayo, Huancayo, Piura, Ica, Tacna, Puno, Ayacucho, Chimbote, Tarapoto e Iquitos.
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         {/* YOUTUBE MODAL POPUP */}
