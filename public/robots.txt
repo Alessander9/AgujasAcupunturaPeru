@@ -5,4 +5,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://agujas-acupuntura-peru.vercel.app/sitemap.xml
+Sitemap: https://www.agujasacupunturaperu.com/sitemap.xml
