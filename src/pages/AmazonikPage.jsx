@@ -1,14 +1,57 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { AMAZONIK_PRODUCTS } from '../data/amazonikData';
 import { Sparkles, ShieldCheck, Leaf, Heart, ShoppingBag, Phone, CheckCircle2, Star } from 'lucide-react';
 import SEOHead from '../components/common/SEOHead';
 
 export default function AmazonikPage() {
+  const amazonikSchema = useMemo(() => ({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Inicio', 'item': 'https://www.agujasacupunturaperu.com/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Aceites Esenciales Amazoni-k', 'item': 'https://www.agujasacupunturaperu.com/aceites-amazonik' }
+        ]
+      },
+      {
+        '@type': 'ItemList',
+        'name': 'Aceites Esenciales y Resinas Amazónicas Amazoni-k',
+        'description': 'Extractos botánicos 100% puros de la Amazonía peruana con grado clínico para masoterapia y reflexología.',
+        'numberOfItems': AMAZONIK_PRODUCTS.length,
+        'itemListElement': AMAZONIK_PRODUCTS.map((p, idx) => {
+          const numPrice = parseFloat(String(p.price).replace(/[^0-9.]/g, '')) || 35;
+          return {
+            '@type': 'ListItem',
+            'position': idx + 1,
+            'item': {
+              '@type': 'Product',
+              'name': p.name,
+              'sku': p.sku,
+              'image': `https://www.agujasacupunturaperu.com${p.image}`,
+              'description': p.description,
+              'brand': { '@type': 'Brand', 'name': 'Amazoni-k' },
+              'offers': {
+                '@type': 'Offer',
+                'url': 'https://www.agujasacupunturaperu.com/aceites-amazonik',
+                'priceCurrency': 'PEN',
+                'price': numPrice.toFixed(2),
+                'availability': p.inStock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+                'itemCondition': 'https://schema.org/NewCondition'
+              }
+            }
+          };
+        })
+      }
+    ]
+  }), []);
+
   return (
     <div className="min-h-screen bg-[#F7F2EA] py-8 sm:py-12">
       <SEOHead 
-        title="Aceites Amazoni-k 100% Puros y Terapéuticos | Agujas Acupuntura Perú"
-        description="Aceites esenciales y resinas medicinales de la Amazonía peruana: Copaiba, Sangre de Grado, Aguaje, Ungurahui y Eucalipto. Grado clínico para masoterapia y reflexología."
+        title="Aceites Amazoni-k 100% Puros: Copaiba, Sangre de Grado y Palo Santo en Perú"
+        description="Venta de aceites esenciales y resinas medicinales de la Amazonía peruana: Copaiba, Sangre de Grado, Aguaje y Palo Santo. Grado clínico para masoterapia en Lima y Perú."
+        schemaData={amazonikSchema}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         

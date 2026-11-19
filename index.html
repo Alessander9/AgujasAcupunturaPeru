@@ -19,61 +19,83 @@
   <meta name="distribution" content="Global" />
   <meta name="target_country" content="pe" />
 
-  <!-- Schema.org JSON-LD: MedicalBusiness / MedicalSupplyStore / Store -->
+  <!-- Schema.org JSON-LD: MedicalBusiness / MedicalSupplyStore / Store + WebSite SearchAction -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["Store", "MedicalSupplyStore", "LocalBusiness"],
-    "@id": "https://www.agujasacupunturaperu.com/#organization",
-    "name": "Agujas Acupuntura Perú - Instituto de Terapias Integrales",
-    "alternateName": ["Agujas Acupuntura Perú", "Instituto de Terapias Integrales Perú"],
-    "url": "https://www.agujasacupunturaperu.com",
-    "logo": "https://www.agujasacupunturaperu.com/agujaslogo.png",
-    "image": "https://www.agujasacupunturaperu.com/agujaslogo.png",
-    "description": "Especialistas en suministro de agujas de acupuntura estériles, insumos de medicina tradicional china, conos y puros de moxibustión, ventosas terapéuticas y aceites amazónicos en Lima y todo el Perú.",
-    "telephone": "+51930830427",
-    "priceRange": "S/ 10.00 - S/ 350.00",
-    "currenciesAccepted": "PEN",
-    "paymentAccepted": "Cash, Credit Card, Yape, BCP, Transferencia bancaria",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Av. Julio César Tello 438",
-      "addressLocality": "Lince",
-      "addressRegion": "Lima",
-      "postalCode": "15046",
-      "addressCountry": "PE"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -12.0833,
-      "longitude": -77.0333
-    },
-    "hasMap": "https://maps.google.com/?q=Av.+Julio+Cesar+Tello+438+Lince+Lima",
-    "openingHoursSpecification": [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "18:30"
+        "@type": ["Store", "MedicalSupplyStore", "LocalBusiness"],
+        "@id": "https://www.agujasacupunturaperu.com/#organization",
+        "name": "Agujas Acupuntura Perú - Instituto de Terapias Integrales",
+        "alternateName": ["Agujas Acupuntura Perú", "Instituto de Terapias Integrales Perú"],
+        "url": "https://www.agujasacupunturaperu.com",
+        "logo": "https://www.agujasacupunturaperu.com/agujaslogo.png",
+        "image": "https://www.agujasacupunturaperu.com/agujaslogo.png",
+        "description": "Especialistas en suministro de agujas de acupuntura estériles, insumos de medicina tradicional china, conos y puros de moxibustión, ventosas terapéuticas y aceites amazónicos en Lima y todo el Perú.",
+        "telephone": "+51930830427",
+        "priceRange": "S/ 10.00 - S/ 350.00",
+        "currenciesAccepted": "PEN",
+        "paymentAccepted": "Cash, Credit Card, Yape, BCP, Transferencia bancaria",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Julio César Tello 438",
+          "addressLocality": "Lince",
+          "addressRegion": "Lima",
+          "postalCode": "15046",
+          "addressCountry": "PE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -12.0833,
+          "longitude": -77.0333
+        },
+        "hasMap": "https://maps.google.com/?q=Av.+Julio+Cesar+Tello+438+Lince+Lima",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "14:00"
+          }
+        ],
+        "sameAs": [
+          "https://wa.me/51930830427"
+        ],
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Lima"
+          },
+          {
+            "@type": "Country",
+            "name": "Perú"
+          }
+        ]
       },
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "09:00",
-        "closes": "14:00"
-      }
-    ],
-    "sameAs": [
-      "https://wa.me/51930830427"
-    ],
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Lima"
-      },
-      {
-        "@type": "Country",
-        "name": "Perú"
+        "@type": "WebSite",
+        "@id": "https://www.agujasacupunturaperu.com/#website",
+        "url": "https://www.agujasacupunturaperu.com",
+        "name": "Agujas Acupuntura Perú",
+        "publisher": {
+          "@id": "https://www.agujasacupunturaperu.com/#organization"
+        },
+        "inLanguage": "es-PE",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.agujasacupunturaperu.com/productos?search={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
       }
     ]
   }
@@ -149,6 +171,28 @@
 </head>
 <body class="bg-[#F7F2EA] text-slate-900 font-sans antialiased selection:bg-[#23483C] selection:text-[#EDE4D6]">
   <div id="root"></div>
+  <noscript>
+    <main style="max-width:960px;margin:2rem auto;padding:1.5rem;font-family:sans-serif;line-height:1.6;">
+      <h1>Agujas Acupuntura Perú — Instituto de Terapias Integrales Perú</h1>
+      <p>Especialistas en venta de agujas de acupuntura estériles, insumos de medicina tradicional china, moxibustión, ventosas terapéuticas, electroacupuntores, semillas de auriculoterapia, fisioterapia y aceites esenciales amazónicos Amazoni-k en Lima y todo el Perú.</p>
+      <h2>Dirección y Contacto Oficial en Lima</h2>
+      <ul>
+        <li><strong>Dirección:</strong> Av. Julio César Tello 438, Lince 15046, Lima, Perú</li>
+        <li><strong>Teléfono y Pedidos por WhatsApp:</strong> +51 930 830 427 (<a href="https://wa.me/51930830427">https://wa.me/51930830427</a>)</li>
+        <li><strong>Horario:</strong> Lunes a Viernes 9:00–18:30 | Sábados 9:00–14:00</li>
+        <li><strong>Envíos:</strong> Delivery en Lima Metropolitana (24–48h) y despachos diarios a todas las provincias del Perú por Shalom, Olva Courier y Marvisur.</li>
+      </ul>
+      <h2>Categorías Principales</h2>
+      <ul>
+        <li><a href="https://www.agujasacupunturaperu.com/productos">Catálogo Completo de Productos (161 insumos médicos)</a></li>
+        <li><a href="https://www.agujasacupunturaperu.com/aceites-amazonik">Aceites Esenciales y Resinas Amazónicas Amazoni-k (Copaiba, Sangre de Grado, Palo Santo, Aguaje)</a></li>
+        <li><a href="https://www.agujasacupunturaperu.com/videos">Videos Demostrativos de Productos y Equipos</a></li>
+        <li><a href="https://www.agujasacupunturaperu.com/tutoriales">Tutoriales Clínicos y Tabla de Calibres de Agujas de Acupuntura</a></li>
+        <li><a href="https://www.agujasacupunturaperu.com/sobre-nosotros">Sobre Nosotros y Sede en Lince</a></li>
+        <li><a href="https://www.agujasacupunturaperu.com/llms.txt">Ficha Técnica para Asistentes IA (llms.txt)</a></li>
+      </ul>
+    </main>
+  </noscript>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>

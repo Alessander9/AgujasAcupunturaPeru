@@ -16,13 +16,19 @@
     <loc>https://www.agujasacupunturaperu.com/aceites-amazonik</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.agujasacupunturaperu.com/videos</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.agujasacupunturaperu.com/tutoriales</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.agujasacupunturaperu.com/sobre-nosotros</loc>

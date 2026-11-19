@@ -11,8 +11,9 @@ const TODAY = new Date().toISOString().split('T')[0];
 const staticRoutes = [
   { url: '/', priority: '1.0', changefreq: 'daily' },
   { url: '/productos', priority: '0.9', changefreq: 'daily' },
-  { url: '/aceites-amazonik', priority: '0.8', changefreq: 'weekly' },
-  { url: '/tutoriales', priority: '0.8', changefreq: 'weekly' },
+  { url: '/aceites-amazonik', priority: '0.85', changefreq: 'weekly' },
+  { url: '/videos', priority: '0.85', changefreq: 'weekly' },
+  { url: '/tutoriales', priority: '0.85', changefreq: 'weekly' },
   { url: '/sobre-nosotros', priority: '0.7', changefreq: 'monthly' },
   { url: '/checkout', priority: '0.6', changefreq: 'monthly' },
   { url: '/terminos-y-condiciones', priority: '0.5', changefreq: 'monthly' },

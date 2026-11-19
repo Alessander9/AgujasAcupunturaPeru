@@ -70,7 +70,7 @@ const getPromosForProduct = (p) => {
 
 export default function ProductsPage() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const { searchQuery, setSearchQuery, setQuickViewProduct } = useShop();
+  const { searchQuery, setSearchQuery, quickViewProduct, setQuickViewProduct } = useShop();
 
   // Mobile menu & drawer states
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -195,6 +195,12 @@ export default function ProductsPage() {
     if (sortBy !== 'recommended') params.set('sort', sortBy);
     if (currentPage > 1) params.set('page', String(currentPage));
 
+    // Preserve active product deep-link (?prod=slug) for SEO and shareable links
+    if (quickViewProduct) {
+      const slug = quickViewProduct.slug || quickViewProduct.id;
+      if (slug) params.set('prod', String(slug));
+    }
+
     setSearchParams(params, { replace: true });
   }, [
     searchQuery,
@@ -208,6 +214,7 @@ export default function ProductsPage() {
     sortBy,
     currentPage,
     priceBounds.max,
+    quickViewProduct,
     setSearchParams
   ]);
 
@@ -681,11 +688,129 @@ export default function ProductsPage() {
   const hasActiveFilters = activeChips.length > 0;
   const moreFiltersCount = selectedRatings.length + selectedPromos.length + selectedAvailability.length;
 
+  // Dynamic SEO & Schema.org (ItemList + BreadcrumbList) for Google & AI Search Engines
+  const dynamicTitle = useMemo(() => {
+    if (quickViewProduct) {
+      const pText = quickViewProduct.precio ? ` — S/ ${Number(quickViewProduct.precio).toFixed(2)}` : '';
+      return `${quickViewProduct.nombre}${pText} | Agujas Acupuntura Perú`;
+    }
+    if (selectedCategories.length === 1) {
+      return `Venta de ${selectedCategories[0]} en Lima y Perú | Agujas Acupuntura Perú`;
+    }
+    return 'Catálogo de Agujas de Acupuntura, Moxas y Ventosas en Perú | Precios Oficiales';
+  }, [quickViewProduct, selectedCategories]);
+
+  const dynamicDescription = useMemo(() => {
+    if (quickViewProduct) {
+      return (
+        quickViewProduct.descripcionResumen ||
+        quickViewProduct.descripcionCompleta ||
+        `Compra ${quickViewProduct.nombre} en Lima y todo el Perú. Insumo médico certificado con envío en 24-48h.`
+      );
+    }
+    if (selectedCategories.length === 1) {
+      return `Catálogo oficial de ${selectedCategories[0]} en Perú (${totalFilteredCount} productos disponibles). Envíos a Lima en 24-48h y provincias vía Shalom y Olva Courier.`;
+    }
+    return `Explora nuestros ${totalFilteredCount} insumos médicos de acupuntura, moxibustión, ventosas, fisioterapia y auriculoterapia en Lima y todo el Perú.`;
+  }, [quickViewProduct, selectedCategories, totalFilteredCount]);
+
+  const dynamicCanonical = useMemo(() => {
+    if (quickViewProduct) {
+      const slug = quickViewProduct.slug || quickViewProduct.id;
+      return `https://www.agujasacupunturaperu.com/productos?prod=${encodeURIComponent(slug)}`;
+    }
+    if (selectedCategories.length === 1) {
+      return `https://www.agujasacupunturaperu.com/productos?cat=${encodeURIComponent(selectedCategories[0])}`;
+    }
+    return 'https://www.agujasacupunturaperu.com/productos';
+  }, [quickViewProduct, selectedCategories]);
+
+  const catalogSchema = useMemo(() => {
+    const items = filteredAndSortedProducts.slice(0, 30).map((p, idx) => {
+      const slug = p.slug || p.id;
+      const pUrl = `https://www.agujasacupunturaperu.com/productos?prod=${encodeURIComponent(slug)}`;
+      const img = p.imagenes?.[0] || p.imagen || '/agujaslogo.png';
+      const fullImg = img.startsWith('http') ? img : `https://www.agujasacupunturaperu.com${img.startsWith('/') ? '' : '/'}${img}`;
+      const numPrice = typeof p.precio === 'number' ? p.precio : parseFloat(String(p.precio || '0').replace(/[^0-9.]/g, '')) || 0;
+
+      const productNode = {
+        '@type': 'Product',
+        'name': p.nombre,
+        'url': pUrl,
+        'image': fullImg,
+        'sku': p.sku || p.id,
+        'description': p.descripcionResumen || p.nombre,
+        'brand': {
+          '@type': 'Brand',
+          'name': p.marca || 'Agujas Acupuntura Perú'
+        }
+      };
+
+      if (numPrice > 0) {
+        productNode.offers = {
+          '@type': 'Offer',
+          'url': pUrl,
+          'priceCurrency': 'PEN',
+          'price': numPrice.toFixed(2),
+          'availability': p.enStock !== false ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+          'itemCondition': 'https://schema.org/NewCondition'
+        };
+      }
+
+      return {
+        '@type': 'ListItem',
+        'position': idx + 1,
+        'item': productNode
+      };
+    });
+
+    return {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'BreadcrumbList',
+          'itemListElement': [
+            {
+              '@type': 'ListItem',
+              'position': 1,
+              'name': 'Inicio',
+              'item': 'https://www.agujasacupunturaperu.com/'
+            },
+            {
+              '@type': 'ListItem',
+              'position': 2,
+              'name': 'Catálogo de Productos',
+              'item': 'https://www.agujasacupunturaperu.com/productos'
+            },
+            ...(selectedCategories.length === 1
+              ? [
+                  {
+                    '@type': 'ListItem',
+                    'position': 3,
+                    'name': selectedCategories[0],
+                    'item': `https://www.agujasacupunturaperu.com/productos?cat=${encodeURIComponent(selectedCategories[0])}`
+                  }
+                ]
+              : [])
+          ]
+        },
+        {
+          '@type': 'ItemList',
+          'name': selectedCategories.length === 1 ? `Catálogo de ${selectedCategories[0]}` : 'Catálogo General Agujas Acupuntura Perú',
+          'numberOfItems': totalFilteredCount,
+          'itemListElement': items
+        }
+      ]
+    };
+  }, [filteredAndSortedProducts, selectedCategories, totalFilteredCount]);
+
   return (
     <>
       <SEOHead 
-        title={selectedCategories.length === 1 ? `Catálogo de ${selectedCategories[0]} en Perú` : 'Catálogo de Agujas de Acupuntura & Insumos Médicos en Perú'}
-        description={`Explora nuestros ${totalFilteredCount} insumos de acupuntura, moxas, ventosas y fisioterapia con envíos inmediatos en Lima y todo el Perú.`}
+        title={dynamicTitle}
+        description={dynamicDescription}
+        canonicalUrl={dynamicCanonical}
+        schemaData={catalogSchema}
       />
 
       {/* 4 & 5. BREADCRUMBS & HERO */}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { TUTORIALS_DATA } from '../data/tutorialsData';
 import { Play, Sparkles, Video, X, ExternalLink, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import SEOHead from '../components/common/SEOHead';
@@ -6,11 +6,45 @@ import SEOHead from '../components/common/SEOHead';
 export default function TutorialsPage() {
   const [activeVideoId, setActiveVideoId] = useState(null);
 
+  const tutorialsSchema = useMemo(() => {
+    const allVideos = TUTORIALS_DATA.flatMap(cat => cat.videos);
+    return {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'BreadcrumbList',
+          'itemListElement': [
+            { '@type': 'ListItem', 'position': 1, 'name': 'Inicio', 'item': 'https://www.agujasacupunturaperu.com/' },
+            { '@type': 'ListItem', 'position': 2, 'name': 'Tutoriales Clínicos', 'item': 'https://www.agujasacupunturaperu.com/tutoriales' }
+          ]
+        },
+        {
+          '@type': 'ItemList',
+          'name': 'Tutoriales Clínicos de Acupuntura y Rehabilitación',
+          'itemListElement': allVideos.map((v, idx) => ({
+            '@type': 'ListItem',
+            'position': idx + 1,
+            'item': {
+              '@type': 'VideoObject',
+              'name': v.title,
+              'description': v.summary,
+              'thumbnailUrl': [`https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg`],
+              'uploadDate': '2026-01-15T08:00:00-05:00',
+              'embedUrl': `https://www.youtube.com/embed/${v.youtubeId}`,
+              'contentUrl': `https://www.youtube.com/watch?v=${v.youtubeId}`
+            }
+          }))
+        }
+      ]
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#F7F2EA] py-8 sm:py-12">
       <SEOHead 
         title="Tutoriales Clínicos de Acupuntura, Ventosas y Masaje | Agujas Acupuntura Perú"
-        description="Videos educativos y demostraciones prácticas de acupuntura, electroacupuntura, ventosaterapia y puntos de digitopresión dictados por especialistas en Perú."
+        description="Videos educativos, tabla de calibres de agujas y demostraciones prácticas de acupuntura, electroacupuntura y ventosaterapia por especialistas en Lima, Perú."
+        schemaData={tutorialsSchema}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         

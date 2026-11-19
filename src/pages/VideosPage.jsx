@@ -106,11 +106,43 @@ export default function VideosPage() {
     });
   }, [selectedCategory, selectedType, searchQuery]);
 
+  const videosSchema = useMemo(() => ({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Inicio', 'item': 'https://www.agujasacupunturaperu.com/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Videos Demostrativos', 'item': 'https://www.agujasacupunturaperu.com/videos' }
+        ]
+      },
+      {
+        '@type': 'ItemList',
+        'name': 'Videos Demostrativos de Insumos Médicos y Acupuntura',
+        'numberOfItems': VIDEOS_DATA.length,
+        'itemListElement': VIDEOS_DATA.map((v, idx) => ({
+          '@type': 'ListItem',
+          'position': idx + 1,
+          'item': {
+            '@type': 'VideoObject',
+            'name': v.title,
+            'description': v.summary,
+            'thumbnailUrl': [`https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg`],
+            'uploadDate': '2026-02-10T08:00:00-05:00',
+            'embedUrl': `https://www.youtube.com/embed/${v.youtubeId}`,
+            'contentUrl': v.youtubeUrl
+          }
+        }))
+      }
+    ]
+  }), []);
+
   return (
     <div className="min-h-screen bg-[#FDFBF7] py-8 sm:py-12">
       <SEOHead 
-        title="Videos: Demostraciones y Usos de Productos | Agujas Acupuntura Perú"
-        description="Mira demostraciones en video sobre cómo usar agujas de acupuntura, ventosas, electroacupuntor, piedras calientes, férulas y más insumos clínicos en Perú."
+        title="Videos: Demostraciones y Usos de Agujas de Acupuntura y Equipos | Perú"
+        description="Mira demostraciones en video sobre cómo usar agujas de acupuntura, ventosas, electroacupuntor SDZ-IIB, piedras calientes, férulas y más insumos clínicos en Perú."
+        schemaData={videosSchema}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-10">
