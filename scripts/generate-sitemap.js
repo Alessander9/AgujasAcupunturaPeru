@@ -73,10 +73,10 @@ const generateSitemap = () => {
       products.forEach(p => {
         const slug = p.slug || `prod-${p.id}`;
         xml += `  <url>\n`;
-        xml += `    <loc>${BASE_URL}/productos?prod=${encodeURIComponent(slug)}</loc>\n`;
+        xml += `    <loc>${BASE_URL}/producto/${encodeURIComponent(slug)}</loc>\n`;
         xml += `    <lastmod>${TODAY}</lastmod>\n`;
         xml += `    <changefreq>weekly</changefreq>\n`;
-        xml += `    <priority>0.7</priority>\n`;
+        xml += `    <priority>0.75</priority>\n`;
         xml += `  </url>\n`;
       });
       console.log(`Generated sitemap with ${products.length} products.`);

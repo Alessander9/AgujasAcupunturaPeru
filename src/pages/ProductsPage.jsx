@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect, useCallback } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useParams } from 'react-router-dom';
 import { PRODUCTS_CATALOG } from '../data/productsData';
 import { useShop } from '../context/ShopContext';
 import SEOHead from '../components/common/SEOHead';
@@ -70,6 +70,7 @@ const getPromosForProduct = (p) => {
 
 export default function ProductsPage() {
   const [searchParams, setSearchParams] = useSearchParams();
+  const { slug: routeSlug } = useParams();
   const { searchQuery, setSearchQuery, quickViewProduct, setQuickViewProduct } = useShop();
 
   // Mobile menu & drawer states
@@ -166,8 +167,8 @@ export default function ProductsPage() {
     else if (p === 'novedades') setSelectedPromos(['new']);
     else if (p) setSelectedPromos(p.split(','));
 
-    // Deep-linking de producto (?prod=slug o ?prod=id) para indexación SEO individual y GEO
-    const prodParam = searchParams.get('prod');
+    // Deep-linking de producto (/producto/:slug o ?prod=slug) para indexación SEO individual y GEO
+    const prodParam = routeSlug || searchParams.get('prod');
     if (prodParam) {
       const targetProduct = PRODUCTS_CATALOG.find(
         (item) => item.slug === prodParam || String(item.id).toLowerCase() === prodParam.toLowerCase()
@@ -176,10 +177,15 @@ export default function ProductsPage() {
         setQuickViewProduct(targetProduct);
       }
     }
-  }, [searchParams, setQuickViewProduct]);
+  }, [searchParams, routeSlug, setQuickViewProduct]);
 
   // Sync state back to URL params
   useEffect(() => {
+    // Do not overwrite clean /producto/:slug pathname with query parameters unless user filters
+    if (routeSlug && quickViewProduct && (quickViewProduct.slug === routeSlug || quickViewProduct.id === routeSlug)) {
+      return;
+    }
+
     const params = new URLSearchParams();
     
     if (searchQuery.trim()) params.set('search', searchQuery.trim());
@@ -195,8 +201,8 @@ export default function ProductsPage() {
     if (sortBy !== 'recommended') params.set('sort', sortBy);
     if (currentPage > 1) params.set('page', String(currentPage));
 
-    // Preserve active product deep-link (?prod=slug) for SEO and shareable links
-    if (quickViewProduct) {
+    // Preserve active product deep-link (?prod=slug) when browsing on /productos
+    if (!routeSlug && quickViewProduct) {
       const slug = quickViewProduct.slug || quickViewProduct.id;
       if (slug) params.set('prod', String(slug));
     }
@@ -215,6 +221,7 @@ export default function ProductsPage() {
     currentPage,
     priceBounds.max,
     quickViewProduct,
+    routeSlug,
     setSearchParams
   ]);
 
@@ -717,7 +724,7 @@ export default function ProductsPage() {
   const dynamicCanonical = useMemo(() => {
     if (quickViewProduct) {
       const slug = quickViewProduct.slug || quickViewProduct.id;
-      return `https://www.agujasacupunturaperu.com/productos?prod=${encodeURIComponent(slug)}`;
+      return `https://www.agujasacupunturaperu.com/producto/${encodeURIComponent(slug)}`;
     }
     if (selectedCategories.length === 1) {
       return `https://www.agujasacupunturaperu.com/productos?cat=${encodeURIComponent(selectedCategories[0])}`;
@@ -728,7 +735,7 @@ export default function ProductsPage() {
   const catalogSchema = useMemo(() => {
     const items = filteredAndSortedProducts.slice(0, 30).map((p, idx) => {
       const slug = p.slug || p.id;
-      const pUrl = `https://www.agujasacupunturaperu.com/productos?prod=${encodeURIComponent(slug)}`;
+      const pUrl = `https://www.agujasacupunturaperu.com/producto/${encodeURIComponent(slug)}`;
       const img = p.imagenes?.[0] || p.imagen || '/agujaslogo.png';
       const fullImg = img.startsWith('http') ? img : `https://www.agujasacupunturaperu.com${img.startsWith('/') ? '' : '/'}${img}`;
       const numPrice = typeof p.precio === 'number' ? p.precio : parseFloat(String(p.precio || '0').replace(/[^0-9.]/g, '')) || 0;

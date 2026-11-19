@@ -66,9 +66,10 @@ export default function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/index.html" element={<HomePage />} />
 
-              {/* Catálogo de Productos */}
+              {/* Catálogo de Productos & Fichas Individuales SEO/GEO */}
               <Route path="/productos" element={<ProductsPage />} />
               <Route path="/productos.html" element={<ProductsPage />} />
+              <Route path="/producto/:slug" element={<ProductsPage />} />
 
               {/* Checkout & Resumen de Pedido */}
               <Route path="/checkout" element={<CheckoutPage />} />

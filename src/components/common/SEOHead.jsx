@@ -65,6 +65,9 @@ export default function SEOHead({
     linkCanonical.setAttribute('href', currentUrl);
 
     // 6. Dynamic JSON-LD Structured Data (Schema.org)
+    const preScript = document.getElementById('prerendered-route-schema');
+    if (preScript) preScript.remove();
+
     const scriptId = 'dynamic-page-schema';
     let dynamicScript = document.getElementById(scriptId);
     if (schemaData) {
